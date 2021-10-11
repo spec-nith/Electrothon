@@ -26,16 +26,10 @@ const Nav = () => {
 
           <div className="hidden text-normal md:flex items-center h-full space-x-1">
             <a
-              href="#hackers"
+              href="#home"
               className="py-4 px-2 text-gray-500 hover:text-green-500 transition duration-300"
             >
-              HackersGuide
-            </a>
-            <a
-              href="#workshop"
-              className="py-4 px-2 text-gray-500  hover:text-green-500 transition duration-300"
-            >
-              Workshops
+              Home
             </a>
             <a
               href="#schedule"
@@ -44,10 +38,22 @@ const Nav = () => {
               Schedule
             </a>
             <a
+              href="#themes"
+              className="py-4 px-2 text-gray-500  hover:text-green-500 transition duration-300"
+            >
+              Themes
+            </a>
+            <a
               href="#prizes"
               className="py-4 px-2 text-gray-500  hover:text-blue-500 transition duration-300"
             >
               Prizes
+            </a>
+            <a
+              href="#workshops"
+              className="py-4 px-2 text-gray-500  hover:text-green-500 transition duration-300"
+            >
+              Workshops
             </a>
             <a
               href="#sponsors"
@@ -98,98 +104,113 @@ const Nav = () => {
             <aside
               className={`transform top-0 left-0 w-64 fixed h-full bg-white overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
-              }`} onClick={() => setIsOpen((prevState) => !prevState)}
+              }`}
+              onClick={() => setIsOpen((prevState) => !prevState)}
             >
-                <div className="flex w-full items-center justify-center h-20 shadow-md">
-                  <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
-                </div>
-                <a
-                  href="https://www.notion.so/Hacker-s-Guide-to-Electrothon-3-0-528b6b2f10bd48dd812ed8dd9f99ce7f"
-                  className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
-                  onClick={() => setIsOpen((prevState) => !prevState)}
-                >
-                  <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
-                    <FontAwesomeIcon
-                      className="text-lg"
-                      icon={faHome}
-                      fixedWidth
-                    />
-                  </span>
-                  <span className="text-sm font-medium">Hackers Guide</span>
-                </a>
+              <div className="flex w-full items-center justify-center h-20 shadow-md">
+                <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
+              </div>
+              <a
+                href="#home"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faHome}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Home</span>
+              </a>
 
-                <a
-                  href="#workshops"
-                  className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
-                  onClick={() => setIsOpen((prevState) => !prevState)}
-                >
-                  <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
-                    <FontAwesomeIcon
-                      className="text-lg"
-                      icon={faChalkboardTeacher}
-                      fixedWidth
-                    />
-                  </span>
-                  <span className="text-sm font-medium">Workshops</span>
-                </a>
+              <a
+                href="#schedule"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faCalendarDay}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Schedule</span>
+              </a>
 
-                <a
-                  href="#schedule"
-                  className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
-                  onClick={() => setIsOpen((prevState) => !prevState)}
-                >
-                  <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
-                    <FontAwesomeIcon
-                      className="text-lg"
-                      icon={faCalendarDay}
-                      fixedWidth
-                    />
-                  </span>
-                  <span className="text-sm font-medium">Schedule</span>
-                </a>
+              <a
+                href="#themes"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faChalkboardTeacher}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Themes</span>
+              </a>
 
-                <a
-                  href="#prizes"
-                  className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
-                  onClick={() => setIsOpen((prevState) => !prevState)}
-                >
-                  <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
-                    <FontAwesomeIcon
-                      className="text-lg"
-                      icon={faAward}
-                      fixedWidth
-                    />
-                  </span>
-                  <span className="text-sm font-medium">Prizes</span>
-                </a>
-                <a
-                  href="#sponsors"
-                  className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
-                  onClick={() => setIsOpen((prevState) => !prevState)}
-                >
-                  <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
-                    <FontAwesomeIcon
-                      className="text-lg"
-                      icon={faHandHoldingUsd}
-                      fixedWidth
-                    />
-                  </span>
-                  <span className="text-sm font-medium">Sponsors</span>
-                </a>
-                <a
-                  href="#contact"
-                  className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
-                  onClick={() => setIsOpen((prevState) => !prevState)}
-                >
-                  <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
-                    <FontAwesomeIcon
-                      className="text-lg"
-                      icon={faIdCardAlt}
-                      fixedWidth
-                    />
-                  </span>
-                  <span className="text-sm font-medium">Contact Us</span>
-                </a>
+              <a
+                href="#prizes"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faAward}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Prizes</span>
+              </a>
+              <a
+                href="#workshops"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faChalkboardTeacher}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Workshops</span>
+              </a>
+              <a
+                href="#sponsors"
+                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faHandHoldingUsd}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Sponsors</span>
+              </a>
+              <a
+                href="#contact"
+                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faIdCardAlt}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">Contact Us</span>
+              </a>
             </aside>
           )}
         </div>

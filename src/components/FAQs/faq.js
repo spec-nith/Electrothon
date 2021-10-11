@@ -35,15 +35,14 @@ export default function faq() {
     );
   };
   return (
-    <section id="faq"
-      className="relative bg-white overflow-hidden mt-10">
+    <section id="faq" className="relative bg-white overflow-hidden mt-10">
       <h1 className="text-3xl text-center tracking-tight md:text-4xl leading-normal md:leading-relaxed text-gray-800">
         Commonly Asked Questions
       </h1>
       <div className="lg:w-3/5 lg:p-8 p-2 py-6 mx-auto">
         <div className="shadow row faqs-tabs">
           {FaqArray.map((props) => {
-            return <FaqTab props={props} />;
+            return <FaqTab props={props} key={props.title + Math.random()} />;
           })}
         </div>
       </div>

@@ -36,7 +36,9 @@ export default function Content() {
               </p>
             </div>
             <div className="my-4">
-              <span className="text-2xl text-gray-700">Sustainability and Globalization</span>
+              <span className="text-2xl text-gray-700">
+                Sustainability and Globalization
+              </span>
               <p className="text-normal md:text-xl mt-4">
                 This year's theme inspires participants to come up with
                 sustainable ideas, ideas that aim to target bigger issues of

@@ -5,7 +5,8 @@
   max-height: 0;
   transition: 0.5s;
 }
-.faqs-tab, .faqs-tab svg {
+.faqs-tab,
+.faqs-tab svg {
   transition-duration: 0.5s;
 }
 

@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function footer() {
   return (
-    <div className="w-full bg-gray-700">
+    <section id="contact" className="w-full bg-gray-700">
       <div className="flex flex-wrap text-center text-white">
         <div className="w-full md:w-1/3 p-5 border-r border-gray-600 align-center">
           <div className="my-6 ml-3 text-3xl">ABOUT US</div>
@@ -25,15 +25,11 @@ export default function footer() {
                 href="https://hackcodeofconduct.org/2012-electrothon"
                 target="_blank"
                 rel="noreferrer noopener"
-              ><span className="mr-2">
-                <FontAwesomeIcon
-                  className="text-lg"
-                  icon={faCode}
-                  /></span>
-                <span>
-                Code Of Conduct
-              </span>
-
+              >
+                <span className="mr-2">
+                  <FontAwesomeIcon className="text-lg" icon={faCode} />
+                </span>
+                <span>Code Of Conduct</span>
               </a>
             </li>
             <li>
@@ -42,16 +38,14 @@ export default function footer() {
                 target="_blank"
                 rel="noreferrer noopener"
               >
-               <span className="mr-2">
+                <span className="mr-2">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faEnvelope}
                     fixedWidth
                   />
                 </span>
-                <span>
-                  spec@nith.ac.in
-                  </span>
+                <span>spec@nith.ac.in</span>
               </a>
             </li>
             <li>
@@ -67,23 +61,19 @@ export default function footer() {
                     fixedWidth
                   />
                 </span>
-                <span>
-                  Join our Discord
-                  </span>
+                <span>Join our Discord</span>
               </a>
             </li>
             <li>
               <a href="../index.html" target="_blank" rel="noreferrer noopener">
-              <span className="mr-2">
+                <span className="mr-2">
                   <FontAwesomeIcon
                     className="text-lg mr-2"
                     icon={faUsers}
                     fixedWidth
                   />
                 </span>
-                <span>
-                  About SPEC
-                  </span>
+                <span>About SPEC</span>
               </a>
             </li>
             <li>
@@ -99,9 +89,7 @@ export default function footer() {
                     fixedWidth
                   />
                 </span>
-                <span>
-                  Hackers Guide
-                </span>
+                <span>Hackers Guide</span>
               </a>
             </li>
           </ul>
@@ -158,30 +146,40 @@ export default function footer() {
             </a>
           </p>
           <div className="relative w-20 h-20 mx-auto my-12 bg-blue-300 rotate-45">
-            <a className="flex justify-center items-center absolute left-0 top-0 w-10 h-10 hover:-ml-1 hover:-mt-1 bg-gray-600"
-                href="https://www.facebook.com/spec.ece">
+            <a
+              className="flex justify-center items-center absolute left-0 top-0 w-10 h-10 hover:-ml-1 hover:-mt-1 bg-gray-600"
+              href="https://www.facebook.com/spec.ece"
+            >
               <FontAwesomeIcon
                 className="text-xl"
                 icon={faFacebook}
                 fixedWidth
               />
             </a>
-            <a className="flex justify-center items-center absolute top-0 right-0 w-10 h-10 hover:-mt-1 hover:-mr-1 bg-gray-600"
-            href="https://www.linkedin.com/company/spec-nith/mycompany/">
+            <a
+              className="flex justify-center items-center absolute top-0 right-0 w-10 h-10 hover:-mt-1 hover:-mr-1 bg-gray-600"
+              href="https://www.linkedin.com/company/spec-nith/mycompany/"
+            >
               <FontAwesomeIcon
                 className="text-xl"
                 icon={faLinkedin}
                 fixedWidth
               />
             </a>
-            <a href="https://www.instagram.com/s.p.e.c_nith/" className="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-gray-600">
+            <a
+              href="https://www.instagram.com/s.p.e.c_nith/"
+              className="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-gray-600"
+            >
               <FontAwesomeIcon
                 className="text-xl"
                 icon={faInstagram}
                 fixedWidth
               />
             </a>
-            <a href="https://discord.gg/cjMMRs7tHs" className="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-gray-600 cursor-pointer">
+            <a
+              href="https://discord.gg/cjMMRs7tHs"
+              className="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-gray-600 cursor-pointer"
+            >
               <FontAwesomeIcon
                 className="text-xl"
                 icon={faDiscord}
@@ -191,6 +189,6 @@ export default function footer() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
