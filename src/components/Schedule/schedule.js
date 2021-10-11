@@ -74,7 +74,7 @@ export default function schedule() {
         Explore Now</a>
       </div>
       <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
-        <div className="container mx-auto w-full h-full" style={{minWidth:'500px'}}>
+        <div className="container mx-auto w-full h-full" >
           <div className="relative wrap overflow-hidden p-10 h-full">
           <div className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style={{left: "50%"}}></div>
           {array.map((props,index)=>{
