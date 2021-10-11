@@ -9,12 +9,19 @@ import {
 
 export default function milestone() {
   return (
-    <section id="milestone" className="relative bg-white overflow-hidden mt-10">
+    <section
+      id="milestone"
+      className="relative overflow-hidden mt-2 container-theme p-6"
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out-cubic"
+    >
       <div className="container mx-auto">
-        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed text-gray-800">
+        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Milestones
         </h1>
-        <div className="flex flex-wrap -m-4 text-center mt-6">
+        <div className="flex flex-wrap -m-4 text-center mt-2">
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
             <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-green-200">
               <FontAwesomeIcon

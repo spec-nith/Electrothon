@@ -15,7 +15,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function footer() {
   return (
-    <section id="contact" className="w-full bg-gray-700">
+    <section
+      id="contact"
+      className="w-full bg-gray-700"
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out-cubic"
+    >
       <div className="flex flex-wrap text-center text-white">
         <div
           className="w-full md:w-1/3 p-5 border-r border-gray-600 align-center"
@@ -102,31 +109,31 @@ export default function footer() {
           className="w-full md:w-1/3 p-5 border-r border-gray-600"
           aria-label="Contact Us"
         >
-          <div className="mt-6 text-3xl">SAY HELLO!</div>
+          <div className="mt-2 text-3xl">SAY HELLO!</div>
           <form className="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded">
             <div className="flex items-center mb-4">
               <input
-                className="w-full h-10 p-2 border-b border-blue-300 bg-white text-white"
+                className="w-full h-10 p-2 border-b border-blue-300 text-white"
                 type="text"
                 placeholder="Username"
               />
             </div>
             <div className="flex items-center mb-4">
               <input
-                className="w-full h-10 p-2 border-b border-blue-300 bg-white text-white"
+                className="w-full h-10 p-2 border-b border-blue-300 text-white"
                 type="text"
                 placeholder="Email"
               />
             </div>
             <div className="mb-6">
               <textarea
-                className="w-full h-24 px-2 pt-2 border-b-2 border-blue-300 bg-white text-white"
+                className="w-full h-24 px-2 pt-2 border-b-2 border-blue-300 text-white"
                 placeholder="Message"
               ></textarea>
             </div>
             <div className="flex justify-between items-center">
               <button
-                className="w-full py-2 px-4 bg-transparent hover:bg-white hover:text-blue-400 text-white font-bold border border-white hover:border-transparent rounded"
+                className="w-full py-2 px-4 bg-transparent hover:hover:text-blue-400 text-white font-bold border border-white hover:border-transparent rounded"
                 type="button"
               >
                 SEND

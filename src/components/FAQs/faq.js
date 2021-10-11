@@ -40,8 +40,15 @@ export default function faq() {
     );
   };
   return (
-    <section id="faq" className="relative bg-white overflow-hidden mt-10">
-      <h1 className="text-3xl text-center tracking-tight md:text-4xl leading-normal md:leading-relaxed text-gray-800">
+    <section
+      id="faq"
+      className="relative overflow-hidden mt-2"
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out-cubic"
+    >
+      <h1 className="text-3xl text-center tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
         Commonly Asked Questions
       </h1>
       <div className="lg:w-3/5 lg:p-8 p-2 py-6 mx-auto">

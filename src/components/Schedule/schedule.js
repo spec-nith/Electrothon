@@ -120,14 +120,21 @@ export default function Schedule() {
   };
 
   return (
-    <div id="schedule" className="py-8">
-      <div className="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+    <div
+      id="schedule"
+      className="py-8 container-theme  p-6 mt-2"
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out-cubic"
+    >
+      <div className="container mx-auto flex flex-col items-start md:flex-row">
         <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 pr-8">
           <p className="text-blue-500 uppercase tracking-loose">Timeline</p>
-          <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">
+          <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 header-theme">
             Working Process of Fest
           </p>
-          <p className="text-sm md:text-base text-black-50 mb-4">
+          <p className="text-sm md:text-base text-black-50 mb-4 content-theme">
             Here’s your guide to the Electrothon 4.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>

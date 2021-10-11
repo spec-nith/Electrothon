@@ -21,50 +21,50 @@ const Nav = () => {
           <div className="hidden md:flex items-center py-4 px-2">
             <a href="https://specnith.com/">
               {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
-              <span className=" text-gray-500 text-lg">SPEC</span>
+              <span className=" text-gray-400 text-lg">SPEC</span>
             </a>
           </div>
 
           <div className="hidden text-normal md:flex items-center h-full space-x-1">
             <a
               href="#home"
-              className="py-4 px-2 text-gray-500 hover:text-green-500 transition duration-300"
+              className="py-4 px-2 text-gray-400 hover:text-green-500 transition duration-300"
             >
               Home
             </a>
             <a
               href="#schedule"
-              className="py-4 px-2 text-gray-500  hover:text-blue-500 transition duration-300"
+              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
             >
               Schedule
             </a>
             <a
               href="#themes"
-              className="py-4 px-2 text-gray-500  hover:text-green-500 transition duration-300"
+              className="py-4 px-2 text-gray-400  hover:text-green-500 transition duration-300"
             >
               Themes
             </a>
             <a
               href="#prizes"
-              className="py-4 px-2 text-gray-500  hover:text-blue-500 transition duration-300"
+              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
             >
               Prizes
             </a>
             <a
               href="#workshops"
-              className="py-4 px-2 text-gray-500  hover:text-green-500 transition duration-300"
+              className="py-4 px-2 text-gray-400  hover:text-green-500 transition duration-300"
             >
               Workshops
             </a>
             <a
               href="#sponsors"
-              className="py-4 px-2 text-gray-500  hover:text-blue-500 transition duration-300"
+              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
             >
               Sponsors
             </a>
             <a
               href="#contact"
-              className="py-4 px-2 text-gray-500  hover:text-blue-500 transition duration-300"
+              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
             >
               Contact Us
             </a>
@@ -104,7 +104,7 @@ const Nav = () => {
           </Transition>
           {isOpen && (
             <aside
-              className={`transform top-0 left-0 w-64 fixed h-full bg-white overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ${
+              className={`transform top-0 left-0 w-64 fixed h-full overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ${
                 isOpen ? "translate-x-0" : "-translate-x-full"
               }`}
               onClick={() => setIsOpen((prevState) => !prevState)}
@@ -114,7 +114,7 @@ const Nav = () => {
               </div>
               <a
                 href="#home"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
@@ -129,7 +129,7 @@ const Nav = () => {
 
               <a
                 href="#schedule"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
@@ -144,7 +144,7 @@ const Nav = () => {
 
               <a
                 href="#themes"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
@@ -159,7 +159,7 @@ const Nav = () => {
 
               <a
                 href="#prizes"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
@@ -173,7 +173,7 @@ const Nav = () => {
               </a>
               <a
                 href="#workshops"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
@@ -187,7 +187,7 @@ const Nav = () => {
               </a>
               <a
                 href="#sponsors"
-                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
@@ -201,7 +201,7 @@ const Nav = () => {
               </a>
               <a
                 href="#contact"
-                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800"
+                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">

@@ -5,15 +5,19 @@ export default function Content() {
     <>
       <section
         id="whats-new"
-        className="relative bg-white overflow-hidden mt-10"
+        className="relative overflow-hidden mt-2 container-theme p-6"
+        data-aos="fade"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-cubic"
       >
-        <div className="max-w-7xl ">
-          <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed text-gray-800">
+        <div className="max-w-7xl">
+          <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
             What's new this time?
           </h1>
-          <div className="mt-3 text-normal text-gray-500 md:mt-5 lg:mx-0 md:leading-normal">
+          <div className="mt-3 text-normal md:mt-5 lg:mx-0 md:leading-normal content-theme">
             <div className="my-4">
-              <p className="text-2xl text-gray-700">Ideation</p>
+              <p className="text-2xl subhead-theme">Ideation</p>
               <p className="text-normal md:text-xl mt-4">
                 This iteration of Electrothon aims to find not just technical
                 ideas but also research and business ideas. As long as the idea
@@ -22,21 +26,21 @@ export default function Content() {
               </p>
             </div>
             <div className="my-4">
-              <span className="text-2xl text-gray-700">Diversity</span>
+              <span className="text-2xl subhead-theme">Diversity</span>
               <p className="text-normal md:text-xl mt-4">
                 Diversity of thought, perspective, and culture will be
                 emboldened by uplifting people from the LGBTQ community.
               </p>
             </div>
             <div className="my-4">
-              <span className="text-2xl text-gray-700">Incubation</span>
+              <span className="text-2xl subhead-theme">Incubation</span>
               <p className="text-normal md:text-xl mt-4">
                 Ideas with the potential to be converted into a product, will be
                 partnered by our partnered companies.
               </p>
             </div>
             <div className="my-4">
-              <span className="text-2xl text-gray-700">
+              <span className="text-2xl subhead-theme">
                 Sustainability and Globalization
               </span>
               <p className="text-normal md:text-xl mt-4">
@@ -50,13 +54,17 @@ export default function Content() {
       </section>
       <section
         id="diversity"
-        className="relative bg-white overflow-hidden mt-10"
+        className="relative overflow-hidden mt-2 container-theme p-6"
+        data-aos="fade"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out-cubic"
       >
         <div className="max-w-7xl ">
-          <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed text-gray-800">
+          <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
             Diversity and Inclusion
           </h1>
-          <div className="mt-3 text-normal text-gray-500 md:mt-5 md:text-xl lg:mx-0 md:leading-normal">
+          <div className="mt-3 text-normal text-gray-400 md:mt-5 md:text-xl lg:mx-0 md:leading-normal content-theme">
             <p className="text-normal md:text-xl mt-4">
               With a vision to create a generation of financially and socially
               independent women, we strive to turn their aspirations into

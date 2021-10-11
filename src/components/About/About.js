@@ -2,12 +2,19 @@ import React from "react";
 
 export default function About() {
   return (
-    <section id="about" className="relative overflow-hidden mt-10">
-      <div className="max-w-7xl">
-        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed text-gray-800">
+    <section
+      id="about"
+      className="relative overflow-hidden mt-2 container-theme p-6"
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out-cubic"
+    >
+      <div>
+        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           About Us
         </h1>
-        <div className="mt-3 text-normal text-gray-500 md:mt-5 md:text-xl lg:mx-0 md:leading-normal">
+        <div className="mt-3 text-normal content-theme md:mt-5 md:text-xl lg:mx-0 md:leading-normal">
           Electrothon is a student-run hackathon, under the aegis of the
           National Institute of Technology Hamirpur, India. An exceptional place
           for young and dedicated minds, a platform for organizations to meet a
