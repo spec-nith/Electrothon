@@ -52,12 +52,12 @@ export default function Schedule() {
           <p className="mb-3 text-base text-white">
             {props.props.date} 10 May, 2021
           </p>
-          <h4
+          <span
             className="mb-3 font-bold text-lg md:text-2xl"
             style={{ color: "#EEEEEE" }}
           >
             {props.props.title}
-          </h4>
+          </span>
           <p className="text-sm md:text-base leading-snug text-black-50 text-opacity-100 p-4">
             {props.props.para}
           </p>
@@ -81,12 +81,12 @@ export default function Schedule() {
           style={{ width: "80%" }}
         >
           <p className="mb-3 text-base text-white">{props.props.date}</p>
-          <h4
+          <span
             className="mb-3 font-bold  text-lg md:text-2xl text-left"
             style={{ color: "#EEEEEE" }}
           >
             {props.props.title}
-          </h4>
+          </span>
           <p className="text-sm md:text-base leading-snug text-black-50 text-opacity-100 p-2">
             {props.props.para}
           </p>
@@ -105,12 +105,12 @@ export default function Schedule() {
         </div>
         <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4 text-left">
           <p className="mb-3 text-base text-white">{props.props.date}</p>
-          <h4
+          <span
             className="mb-3 font-bold  text-lg md:text-2xl text-left"
             style={{ color: "#EEEEEE" }}
           >
             {props.props.title}
-          </h4>
+          </span>
           <p className="text-sm md:text-base leading-snug text-black-50 text-opacity-100 p-4">
             {props.props.para}
           </p>

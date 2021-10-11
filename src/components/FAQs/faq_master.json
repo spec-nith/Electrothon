@@ -8,15 +8,15 @@
     "content": "Yes, you must be a student from any designated University/College."
   },
   {
-    "title": " Do I need experience?",
-    "content": " No, you do not require any prior experience in development. We will provide you with mentors to help you figure out things. Of course, a will to think, learn, and collaborate will be cherry on the cake."
+    "title": "Do I need experience?",
+    "content": "No, you do not require any prior experience in development. We will provide you with mentors to help you figure out things. Of course, a will to think, learn, and collaborate will be cherry on the cake."
   },
   {
     "title": "Do I need to present physically?",
     "content": "No, the complete hackathon is virtual, join our discord channel to stay updated."
   },
   {
-    "title": " What kind of solutions will be accepted?",
+    "title": "What kind of solutions will be accepted?",
     "content": "You can propose solutions based on the themes mentioned in the project category. Technology does not matter."
   },
   {
@@ -37,7 +37,7 @@
   },
   {
     "title": "What is the goal of the Electrothon?",
-    "content": " We want to create an environment that embraces new ideas and technology solutions at the industry level. A place where technology designers and developers can come to help real life problems which can be solved through engineering. We know it takes longer than a weekend tobuild great solutions, but this is ample time to form teams of good people and begin creatinggreat solutions."
+    "content": "We want to create an environment that embraces new ideas and technology solutions at the industry level. A place where technology designers and developers can come to help real life problems which can be solved through engineering. We know it takes longer than a weekend tobuild great solutions, but this is ample time to form teams of good people and begin creatinggreat solutions."
   },
   {
     "title": "How does Electrothon promote diversity?",
@@ -56,7 +56,7 @@
     "content": "There will be API prizes from multiple sponsors to build a hack on top of their APIs or SDKs. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event. Teams are free to pick from them as well."
   },
   {
-    "title": " What if I have more queries?",
+    "title": "What if I have more queries?",
     "content": "You can reach out to us any time at spec@nith.ac.in as well as our social media platforms"
   }
 ]

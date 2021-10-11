@@ -17,7 +17,10 @@ export default function footer() {
   return (
     <section id="contact" className="w-full bg-gray-700">
       <div className="flex flex-wrap text-center text-white">
-        <div className="w-full md:w-1/3 p-5 border-r border-gray-600 align-center">
+        <div
+          className="w-full md:w-1/3 p-5 border-r border-gray-600 align-center"
+          aria-label="About Us"
+        >
           <div className="my-6 ml-3 text-3xl">ABOUT US</div>
           <ul type="none" className="text-lg space-y-2">
             <li>
@@ -95,7 +98,10 @@ export default function footer() {
           </ul>
         </div>
 
-        <div className="w-full md:w-1/3 p-5 border-r border-gray-600">
+        <div
+          className="w-full md:w-1/3 p-5 border-r border-gray-600"
+          aria-label="Contact Us"
+        >
           <div className="mt-6 text-3xl">SAY HELLO!</div>
           <form className="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded">
             <div className="flex items-center mb-4">
@@ -128,7 +134,10 @@ export default function footer() {
             </div>
           </form>
         </div>
-        <div className="w-full md:w-1/3 p-5 border-r border-gray-600">
+        <div
+          className="w-full md:w-1/3 p-5 border-r border-gray-600"
+          aria-label="Social"
+        >
           <div className="my-6 text-3xl">CONTACT US</div>
           <p className="mt-8">
             National Institute of Technology, Hamirpur
@@ -149,6 +158,8 @@ export default function footer() {
             <a
               className="flex justify-center items-center absolute left-0 top-0 w-10 h-10 hover:-ml-1 hover:-mt-1 bg-gray-600"
               href="https://www.facebook.com/spec.ece"
+              aria-label="Facebook"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="text-xl"
@@ -159,6 +170,8 @@ export default function footer() {
             <a
               className="flex justify-center items-center absolute top-0 right-0 w-10 h-10 hover:-mt-1 hover:-mr-1 bg-gray-600"
               href="https://www.linkedin.com/company/spec-nith/mycompany/"
+              aria-label="Linkedin"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="text-xl"
@@ -169,6 +182,8 @@ export default function footer() {
             <a
               href="https://www.instagram.com/s.p.e.c_nith/"
               className="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-gray-600"
+              aria-label="Instagram"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="text-xl"
@@ -179,6 +194,8 @@ export default function footer() {
             <a
               href="https://discord.gg/cjMMRs7tHs"
               className="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-gray-600 cursor-pointer"
+              aria-label="Join our Discord"
+              target="_blank"
             >
               <FontAwesomeIcon
                 className="text-xl"

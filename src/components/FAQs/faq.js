@@ -6,13 +6,18 @@ import FaqArray from "./faq_master.json";
 
 export default function faq() {
   const FaqTab = (props) => {
+    const elem_id = props.props.title + Math.random();
     return (
       <div className="border-b faqs-tab">
         <div className="border-l-2 border-transparent relative">
+          <label htmlFor={elem_id} className="opacity-0 absolute">
+            Toggler
+          </label>
           <input
-            className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6"
+            className="w-full h-full absolute z-10 cursor-pointer opacity-0"
             type="checkbox"
-            id="chck1"
+            name={elem_id}
+            id={elem_id}
           />
           <header
             className="flex justify-between items-center pt-5 pb-3 px-4 lg:px-8 cursor-pointer select-none faqs-tab-label"

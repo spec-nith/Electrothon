@@ -77,6 +77,7 @@ const Nav = () => {
             <button
               className="outline-none mobile-menu-button text-xl pt-4"
               onClick={() => setIsOpen((prevState) => !prevState)}
+              name="Menu Toggler"
             >
               <FontAwesomeIcon className="text-lg" icon={faBars} fixedWidth />
             </button>
