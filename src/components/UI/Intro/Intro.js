@@ -17,19 +17,17 @@ export default function Introduction() {
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
-                                    <a
-                                        href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 disabled"
-                                    >
-                                        Apply with Devfolio
+                                    <a href="https://devfolio.co/" rel="noreferror noopener">
+                                        <button className="w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 z-1">
+                                            Apply with Devfolio
+                                        </button>
                                     </a>
                                 </div>
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
-                                    <a
-                                        href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
-                                    >
+                                    <a href="https://specnith.com/electrothon.html" rel="noreferror noopener">
+                                        <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                                         Electrothon 3.0
+                                        </button>
                                     </a>
                                 </div>
                             </div>

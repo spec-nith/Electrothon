@@ -15,23 +15,25 @@ import Sponsors from './components/Sponsors/Sponsors';
 import Workshop from './components/Workshop/Workshop';
 
 
-const App=()=>{
-  return(
+const App = () => {
+  return (
     <React.Fragment>
-      <Header/>
-      <Intro/>
-      <About/>
-      <Content/>
-      <Milestone/>
-      <Schedule/>
-      <Projects/>
-      <ProbStatements/>
-      <Prizes/>
-      <Workshop/>
-      <Judges/>
-      <Sponsors/>
-      <FAQ/>
-      <Footer/>
+      <Header />
+      <Intro />
+      <div className="container mx-auto px-4">
+        <About />
+        <Content />
+        <Milestone />
+        <Schedule />
+        <Projects />
+        <ProbStatements />
+        <Prizes />
+        <Workshop />
+        <Judges />
+        <Sponsors />
+        <FAQ />
+      </div>
+      <Footer />
 
     </React.Fragment>
   )
