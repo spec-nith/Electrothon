@@ -1,0 +1,20 @@
+.faqs-tab {
+    overflow: hidden;
+    }
+.faqs-tab-content {
+    max-height: 0;
+    transition: all 0.5s;
+}
+input:checked + .faqs-tab-label .faqs-test {
+    background-color: #000;
+}
+input:checked + .faqs-tab-label .faqs-test svg {
+    transform: rotate(180deg);
+    stroke: #fff;
+}
+input:checked + .faqs-tab-label::after {
+    transform: rotate(90deg);
+}
+input:checked ~ .faqs-tab-content {
+    max-height: 100vh;
+}
