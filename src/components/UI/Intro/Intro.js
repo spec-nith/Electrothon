@@ -2,11 +2,14 @@ import React from "react";
 
 export default function Introduction() {
   return (
-    <section id="home" className="relative bg-white overflow-hidden">
+    <section
+      id="home"
+      className="relative bg-white overflow-hidden pt-10 sm:pt-4"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="relative pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
           <main className="mt-10 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 lg:py-8 xl:mt-28">
-            <div className="sm:text-center lg:text-left">
+            <div className="text-center lg:text-left">
               <h1 className="text-4xl tracking-tight text-gray-800 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline font-extrabold">
                   Electothon 4.0
@@ -44,7 +47,7 @@ export default function Introduction() {
           </main>
         </div>
       </div>
-      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+      <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hidden sm:block">
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full hero-background"
           src="./bg.jpg"

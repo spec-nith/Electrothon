@@ -6,6 +6,7 @@ import {
   faHandHoldingUsd,
   faIdCardAlt,
   faBars,
+  faWindowRestore,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -148,7 +149,7 @@ const Nav = () => {
                 <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
                   <FontAwesomeIcon
                     className="text-lg"
-                    icon={faChalkboardTeacher}
+                    icon={faWindowRestore}
                     fixedWidth
                   />
                 </span>
