@@ -68,13 +68,13 @@ export default function faq() {
             <div className="border-b faqs-tab">
                 <div className="border-l-2 border-transparent relative">
                     <input className="w-full absolute z-10 cursor-pointer opacity-0 h-5 top-6" type="checkbox" id="chck1" />
-                    <header className="flex justify-between items-center pt-5 pb-3 px-8 cursor-pointer select-none faqs-tab-label" for="chck1">
+                    <header className="flex justify-between items-center pt-5 pb-3 px-8 cursor-pointer select-none faqs-tab-label" htmlFor="chck1">
                         <span className="text-grey-darkest font-thin text-xl">
                             {props.props.title}
                         </span>
                         <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center faqs-test">
 
-                            <svg aria-hidden="true" className="" data-reactid="266" fill="none" height="24" stroke="#606F7B" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <svg aria-hidden="true" className="" data-reactid="266" fill="none" height="24" stroke="#606F7B" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
                                 <polyline points="6 9 12 15 18 9">
                                 </polyline>
                             </svg>
@@ -83,7 +83,6 @@ export default function faq() {
                     <div className="faqs-tab-content">
                         <div className=" pb-5 text-grey-darkest">
                             <p className="mx-8">{props.props.content}</p>
-
                         </div>
                     </div>
                 </div>
