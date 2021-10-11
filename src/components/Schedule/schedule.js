@@ -19,25 +19,26 @@ export default function Schedule() {
   });
   const array = [
     {
-      title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our jdging panuel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
-      date: "10 May, 2021",
+      title: "Electrothon Registration",
+      para: "Registration opens up for students to register with their respective teams and project ideas for Electrothon.",
+      date: "1st - 20th January 2022",
+    },
+    {
+      title: "Registration Deadline",
+      para: "Registered teams submit a brief proposal of their project ideas, describing the general workflow, complexity, design and its possible applications.",
+      date: "30th January 2022",
+    },
+    {
+      title: "Electrothon Main Event",
+      para: "Electrothon will be a two-day event consisting of various guest lectures, workshops, and project evaluation.",
+      date: "19th - 20th February 2022",
     },
     {
       title: "Result Declaration",
       para: "The ultimate genius will be revealed by our jdging panuel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
-      date: "10 May, 2021",
+      date: "22nd Feburary 2022",
     },
-    {
-      title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our jdging panuel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
-      date: "10 May, 2021",
-    },
-    {
-      title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our jdging panuel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
-      date: "10 May, 2021",
-    },
+    
   ];
   const LeftCard = (props) => {
     return (
@@ -50,7 +51,7 @@ export default function Schedule() {
         </div>
         <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4 text-right">
           <p className="mb-3 text-base text-white">
-            {props.props.date} 10 May, 2021
+            {props.props.date}
           </p>
           <span
             className="mb-3 font-bold text-lg md:text-2xl"

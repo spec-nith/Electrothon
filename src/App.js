@@ -5,14 +5,14 @@ import Intro from "./components/Hero/Hero";
 import Content from "./components/UI/Content/Content";
 import About from "./components/About/About";
 import FAQ from "./components/FAQs/faq";
-import Judges from "./components/Judges/judges";
+// import Judges from "./components/Judges/judges";
 import Milestone from "./components/Milestone/milestone";
-import Prizes from "./components/Prizes/prizes";
+// import Prizes from "./components/Prizes/prizes";
 import ProbStatements from "./components/Prob_statements/problems";
 import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
-import Sponsors from "./components/Sponsors/Sponsors";
-import Workshop from "./components/Workshop/Workshop";
+// import Sponsors from "./components/Sponsors/Sponsors";
+// import Workshop from "./components/Workshop/Workshop";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({
@@ -31,10 +31,10 @@ const App = () => {
         <Schedule />
         <Projects />
         <ProbStatements />
-        <Prizes />
-        <Workshop />
-        <Judges />
-        <Sponsors />
+        {/* <Prizes /> */}
+        {/* <Workshop /> */}
+        {/* <Judges /> */}
+        {/* <Sponsors /> */}
         <FAQ />
       </div>
       <Footer />
