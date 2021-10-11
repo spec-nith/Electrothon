@@ -16,7 +16,7 @@ export default function milestone() {
         </h1>
         <div className="flex flex-wrap -m-4 text-center mt-6">
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-indigo-200">
+            <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-green-200">
               <FontAwesomeIcon
                 icon={faUsers}
                 className="text-5xl text-green-500 mb-3"
@@ -40,7 +40,7 @@ export default function milestone() {
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-indigo-200">
+            <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-blue-200">
               <FontAwesomeIcon
                 icon={faDonate}
                 className="text-5xl text-blue-500 mb-3"
@@ -52,7 +52,7 @@ export default function milestone() {
             </div>
           </div>
           <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-            <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-indigo-200">
+            <div className="border-2 border-gray-200 px-4 py-6 rounded-lg bg-red-200">
               <FontAwesomeIcon
                 icon={faAward}
                 className="text-5xl text-red-500 mb-3"

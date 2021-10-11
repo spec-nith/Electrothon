@@ -13,7 +13,7 @@ export default function Content() {
           </h1>
           <div className="mt-3 text-normal text-gray-500 md:mt-5 lg:mx-0 md:leading-normal">
             <div className="my-4">
-              <span className="text-3xl">Ideation</span>
+              <p className="text-2xl text-gray-700">Ideation</p>
               <p className="text-normal md:text-xl mt-4">
                 This iteration of Electrothon aims to find not just technical
                 ideas but also research and business ideas. As long as the idea
@@ -22,21 +22,21 @@ export default function Content() {
               </p>
             </div>
             <div className="my-4">
-              <span className="text-3xl">Diversity</span>
+              <span className="text-2xl text-gray-700">Diversity</span>
               <p className="text-normal md:text-xl mt-4">
                 Diversity of thought, perspective, and culture will be
                 emboldened by uplifting people from the LGBTQ community.
               </p>
             </div>
             <div className="my-4">
-              <span className="text-3xl">Incubation</span>
+              <span className="text-2xl text-gray-700">Incubation</span>
               <p className="text-normal md:text-xl mt-4">
                 Ideas with the potential to be converted into a product, will be
                 partnered by our partnered companies.
               </p>
             </div>
             <div className="my-4">
-              <span className="text-3xl">Sustainability and Globalization</span>
+              <span className="text-2xl text-gray-700">Sustainability and Globalization</span>
               <p className="text-normal md:text-xl mt-4">
                 This year's theme inspires participants to come up with
                 sustainable ideas, ideas that aim to target bigger issues of
