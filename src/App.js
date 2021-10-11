@@ -13,6 +13,7 @@ import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
 // import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
+import Contact from "./components/Contact/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init({
@@ -24,13 +25,14 @@ const App = () => {
     <React.Fragment>
       <Header />
       <Intro />
+      <Contact />
       <div className="container mx-auto px-4">
         <About />
         <Content />
         <Milestone />
         <Schedule />
         <Projects />
-        <ProbStatements />
+        {/* <ProbStatements /> */}
         {/* <Prizes /> */}
         {/* <Workshop /> */}
         {/* <Judges /> */}
