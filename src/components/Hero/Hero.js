@@ -1,6 +1,21 @@
 import React from "react";
-
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import {Carousel} from '3d-react-carousal'
 export default function Introduction() {
+  let slides = [
+    <img src="./electrothon/el1.jpg" alt="1" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el2.jpg" alt="2" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el3.jpg" alt="3" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el4.jpg" alt="4" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el5.jpg" alt="5" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el6.jpg" alt="6" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el7.jpg" alt="7" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el8.jpg" alt="8" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el9.jpg" alt="9" style={{height:'350px', display : 'block'}} />,
+    <img src="./electrothon/el10.jpg" alt="10" style={{height:'350px', display : 'block'}} />,
+     ];
   return (
     <section
       id="home"
@@ -60,12 +75,16 @@ export default function Introduction() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full hero-background"
-          src="./bg.jpg"
-          alt=""
-        />
+
+<div className="w-full pt-32">
+
+<Carousel slides={slides} />
+</div>
+
+      
+       
       </div>
+      
     </section>
   );
 }
