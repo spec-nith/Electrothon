@@ -1,21 +1,51 @@
-import {
-  faHome,
-  faChalkboardTeacher,
-  faCalendarDay,
-  faAward,
-  faHandHoldingUsd,
-  faIdCardAlt,
-  faBars,
-  faWindowRestore,
-  faUsers,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Transition } from "@headlessui/react";
 import { Link, animateScroll as scroll } from "react-scroll";
+import navItems from "./Nav_tems";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const NavbarLG = (props) => {
+    return (
+      <Link
+        activeClass="text-green-600 border-b-2"
+        to={props.item.id}
+        spy={true}
+        smooth={true}
+        duration={1000}
+        className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
+      >
+        {props.item.name}
+      </Link>
+    )
+  };
+
+  const NavbarSM = (props) => {
+    return (
+      <Link
+        activeClass="text-green-600 border-b-2"
+        to={props.item.id}
+        spy={true}
+        smooth={true}
+        duration={1000}
+        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
+        onClick={() => setIsOpen((prevState) => !prevState)}
+      >
+        <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
+          <FontAwesomeIcon
+            className="text-lg"
+            icon={props.item.icon}
+            fixedWidth
+          />
+        </span>
+        <span className="text-sm font-medium">{props.item.name}</span>
+      </Link>
+    )
+  };
+
   return (
     <React.Fragment>
       <nav className="fixed w-full top-0 bg-white shadow-lg z-10">
@@ -28,99 +58,9 @@ const Nav = () => {
           </div>
 
           <div className="hidden text-normal md:flex items-center h-full space-x-1">
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
-            >
-              Home
-            </Link>
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="general-content"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
-            >
-              About Us
-            </Link>
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="schedule"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
-            >
-              Schedule
-            </Link>
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="themes"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
-            >
-              Themes
-            </Link>
-            {/* <Link
-              activeClass="text-green-600 border-b-2"
-              to="prizes"
-              spy={true}
-              smooth={true}
-              
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300"
-            >
-              Prizes
-            </Link>
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="workshops"
-              spy={true}
-              smooth={true}
-              
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300"
-            >
-              Workshops
-            </Link>
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="sponsors"
-              spy={true}
-              smooth={true}
-              
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300"
-            >
-              Sponsors
-            </Link> */}
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="faq"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
-            >
-              FAQ
-            </Link>
-            <Link
-              activeClass="text-green-600 border-b-2"
-              to="contact"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
-            >
-              Contact Us
-            </Link>
+            {navItems.map((item) => (
+              <NavbarLG item={item} key={item.id} />
+            ))}
           </div>
         </div>
       </nav>
@@ -145,7 +85,6 @@ const Nav = () => {
             leaveTo="opacity-0"
           >
             <div
-              // keydown....esc
               className="z-10 fixed inset-0 transition-opacity"
             >
               <div
@@ -157,162 +96,17 @@ const Nav = () => {
           </Transition>
           {isOpen && (
             <aside
-              className={`transform top-0 left-0 w-64 fixed h-full overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ${
-                isOpen ? "translate-x-0" : "-translate-x-full"
-              }`}
+              className={`transform top-0 left-0 w-64 fixed h-full overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ${isOpen ? "translate-x-0" : "-translate-x-full"
+                }`}
               onClick={() => setIsOpen((prevState) => !prevState)}
             >
               <div className="flex w-full items-center justify-center h-20 shadow-md">
                 <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
               </div>
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="home"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faHome}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Home</span>
-              </Link>
 
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="general-content"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faUsers}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">About Us</span>
-              </Link>
-
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="schedule"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faCalendarDay}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Schedule</span>
-              </Link>
-
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="themes"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faWindowRestore}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Themes</span>
-              </Link>
-
-              {/* <Link
-                activeClass="text-green-600 border-b-2"
-                to="prizes"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faAward}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Prizes</span>
-              </Link>
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="workshops"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faChalkboardTeacher}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Workshops</span>
-              </Link>
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="sponsors"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faHandHoldingUsd}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Sponsors</span>
-              </Link> */}
-              <Link
-                activeClass="text-green-600 border-b-2"
-                to="contact"
-                spy={true}
-                smooth={true}
-                duration={500}
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
-                onClick={() => setIsOpen((prevState) => !prevState)}
-              >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faIdCardAlt}
-                    fixedWidth
-                  />
-                </span>
-                <span className="text-sm font-medium">Contact Us</span>
-              </Link>
+              {navItems.map((item) => (
+                <NavbarSM item={item} key={item.id} />
+              ))}
             </aside>
           )}
         </div>
