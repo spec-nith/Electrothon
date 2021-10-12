@@ -23,7 +23,7 @@ export default function faq() {
             className="flex justify-between items-center pt-5 pb-3 px-4 lg:px-8 cursor-pointer select-none faqs-tab-label"
             htmlFor="chck1"
           >
-            <span className="text-grey-darkest font-thin text-normal lg:text-xl w-4/5">
+            <span className="text-gray-900 text-normal lg:text-xl w-4/5">
               {props.props.title}
             </span>
             <div className="rounded-full border border-grey w-7 h-7 flex items-center justify-center faqs-test">
@@ -31,7 +31,7 @@ export default function faq() {
             </div>
           </header>
           <div className="faqs-tab-content">
-            <div className="mx-4 lg:mx-8 pb-5 text-gray-600">
+            <div className="mx-4 lg:mx-8 pb-5 text-gray-500">
               <p className="mr-4 lg:mr-8 justify-left">{props.props.content}</p>
             </div>
           </div>
