@@ -1,222 +1,91 @@
 import React from "react";
-import {
-  faFacebook,
-  faLinkedin,
-  faInstagram,
-  faDiscord,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faBook,
-  faCode,
-  faEnvelope,
-  faUsers,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useForm, ValidationError } from '@formspree/react';
+import { Link, animateScroll as scroll } from "react-scroll";
+export default function Footer() {
+  const [state, handleSubmit] = useForm("xoqyboee");
+  if (state.succeeded) {
+      return (
+    <div className="flex justify-center px-4 text-gray-800 bg-white dark:text-white dark:bg-gray-800 bg-gray-100 rounded-lg shadow-lg pt-10">
 
-export default function footer() {
-  return (
-    <section
-      id="contact"
-      className="w-full bg-gray-700"
-      data-aos="fade"
-      data-aos-delay="50"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-out-cubic"
-    >
-      <div className="flex flex-wrap text-center text-white">
-        <div
-          className="w-full md:w-1/3 p-5 border-r border-gray-600 align-center"
-          aria-label="About Us"
-        >
-          <div className="my-6 ml-3 text-3xl">ABOUT US</div>
-          <ul type="none" className="text-lg space-y-2">
-            <li>
-              <a
-                href="https://hackcodeofconduct.org/2012-electrothon"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <span className="mr-2">
-                  <FontAwesomeIcon className="text-lg" icon={faCode} />
-                </span>
-                <span>Code Of Conduct</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="mailto:spec@nith.ac.in"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <span className="mr-2">
-                  <FontAwesomeIcon
-                    className="text-lg"
-                    icon={faEnvelope}
-                    fixedWidth
-                  />
-                </span>
-                <span>spec@nith.ac.in</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://discord.gg/cjMMRs7tHs"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <span className="mr-2">
-                  <FontAwesomeIcon
-                    className="text-lg mr-2"
-                    icon={faDiscord}
-                    fixedWidth
-                  />
-                </span>
-                <span>Join our Discord</span>
-              </a>
-            </li>
-            <li>
-              <a href="../index.html" target="_blank" rel="noreferrer noopener">
-                <span className="mr-2">
-                  <FontAwesomeIcon
-                    className="text-lg mr-2"
-                    icon={faUsers}
-                    fixedWidth
-                  />
-                </span>
-                <span>About SPEC</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.notion.so/Hacker-s-Guide-to-Electrothon-3-0-528b6b2f10bd48dd812ed8dd9f99ce7f"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <span className="mr-2">
-                  <FontAwesomeIcon
-                    className="text-lg mr-2"
-                    icon={faBook}
-                    fixedWidth
-                  />
-                </span>
-                <span>Hackers Guide</span>
-              </a>
-            </li>
-          </ul>
+      
+         <div className="container py-6">
+        <h1 className="text-lg font-bold text-center lg:text-2xl">
+        Thanks for your Responce
+            </h1>
+      
+     <BottomFooter />
+      </div>
+      </div>
+        )
+  }
+  const BottomFooter = ()=>{
+    return(
+      <div>
+        
+      <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
+    <div>
+      <a href="https://specnith.com/" target="_blank" rel="noopener noreferrer"><img src="logo_spec.png" alt="SPEC"  className="text-xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300" width="100" height="100"/></a>
+      
+        
+    </div>
+
+    <div className="flex mt-4 md:m-0">
+        <div className="-mx-4">
+ 
+           <p className="px-4 text-sm font-medium text-gray-800">Designed By- 
+           <a href="https://www.linkedin.com/in/avishrantsh/" className="text-blue-400 hover:text-indigo-800 cursor-pointer"  target="_blank" rel="noopener noreferrer">Avishrant Sharma</a>, &nbsp;
+           <a href="https://www.linkedin.com/in/aman-jagotra-26bb38207/" className="text-blue-400 hover:text-indigo-800 cursor-pointer"  target="_blank" rel="noopener noreferrer">Aman Jagotra</a>, &nbsp;
+           <a href="https://www.linkedin.com/in/priyanshu-rajput-144990201/" className="text-blue-400 hover:text-indigo-800 cursor-pointer"  target="_blank" rel="noopener noreferrer">Priyanshu Rajput </a>
+          </p>
+
         </div>
-
-        <div
-          className="w-full md:w-1/3 p-5 border-r border-gray-600"
-          aria-label="Contact Us"
-        >
-          <div className="mt-2 text-3xl">SAY HELLO!</div>
-          <form className="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded">
-            <div className="flex items-center mb-4">
-              <input
-                className="w-full h-10 p-2 border-b border-blue-300 text-white"
-                type="text"
-                placeholder="Username"
-              />
+    </div>
+</div>
+      </div>
+    )
+  }
+  return (
+    <footer className="flex justify-center px-4 text-gray-800 bg-white dark:text-white dark:bg-gray-800 bg-gray-100 rounded-lg shadow-lg">
+    <div className="container py-6">
+      <div id="contact"
+        className="max-w-screen-xl md:mt-4 px-8 grid gap-24 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:py-16 mx-auto bg-gray-100 text-gray-900  ">
+        <div className="flex flex-col justify-between ">
+          <div>
+            <h2 className="text-4xl lg:text-5xl font-bold leading-tight">Lets talk about everything!</h2>
+            <div className="text-gray-700 mt-8">
+              Hate forms? Send us an <span className="underline">email</span> instead.
             </div>
-            <div className="flex items-center mb-4">
-              <input
-                className="w-full h-10 p-2 border-b border-blue-300 text-white"
-                type="text"
-                placeholder="Email"
-              />
-            </div>
-            <div className="mb-6">
-              <textarea
-                className="w-full h-24 px-2 pt-2 border-b-2 border-blue-300 text-white"
-                placeholder="Message"
-              ></textarea>
-            </div>
-            <div className="flex justify-between items-center">
-              <button
-                className="w-full py-2 px-4 bg-transparent hover:hover:text-blue-400 text-white font-bold border border-white hover:border-transparent rounded"
-                type="button"
-              >
-                SEND
-              </button>
-            </div>
+          </div>
+          <img src="email-contact.png" className="hidden md:block " alt="image" />
+        </div>
+        <div className="">
+          <form onSubmit={handleSubmit}>
+          <div>
+            <label className="uppercase text-sm text-gray-600 font-bold" htmlFor="Name">Full Name</label>
+            <input className="w-full content-theme  mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="text" placeholder="" name="Name" id="Name"/>
+          </div>
+          <div className="mt-8">
+            <label className="uppercase text-sm text-gray-600 font-bold" htmlFor="Sender">Email</label>
+            <input className="w-full content-theme mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+              type="email" name="Sender" id="Sender"/>
+          </div>
+          <div className="mt-8">
+            <label className="uppercase text-sm text-gray-600 font-bold" htmlFor="Message">Message</label>
+            <textarea
+              className="w-full h-32 content-theme  mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" name="Message" id="Message"></textarea>
+          </div>
+          <div className="mt-8">
+            <button
+              className="uppercase text-sm font-bold tracking-wide bg-indigo-500 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-indigo-700" type='submit' disabled={state.submitting}>
+              Send Message
+            </button>
+          </div>
           </form>
         </div>
-        <div
-          className="w-full md:w-1/3 p-5 border-r border-gray-600"
-          aria-label="Social"
-        >
-          <div className="my-6 text-3xl">CONTACT US</div>
-          <p className="mt-8">
-            National Institute of Technology, Hamirpur
-            <br />
-            Hamirpur, 177005 <br />
-            Himachal Pradesh, India <br />
-            {/* <strong>Phone:</strong> +1 5589 55488 55 <br/> */}
-            <strong>Email:</strong>{" "}
-            <a
-              href="mailto:spec@nith.ac.in"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              spec@nith.ac.in
-            </a>
-          </p>
-          <div className="relative w-20 h-20 mx-auto my-12 bg-blue-300 rotate-45">
-            <a
-              className="flex justify-center items-center absolute left-0 top-0 w-10 h-10 hover:-ml-1 hover:-mt-1 bg-gray-600"
-              href="https://www.facebook.com/spec.ece"
-              aria-label="Facebook"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FontAwesomeIcon
-                className="text-xl"
-                icon={faFacebook}
-                fixedWidth
-              />
-            </a>
-            <a
-              className="flex justify-center items-center absolute top-0 right-0 w-10 h-10 hover:-mt-1 hover:-mr-1 bg-gray-600"
-              href="https://www.linkedin.com/company/spec-nith/mycompany/"
-              aria-label="Linkedin"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FontAwesomeIcon
-                className="text-xl"
-                icon={faLinkedin}
-                fixedWidth
-              />
-            </a>
-            <a
-              href="https://www.instagram.com/s.p.e.c_nith/"
-              className="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-gray-600"
-              aria-label="Instagram"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FontAwesomeIcon
-                className="text-xl"
-                icon={faInstagram}
-                fixedWidth
-              />
-            </a>
-            <a
-              href="https://discord.gg/cjMMRs7tHs"
-              className="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-gray-600 cursor-pointer"
-              aria-label="Join our Discord"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <FontAwesomeIcon
-                className="text-xl"
-                icon={faDiscord}
-                fixedWidth
-              />
-            </a>
-          </div>
-        </div>
       </div>
-    </section>
+      <BottomFooter />
+    </div>
+</footer>
   );
 }

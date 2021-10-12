@@ -32,7 +32,7 @@ export default function Introduction() {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button className="w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10 z-1">
+                    <button className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-400 ${true ? 'cursor-not-allowed' : 'hover:bg-indigo-700'} md:py-4 md:text-lg md:px-10 z-1`} disabled={true}>
                       Apply with Devfolio
                     </button>
                   </a>
