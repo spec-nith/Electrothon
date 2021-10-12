@@ -7,10 +7,12 @@ import {
   faIdCardAlt,
   faBars,
   faWindowRestore,
+  faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Transition } from "@headlessui/react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,53 +23,104 @@ const Nav = () => {
           <div className="hidden md:flex items-center py-4 px-2">
             <a href="https://specnith.com/">
               {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
-              <span className=" text-gray-400 text-lg">SPEC</span>
+              <span className=" text-gray-600 text-lg">SPEC</span>
             </a>
           </div>
 
           <div className="hidden text-normal md:flex items-center h-full space-x-1">
-            <a
-              href="#home"
-              className="py-4 px-2 text-gray-400 hover:text-green-500 transition duration-300"
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
             >
               Home
-            </a>
-            <a
-              href="#schedule"
-              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
+            </Link>
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="general-content"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
+            >
+              About Us
+            </Link>
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="schedule"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
             >
               Schedule
-            </a>
-            <a
-              href="#themes"
-              className="py-4 px-2 text-gray-400  hover:text-green-500 transition duration-300"
+            </Link>
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="themes"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
             >
               Themes
-            </a>
-            <a
-              href="#prizes"
-              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
+            </Link>
+            {/* <Link
+              activeClass="text-green-600 border-b-2"
+              to="prizes"
+              spy={true}
+              smooth={true}
+              
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300"
             >
               Prizes
-            </a>
-            <a
-              href="#workshops"
-              className="py-4 px-2 text-gray-400  hover:text-green-500 transition duration-300"
+            </Link>
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="workshops"
+              spy={true}
+              smooth={true}
+              
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300"
             >
               Workshops
-            </a>
-            <a
-              href="#sponsors"
-              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
+            </Link>
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="sponsors"
+              spy={true}
+              smooth={true}
+              
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300"
             >
               Sponsors
-            </a>
-            <a
-              href="#contact"
-              className="py-4 px-2 text-gray-400  hover:text-blue-500 transition duration-300"
+            </Link> */}
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="faq"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
+            >
+              FAQ
+            </Link>
+            <Link
+              activeClass="text-green-600 border-b-2"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+              className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -112,12 +165,16 @@ const Nav = () => {
               <div className="flex w-full items-center justify-center h-20 shadow-md">
                 <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
               </div>
-              <a
-                href="#home"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="home"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faHome}
@@ -125,14 +182,37 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Home</span>
-              </a>
+              </Link>
 
-              <a
-                href="#schedule"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="general-content"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
+                  <FontAwesomeIcon
+                    className="text-lg"
+                    icon={faUsers}
+                    fixedWidth
+                  />
+                </span>
+                <span className="text-sm font-medium">About Us</span>
+              </Link>
+
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="schedule"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
+                onClick={() => setIsOpen((prevState) => !prevState)}
+              >
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faCalendarDay}
@@ -140,14 +220,18 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Schedule</span>
-              </a>
+              </Link>
 
-              <a
-                href="#themes"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="themes"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faWindowRestore}
@@ -155,14 +239,18 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Themes</span>
-              </a>
+              </Link>
 
-              <a
-                href="#prizes"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              {/* <Link
+                activeClass="text-green-600 border-b-2"
+                to="prizes"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faAward}
@@ -170,13 +258,17 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Prizes</span>
-              </a>
-              <a
-                href="#workshops"
-                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              </Link>
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="workshops"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faChalkboardTeacher}
@@ -184,13 +276,17 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Workshops</span>
-              </a>
-              <a
-                href="#sponsors"
-                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              </Link>
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="sponsors"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faHandHoldingUsd}
@@ -198,13 +294,17 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Sponsors</span>
-              </a>
-              <a
-                href="#contact"
-                className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+              </Link> */}
+              <Link
+                activeClass="text-green-600 border-b-2"
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="flex flex-row items-center h-12 transform   transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
                 onClick={() => setIsOpen((prevState) => !prevState)}
               >
-                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-400">
+                <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
                   <FontAwesomeIcon
                     className="text-lg"
                     icon={faIdCardAlt}
@@ -212,7 +312,7 @@ const Nav = () => {
                   />
                 </span>
                 <span className="text-sm font-medium">Contact Us</span>
-              </a>
+              </Link>
             </aside>
           )}
         </div>

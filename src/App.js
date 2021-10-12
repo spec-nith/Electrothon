@@ -27,9 +27,11 @@ const App = () => {
       <Intro />
       <Contact />
       <div className="container mx-auto px-4">
-        <About />
-        <Content />
-        <Milestone />
+        <section id="general-content">
+          <About />
+          <Content />
+          <Milestone />
+        </section>
         <Schedule />
         <Projects />
         {/* <ProbStatements /> */}

@@ -4,18 +4,18 @@ import themeArray from "./themesdata.json";
 
 export default function Projects() {
   return (
-    <section id="problems" class="problem_body">
-      <div class="problemContainer">
-        <ul class="cards">
+    <section id="themes" className="problem_body">
+      <div className="problemContainer">
+        <ul className="cards">
           {themeArray.map((e) => {
             return (
-              <li class="card cards__item">
-                <div class="card__frame">
-                  <div class="card__picture"></div>
-                  <h2 class="card__title">{e.title}</h2>
+              <li className="card cards__item" key={e.title + Math.random()}>
+                <div className="card__frame">
+                  <div className="card__picture"></div>
+                  <h2 className="card__title">{e.title}</h2>
                 </div>
-                <div class="card__overlay"></div>
-                <div class="card__content">
+                <div className="card__overlay"></div>
+                <div className="card__content">
                   <h2>{e.title}</h2>
                   <p>{e.content}</p>
                 </div>
