@@ -8,7 +8,7 @@ import FAQ from "./components/FAQs/faq";
 // import Judges from "./components/Judges/judges";
 import Milestone from "./components/Milestone/milestone";
 // import Prizes from "./components/Prizes/prizes";
-import ProbStatements from "./components/Prob_statements/problems";
+// import ProbStatements from "./components/Prob_statements/problems";
 import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
 // import Sponsors from "./components/Sponsors/Sponsors";
@@ -29,8 +29,8 @@ const App = () => {
       <div className="container mx-auto px-4">
         <section id="general-content">
           <About />
-          <Content />
           <Milestone />
+          <Content />
         </section>
         <Schedule />
         <Projects />

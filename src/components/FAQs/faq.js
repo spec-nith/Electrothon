@@ -42,7 +42,7 @@ export default function faq() {
   return (
     <section
       id="faq"
-      className="relative overflow-hidden mt-2"
+      className="relative overflow-hidden mt-10"
       data-aos="fade"
       data-aos-delay="50"
       data-aos-duration="1000"

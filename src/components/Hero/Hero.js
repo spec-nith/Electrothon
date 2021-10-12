@@ -1,28 +1,27 @@
 import React from "react";
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
-import {Carousel} from '3d-react-carousal'
+import { Slide } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import slides from "./Carousel.json";
+
 export default function Introduction() {
-  let slides = [
-    <img src="./electrothon/el1.jpg" alt="1" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el2.jpg" alt="2" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el3.jpg" alt="3" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el4.jpg" alt="4" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el5.jpg" alt="5" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el6.jpg" alt="6" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el7.jpg" alt="7" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el8.jpg" alt="8" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el9.jpg" alt="9" style={{height:'350px', display : 'block'}} />,
-    <img src="./electrothon/el10.jpg" alt="10" style={{height:'350px', display : 'block'}} />,
-     ];
+  const properties = {
+    duration: 3000,
+    autoplay: true,
+    transitionDuration: 2000,
+    arrows: false,
+    infinite: true,
+    easing: "ease",
+    pauseOnHover: true,
+    // indicators: (i) => <div className="indicator">{i + 1}</div>
+  };
+
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-10 sm:pt-4 h-screen flex items-center"
+      className="relative overflow-hidden pt-10 sm:pt-4 h-screen grid grid-cols-2 xl:grid-cols-5 flex items-center"
     >
       <div
-        className="max-w-7xl mx-auto md:mx-20"
+        className="mx-auto md:mx-20 col-span-2"
         data-aos="fade-down"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -47,8 +46,13 @@ export default function Introduction() {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-400 ${true ? 'cursor-not-allowed' : 'hover:bg-indigo-700'} md:py-4 md:text-lg md:px-10 z-1`} disabled={true}>
-                      Apply with Devfolio
+                    <button
+                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-400 ${
+                        true ? "cursor-not-allowed" : "hover:bg-indigo-700"
+                      } md:py-4 md:text-lg md:px-10 z-1`}
+                      disabled={true}
+                    >
+                      Apply Now
                     </button>
                   </a>
                 </div>
@@ -69,22 +73,24 @@ export default function Introduction() {
         </div>
       </div>
       <div
-        className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hidden xl:block"
+        className="mx-auto hidden xl:block h-full w-full col-span-3"
         data-aos="fade-left"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-
-<div className="w-full pt-32">
-
-<Carousel slides={slides} />
-</div>
-
-      
-       
+        <Slide {...properties} className="hero-container mt-24">
+          {slides.map((element, index) => (
+            <div className="each-slide overflow-hidden bg-contain" key={index}>
+              <img
+                src={"./electrothon/" + element.url}
+                alt={element.caption}
+                className="hero-background"
+              />
+            </div>
+          ))}
+        </Slide>
       </div>
-      
     </section>
   );
 }

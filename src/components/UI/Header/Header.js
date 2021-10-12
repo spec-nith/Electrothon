@@ -11,16 +11,17 @@ const Nav = () => {
   const NavbarLG = (props) => {
     return (
       <Link
-        activeClass="text-green-600 border-b-2"
+        activeClass={props.item.hide != null ? "" : "text-green-600 border-b-2"}
         to={props.item.id}
         spy={true}
+        offset={-60}
         smooth={true}
         duration={1000}
         className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all cursor-pointer"
       >
         {props.item.name}
       </Link>
-    )
+    );
   };
 
   const NavbarSM = (props) => {
@@ -44,7 +45,7 @@ const Nav = () => {
         </span>
         <span className="text-sm font-medium">{props.item.name}</span>
       </Link>
-    )
+    );
   };
 
   return (
@@ -85,9 +86,7 @@ const Nav = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div 
-              className="z-10 fixed inset-0 transition-opacity"
-            >
+            <div className="z-10 fixed inset-0 transition-opacity">
               <div
                 onClick={() => setIsOpen((prevState) => !prevState)}
                 className="absolute inset-0 bg-black opacity-0"
@@ -95,21 +94,21 @@ const Nav = () => {
               ></div>
             </div>
           </Transition>
-          
-            <aside
-              className={`transform top-0 left-0 w-64 fixed h-full bg-white overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 border-r-2 ease-in-out transition-all duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"
-                }`}
-              onClick={() => setIsOpen((prevState) => !prevState)}
-            >
-              <div className="flex w-full items-center justify-center h-20 shadow-md">
-                <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
-              </div>
 
-              {navItems.map((item) => (
-                <NavbarSM item={item} key={item.id} />
-              ))}
-            </aside>
-          
+          <aside
+            className={`transform top-0 left-0 w-64 fixed h-full bg-white overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 border-r-2 ease-in-out transition-all duration-300 ${
+              isOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+            onClick={() => setIsOpen((prevState) => !prevState)}
+          >
+            <div className="flex w-full items-center justify-center h-20 shadow-md">
+              <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
+            </div>
+
+            {navItems.map((item) => (
+              <NavbarSM item={item} key={item.id} />
+            ))}
+          </aside>
         </div>
       </span>
     </React.Fragment>

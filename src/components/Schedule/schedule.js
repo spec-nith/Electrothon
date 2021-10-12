@@ -147,7 +147,7 @@ export default function Schedule() {
           <div className="container mx-auto w-full h-full pr-6 ">
             <div
               className={`relative wrap overflow-hidden py-10  h-full ${
-                Componentwidth < 580 ? "mb-20" : null
+                Componentwidth < 580 ? "mb-4" : null
               } `}
               ref={ref}
             >

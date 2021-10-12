@@ -37,26 +37,25 @@
   justify-content: center;
   text-align: center;
 }
-.problem_card__frame h2{
-    padding: 5px;
-    font-size: 24px;
-    font-weight: 400;
-    margin-top: 5%;
-    position: absolute;
-    text-align: center;
-    visibility: hidden;
-    width: 100%;
-    z-index: 1;
+.problem_card__frame h2 {
+  padding: 5px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 5%;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
 }
 .problem_card__frame:hover h2,
 .problem_card__frame:focus h2,
-  .problem_card__frame:active h2{
-  background: rgba(255,255,255);
-    color: #3487f7;
+.problem_card__frame:active h2 {
+  background: rgba(255, 255, 255);
+  color: #3487f7;
   visibility: visible;
   transition: 0.7s;
 }
-
 
 .problem_card__overlay {
   z-index: 2;
@@ -77,7 +76,7 @@
 }
 .problem_card__overlay::before {
   content: "Read";
-  color:white;
+  color: white;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
@@ -116,7 +115,7 @@
 }
 .problem_card__overlay:hover ~ .problem_card__content {
   opacity: 1;
-  visibility:visible ;
+  visibility: visible;
   transition: 0.2s 0.3s;
 }
 .problem_card__content h2 {
