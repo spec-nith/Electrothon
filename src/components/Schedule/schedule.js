@@ -78,8 +78,8 @@ export default function Schedule() {
           </h1>
         </div>
         <div
-          className={`order-1 bg-${props.colr}-400 rounded-lg shadow-xl w-5/12 px-6 py-4 text-left`}
-          style={{ width: "80%" }}
+          className={`order-1 bg-${props.colr}-400 rounded-lg shadow-xl w-5/12 px-4 py-4 text-left`}
+          style={{ width: "85%" }}
         >
           <p className="mb-3 text-base text-white">{props.props.date}</p>
           <span
@@ -123,7 +123,7 @@ export default function Schedule() {
   return (
     <div
       id="schedule"
-      className="py-8 container-theme  p-6 mt-2"
+      className="py-8 container-theme pl-6  mt-2"
       data-aos="fade"
       data-aos-delay="50"
       data-aos-duration="1000"
@@ -147,16 +147,16 @@ export default function Schedule() {
           </a>
         </div>
         <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
-          <div className="container mx-auto w-full h-full">
+          <div className="container mx-auto w-full h-full pr-6 ">
             <div
-              className={`relative wrap overflow-hidden p-10 h-full ${
+              className={`relative wrap overflow-hidden py-10  h-full ${
                 Componentwidth < 580 ? "mb-20" : null
               } `}
               ref={ref}
             >
               <div
                 className="border-2-2 absolute border-opacity-20 border-gray-700 h-full border"
-                style={{ left: Componentwidth < 580 ? "55px" : "50%" }}
+                style={{ left: Componentwidth < 580 ? "16px" : "50%" }}
               ></div>
 
               {array.map((props, index) => {
