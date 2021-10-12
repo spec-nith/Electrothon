@@ -72,14 +72,14 @@ export default function Footer() {
       className="flex justify-center px-4 text-gray-800 rounded-lg shadow-lg bg-gray-100"
     >
       <div className="container py-6">
-        <div className="max-w-screen-xl md:mt-4 px-8 grid gap-24 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:pt-16 md:pb-32 mx-auto text-gray-900">
-          <div className="flex flex-col justify-between ">
+        <div className="max-w-screen-xl md:mt-4 px-8 grid gap-x-24 gap-y-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:pt-16 md:pb-32 mx-auto text-gray-900">
+          <div className="flex flex-col justify-around">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold leading-tight">
                 Lets talk about everything!
               </h2>
               <div className="text-gray-700 mt-8">
-                Hate forms? Send us an <span className="underline">email</span>{" "}
+                Hate forms? Send us an <a className="underline" href="mailto:spec@nith.ac.in" target="_blank" rel="noopener noreferrer">email</a>{" "}
                 instead.
               </div>
             </div>
