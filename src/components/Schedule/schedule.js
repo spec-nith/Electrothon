@@ -120,7 +120,7 @@ export default function Schedule() {
   return (
     <div
       id="schedule"
-      className="py-8 container-theme pl-6  mt-2"
+      className="py-2 container-theme pl-6  mt-2 md:py-8"
       data-aos="fade"
       data-aos-delay="50"
       data-aos-duration="1000"

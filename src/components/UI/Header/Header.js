@@ -2,7 +2,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Transition } from "@headlessui/react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import navItems from "./Nav_tems";
 
 const Nav = () => {
@@ -16,7 +16,7 @@ const Nav = () => {
         spy={true}
         smooth={true}
         duration={1000}
-        className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all"
+        className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all cursor-pointer"
       >
         {props.item.name}
       </Link>
@@ -29,6 +29,7 @@ const Nav = () => {
         activeClass="text-green-600 border-b-2"
         to={props.item.id}
         spy={true}
+        offset={+10}
         smooth={true}
         duration={1000}
         className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
@@ -65,7 +66,7 @@ const Nav = () => {
         </div>
       </nav>
       <span className="fixed top-0 bg-transparent z-10">
-        <div className="md:hidden w-auto items-center pl-6 pr-10 h-16 text-gray-700 z-10 inline-block">
+        <div className="md:hidden w-auto items-center pl-3 pr-10 h-16 text-gray-700 z-10 inline-block">
           <div className="md:hidden items-center fixed bg-transparent">
             <button
               className="outline-none mobile-menu-button text-xl pt-4"
@@ -84,7 +85,7 @@ const Nav = () => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <div
+            <div 
               className="z-10 fixed inset-0 transition-opacity"
             >
               <div
@@ -94,9 +95,9 @@ const Nav = () => {
               ></div>
             </div>
           </Transition>
-          {isOpen && (
+          
             <aside
-              className={`transform top-0 left-0 w-64 fixed h-full overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ${isOpen ? "translate-x-0" : "-translate-x-full"
+              className={`transform top-0 left-0 w-64 fixed h-full bg-white overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 border-r-2 ease-in-out transition-all duration-300 ${isOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
               onClick={() => setIsOpen((prevState) => !prevState)}
             >
@@ -108,7 +109,7 @@ const Nav = () => {
                 <NavbarSM item={item} key={item.id} />
               ))}
             </aside>
-          )}
+          
         </div>
       </span>
     </React.Fragment>
