@@ -36,7 +36,7 @@ export default function Introduction() {
       className="relative overflow-hidden pt-10 sm:pt-4 h-screen grid grid-cols-2 xl:grid-cols-5 flex items-center"
     >
       <div
-        className="mx-auto md:mx-20 col-span-2"
+        className="mx-auto md:mx-10 col-span-2"
         data-aos="fade-down"
         data-aos-delay="50"
         data-aos-duration="1000"
