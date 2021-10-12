@@ -1,13 +1,5 @@
 [
     {
-        "url": "f1.jpg",
-        "caption": "Winner"
-    },
-    {
-        "url": "f2.jpg",
-        "caption": "Runner Up"
-    },
-    {
         "url": "f3.jpg",
         "caption": "Second Runner Up"
     },

@@ -3,6 +3,21 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import slides from "./Carousel.json";
 
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+
+  while (currentIndex !== 0) {
+
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+
 export default function Introduction() {
   const properties = {
     duration: 3000,
@@ -32,7 +47,7 @@ export default function Introduction() {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl tracking-tight  sm:text-5xl md:text-6xl">
                 <span className="block xl:inline font-extrabold header-theme">
-                  Electothon 4.0
+                  Electrothon 4.0
                 </span>
                 <span className="block text-indigo-600 text-normal">2022</span>
               </h1>
@@ -47,9 +62,8 @@ export default function Introduction() {
                     rel="noreferrer noopener"
                   >
                     <button
-                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-400 ${
-                        true ? "cursor-not-allowed" : "hover:bg-indigo-700"
-                      } md:py-4 md:text-lg md:px-10 z-1`}
+                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-400 ${true ? "cursor-not-allowed" : "hover:bg-indigo-700"
+                        } md:py-4 md:text-lg md:px-10 z-1`}
                       disabled={true}
                     >
                       Apply Now
@@ -80,7 +94,7 @@ export default function Introduction() {
         data-aos-easing="ease-in-out-cubic"
       >
         <Slide {...properties} className="hero-container mt-24">
-          {slides.map((element, index) => (
+          {shuffle(slides).map((element, index) => (
             <div className="each-slide overflow-hidden bg-contain" key={index}>
               <img
                 src={"./electrothon/" + element.url}

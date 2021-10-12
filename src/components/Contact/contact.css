@@ -1,11 +1,12 @@
 .contact-icons {
   z-index: 99;
   position: fixed;
-  top: 40%;
+  top: 35%;
   right: 0%;
   width: 180px;
   display: flex;
   flex-direction: column;
+  transform: translate(140px, 0px);
   color: white;
 }
 
@@ -19,24 +20,24 @@
   margin: 1px;
   text-align: left;
   border-radius: 50px 0px 0px 50px;
-  transform: translate(140px, 0px);
-  transition: 1s;
+  transition: 0.7s;
 }
 
 .contact-icons a span {
   opacity: 0;
-  transition: 1s;
+  transition: 0.7s;
   padding-left: 10px;
 }
 
-.contact-icons a:hover {
-  transform: translate(10px, 0px);
-}
+@media only screen and (min-width: 768px) {
+  .contact-icons a:hover {
+    transform: translate(-120px, 0px);
+  }
 
-.contact-icons a:hover span {
-  opacity: 1;
+  .contact-icons a:hover span {
+    opacity: 1;
+  }
 }
-
 #discord {
   background-color: #7289da;
 }
