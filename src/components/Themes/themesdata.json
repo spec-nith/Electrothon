@@ -1,26 +1,33 @@
 [
   {
-    "title": "Hunger Eradication",
-    "content": ""
+    "title": "Climate Change",
+    "content": "Lead a brawl against climate change by fabricating an innovative solution to forge a world where the future generations do not have to worry about the climate crisis.",
+    "image":"./climate.jpg"
   },
   {
     "title": "Cyber Bullying",
-    "content": ""
+    "content": "Build prudent solutions to help prevent people from succumbing to the spiral of cyberbullying and to combat misuse of technology and online harassment",
+    "image":"./cyber.jpg"
   },
   {
     "title": "Pandemic",
-    "content": ""
+    "content": "Integrate an approach that helps people build up resilience to cope with the inevitable new normal by figuring strategies in the wake of pandemic.",
+    "image":"./pandemic.jpg"
   },
   {
-    "title": "Climate Change",
-    "content": ""
+    "title": "Hunger Eradication",
+    "content": " In order to shape a world where no one has to question the guarantee of a two square meal, devise projects that promise to eradicate hunger and offer sustainable sustenance resources.",
+     "image":"./hunger.jpg"
   },
+  
   {
     "title": "Natural Disasters",
-    "content": ""
+    "content": "Harnessing the power of technology, vouch for innovative solutions to address the uprising challenges caused by natural calamities.",
+    "image":"./disaster.jpg"
   },
   {
     "title": "Open Innovation",
-    "content": ""
+    "content": "Let your imagination go haywire as you envision ideas that hold the capability to solve any problem that has been distressing mankind for ages.",
+    "image":"./innovation.jpg"
   }
 ]
