@@ -167,6 +167,7 @@ export default function footer() {
               href="https://www.facebook.com/spec.ece"
               aria-label="Facebook"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <FontAwesomeIcon
                 className="text-xl"
@@ -179,6 +180,7 @@ export default function footer() {
               href="https://www.linkedin.com/company/spec-nith/mycompany/"
               aria-label="Linkedin"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <FontAwesomeIcon
                 className="text-xl"
@@ -191,6 +193,7 @@ export default function footer() {
               className="flex justify-center items-center absolute right-0 bottom-0 w-10 h-10 hover:-mr-1 hover:-mb-1 bg-gray-600"
               aria-label="Instagram"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <FontAwesomeIcon
                 className="text-xl"
@@ -203,6 +206,7 @@ export default function footer() {
               className="flex justify-center items-center absolute bottom-0 left-0 w-10 h-10 hover:-mb-1 hover:-ml-1 bg-gray-600 cursor-pointer"
               aria-label="Join our Discord"
               target="_blank"
+              rel="noreferrer noopener"
             >
               <FontAwesomeIcon
                 className="text-xl"

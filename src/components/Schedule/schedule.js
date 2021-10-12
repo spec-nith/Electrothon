@@ -38,7 +38,6 @@ export default function Schedule() {
       para: "The ultimate genius will be revealed by our jdging panuel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
       date: "22nd Feburary 2022",
     },
-    
   ];
   const LeftCard = (props) => {
     return (
@@ -50,9 +49,7 @@ export default function Schedule() {
           </h1>
         </div>
         <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4 text-right">
-          <p className="mb-3 text-base text-white">
-            {props.props.date}
-          </p>
+          <p className="mb-3 text-base text-white">{props.props.date}</p>
           <span
             className="mb-3 font-bold text-lg md:text-2xl"
             style={{ color: "#EEEEEE" }}

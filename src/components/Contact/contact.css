@@ -1,0 +1,58 @@
+.contact-icons {
+  z-index: 99;
+  position: fixed;
+  top: 40%;
+  right: 0%;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+  font-size: 19px;
+  margin: 1px;
+  text-align: left;
+  border-radius: 50px 0px 0px 50px;
+  transform: translate(140px, 0px);
+  transition: 1s;
+}
+
+.contact-icons a span {
+  opacity: 0;
+  transition: 1s;
+  padding-left: 10px;
+}
+
+.contact-icons a:hover {
+  transform: translate(10px, 0px);
+}
+
+.contact-icons a:hover span {
+  opacity: 1;
+}
+
+#discord {
+  background-color: #7289da;
+}
+
+#facebook {
+  background-color: darkslateblue;
+}
+
+#twitter {
+  background-color: #1da1f2;
+}
+
+#instagram {
+  background-color: #e1306c;
+}
+
+#linkedin {
+  background-color: #0077b5;
+}
