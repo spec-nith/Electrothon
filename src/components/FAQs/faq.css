@@ -2,8 +2,8 @@
   overflow: hidden;
 }
 .faqs-tab-content {
+  transition: 0.8s;
   max-height: 0;
-  transition: 0.5s;
 }
 .faqs-tab,
 .faqs-tab svg {
@@ -13,14 +13,12 @@
 input:checked + .faqs-tab-label .faqs-test {
   background-color: #444;
 }
+input:checked ~ .faqs-tab-content {
+  max-height: 100vh;
+  transition: 2s;
+}
 input:checked + .faqs-tab-label .faqs-test svg {
   stroke: white;
   color: white;
   transform: rotate(180deg);
-}
-input:checked + .faqs-tab-label::after {
-  transform: rotate(90deg);
-}
-input:checked ~ .faqs-tab-content {
-  max-height: 100vh;
 }
