@@ -17,7 +17,7 @@ export default function Footer() {
 
         <div className="flex mt-4 md:m-0">
           <div className="-mx-4">
-            <p className="px-4 text-md font-normal text-gray-800">
+            <p className="px-4 text-md font-normal text-gray-800 text-center">
               Designed By:
               <a
                 href="https://www.linkedin.com/in/avishrantsh/"
