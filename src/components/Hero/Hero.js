@@ -96,7 +96,10 @@ export default function Introduction() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <Slide {...properties} className="hero-container mt-8 sm:mt-24 px-6 sm:px-10 md:px-0">
+        <Slide
+          {...properties}
+          className="hero-container mt-8 sm:mt-24 px-6 sm:px-10 md:px-0"
+        >
           {shuffle(slides).map((element, index) => (
             <div className="each-slide overflow-hidden bg-contain" key={index}>
               <img

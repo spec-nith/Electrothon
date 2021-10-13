@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./components/UI/Header/Header";
 import Footer from "./components/UI/Footer/Footer";
 import Intro from "./components/Hero/Hero";
@@ -23,42 +23,50 @@ AOS.init({
 });
 
 const App = () => {
-  const [loading,setLoading]=useState(false);
-  let colour=randomColor();
-  useEffect(()=>{
+  const [loading, setLoading] = useState(false);
+  let colour = randomColor();
+  useEffect(() => {
     setLoading(true);
-    setTimeout(()=>{
-     setLoading(false);
-    },2000)
-  },[]);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
   return (
     <React.Fragment>
-    {loading ?
-    <div className="flex justify-center bg-gray-100 items-center w-full h-screen bg-cover" style={{backgroundImage:`url("./loading_art.jpg")`,backgroundColor: "rgba(255,255,255,0.7)",backgroundBlendMode:"lighten"}}>
-      <ClimbingBoxLoader color={colour} loading={loading} size={25}/>  
-    </div>
-      :<React.Fragment>
-      <Header />
-      <Intro />
-      <div className="container mx-auto px-4">
-        <section id="general-content">
-          <About />
-          <Milestone />
-          <Content />
-        </section>
-        <Schedule />
-        <Projects />
-        {/* <ProbStatements /> */}
-        {/* <Prizes /> */}
-        {/* <Workshop /> */}
-        {/* <Judges /> */}
-        {/* <Sponsors /> */}
-        <FAQ />
-      </div>
-      <Contact />
-      <Footer />
-      </React.Fragment>
-    }
+      {loading ? (
+        <div
+          className="flex justify-center bg-gray-100 items-center w-full h-screen bg-cover"
+          style={{
+            backgroundImage: `url("./loading_art.jpg")`,
+            backgroundColor: "rgba(255,255,255,0.7)",
+            backgroundBlendMode: "lighten",
+          }}
+        >
+          <ClimbingBoxLoader color={colour} loading={loading} size={25} />
+        </div>
+      ) : (
+        <React.Fragment>
+          <Header />
+          <Intro />
+          <div className="container mx-auto px-4">
+            <section id="general-content">
+              <About />
+              <Milestone />
+              <Content />
+            </section>
+            <Schedule />
+            <Projects />
+            {/* <ProbStatements /> */}
+            {/* <Prizes /> */}
+            {/* <Workshop /> */}
+            {/* <Judges /> */}
+            {/* <Sponsors /> */}
+            <FAQ />
+          </div>
+          <Contact />
+          <Footer />
+        </React.Fragment>
+      )}
     </React.Fragment>
   );
 };
