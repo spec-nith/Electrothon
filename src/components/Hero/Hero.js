@@ -35,10 +35,10 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden pt-10 sm:pt-4 h-screen grid grid-cols-2 xl:grid-cols-5 flex items-center"
+      className="relative sm:pt-4 min-h-screen h-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 flex items-center"
     >
       <div
-        className="mx-auto md:mx-10 col-span-2"
+        className="mx-auto md:mx-10 pt-16 md:col-span-2"
         data-aos="fade-down"
         data-aos-delay="50"
         data-aos-duration="1000"
@@ -90,13 +90,13 @@ export default function Introduction() {
         </div>
       </div>
       <div
-        className="mx-auto hidden xl:block h-full w-full col-span-3"
+        className="mx-auto block h-full w-full col-span-3"
         data-aos="fade-left"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <Slide {...properties} className="hero-container mt-24">
+        <Slide {...properties} className="hero-container mt-8 sm:mt-24 px-6 sm:px-10 md:px-0">
           {shuffle(slides).map((element, index) => (
             <div className="each-slide overflow-hidden bg-contain" key={index}>
               <img

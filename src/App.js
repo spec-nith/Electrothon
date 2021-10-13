@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import Header from "./components/UI/Header/Header";
 import Footer from "./components/UI/Footer/Footer";
 import Intro from "./components/Hero/Hero";
@@ -14,18 +14,32 @@ import Schedule from "./components/Schedule/schedule";
 // import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 import Contact from "./components/Contact/Contact";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import randomColor from "randomcolor";
 AOS.init({
   once: true,
 });
 
 const App = () => {
+  const [loading,setLoading]=useState(false);
+  let colour=randomColor();
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(()=>{
+     setLoading(false);
+    },2000)
+  },[]);
   return (
     <React.Fragment>
+    {loading ?
+    <div className="flex justify-center bg-gray-100 items-center w-full h-screen bg-cover" style={{backgroundImage:`url("./loading_art.jpg")`,backgroundColor: "rgba(255,255,255,0.7)",backgroundBlendMode:"lighten"}}>
+      <ClimbingBoxLoader color={colour} loading={loading} size={25}/>  
+    </div>
+      :<React.Fragment>
       <Header />
       <Intro />
-      <Contact />
       <div className="container mx-auto px-4">
         <section id="general-content">
           <About />
@@ -41,7 +55,10 @@ const App = () => {
         {/* <Sponsors /> */}
         <FAQ />
       </div>
+      <Contact />
       <Footer />
+      </React.Fragment>
+    }
     </React.Fragment>
   );
 };

@@ -11,7 +11,7 @@ export default function About() {
       data-aos-easing="ease-in-out-cubic"
     >
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-16">
-        <div className="">
+        <div className="hidden md:block">
           <img
             src="./electro.jpg"
             alt="Electrothon Logo"
