@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Link } from "react-scroll";
 
 export default function Schedule() {
   const ref = useRef(null);
@@ -136,12 +137,15 @@ export default function Schedule() {
             Here’s your guide to the Electrothon 4.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>
-          <a
-            href="#problems"
+          <Link
+            to="themes"
+            offset={-60}
+            smooth={true}
+            duration={1000}
             className="bg-transparent mr-auto hover:bg-blue-300 text-blue-500 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-blue-300 hover:border-transparent"
           >
             Explore Themes
-          </a>
+          </Link>
         </div>
         <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
           <div className="container mx-auto w-full h-full pr-6 ">
