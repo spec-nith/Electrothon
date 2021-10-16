@@ -47,21 +47,23 @@ const App = () => {
       ) : (
         <React.Fragment>
           <Header />
-          <Intro />
-          <div className="container mx-auto px-4">
-            <section id="general-content">
-              <About />
-              <Milestone />
-              <Content />
-            </section>
-            <Schedule />
-            <Projects />
-            {/* <ProbStatements /> */}
-            {/* <Prizes /> */}
-            {/* <Workshop /> */}
-            {/* <Judges /> */}
-            {/* <Sponsors /> */}
-            <FAQ />
+          <div className="sm:mx-20">
+            <Intro />
+            <div className="container mx-auto px-4 text-justify">
+              <section id="general-content">
+                <About />
+                <Milestone />
+                <Content />
+              </section>
+              <Schedule />
+              <Projects />
+              {/* <ProbStatements /> */}
+              {/* <Prizes /> */}
+              {/* <Workshop /> */}
+              {/* <Judges /> */}
+              {/* <Sponsors /> */}
+              <FAQ />
+            </div>
           </div>
           <Contact />
           <Footer />

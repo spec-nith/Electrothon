@@ -27,16 +27,16 @@ export default function Content() {
                 </p>
               </div>
               <div className="my-4">
-                <span className="text-2xl subhead-theme">Incubation</span>
+                <p className="text-2xl subhead-theme">Incubation</p>
                 <p className="text-normal md:text-xl mt-4">
                   Ideas with the potential to be converted into a product, will
                   be partnered by our partnered companies.
                 </p>
               </div>
               <div className="my-4">
-                <span className="text-2xl subhead-theme">
+                <p className="text-2xl subhead-theme">
                   Sustainability and Globalization
-                </span>
+                </p>
                 <p className="text-normal md:text-xl mt-4">
                   This year's theme inspires participants to come up with
                   sustainable ideas, ideas that aim to target bigger issues of

@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
+    "css-doodle": "^0.20.2",
     "postcss": "^7.0.39",
     "randomcolor": "^0.6.2",
     "react-spinners": "^0.11.0",

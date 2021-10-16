@@ -4,7 +4,7 @@ import themeArray from "./themesdata.json";
 
 export default function Themes() {
   return (
-    <section id="themes" className="flex h-auto pb-10 mt-10">
+    <section id="themes" className="flex h-auto md:pb-6 mt-10">
       <div className="problemContainer max-w-screen">
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Themes

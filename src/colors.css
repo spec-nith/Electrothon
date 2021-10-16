@@ -4,15 +4,17 @@ body {
 
 .container-theme {
   border-radius: 10px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.83);
 }
 
 .header-theme {
   color: #222;
+  @apply text-left;
 }
 
 .subhead-theme {
   color: #444;
+  @apply text-left;
 }
 
 .content-theme {
