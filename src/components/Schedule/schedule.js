@@ -36,7 +36,7 @@ export default function Schedule() {
     },
     {
       title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our jdging panuel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
+      para: "The ultimate genius will be revealed by our judging panel on 10th May, 2021 and the resukts will be announced on the whatsapp groups and will be mailed to you",
       date: "22nd Feburary 2022",
     },
   ];
