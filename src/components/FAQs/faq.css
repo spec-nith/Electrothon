@@ -15,7 +15,7 @@ input:checked + .faqs-tab-label .faqs-test {
 }
 input:checked ~ .faqs-tab-content {
   max-height: 100vh;
-  transition: 2s;
+  transition: 1.5s;
 }
 input:checked + .faqs-tab-label .faqs-test svg {
   stroke: white;
