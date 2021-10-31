@@ -205,8 +205,13 @@ export default function Schedule() {
             {Componentwidth < 580 ? null : (
               <img
                 className="mx-auto -mt-36 md:-mt-36"
-                src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
+                // src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
+                src = "./rocket.png"
                 alt="result_img"
+                
+                style={{width : "25rem"}}
+                
+                
               />
             )}
           </div>
