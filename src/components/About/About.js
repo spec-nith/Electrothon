@@ -13,9 +13,9 @@ export default function About() {
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-16">
         <div className="hidden md:block">
           <img
-            src="./electro.jpg"
+            src="./electro.png"
             alt="Electrothon Logo"
-            className="h-auto w-80 mx-auto"
+            className="h-auto w-60 mx-auto"
           />
         </div>
         <div className="my-auto md:col-span-2">

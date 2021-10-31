@@ -1,22 +1,28 @@
 body {
-  background-color: white;
+  background-color: rgb(19,19,23);
 }
 
 .container-theme {
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.83);
+  background-color: rgba(34, 30, 30, 0.83);
+  @apply my-12;
+  @apply p-12;
 }
 
 .header-theme {
-  color: #222;
+  color: rgb(255, 255, 255);
   @apply text-left;
 }
 
 .subhead-theme {
-  color: #444;
+  color: rgb(212, 212, 212);
   @apply text-left;
 }
 
 .content-theme {
-  color: #666;
+  color: rgb(177, 177, 177);
 }
+.header-font{
+  color:aliceblue
+}
+

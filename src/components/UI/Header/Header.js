@@ -11,13 +11,13 @@ const Nav = () => {
   const NavbarLG = (props) => {
     return (
       <Link
-        activeClass={props.item.hide != null ? "" : "text-green-600 border-b-2"}
+        activeClass={props.item.hide != null ? "" : "text-purple-100 border-b-2"}
         to={props.item.id}
         spy={true}
         offset={-60}
         smooth={true}
         duration={1000}
-        className="py-4 px-2 text-gray-600 hover:text-green-500 transition duration-300 transition-all cursor-pointer"
+        className="py-4 px-2 text-gray-600 hover:text-white transition duration-300 transition-all cursor-pointer"
       >
         {props.item.name}
       </Link>
@@ -50,12 +50,12 @@ const Nav = () => {
 
   return (
     <React.Fragment>
-      <nav className="fixed w-full top-0 bg-white shadow-lg z-10">
+      <nav className="fixed w-full top-0  shadow-lg z-10 bg-black">
         <div className="mx-auto px-4 flex justify-around space-x-20">
           <div className="hidden md:flex items-center py-4 px-2">
             <a href="https://specnith.com/">
               {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
-              <span className=" text-gray-600 text-lg">SPEC</span>
+              <span className=" text-gray-200 text-lg font-black">SPEC</span>
             </a>
           </div>
 

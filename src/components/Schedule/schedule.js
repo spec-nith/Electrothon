@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-scroll";
-
+import './schedule.css'
 export default function Schedule() {
   const ref = useRef(null);
   // const [windowwidth, changewidth] = useState(window.innerwidth);
@@ -49,7 +49,7 @@ export default function Schedule() {
             {props.index}
           </h1>
         </div>
-        <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4 text-right">
+        <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 text-right schedule-block2">
           <p className="mb-3 text-base text-white">{props.props.date}</p>
           <span
             className="mb-3 font-bold text-lg md:text-2xl"
@@ -76,7 +76,7 @@ export default function Schedule() {
           </h1>
         </div>
         <div
-          className={`order-1 bg-${props.colr}-400 rounded-lg shadow-xl w-5/12 px-4 py-4 text-left`}
+          className={`order-1 schedule-block${props.colr} rounded-lg shadow-xl w-5/12 px-4 py-4 text-left`}
           style={{ width: "85%" }}
         >
           <p className="mb-3 text-base text-white">{props.props.date}</p>
@@ -102,7 +102,7 @@ export default function Schedule() {
             {props.index}
           </h1>
         </div>
-        <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4 text-left">
+        <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 text-left schedule-block4">
           <p className="mb-3 text-base text-white">{props.props.date}</p>
           <span
             className="mb-3 font-bold  text-lg md:text-2xl text-left"
@@ -167,7 +167,7 @@ export default function Schedule() {
                       <SmallCard
                         props={props}
                         index={index + 1}
-                        colr="red"
+                        colr="1"
                         key={props.title + Math.random()}
                       />
                     );
@@ -176,7 +176,7 @@ export default function Schedule() {
                       <SmallCard
                         props={props}
                         index={index + 1}
-                        colr="gray"
+                        colr="2"
                         key={props.title + Math.random()}
                       />
                     );

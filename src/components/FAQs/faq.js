@@ -31,7 +31,7 @@ export default function faq() {
             </div>
           </header>
           <div className="faqs-tab-content">
-            <div className="mx-4 lg:mx-8 pb-5 text-gray-500">
+            <div className="mx-4 lg:mx-8 pb-5 text-gray-200">
               <p className="mr-4 lg:mr-8 justify-left">{props.props.content}</p>
             </div>
           </div>

@@ -8,6 +8,8 @@
 .faqs-tab,
 .faqs-tab svg {
   transition-duration: 0.5s;
+  color: rgb(148, 148, 148);
+  
 }
 
 input:checked + .faqs-tab-label .faqs-test {
