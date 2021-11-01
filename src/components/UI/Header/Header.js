@@ -11,7 +11,9 @@ const Nav = () => {
   const NavbarLG = (props) => {
     return (
       <Link
-        activeClass={props.item.hide != null ? "" : "text-purple-100 border-b-2"}
+        activeClass={
+          props.item.hide != null ? "" : "text-purple-100 border-b-2"
+        }
         to={props.item.id}
         spy={true}
         offset={-60}

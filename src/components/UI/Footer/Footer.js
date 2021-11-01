@@ -56,51 +56,55 @@ export default function Footer() {
   if (state.succeeded) {
     return (
       <footer
-      id="contact"
-      className="flex justify-center px-4 text-gray-800 rounded-lg shadow-lg" style={{backgroundColor:'rgba(34, 30, 30, 0.83)'}}
-    >
-      <div className="container py-6">
-        <div className="max-w-screen-xl md:mt-4 px-8 grid gap-x-24 gap-y-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:pt-16 md:pb-32 mx-auto text-gray-900">
-          <div className="flex flex-col justify-around">
-            <div>
-              <h2 className="text-4xl lg:text-5xl font-bold leading-tight header-theme">
-                Lets talk about everything!
-              </h2>
-              <div className="text-gray-200 mt-8">
-                Hate forms? Send us an{" "}
-                <a
-                  className="underline"
-                  href="mailto:spec@nith.ac.in"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  email
-                </a>{" "}
-                instead.
+        id="contact"
+        className="flex justify-center px-4 text-gray-800 rounded-lg shadow-lg"
+        style={{ backgroundColor: "rgba(34, 30, 30, 0.83)" }}
+      >
+        <div className="container py-6">
+          <div className="max-w-screen-xl md:mt-4 px-8 grid gap-x-24 gap-y-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:pt-16 md:pb-32 mx-auto text-gray-900">
+            <div className="flex flex-col justify-around">
+              <div>
+                <h2 className="text-4xl lg:text-5xl font-bold leading-tight header-theme">
+                  Lets talk about everything!
+                </h2>
+                <div className="text-gray-200 mt-8">
+                  Hate forms? Send us an{" "}
+                  <a
+                    className="underline"
+                    href="mailto:spec@nith.ac.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    email
+                  </a>{" "}
+                  instead.
+                </div>
+              </div>
+              <img
+                src="email-contact.png"
+                className="hidden md:block "
+                alt="imageContact"
+              />
+            </div>
+            <div className="flex content-center">
+              <div className="flex items-baseline">
+                <p className="text-4xl font-bold lg:text-5xl text-white content-center m-auto">
+                  We will get back to you soon !!
+                </p>
               </div>
             </div>
-            <img
-              src="email-contact.png"
-              className="hidden md:block "
-              alt="imageContact"
-            />
           </div>
-          <div className="flex content-center">
-            <div className="flex items-baseline">
-              <p className="text-4xl font-bold lg:text-5xl text-white content-center m-auto">We will get back to you soon !!</p>
-            </div>
-          </div>
+          <BottomFooter />
         </div>
-        <BottomFooter />
-      </div>
-    </footer>
+      </footer>
     );
   }
 
   return (
     <footer
       id="contact"
-      className="flex justify-center px-4 text-gray-800 rounded-lg shadow-lg" style={{backgroundColor:'rgba(34, 30, 30, 0.83)'}}
+      className="flex justify-center px-4 text-gray-800 rounded-lg shadow-lg"
+      style={{ backgroundColor: "rgba(34, 30, 30, 0.83)" }}
     >
       <div className="container py-6">
         <div className="max-w-screen-xl md:mt-4 px-8 grid gap-x-24 gap-y-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:pt-16 md:pb-32 mx-auto text-gray-900">

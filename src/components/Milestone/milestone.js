@@ -54,7 +54,12 @@ export default function milestone() {
                 icon={faDonate}
                 className="text-5xl text-blue-500 mb-3"
               /> */}
-              <img src="./sponsors.png" alt="sponsors" style={{width: '82%', hight: '200px'}} className="p-3 "/>
+              <img
+                src="./sponsors.png"
+                alt="sponsors"
+                style={{ width: "82%", hight: "200px" }}
+                className="p-3 "
+              />
               <h2 className="title-font font-medium text-3xl text-white font-bold">
                 40+
               </h2>

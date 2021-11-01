@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-scroll";
-import './schedule.css'
+import "./schedule.css";
 export default function Schedule() {
   const ref = useRef(null);
   // const [windowwidth, changewidth] = useState(window.innerwidth);
@@ -176,7 +176,7 @@ export default function Schedule() {
                       <SmallCard
                         props={props}
                         index={index + 1}
-                        colr="2"
+                        colr="3"
                         key={props.title + Math.random()}
                       />
                     );
@@ -205,13 +205,9 @@ export default function Schedule() {
             {Componentwidth < 580 ? null : (
               <img
                 className="mx-auto -mt-36 md:-mt-36"
-                // src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png"
-                src = "./rocket.png"
+                src="./rocket.png"
                 alt="result_img"
-                
-                style={{width : "25rem"}}
-                
-                
+                style={{ width: "25rem" }}
               />
             )}
           </div>
