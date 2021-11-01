@@ -12,7 +12,7 @@ const Nav = () => {
     return (
       <Link
         activeClass={
-          props.item.hide != null ? "" : "text-purple-100 border-b-2"
+          props.item.hide != null ? "" : "text-purple-100 border-b-2 "
         }
         to={props.item.id}
         spy={true}
@@ -29,16 +29,16 @@ const Nav = () => {
   const NavbarSM = (props) => {
     return (
       <Link
-        activeClass="text-green-600 border-b-2"
+        activeClass="text-indigo-400 nav-theme"
         to={props.item.id}
         spy={true}
         offset={+10}
         smooth={true}
         duration={1000}
-        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-600 hover:text-gray-800"
+        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
         onClick={() => setIsOpen((prevState) => !prevState)}
       >
-        <span className="flex items-center justify-center h-12 w-12 text-lg text-gray-600">
+        <span className="flex items-center justify-center h-12 w-12 text-lg">
           <FontAwesomeIcon
             className="text-lg"
             icon={props.item.icon}
@@ -52,12 +52,12 @@ const Nav = () => {
 
   return (
     <React.Fragment>
-      <nav className="fixed w-full top-0  shadow-lg z-10 bg-black">
+      <nav className="fixed w-full top-0  shadow-lg z-10 nav-theme">
         <div className="mx-auto px-4 flex justify-around space-x-20">
           <div className="hidden md:flex items-center py-4 px-2">
             <a href="https://specnith.com/">
               {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
-              <span className=" text-gray-200 text-lg font-black">SPEC</span>
+              <span className=" text-gray-200 text-2xl font-black">SPEC</span>
             </a>
           </div>
 
@@ -91,14 +91,14 @@ const Nav = () => {
             <div className="z-10 fixed inset-0 transition-opacity">
               <div
                 onClick={() => setIsOpen((prevState) => !prevState)}
-                className="absolute inset-0 bg-black opacity-0"
+                className="absolute inset-0 opacity-0 "
                 tabIndex="0"
               ></div>
             </div>
           </Transition>
 
           <aside
-            className={`transform top-0 left-0 w-64 fixed h-full bg-white overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 border-r-2 ease-in-out transition-all duration-300 ${
+            className={`transform top-0 left-0 w-64 fixed h-full nav-theme overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ease-in-out transition-all duration-300 ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
             onClick={() => setIsOpen((prevState) => !prevState)}

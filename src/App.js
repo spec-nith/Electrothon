@@ -35,12 +35,12 @@ const App = () => {
     <React.Fragment>
       {loading ? (
         <div
-          className="flex justify-center bg-gray-100 items-center w-full h-screen bg-cover"
-          style={{
-            backgroundImage: `url("./loading_art.jpg")`,
-            backgroundColor: "rgba(255,255,255,0.7)",
-            backgroundBlendMode: "lighten",
-          }}
+          className="flex justify-center nav-theme items-center w-full h-screen bg-cover"
+          // style={{
+          //   backgroundImage: `url("./loading_art.jpg")`,
+          //   backgroundColor: "rgba(255,255,255,0.7)",
+          //   backgroundBlendMode: "lighten",
+          // }}
         >
           <ClimbingBoxLoader color={colour} loading={loading} size={25} />
         </div>

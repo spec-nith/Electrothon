@@ -5,8 +5,8 @@ body {
 .container-theme {
   border-radius: 10px;
   background-color: rgba(34, 30, 30, 0.83);
-  @apply md:my-12;
-  @apply p-12;
+  @apply md:my-12 md:p-12;
+  
 }
 
 .header-theme {
@@ -24,5 +24,9 @@ body {
 }
 .header-font{
   color:aliceblue
+}
+.nav-theme{
+  background-color: rgb(18, 18, 20);
+  border-bottom: 1px solid white;
 }
 
