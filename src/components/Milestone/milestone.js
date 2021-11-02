@@ -15,10 +15,10 @@ export default function milestone() {
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Milestones
         </h1>
-        <div className="flex flex-wrap -m-4 text-center mt-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center mt-2">
           {Stats.map((stat, index) => {
             return (
-              <div className="p-4 md:w-1/4 sm:w-1/2 w-full" key={index}>
+              <div className="p-4 w-full" key={index}>
                 <div
                   className={
                     "h-full grid grid-cols-1 grid-rows-5 px-4 py-6 rounded-lg " +
