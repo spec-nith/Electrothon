@@ -14,10 +14,16 @@ export default function Themes() {
             return (
               <li className="problem_card h-80 rounded-3xl" key={e.title}>
                 <div className="problem_card__frame">
-                  <div
-                    style={{ backgroundImage: `url(${e.image})` }}
-                    className="border-gray-500 border-2 rounded-3xl bg-cover h-full w-full bg-no-repeat bg-center"
-                  ></div>
+                  <div className="border-gray-500 border-2 rounded-3xl h-full w-full overflow-hidden">
+                    <picture>
+                      <source srcSet={e.webp} type="image/jpeg" />
+                      <img
+                        src={e.image}
+                        className="h-full w-full object-cover"
+                        alt="Electrothon Logo"
+                      />
+                    </picture>
+                  </div>
                   <h2 className="">{e.title}</h2>
                 </div>
                 <div className="problem_card__overlay"></div>

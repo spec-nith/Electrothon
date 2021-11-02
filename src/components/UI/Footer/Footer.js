@@ -80,11 +80,14 @@ export default function Footer() {
                   instead.
                 </div>
               </div>
-              <img
-                src="email-contact.png"
-                className="hidden md:block "
-                alt="imageContact"
-              />
+              <picture>
+                <source srcSet="webp/email-contact.webp" type="image/webp" />
+                <img
+                  src="email-contact.png"
+                  className="hidden md:block "
+                  alt="imageContact"
+                />
+              </picture>
             </div>
             <div className="flex content-center">
               <div className="flex items-baseline">

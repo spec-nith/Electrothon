@@ -192,12 +192,15 @@ export default function Schedule() {
               })}
             </div>
             {Componentwidth < 580 ? null : (
-              <img
-                className="mx-auto -mt-36 md:-mt-36"
-                src="./rocket.png"
-                alt="result_img"
-                style={{ width: "25rem" }}
-              />
+              <picture>
+                <source srcSet="webp/rocket.webp" type="image/webp" />
+                <img
+                  className="mx-auto -mt-36 md:-mt-36"
+                  src="rocket.png"
+                  alt="result_img"
+                  style={{ width: "25rem" }}
+                />
+              </picture>
             )}
           </div>
         </div>

@@ -12,11 +12,14 @@ export default function About() {
     >
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-16">
         <div className="hidden md:block">
-          <img
-            src="./electro.png"
-            alt="Electrothon Logo"
-            className="h-auto w-60 mx-auto"
-          />
+          <picture>
+            <source srcSet="webp/electro.webp" type="image/webp" />
+            <img
+              src="electro.png"
+              className="h-auto w-60 mx-auto"
+              alt="Electrothon Logo"
+            />
+          </picture>
         </div>
         <div className="my-auto md:col-span-2">
           <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">

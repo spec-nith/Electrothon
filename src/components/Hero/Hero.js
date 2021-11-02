@@ -36,16 +36,16 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="relative sm:pt-4 min-h-screen h-auto grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 flex items-center"
+      className="sm:pt-4 min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1"
     >
       <div
-        className="mx-auto md:mr-10 pt-16 md:col-span-2"
+        className="m-auto md:col-span-2"
         data-aos="fade-down"
         data-aos-delay="50"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <div className="relative mx-0 md:mx-20 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
+        <div className="relative mx-0 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
           <main className="mt-2 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 lg:py-8 xl:mt-28">
             <div className="text-center lg:text-left">
               <h1 className="text-4xl tracking-tight  sm:text-5xl md:text-6xl">
@@ -104,7 +104,7 @@ export default function Introduction() {
           {shuffle(slides).map((element, index) => (
             <div className="each-slide overflow-hidden bg-contain" key={index}>
               <img
-                src={"./electrothon/" + element.url}
+                src={"electrothon/" + element.url}
                 alt={element.caption}
                 className="hero-background"
               />

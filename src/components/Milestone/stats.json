@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Participants",
+    "value": "1.9K",
+    "src": "./participant.png",
+    "webp": "webp/participant.webp",
+    "theme": "milestones-block1"
+  },
+  {
+    "name": "Lines of Code",
+    "value": "150K+",
+    "src": "./code.png",
+    "webp": "webp/code.webp",
+    "theme": "milestones-block2"
+  },
+  {
+    "name": "Sponsors",
+    "value": "40+",
+    "src": "./sponsors.png",
+    "webp": "webp/sponsors.webp",
+    "theme": "milestones-block3"
+  },
+  {
+    "name": "Prize Categories",
+    "value": "22+",
+    "src": "./trophy.png",
+    "webp": "webp/trophy.webp",
+    "theme": "milestones-block4"
+  }
+]
