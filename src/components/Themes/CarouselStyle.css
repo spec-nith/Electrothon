@@ -107,7 +107,7 @@
     width: var(--control-button-width);
     height: var(--control-button-height);
     position: absolute;
-    z-index: 10;
+    z-index: 8;
     top: calc(50% - (0.5 * var(--control-button-height)));
     border: none;
     background-color: var(--control-button-background);
@@ -209,8 +209,8 @@
       padding: 0; }
   .awssld__bullets {
     position: absolute;
-    z-index: 10;
-    bottom: 0px;
+    z-index: 8;
+    bottom: -2rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

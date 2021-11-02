@@ -17,7 +17,7 @@ const slider = (
     {themeArray.map((e, index) => {
       return (
         <div
-          className="grid grid-cols-1 md:grid-cols-5 gap-8 h-96 w-full"
+          className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full"
           key={index}
         >
           <div className="md:col-span-2 track-image">
@@ -31,11 +31,10 @@ const slider = (
             </picture>
           </div>
           <div className="md:col-span-3">
-            <div className="track-text-outline h-full md:w-40"></div>
-            <h1 className="text-3xl md:text-4xl md:leading-relaxed header-theme pb-6">
+            <h1 className="text-3xl md:text-3xl lg:text-4xl md:leading-relaxed header-theme pb-6">
               {e.title}
             </h1>
-            <span className="text-xl md:text-2xl content-theme">
+            <span className="text-lg md:text-xl lg:text-2xl content-theme">
               {e.content}
             </span>
           </div>
