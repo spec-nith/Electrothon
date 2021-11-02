@@ -27,7 +27,8 @@
   {
     "title": "Natural Disasters",
     "content": "Harnessing the power of technology, vouch for innovative solutions to address the uprising challenges caused by natural calamities.",
-    "image": "disaster.jpg"
+    "image": "disaster.jpg",
+    "webp": "webp/disaster.webp"
   },
   {
     "title": "Open Innovation",
