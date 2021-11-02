@@ -5,7 +5,7 @@ body {
 .container-theme {
   border-radius: 10px;
   background-color: rgba(34, 30, 30, 0.83);
-  @apply md:my-12 md:p-12;
+  @apply my-4 py-8 md:my-12 md:p-12;
   
 }
 

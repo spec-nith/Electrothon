@@ -1,9 +1,5 @@
 [
   {
-    "title": "What is Electrothon?",
-    "content": "Electrothon is a national level hackathon where you come with an idea and leave with a community. It is a platform to develop cool projects and showcase them to internationally acclaimed Tech-Speakers and Judges. Above all, you leave with quirky T-Shirts and coolest stickers :)"
-  },
-  {
     "title": "Do I need to have some specific qualifications to be a participant for the Electrothon?",
     "content": "Yes, you must be a student from any designated University/College."
   },
@@ -16,16 +12,8 @@
     "content": "No, the complete hackathon is virtual, join our discord channel to stay updated."
   },
   {
-    "title": "What kind of solutions will be accepted?",
-    "content": "You can propose solutions based on the themes mentioned in the project category. Technology does not matter."
-  },
-  {
     "title": "Can a college have multiple teams?",
     "content": "Yes, there is no restriction here. We also welcome inter-college teams."
-  },
-  {
-    "title": "Who owns my project?",
-    "content": "The team that develops the project is the owner of the project. We do encourage sharing of code with others in the community or making code open source but it is not mandatory."
   },
   {
     "title": "What are the selection criteria?",
@@ -33,7 +21,7 @@
   },
   {
     "title": "What do I get from the event?",
-    "content": "The winners will be awarded prizes worth 30k. The short-listed participants will get certificates, swags and a platform to showcase their talents. There will be special prizes for the best hack built on the APIs and SDKs of the partner companies."
+    "content": "The winners will be awarded prizes . The short-listed participants will get certificates, swags and a platform to showcase their talents. There will be special prizes for the best hack built on the APIs and SDKs of the partner companies."
   },
   {
     "title": "What is the goal of the Electrothon?",
@@ -53,7 +41,7 @@
   },
   {
     "title": "Do we need to apply in teams?",
-    "content": "There will be API prizes from multiple sponsors to build a hack on top of their APIs or SDKs. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event. Teams are free to pick from them as well."
+    "content": "Yes, the hackathon requires you to register in a team of a minimum of 2 and a maximum of 4 participants."
   },
   {
     "title": "What if I have more queries?",
