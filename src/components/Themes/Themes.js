@@ -17,11 +17,11 @@ const slider = (
     {themeArray.map((e, index) => {
       return (
         <div
-          className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full"
+          className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full themes-image"
           key={index}
         >
           <div className="md:col-span-2 track-image">
-            <picture className="m-auto">
+            <picture className="m-auto ">
               <source srcSet={e.webp} type="image/jpeg" />
               <img
                 src={e.image}

@@ -436,4 +436,27 @@
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0); } }
 
-  
+  .themes-image{
+    min-height:16rem;
+    
+  }
+  @media only screen and (max-width:810px){
+    .themes-image{
+      min-height:20rem;
+    }
+  }
+  @media only screen and (max-width:767px){
+    .themes-image{
+      min-height: 38rem;
+    }
+  }
+  @media only screen and (max-width:600px){
+    .themes-image{
+      min-height: 40rem;
+    }
+  }
+  @media only screen and (max-width:412px){
+    .themes-image{
+      min-height: 35rem;
+    }
+  }
