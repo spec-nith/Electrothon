@@ -437,8 +437,13 @@
             transform: translate3d(100%, 0, 0); } }
 
   .themes-image{
-    min-height:16rem;
+    min-height:28rem;
     
+  }
+  @media only screen and (max-width:1300px){
+    .themes-image{
+      min-height:20rem;
+    }
   }
   @media only screen and (max-width:810px){
     .themes-image{
