@@ -17,7 +17,9 @@ const slider = (
     {themeArray.map((e, index) => {
       return (
         <div
-          className={`grid grid-cols-1 md:grid-cols-5 md:gap-8 w-full themes-image  theme-block${index+1} theme-box`}
+          className={`grid grid-cols-1 md:grid-cols-5 md:gap-8 w-full themes-image  theme-block${
+            index + 1
+          } theme-box`}
           key={index}
         >
           <div className="md:col-span-2 track-image flex items-center justify-center">
@@ -30,9 +32,9 @@ const slider = (
               />
             </picture>
           </div>
-          
+
           <div className="md:col-span-3 bg-gray-900 clip-class-theme p-8">
-          <div className="track-text-outline h-full md:w-40"></div>
+            <div className="track-text-outline h-full md:w-40"></div>
             <h1 className="text-3xl md:text-3xl lg:text-4xl md:leading-relaxed header-theme pb-6 ">
               {e.title}
             </h1>
