@@ -210,11 +210,13 @@
   .awssld__bullets {
     position: absolute;
     z-index: 8;
-    bottom: -2rem;
+    bottom:1rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    color:white;
+    
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -233,10 +235,9 @@
       overflow: hidden;
       cursor: pointer;
       border: none;
-      -webkit-transition: background-color 0.175s ease-out, -webkit-transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45);
-      transition: background-color 0.175s ease-out, -webkit-transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45);
-      transition: transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45), background-color 0.175s ease-out;
-      transition: transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45), background-color 0.175s ease-out, -webkit-transform 0.225s cubic-bezier(0.8, 1.35, 0.75, 1.45); }
+      color:white;
+      background-color: rgb(189, 189, 189);
+      }
       .awssld__bullets button:hover {
         -webkit-transform: scale(1.2);
                 transform: scale(1.2); }
@@ -246,7 +247,7 @@
     .awssld__bullets .awssld__bullets--active {
       -webkit-transform: scale(1.5);
               transform: scale(1.5);
-      background: var(--control-bullet-active-color); }
+      background: rgb(255, 255, 255); }
       .awssld__bullets .awssld__bullets--active:hover {
         -webkit-transform: scale(1.5);
                 transform: scale(1.5); }

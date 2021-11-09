@@ -17,21 +17,23 @@ const slider = (
     {themeArray.map((e, index) => {
       return (
         <div
-          className="grid grid-cols-1 md:grid-cols-5 gap-8 w-full themes-image"
+          className={`grid grid-cols-1 md:grid-cols-5 md:gap-8 w-full themes-image  theme-block${index+1} theme-box`}
           key={index}
         >
-          <div className="md:col-span-2 track-image">
-            <picture className="m-auto ">
+          <div className="md:col-span-2 track-image flex items-center justify-center">
+            <picture className="m-auto">
               <source srcSet={e.webp} type="image/jpeg" />
               <img
                 src={e.image}
-                className="object-contain"
+                className="object-contain w-5/6 m-auto"
                 alt="Electrothon Logo"
               />
             </picture>
           </div>
-          <div className="md:col-span-3">
-            <h1 className="text-3xl md:text-3xl lg:text-4xl md:leading-relaxed header-theme pb-6">
+          
+          <div className="md:col-span-3 bg-gray-900 clip-class-theme p-8">
+          <div className="track-text-outline h-full md:w-40"></div>
+            <h1 className="text-3xl md:text-3xl lg:text-4xl md:leading-relaxed header-theme pb-6 ">
               {e.title}
             </h1>
             <span className="text-lg md:text-xl lg:text-2xl content-theme">
@@ -45,13 +47,13 @@ const slider = (
 );
 export default function Themes() {
   return (
-    <section id="themes" className="h-auto md:pb-6 mt-10 container-theme">
-      <div className="w-full">
+    <section id="themes" className="h-auto theme-box mt-10">
+      {/* <div className="w-full">
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Themes
         </h1>
-      </div>
-      <div className="p-8">{slider}</div>
+      </div> */}
+      <div className="theme-box">{slider}</div>
     </section>
   );
 }

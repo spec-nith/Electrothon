@@ -53,7 +53,7 @@ const App = () => {
               <section id="general-content">
                 <About />
                 <Milestone />
-                {/* <Content /> */}
+                <Content />
               </section>
               <Schedule />
               <Projects />

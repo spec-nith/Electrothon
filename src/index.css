@@ -31,3 +31,9 @@ code {
   shape-outside: polygon(0 0, 0 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
 }
+@media only screen and (max-width:900px){
+  .track-text-outline{
+    shape-outside: polygon(0 0, 0 0, 0 0,0 0);
+    clip-path: polygon(0 0, 0 0, 0 0,0 0);
+  }
+}
