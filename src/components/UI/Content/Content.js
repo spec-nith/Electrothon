@@ -46,9 +46,16 @@ export default function Content() {
             </div>
           </div>
           <div>
-            <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
+            <img src="whatsnew.png" alt="whatsnew" />
+           
+          </div>
+        </div>
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16">
+          <div>
+            
+          <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
               Diversity and Inclusion
-            </h1>
+            </h1>   
             <div className="mt-3 text-normal text-gray-400 md:mt-5 md:text-xl lg:mx-0 md:leading-normal content-theme">
               <div className="my-4">
                 <span className="text-2xl subhead-theme">
@@ -62,24 +69,74 @@ export default function Content() {
                   inspiring girls around the world.
                 </p>
               </div>
-              <div className="my-4">
+              </div>     
+
+
+
+
+            
+          </div>
+          <div>
+            
+            <div className="mt-3 text-normal text-gray-400 md:mt-5 md:text-xl lg:mx-0 md:leading-normal content-theme">
+              
+              <div className="my-4 mt-20">
                 <span className="text-2xl subhead-theme">Notable Speakers</span>
                 <div className="text-normal md:text-xl mt-4">
-                  <div className="mb-4">
-                    <span className="font-bold">Miri Rodriguez:</span> Global
+                <div class="flex bg-black bg-opacity-25 shadow-lg rounded-lg mx-4 md:mx-auto my-4 max-w-md md:max-w-2xl ">
+   <div class="flex items-start px-4 py-6">
+      <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="speakers/miri.jpg" alt="avatar" />
+      <div class="">
+         <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold text-white -mt-1">Miri Rodriguez </h2>
+          
+         </div>
+         
+         <p class="mt-3 text-white text-sm">
+         Global
                     Head of internships at Microsoft and an award-winning
                     storyteller.
-                  </div>
-                  <div className="mb-4">
-                    <span className="font-bold">Niharika Arora:</span> Developer
-                    Relations Engineer for Android at Google, Contributor at
+         </p>
+         
+      </div>
+   </div>
+</div>
+
+<div class="flex bg-black bg-opacity-25 shadow-lg rounded-lg mx-4 md:mx-auto my-4 max-w-md md:max-w-2xl ">
+   <div class="flex items-start px-4 py-6">
+      <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="speakers/profile_pic.png" alt="avatar" />
+      <div class="">
+         <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold text-white -mt-1">Niharika Arora</h2>
+          
+         </div>
+         
+         <p class="mt-3 text-white text-sm">
+         Developer Relations Engineer for Android at Google, Contributor at
                     Aarogya Setu.
-                  </div>
-                  <div className="mb-4">
-                    <span className="font-bold">Dr. Nayan Mitra:</span> Founding
+         </p>
+         
+      </div>
+   </div>
+</div>
+<div class="flex bg-black bg-opacity-25 shadow-lg rounded-lg mx-4 md:mx-auto my-4 max-w-md md:max-w-2xl ">
+   <div class="flex items-start px-4 py-6">
+      <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="speakers/nayan.jpg" alt="avatar" />
+      <div class="">
+         <div class="flex items-center justify-between">
+            <h2 class="text-lg font-semibold text-white -mt-1">Dr. Nayan Mitra</h2>
+          
+         </div>
+         
+         <p class="mt-3 text-white text-sm">
+         Founding
                     President of Women’s Indian Chamber of Commerce and Industry
                     (WICCI), mentor at Aspire for Her Foundation
-                  </div>
+         </p>
+         
+      </div>
+   </div>
+</div>
                 </div>
               </div>
               <p className="text-normal md:text-xl mt-4"></p>

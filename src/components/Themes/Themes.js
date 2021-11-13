@@ -33,14 +33,16 @@ const slider = (
             </picture>
           </div>
 
-          <div className="md:col-span-3 bg-gray-900 clip-class-theme p-8">
-            <div className="track-text-outline h-full md:w-40"></div>
+          <div className="md:col-span-3 bg-gray-900 clip-class-theme p-8 2xl:my-20 xl:pt-16 ">
+            <div className="track-text-outline h-full md:w-40 "></div>
+            <div className="m-auto">
             <h1 className="text-3xl md:text-3xl lg:text-4xl md:leading-relaxed header-theme pb-6 ">
               {e.title}
             </h1>
             <span className="text-lg md:text-xl lg:text-2xl content-theme">
               {e.content}
             </span>
+            </div>
           </div>
         </div>
       );
