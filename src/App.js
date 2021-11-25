@@ -11,7 +11,7 @@ import Milestone from "./components/Milestone/milestone";
 // import ProbStatements from "./components/Prob_statements/problems";
 import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
-// import Sponsors from "./components/Sponsors/Sponsors";
+import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 import Contact from "./components/Contact/Contact";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
@@ -61,7 +61,7 @@ const App = () => {
               {/* <Prizes /> */}
               {/* <Workshop /> */}
               {/* <Judges /> */}
-              {/* <Sponsors /> */}
+              <Sponsors />
               <FAQ />
             </div>
           </div>
