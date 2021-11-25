@@ -10,7 +10,7 @@ const AutoplaySlider = withAutoplay(AwesomeSlider);
 const slider = (
   <AutoplaySlider
     play={true}
-    interval={300000}
+    interval={5000}
     mobileTouch={true}
     organicArrows={false}
   >

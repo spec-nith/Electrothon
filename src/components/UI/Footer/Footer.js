@@ -14,40 +14,6 @@ export default function Footer() {
             SPEC
           </a>
         </div>
-
-        <div className="flex mt-4 md:m-0">
-          <div className="-mx-4">
-            <p className="px-4 text-md font-normal text-gray-200 text-center">
-              <span className="block sm:inline">Designed By:</span>
-              <a
-                href="https://www.linkedin.com/in/avishrantsh/"
-                className="text-blue-400 hover:text-indigo-800 cursor-pointer block sm:inline mt-1 sm:mt-0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                &nbsp;Avishrant Sharma
-              </a>
-              <span className="hidden sm:inline">,</span>
-              <a
-                href="https://www.linkedin.com/in/aman-jagotra-26bb38207/"
-                className="text-blue-400 hover:text-indigo-800 cursor-pointer block sm:inline mt-1 sm:mt-0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                &nbsp;Aman Jagotra
-              </a>
-              <span className="hidden sm:inline">,</span>
-              <a
-                href="https://www.linkedin.com/in/priyanshu-rajput-144990201/"
-                className="text-blue-400 hover:text-indigo-800 cursor-pointer block sm:inline mt-1 sm:mt-0"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                &nbsp;Priyanshu Rajput{" "}
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     );
   };

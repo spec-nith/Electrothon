@@ -1,0 +1,1 @@
+export const carouselData = ["sponsors2/web1.png","sponsors2/web2.png","sponsors2/web3.png","sponsors2/web4.png","sponsors2/web1.png","sponsors2/web3.png","sponsors2/web2.png","sponsors2/web4.png","sponsors2/web3.png","sponsors2/web1.png"];

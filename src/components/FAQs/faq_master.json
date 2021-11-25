@@ -1,7 +1,7 @@
 [
   {
-    "title": "Do I need to have some specific qualifications to be a participant for the Electrothon?",
-    "content": "Yes, you must be a student from any designated University/College."
+    "title": "Who can apply?",
+    "content": "You must be 18 years or above and a student from any designated University/College."
   },
   {
     "title": "Do I need experience?",
@@ -38,10 +38,6 @@
   {
     "title": "Are there any sponsored challenges and API prizes?",
     "content": " There will be API prizes from multiple sponsors to build a hack on top of their APIs or SDKs. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event. Teams are free to pick from them as well."
-  },
-  {
-    "title": "Do we need to apply in teams?",
-    "content": "Yes, the hackathon requires you to register in a team of a minimum of 2 and a maximum of 4 participants."
   },
   {
     "title": "What if I have more queries?",

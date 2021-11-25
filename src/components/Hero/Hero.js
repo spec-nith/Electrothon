@@ -86,6 +86,11 @@ export default function Introduction() {
                   </a>
                 </div>
               </div>
+              <span className="md:mt-0.5 mt-4 sm:flex sm:justify-center lg:justify-start">
+                <a href="https://dented-postage-1f4.notion.site/Code-of-Conduct-11809eecfb9a47259aa8557d8d044ec1" className="pt-4 text-sm text-gray-400 sm:text-base sm:max-w-xl sm:mx-auto md:text-lg lg:mx-0" target="_blank" rel="noreferrer noopener">
+                CODE OF CONDUCT
+              </a>
+              </span>
             </div>
           </main>
         </div>

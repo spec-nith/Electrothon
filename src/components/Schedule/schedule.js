@@ -1,5 +1,8 @@
 import React, { useState, useRef } from "react";
 import "./schedule.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+
 export default function Schedule() {
   const ref = useRef(null);
   var value = 400;
@@ -135,6 +138,13 @@ export default function Schedule() {
             Here’s your guide to the Electrothon 4.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>
+          <span className="text-xl text-white">
+          <FontAwesomeIcon
+            className="text-lg"
+            icon={faMapMarkerAlt}
+            fixedWidth
+          /> ONLINE
+          </span>
         </div>
         <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
           <div className="container mx-auto w-full h-full pr-6 ">

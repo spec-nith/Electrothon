@@ -35,7 +35,7 @@ const Nav = () => {
         offset={+10}
         smooth={true}
         duration={1000}
-        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 text-gray-400 hover:text-gray-800"
+        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 hover:text-white text-gray-600"
         onClick={() => setIsOpen((prevState) => !prevState)}
       >
         <span className="flex items-center justify-center h-12 w-12 text-lg">
@@ -55,7 +55,7 @@ const Nav = () => {
       <nav className="fixed w-full top-0  shadow-lg z-10 nav-theme">
         <div className="mx-auto px-4 flex justify-around space-x-20">
           <div className="hidden md:flex items-center py-4 px-2">
-            <a href="https://specnith.com/">
+            <a href="https://specnith.com/" target="_blank" rel="noreferrer noopener">
               {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
               <span className=" text-gray-200 text-2xl font-black">SPEC</span>
             </a>
