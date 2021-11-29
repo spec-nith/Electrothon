@@ -63,8 +63,8 @@
       }
     }
     .sponsor-slider .sponsor-slide-track {
-      -webkit-animation: scroll 10s linear infinite;
-              animation: scroll 10s linear infinite;
+      -webkit-animation: scroll 100s linear infinite;
+              animation: scroll 100s linear infinite;
       display: flex;
       width: calc(32vh * 28);    
       /* increase the number as per images e.g. 1 image means number should be 8/3 .....thus 18 images means 48 */
