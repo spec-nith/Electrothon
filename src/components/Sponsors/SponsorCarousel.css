@@ -5,24 +5,6 @@
     height: 60%;
     justify-content: center;
   }
-  
-  @-webkit-keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 34));
-    }
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 34));
-    }
-  }
   .sponsor-slider {
     background: transparent;
     /* box-shadow: 0 1px 2px rgba(0,0,0,0.1), 
@@ -53,14 +35,43 @@
   .sponsor-slider::before {
     left: 0;
     top: 0;
+  } 
+  @media screen and (min-width: 640px) {
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-32vh * 43));
+      }
+    }
+    .sponsor-slider .sponsor-slide-track {
+      -webkit-animation: scroll 100s linear infinite;
+              animation: scroll 100s linear infinite;
+      display: flex;
+      width: calc(32vh * 48);    
+      /* increase the number as per images e.g. 1 image means number should be 8/3 .....thus 18 images means 48 */
+    }
   }
-  .sponsor-slider .sponsor-slide-track {
-    -webkit-animation: scroll 100s linear infinite;
-            animation: scroll 100s linear infinite;
-    display: flex;
-    width: calc(250px * 48);    
-    /* increase the number as per images e.g. 1 image means number should be 8/3 .....thus 18 images means 48 */
+  @media screen and (max-width: 640px) {
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-32vh * 25));
+      }
+    }
+    .sponsor-slider .sponsor-slide-track {
+      -webkit-animation: scroll 10s linear infinite;
+              animation: scroll 10s linear infinite;
+      display: flex;
+      width: calc(32vh * 28);    
+      /* increase the number as per images e.g. 1 image means number should be 8/3 .....thus 18 images means 48 */
+    }
   }
+
+  
   .sponsor-slider .sponsor-slide {
     height: auto;
     width: auto;

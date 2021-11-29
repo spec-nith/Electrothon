@@ -53,6 +53,7 @@ export default function Introduction() {
                   Electrothon 4.0
                 </span>
                 <span className="block text-indigo-600 text-normal">2022</span>
+                <span className="block text-indigo-600 text-xl tracking-wider">19th-20th February, 2022</span>
               </h1>
               <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 SEARCH | PLAN | ENGAGE | CREATE
@@ -87,7 +88,7 @@ export default function Introduction() {
                 </div>
               </div>
               <span className="md:mt-0.5 mt-4 sm:flex sm:justify-center lg:justify-start">
-                <a href="https://dented-postage-1f4.notion.site/Code-of-Conduct-11809eecfb9a47259aa8557d8d044ec1" className="pt-4 text-sm text-gray-400 sm:text-base sm:max-w-xl sm:mx-auto md:text-lg lg:mx-0" target="_blank" rel="noreferrer noopener">
+                <a href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk" className="pt-4 text-sm text-gray-400 sm:text-base sm:max-w-xl sm:mx-auto md:text-lg lg:mx-0" target="_blank" rel="noreferrer noopener">
                 CODE OF CONDUCT
               </a>
               </span>

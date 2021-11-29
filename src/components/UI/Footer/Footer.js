@@ -3,18 +3,38 @@ import { useForm } from "@formspree/react";
 export default function Footer() {
   const BottomFooter = () => {
     return (
-      <div className="flex flex-col items-center justify-between mt-6 md:flex-row">
-        <div>
-          <a
-            href="https://specnith.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xl font-bold text-white"
-          >
-            SPEC
-          </a>
+      <div className="flex items-center justify-around mt-6">
+          <div className="flex">
+            <a
+              href="https://specnith.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xl font-bold text-white"
+            >
+              SPEC
+            </a>
+          </div>
+          <div className="flex">
+            <a
+              href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-bold text-white"
+            >
+              CODE OF CONDUCT
+            </a>
+          </div>
+          <div className="flex">
+            <a
+              href="https://drive.google.com/file/d/1P_-npMEWQtOUAWnuJH66aK5h7sCxSgRy/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-bold text-white"
+            >
+              SPONSORSHIP BROCHURE
+            </a>
+          </div>
         </div>
-      </div>
     );
   };
 

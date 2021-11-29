@@ -1,1 +1,1 @@
-export const carouselData = ["sponsors2/web1.png","sponsors2/web2.png","sponsors2/web3.png","sponsors2/web4.png","sponsors2/web1.png","sponsors2/web3.png","sponsors2/web2.png","sponsors2/web4.png","sponsors2/web3.png","sponsors2/web1.png"];
+export const carouselData = ["sponsors/web1.png","sponsors/web2.png","sponsors/web3.png","sponsors/web4.png","sponsors/web1.png","sponsors/web2.png","sponsors/web3.png","sponsors/web4.png","sponsors/web1.png","sponsors/web2.png","sponsors/web3.png","sponsors/web4.png"];

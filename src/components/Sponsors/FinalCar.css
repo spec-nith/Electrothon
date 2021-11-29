@@ -1,0 +1,28 @@
+.tech-slideshow {
+    height: 75vh;
+    max-width: auto;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .tech-slideshow > div {
+    height: auto;
+    width: 2526px;
+    /* background: url('sponsors2/sponsors.png'); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+  }
+  .tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+  }
+  
+  @keyframes moveSlideshow {
+    100% { 
+      transform: translateX(-200.6666%);  
+    }
+  }
