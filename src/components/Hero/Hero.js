@@ -48,12 +48,15 @@ export default function Introduction() {
         <div className="relative mx-0 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
           <main className="mt-2 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 lg:py-8 xl:mt-28">
             <div className="text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight  sm:text-5xl md:text-6xl">
-                <span className="block xl:inline font-extrabold header-theme">
-                  Electrothon 4.0
+              <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-6xl">
+                <span className="xl:inline font-extrabold header-theme">
+                  Electrothon 
                 </span>
-                <span className="block text-indigo-600 text-normal">2022</span>
-                <span className="block text-indigo-600 text-xl tracking-wider">19th-20th February, 2022</span>
+                <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme">
+                  4.0
+                </span>
+                <span className="block text-indigo-600 text-normal md:mt-0 mt-1.5">2022</span>
+                <span className="block text-indigo-600 text-xl tracking-wider mt-2">19th-20th February, 2022</span>
               </h1>
               <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 SEARCH | PLAN | ENGAGE | CREATE

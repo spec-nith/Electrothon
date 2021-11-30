@@ -3,7 +3,7 @@ import { useForm } from "@formspree/react";
 export default function Footer() {
   const BottomFooter = () => {
     return (
-      <div className="flex items-center justify-around mt-6">
+      <div className="flex flex-col md:flex-row items-center justify-around mt-6">
           <div className="flex">
             <a
               href="https://specnith.com/"
