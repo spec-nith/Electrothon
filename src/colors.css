@@ -26,7 +26,7 @@ body {
   color:aliceblue
 }
 .nav-theme{
-  background-color: rgba(15, 15, 20, 0.877);
+  background-color: rgba(15, 15, 20);
+  @apply md:opacity-80;
   border-bottom: 1px solid white;
 }
-

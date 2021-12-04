@@ -11,7 +11,7 @@ const Nav = () => {
   const NavbarLG = (props) => {
     return (
       <Link
-        activeclassname={
+        activeClass={
           props.item.hide != null ? "" : "text-purple-100 border-b-2 "
         }
         to={props.item.id}
@@ -29,10 +29,10 @@ const Nav = () => {
   const NavbarSM = (props) => {
     return (
       <Link
-        activeclassname="text-indigo-400 nav-theme"
+        activeClass="text-indigo-400 nav-theme"
         to={props.item.id}
         spy={true}
-        offset={+10}
+        // offset={+10}
         smooth={true}
         duration={1000}
         className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 hover:text-white text-gray-600"
@@ -52,7 +52,7 @@ const Nav = () => {
 
   return (
     <React.Fragment>
-      <nav className="fixed w-full top-0  shadow-lg z-10 nav-theme">
+      <nav className="fixed w-full top-0 shadow-lg z-10 nav-theme">
         <div className="mx-auto px-4 flex justify-around space-x-20">
           <div className="hidden md:flex items-center py-4 px-2">
             <a
