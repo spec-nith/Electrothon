@@ -139,11 +139,12 @@ export default function Schedule() {
             steps to know the exact process of the fest.
           </p>
           <span className="text-xl text-white">
-          <FontAwesomeIcon
-            className="text-lg"
-            icon={faMapMarkerAlt}
-            fixedWidth
-          /> ONLINE
+            <FontAwesomeIcon
+              className="text-lg"
+              icon={faMapMarkerAlt}
+              fixedWidth
+            />{" "}
+            ONLINE
           </span>
         </div>
         <div className="ml-0 md:ml-12 lg:w-2/3 sticky">

@@ -11,7 +11,7 @@ const Nav = () => {
   const NavbarLG = (props) => {
     return (
       <Link
-        activeClass={
+        activeclassname={
           props.item.hide != null ? "" : "text-purple-100 border-b-2 "
         }
         to={props.item.id}
@@ -29,7 +29,7 @@ const Nav = () => {
   const NavbarSM = (props) => {
     return (
       <Link
-        activeClass="text-indigo-400 nav-theme"
+        activeclassname="text-indigo-400 nav-theme"
         to={props.item.id}
         spy={true}
         offset={+10}
@@ -55,7 +55,11 @@ const Nav = () => {
       <nav className="fixed w-full top-0  shadow-lg z-10 nav-theme">
         <div className="mx-auto px-4 flex justify-around space-x-20">
           <div className="hidden md:flex items-center py-4 px-2">
-            <a href="https://specnith.com/" target="_blank" rel="noreferrer noopener">
+            <a
+              href="https://specnith.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
               <span className=" text-gray-200 text-2xl font-black">SPEC</span>
             </a>
@@ -104,7 +108,7 @@ const Nav = () => {
             onClick={() => setIsOpen((prevState) => !prevState)}
           >
             <div className="flex w-full items-center justify-center h-20 shadow-md">
-              <h1 className="text-3xl uppercase text-indigo-500">SPEC</h1>
+              <h1 className="text-3xl uppercase text-white">SPEC</h1>
             </div>
 
             {navItems.map((item) => (

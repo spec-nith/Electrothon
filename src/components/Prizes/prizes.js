@@ -6,19 +6,19 @@ export default function prizes() {
   return (
     <div>
       <h1>prize</h1>
-      <div class="card" onclick="this.classList.toggle('expanded')">
+      <div className="card" onclick="this.classList.toggle('expanded')">
         <FontAwesomeIcon icon={faTrophy} />
 
-        <div class="text1">
-          <div class="text-content">
-            <h1 class="title">OUR GOODS</h1>
-            <div class="body-text">
+        <div className="text1">
+          <div className="text-content">
+            <h1 className="title">OUR GOODS</h1>
+            <div className="body-text">
               are delivered with the same high quality as decades ago
             </div>
           </div>
         </div>
         <svg
-          class="chevron"
+          className="chevron"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 35"
           width="30"
@@ -31,18 +31,18 @@ export default function prizes() {
           />
         </svg>
       </div>
-      <div class="card" onclick="this.classList.toggle('expanded')">
+      <div className="card" onclick="this.classList.toggle('expanded')">
         <FontAwesomeIcon icon={faTrophy} />
-        <div class="text2">
-          <div class="text-content">
-            <h1 class="title">OUR LABEL</h1>
-            <div class="body-text">
+        <div className="text2">
+          <div className="text-content">
+            <h1 className="title">OUR LABEL</h1>
+            <div className="body-text">
               has stayed the same reliable brand for nearly a century
             </div>
           </div>
         </div>
         <svg
-          class="chevron"
+          className="chevron"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 35"
           width="30"

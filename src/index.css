@@ -37,3 +37,16 @@ code {
     clip-path: polygon(0 0, 0 0, 0 0,0 0);
   }
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height:10px;}
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; } 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(53, 54, 56); 
+  border-radius:10px;}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; }

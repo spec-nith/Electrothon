@@ -4,37 +4,37 @@ export default function Footer() {
   const BottomFooter = () => {
     return (
       <div className="flex flex-col md:flex-row items-center justify-around mt-6">
-          <div className="flex">
-            <a
-              href="https://specnith.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl font-bold text-white"
-            >
-              SPEC
-            </a>
-          </div>
-          <div className="flex">
-            <a
-              href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg font-bold text-white"
-            >
-              CODE OF CONDUCT
-            </a>
-          </div>
-          <div className="flex">
-            <a
-              href="https://drive.google.com/file/d/1P_-npMEWQtOUAWnuJH66aK5h7sCxSgRy/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-lg font-bold text-white"
-            >
-              SPONSORSHIP BROCHURE
-            </a>
-          </div>
+        <div className="flex invisible md:visible">
+          <a
+            href="https://specnith.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm md:text-lg md:font-bold text-white"
+          >
+            SPEC
+          </a>
         </div>
+        <div className="flex mb-6">
+          <a
+            href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm md:text-lg md:font-bold text-white hover:text-indigo-400"
+          >
+            CODE OF CONDUCT
+          </a>
+        </div>
+        <div className="flex">
+          <a
+            href="https://drive.google.com/file/d/1P_-npMEWQtOUAWnuJH66aK5h7sCxSgRy/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm md:text-lg md:font-bold text-white hover:text-indigo-400"
+          >
+            SPONSORSHIP BROCHURE
+          </a>
+        </div>
+      </div>
     );
   };
 
@@ -56,7 +56,7 @@ export default function Footer() {
                 <div className="text-gray-200 mt-8">
                   Hate forms? Send us an{" "}
                   <a
-                    className="underline"
+                    className="underline hover:text-indigo-400"
                     href="mailto:spec@nith.ac.in"
                     target="_blank"
                     rel="noopener noreferrer"

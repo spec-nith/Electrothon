@@ -36,7 +36,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="sm:pt-4 min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1"
+      className="pt-16 min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1"
     >
       <div
         className="m-auto md:col-span-2"
@@ -50,15 +50,19 @@ export default function Introduction() {
             <div className="text-center lg:text-left">
               <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-6xl">
                 <span className="xl:inline font-extrabold header-theme">
-                  Electrothon 
+                  Electrothon
                 </span>
                 <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme">
                   4.0
                 </span>
-                <span className="block text-indigo-600 text-normal md:mt-0 mt-1.5">2022</span>
-                <span className="block text-indigo-600 text-xl tracking-wider mt-2">19th-20th February, 2022</span>
+                <span className="block text-indigo-600 text-normal md:mt-0 mt-1.5">
+                  2022
+                </span>
+                <span className="block text-indigo-600 text-xl tracking-wider mt-2">
+                  19th-20th February, 2022
+                </span>
               </h1>
-              <p className="mt-3 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-6 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 SEARCH | PLAN | ENGAGE | CREATE
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
@@ -72,7 +76,6 @@ export default function Introduction() {
                       className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${
                         false ? "cursor-not-allowed" : "hover:bg-indigo-400"
                       } md:py-4 md:text-lg md:px-10 z-1`}
-                      
                     >
                       Register Now
                     </button>
@@ -91,9 +94,14 @@ export default function Introduction() {
                 </div>
               </div>
               <span className="md:mt-0.5 mt-4 sm:flex sm:justify-center lg:justify-start">
-                <a href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk" className="pt-4 text-sm text-gray-400 sm:text-base sm:max-w-xl sm:mx-auto md:text-lg lg:mx-0" target="_blank" rel="noreferrer noopener">
-                CODE OF CONDUCT
-              </a>
+                <a
+                  href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
+                  className="pt-4 text-sm text-gray-400 sm:text-base sm:max-w-xl sm:mx-auto md:text-lg lg:mx-0"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  CODE OF CONDUCT
+                </a>
               </span>
             </div>
           </main>
