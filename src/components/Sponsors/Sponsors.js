@@ -26,7 +26,7 @@ export default function Sponsors() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <h1 className="text-4xl tracking-tight md:text-5xl leading-normal md:leading-relaxed header-theme text-center">
+        <h1 className="text-4xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme text-center">
           Sponsors
         </h1>
         <div className="mt-5 md:mt-0">{slider}</div>

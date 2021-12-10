@@ -74,7 +74,7 @@ export default function Introduction() {
                   >
                     <button
                       className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${
-                        false ? "cursor-not-allowed" : "hover:bg-indigo-400"
+                        false ? "cursor-not-allowed" : "hover:bg-indigo-500"
                       } md:py-4 md:text-lg md:px-10 z-1`}
                     >
                       Register Now
@@ -87,7 +87,7 @@ export default function Introduction() {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-indigo-400 hover:text-white md:py-4 md:text-lg md:px-10">
+                    <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-blue-300 hover:text-white md:py-4 md:text-lg md:px-10">
                       Electrothon 3.0
                     </button>
                   </a>
