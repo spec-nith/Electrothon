@@ -1,5 +1,6 @@
 import {
   faCalendarDay,
+  faHandshake,
   faHome,
   faIdCardAlt,
   faSearch,
@@ -27,6 +28,11 @@ const navItems = [
     name: "Themes",
     id: "themes",
     icon: faWindowRestore,
+  },
+  {
+    name: "Sponsors",
+    id: "sponsors",
+    icon: faHandshake,
   },
   {
     name: "FAQ",

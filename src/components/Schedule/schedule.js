@@ -43,7 +43,13 @@ export default function Schedule() {
   ];
   const LeftCard = (props) => {
     return (
-      <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+      <div
+        className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline"
+        data-aos="fade-right"
+        data-aos-delay="50"
+        data-aos-duration="2500"
+        data-aos-easing="ease-in-out-cubic"
+      >
         <div className="order-1 w-5/12"></div>
         <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
           <h1 className="mx-auto text-white font-semibold text-lg">
@@ -96,7 +102,13 @@ export default function Schedule() {
   };
   const RightCard = (props) => {
     return (
-      <div className="mb-8 flex justify-between items-center w-full right-timeline">
+      <div
+        className="mb-8 flex justify-between items-center w-full right-timeline"
+        data-aos="fade-left"
+        data-aos-delay="50"
+        data-aos-duration="2500"
+        data-aos-easing="ease-in-out-cubic"
+      >
         <div className="order-1 w-5/12"></div>
         <div className="z-20 flex items-center order-1 bg-gray-800 shadow-xl w-8 h-8 rounded-full">
           <h1 className="mx-auto font-semibold text-lg text-white">
@@ -129,7 +141,13 @@ export default function Schedule() {
       data-aos-easing="ease-in-out-cubic"
     >
       <div className="container mx-auto flex flex-col items-start md:flex-row">
-        <div className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 pr-8">
+        <div
+          className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 pr-8"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out-cubic"
+        >
           <p className="text-blue-500 uppercase tracking-loose">Timeline</p>
           <p className="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2 header-theme">
             Working Process of Fest
@@ -138,7 +156,7 @@ export default function Schedule() {
             Here’s your guide to the Electrothon 4.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>
-          <span className="text-xl text-white">
+          <span className="text-xl text-blue-500">
             <FontAwesomeIcon
               className="text-lg"
               icon={faMapMarkerAlt}
@@ -203,15 +221,22 @@ export default function Schedule() {
               })}
             </div>
             {Componentwidth < 580 ? null : (
-              <picture>
-                <source srcSet="webp/rocket.webp" type="image/webp" />
-                <img
-                  className="mx-auto -mt-36 md:-mt-36"
-                  src="rocket.png"
-                  alt="result_img"
-                  style={{ width: "25rem" }}
-                />
-              </picture>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="50"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out-cubic"
+              >
+                <picture>
+                  <source srcSet="rocket.png" type="image/webp" />
+                  <img
+                    className="mx-auto -mt-36 md:-mt-36"
+                    src="rocket.png"
+                    alt="result_img"
+                    style={{ width: "25rem" }}
+                  />
+                </picture>
+              </div>
             )}
           </div>
         </div>

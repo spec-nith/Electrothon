@@ -11,9 +11,15 @@ export default function About() {
       data-aos-easing="ease-in-out-cubic"
     >
       <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-16">
-        <div className="hidden md:block">
+        <div
+          className="hidden md:block"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out-cubic"
+        >
           <picture>
-            <source srcSet="webp/electro.webp" type="image/webp" />
+            <source srcSet="electro.webp" type="image/webp" />
             <img
               src="electro.png"
               className="h-auto w-60 mx-auto"
@@ -21,7 +27,13 @@ export default function About() {
             />
           </picture>
         </div>
-        <div className="my-auto md:col-span-2">
+        <div
+          className="my-auto md:col-span-2"
+          data-aos="fade-left"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out-cubic"
+        >
           <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
             About Us
           </h1>

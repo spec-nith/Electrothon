@@ -55,7 +55,13 @@ export default function faq() {
         Commonly Asked Questions
       </h1>
       <div className="lg:w-3/5 mx-auto">
-        <div className="row faqs-tabs">
+        <div
+          className="row faqs-tabs"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out-cubic"
+        >
           {FaqArray.map((props) => {
             return <FaqTab props={props} key={props.title + Math.random()} />;
           })}

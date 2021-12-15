@@ -11,14 +11,22 @@ export default function Content() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16">
+        <div
+          className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16"
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="2500"
+          data-aos-easing="ease-in-out-cubic"
+        >
           <div>
             <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
               What's new this time?
             </h1>
             <div className="mt-3 text-normal md:mt-5 lg:mx-0 md:leading-normal content-theme">
               <div className="my-4">
-                <p className="text-2xl subhead-theme">Ideas that matter</p>
+                <p className="text-2xl subhead-theme font-medium">
+                  Ideas that matter
+                </p>
                 <p className="text-normal md:text-xl mt-4">
                   This iteration of Electrothon aims to find not just technical
                   ideas but also research and business ideas. As long as the
@@ -27,14 +35,14 @@ export default function Content() {
                 </p>
               </div>
               <div className="my-4">
-                <p className="text-2xl subhead-theme">Incubation</p>
+                <p className="text-2xl subhead-theme font-medium">Incubation</p>
                 <p className="text-normal md:text-xl mt-4">
                   Ideas with the potential to be converted into a product, will
                   be partnered by our partnered companies.
                 </p>
               </div>
               <div className="my-4">
-                <p className="text-2xl subhead-theme">
+                <p className="text-2xl subhead-theme font-medium">
                   Sustainability and Globalization
                 </p>
                 <p className="text-normal md:text-xl mt-4">
@@ -50,13 +58,18 @@ export default function Content() {
           </div>
         </div>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16">
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="190"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out-cubic"
+          >
             <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
               Diversity and Inclusion
             </h1>
             <div className="mt-3 text-normal text-gray-400 md:mt-5 md:text-xl lg:mx-0 md:leading-normal content-theme">
               <div className="my-4">
-                <span className="text-2xl subhead-theme">
+                <span className="text-2xl subhead-theme font-medium">
                   Women Empowerment
                 </span>
                 <p className="text-normal md:text-xl mt-4">
@@ -69,19 +82,32 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="mt-3 text-normal text-gray-400 md:mt-5 md:text-xl lg:mx-0 md:leading-normal content-theme">
-              <div className="my-4 mt-20">
-                <span className="text-2xl subhead-theme">Notable Speakers</span>
+          <div
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out-cubic"
+          >
+            <div className="text-normal text-gray-400 md:mt-5 md:text-xl lg:mx-0 md:leading-normal content-theme">
+              <div className="my-4">
+                <span className="text-2xl subhead-theme font-medium">
+                  Notable Speakers
+                </span>
                 <div className="text-normal md:text-xl mt-4">
                   <div className="flex bg-black bg-opacity-25 shadow-lg rounded-lg mx-4 md:mx-auto my-4 max-w-md md:max-w-2xl ">
                     <div className="flex items-start px-4 py-6">
-                      <img
-                        className="w-12 h-12 rounded-full object-cover mr-4 shadow"
-                        src="speakers/miri.jpg"
-                        alt="avatar"
-                      />
-                      <div className="">
+                      <picture className="">
+                        <source
+                          srcSet={"speakers/webp/miri.webp"}
+                          type="image/jpeg"
+                        />
+                        <img
+                          src={"speakers/miri.jpg"}
+                          className="w-12 h-12 rounded-full flex-1 object-cover shadow"
+                          alt="avatar"
+                        />
+                      </picture>
+                      <div className="ml-4 w-full">
                         <div className="flex items-center justify-between">
                           <h2 className="text-lg font-semibold text-white -mt-1">
                             Miri Rodriguez{" "}
@@ -98,12 +124,18 @@ export default function Content() {
 
                   <div className="flex bg-black bg-opacity-25 shadow-lg rounded-lg mx-4 md:mx-auto my-4 max-w-md md:max-w-2xl ">
                     <div className="flex items-start px-4 py-6">
-                      <img
-                        className="w-12 h-12 rounded-full object-cover mr-4 shadow"
-                        src="speakers/profile_pic.png"
-                        alt="avatar"
-                      />
-                      <div className="">
+                      <picture className="">
+                        <source
+                          srcSet={"speakers/webp/profile_pic.webp"}
+                          type="image/jpeg"
+                        />
+                        <img
+                          src={"speakers/profile_pic.jpg"}
+                          className="w-12 h-12 rounded-full object-cover shadow"
+                          alt="avatar"
+                        />
+                      </picture>
+                      <div className="ml-4 w-full">
                         <div className="flex items-center justify-between">
                           <h2 className="text-lg font-semibold text-white -mt-1">
                             Niharika Arora
@@ -119,12 +151,18 @@ export default function Content() {
                   </div>
                   <div className="flex bg-black bg-opacity-25 shadow-lg rounded-lg mx-4 md:mx-auto my-4 max-w-md md:max-w-2xl ">
                     <div className="flex items-start px-4 py-6">
-                      <img
-                        className="w-12 h-12 rounded-full object-cover mr-4 shadow"
-                        src="speakers/nayan.jpg"
-                        alt="avatar"
-                      />
-                      <div className="">
+                      <picture className="">
+                        <source
+                          srcSet={"speakers/webp/nayan.webp"}
+                          type="image/jpeg"
+                        />
+                        <img
+                          src={"speakers/nayan.jpg"}
+                          className="w-12 h-12 rounded-full object-cover shadow"
+                          alt="avatar"
+                        />
+                      </picture>
+                      <div className="ml-4 w-full">
                         <div className="flex items-center justify-between">
                           <h2 className="text-lg font-semibold text-white -mt-1">
                             Dr. Nayan Mitra

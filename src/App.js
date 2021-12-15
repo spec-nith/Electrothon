@@ -13,14 +13,25 @@ import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
 import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
+// import Speakers from "./components/Speakers/Speakers";
 import Contact from "./components/Contact/Contact";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import randomColor from "randomcolor";
+import BackgroundAnimation from "./components/UI/Background/bganimation";
+
 AOS.init({
   once: true,
 });
+export function AddLibrary() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "./bganimation.js";
+    script.async = true;
+    document.body.appendChild(script);
+  });
+}
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -46,6 +57,7 @@ const App = () => {
         </div>
       ) : (
         <React.Fragment>
+          <BackgroundAnimation />
           <Header />
           <div className="sm:mx-20">
             <Intro />
@@ -55,6 +67,8 @@ const App = () => {
                 <Milestone />
                 <Content />
               </section>
+              {/* <Judges /> */}
+              {/* <Speakers/> */}
               <Schedule />
               <Projects />
               {/* <ProbStatements /> */}
@@ -62,6 +76,7 @@ const App = () => {
               {/* <Workshop /> */}
               {/* <Judges /> */}
               <Sponsors />
+              {/* <Speakers/> */}
               <FAQ />
             </div>
           </div>
@@ -69,6 +84,7 @@ const App = () => {
           <Footer />
         </React.Fragment>
       )}
+      {/* {AddLibrary()} */}
     </React.Fragment>
   );
 };

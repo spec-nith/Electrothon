@@ -94,6 +94,10 @@ export default function Footer() {
       id="contact"
       className="flex justify-center px-4 text-gray-800 rounded-lg shadow-lg"
       style={{ backgroundColor: "rgba(34, 30, 30, 0.83)" }}
+      data-aos="fade"
+      data-aos-delay="50"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out-cubic"
     >
       <div className="container py-6">
         <div className="max-w-screen-xl md:mt-4 px-8 grid gap-x-24 gap-y-8 grid-cols-1 md:grid-cols-2 md:px-12 lg:px-16 xl:px-24 md:pt-16 md:pb-32 mx-auto text-gray-900">

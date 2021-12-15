@@ -1,32 +1,27 @@
 import React from "react";
-import { carouselData } from "./Data";
-import "./SponsorCarousel.css";
+import { sponsorData } from "./Data";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "./CarouselStyle.css";
+import SponsorCompo from "./sponsor-tier-comp";
+
+const AutoplaySlider = withAutoplay(AwesomeSlider);
+const slider = (
+  <AutoplaySlider
+    play={true}
+    interval={5000}
+    mobileTouch={true}
+    organicArrows={false}
+  >
+    {sponsorData.map((element) => (
+      <div className="bg-transparent h-auto">
+        <SponsorCompo key={element.id} sponsor={element} />
+      </div>
+    ))}
+  </AutoplaySlider>
+);
 
 export default function Sponsors() {
-  const slider = (
-    <div className="sponsor-carouselBody">
-      <div className="sponsor-slider">
-        <div className="sponsor-slide-track">
-          {carouselData.map((element, index) => (
-            <div className="sponsor-slide " key={index}>
-              {/* <img className="h-full" src={element.src} alt="carousel" /> */}
-              <picture>
-                <source
-                  srcSet={"sponsors/webp/" + element.webp}
-                  type="image/webp"
-                />
-                <img
-                  src={"sponsors/" + element.src}
-                  className="h-full"
-                  alt="Electrothon Logo"
-                />
-              </picture>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
   return (
     <div>
       <section

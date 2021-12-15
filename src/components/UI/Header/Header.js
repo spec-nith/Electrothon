@@ -16,7 +16,7 @@ const Nav = () => {
         }
         to={props.item.id}
         spy={true}
-        offset={-60}
+        offset={-75}
         smooth={true}
         duration={1000}
         className="py-4 px-2 text-gray-600 hover:text-white transition duration-300 transition-all cursor-pointer"
@@ -102,7 +102,7 @@ const Nav = () => {
           </Transition>
 
           <aside
-            className={`transform top-0 left-0 w-64 fixed h-full z-40 nav-theme overflow-auto rounded-r-3xl space-y-5 ease-in-out transition-all duration-300 z-30 ease-in-out transition-all duration-300 ${
+            className={`transform top-0 left-0 w-64 fixed h-full z-40 nav-theme overflow-auto rounded-r-3xl border-r-2 border-zinc-100 space-y-5 ease-in-out transition-all duration-300 z-30 ease-in-out transition-all duration-300 ${
               isOpen ? "translate-x-0" : "-translate-x-full"
             }`}
             onClick={() => setIsOpen((prevState) => !prevState)}

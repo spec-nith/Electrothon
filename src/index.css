@@ -28,7 +28,9 @@ code {
 .track-text-outline{
   float: left;
   opacity: 0;
-  shape-outside: polygon(0 0, 0 0, 100% 100%, 0 100%);
+  /* shape-outside: polygon(0 0, 0 0, 100% 100%, 0 100%); */
+  /* shape-outside: polygon(10% 0%, 50% 80%, 00% 100%, 10.1% 100%); */
+  shape-outside: polygon(0% 20%, 30% 80%, 0% 0%, 45.1% 100%);
   clip-path: polygon(0 0, 0 0, 100% 100%, 0 100%);
 }
 @media only screen and (max-width:900px){

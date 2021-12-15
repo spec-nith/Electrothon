@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:300,400,700);
+.judge-section{
+  padding:0;
+  margin:0;
+  font-size:14px;
+  font-family: "Exo 2", sans-serif;
+  color: #333;
+}
+.judges-social-accounts {
+    z-index: -1;
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    border-radius: 100%;
+    width: 0rem;
+    height: 0rem;
+    transform: translate(-50%, -50%);
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+  }
+  .judges-social-accounts a {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    border-radius: 100%;
+    background: #FFFFFF;
+    color: black;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    transition: 0.25s cubic-bezier(0.25, 0, 0, 1);
+    box-shadow: 0 0 0rem -0.25rem #FFFFFF;
+  }
+  .judges-social-accounts a:first-child:nth-last-child(1) {
+    left: 25%;
+    top: 50%;
+  }
+  .judges-social-accounts a:hover {
+    background: black;
+    color: #FFFFFF;
+    box-shadow: 0 0 1rem -0.25rem #FFFFFF;
+  }
+  .judge-card:hover .judges-social-accounts, .judge-card .judges-social-accounts:focus-within {
+    width: 10rem;
+    height: 10rem;
+  }
+.judge-card{
+  position: relative;
+  width: 215px; /* Remove for full width */
+  height: 270px; /* Remove for full width */
+  margin:30px auto;
+  box-shadow: 0 0 100px rgba(0,0,0, .3);
+  transform-origin:center;
+  transform:perspective(800px) rotateY(25deg);
+  transition:0.5s;
+}
+.judge-card:hover{
+    transform:perspective(800px) rotateY(0deg);
+    
+}
+.judge-card-header{
+  position: relative;
+  height: 220px;
+  background-size: cover;
+  background-position: top;
+}
+.judge-card-header:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgb(5,85,134), rgba(181,181,181, 0.1));
+}
+svg .judge-polygon{
+  fill: #fff;
+}
+.judge-card-header-slanted-edge{
+  position: absolute;
+  bottom: -1px;
+  z-index: 1;
+  width: 100%;
+  right:0;
+  left:0;
+}
+
+.judge-card-body{
+  text-align:center;
+  padding-left: 10px;
+  background: white;
+  padding-top: 10px;
+}
+
+.judge-name{
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.judge-job-title{
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 5px;
+  color: #919191;
+}
+
+.judge-social-accounts img{
+  width: 15px;
+}
+
+.judge-social-accounts a{
+  margin-left: 10px;
+}
+.judge-social-accounts a:first-child{
+  margin-left: 0;
+}
+
+
+

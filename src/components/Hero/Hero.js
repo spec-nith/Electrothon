@@ -25,11 +25,12 @@ export default function Introduction() {
   const properties = {
     duration: 3000,
     autoplay: true,
-    transitionDuration: 2000,
+    transitionDuration: 1500,
     arrows: false,
     infinite: true,
     easing: "ease",
     pauseOnHover: true,
+    canSwipe: true,
     // indicators: (i) => <div className="indicator">{i + 1}</div>
   };
 
@@ -55,10 +56,10 @@ export default function Introduction() {
                 <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme">
                   4.0
                 </span>
-                <span className="block text-indigo-600 text-normal md:mt-0 mt-1.5">
+                <span className="block text-indigo-600 text-normal font-medium md:mt-0 mt-1.5">
                   2022
                 </span>
-                <span className="block text-indigo-600 text-xl tracking-wider mt-2">
+                <span className="block text-white text-xl tracking-wider mt-2">
                   19th-20th February, 2022
                 </span>
               </h1>
@@ -74,7 +75,7 @@ export default function Introduction() {
                   >
                     <button
                       className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${
-                        false ? "cursor-not-allowed" : "hover:bg-indigo-500"
+                        false ? "cursor-not-allowed" : "hover:bg-indigo-400"
                       } md:py-4 md:text-lg md:px-10 z-1`}
                     >
                       Register Now
@@ -87,7 +88,7 @@ export default function Introduction() {
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-blue-300 hover:text-white md:py-4 md:text-lg md:px-10">
+                    <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-blue-500 hover:text-white md:py-4 md:text-lg md:px-10">
                       Electrothon 3.0
                     </button>
                   </a>
@@ -125,6 +126,14 @@ export default function Introduction() {
                 alt={element.caption}
                 className="hero-background"
               />
+              {/* <picture className="">
+              <source srcSet={"webp/" + element.webp} type="image/jpeg" />
+              <img
+                src={"electrothon/" + element.url}
+                className="hero-background"
+                alt="Electrothon Logo"
+              />
+            </picture> */}
             </div>
           ))}
         </Slide>

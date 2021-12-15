@@ -1,11 +1,11 @@
 import React from "react";
-import JudgesCard from "./judgesCard";
-import { judgesData } from "./judgesData";
+import { speakerData } from "./speakerdata";
+import SpeakerCard from "./SpeakerCard";
 
-export default function judges() {
+const Speakers = () => {
   return (
     <section
-      id="judges"
+      id="sponsors"
       className="relative overflow-hidden mt-2 container-theme p-6"
       data-aos="fade"
       data-aos-delay="50"
@@ -13,22 +13,18 @@ export default function judges() {
       data-aos-easing="ease-in-out-cubic"
     >
       <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
-        Judges
+        Speakers
       </h1>
       <div className="mt-5 md:mt-0">
-        {/* {judgesData.map((element, index) => {
-                return (
-                    <JudgesCard key={index} judge={element} />
-                )
-            })} */}
         <section class="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
-          <section class="grid lg:grid-cols-2 2xl:grid-cols-5 grid-cols-1 gap-20">
-            {judgesData.map((element, index) => {
-              return <JudgesCard key={index} judge={element} />;
+          <section class="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-20">
+            {speakerData.map((element, index) => {
+              return <SpeakerCard key={index} speaker={element} />;
             })}
           </section>
         </section>
       </div>
     </section>
   );
-}
+};
+export default Speakers;

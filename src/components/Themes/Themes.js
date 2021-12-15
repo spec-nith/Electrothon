@@ -24,9 +24,9 @@ const slider = (
         >
           <div className="md:col-span-2 track-image flex items-center justify-center">
             <picture className="m-auto">
-              <source srcSet={e.webp} type="image/jpeg" />
+              <source srcSet={"3d/webp/" + e.webp} type="image/jpeg" />
               <img
-                src={e.image}
+                src={"3d/" + e.image}
                 className="object-contain w-5/6 m-auto"
                 alt="Electrothon Logo"
               />
@@ -51,7 +51,14 @@ const slider = (
 );
 export default function Themes() {
   return (
-    <section id="themes" className="h-auto theme-box mt-10">
+    <section
+      id="themes"
+      className="h-auto theme-box mt-10"
+      data-aos="fade-down"
+      data-aos-delay="50"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out-cubic"
+    >
       {/* <div className="w-full">
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Themes
