@@ -50,27 +50,35 @@ export const carouselData = [
 ];
 export const sponsorData = [
   {
+    name: "Title",
+    text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
+    image: "sponsors/Remaining.png",
+    imageLarge:"sponsors/RemainingLarge.png",
+    color:"#b1b1b1",
+    id: 1,
+  },
+  {
     name: "Gold",
     text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
     image: "sponsors/Gold.png",
-    id: 1,
+    imageLarge:"sponsors/GoldLarge.png",
+    color:"#FFD700",
+    id: 2,
   },
   {
     name: "Silver",
     text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
     image: "sponsors/Silver.png",
-    id: 2,
+    imageLarge:"sponsors/SilverLarge.png",
+    color:"#E5E4E2",
+    id: 3,
   },
   {
     name: "Bronze",
     text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
     image: "sponsors/Bronze.png",
-    id: 3,
-  },
-  {
-    name: "Title",
-    text: "Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.",
-    image: "sponsors/Remaining.png",
+    imageLarge:"sponsors/BronzeLarge.png",
+    color:"#CD7F32",
     id: 4,
-  }
+  },
 ];
