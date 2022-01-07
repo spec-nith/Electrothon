@@ -11,7 +11,7 @@ import Milestone from "./components/Milestone/milestone";
 // import ProbStatements from "./components/Prob_statements/problems";
 import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
-import Sponsors from "./components/Sponsors/sponsor-tier";
+import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
 import Contact from "./components/Contact/Contact";
@@ -20,6 +20,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import randomColor from "randomcolor";
 import BackgroundAnimation from "./components/UI/Background/bganimation";
+import './mlh.css'
 
 AOS.init({
   once: true,
@@ -59,6 +60,10 @@ const App = () => {
         <React.Fragment>
           <BackgroundAnimation />
           <Header />
+          <a id="mlh-trust-badge" className="mlh" href="https://mlh.io/seasons/2022/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=gray" target="_blank">
+            <img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" alt="Major League Hacking 2022 Hackathon Season" className="w-full" />
+          </a>
+
           <div className="sm:mx-20">
             <Intro />
             <div className="container mx-auto px-4 text-justify">
