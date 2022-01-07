@@ -16,8 +16,8 @@ const Speakers = () => {
         Speakers
       </h1>
       <div className="mt-5 md:mt-0">
-        <section class="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
-          <section class="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-20">
+        <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
+          <section className="grid lg:grid-cols-2 2xl:grid-cols-4 grid-cols-1 gap-20">
             {speakerData.map((element, index) => {
               return <SpeakerCard key={index} speaker={element} />;
             })}

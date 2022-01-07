@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.core.globals("ScrollTrigger", ScrollTrigger);
 function Bgeffect() {
   useEffect(() => {
-    let speed = 100;
+    let speed = 50;
 
     /*  SCENE 1 */
     let scene1 = gsap.timeline();
@@ -38,9 +38,6 @@ function Bgeffect() {
     scene1.to("#h1-7", { y: 5 * speed, x: 1.6 * speed }, 0);
     scene1.to("#h1-8", { y: 3.5 * speed, x: 0.2 * speed }, 0);
     scene1.to("#h1-9", { y: 3.5 * speed, x: -0.2 * speed }, 0);
-
-    //animate text
-    scene1.to("#info", { y: 8 * speed }, 0);
 
     /*   Bird   */
     gsap.fromTo(
@@ -101,7 +98,7 @@ function Bgeffect() {
     sun.to("#bg_grad stop:nth-child(5)", { attr: { offset: "0.46" } }, 0.0);
     sun.to(
       "#bg_grad stop:nth-child(6)",
-      { attr: { "stop-color": "#FF9171" } },
+      { attr: { "stopColor": "#FF9171" } },
       0
     );
 
@@ -168,12 +165,12 @@ function Bgeffect() {
 
     sun2.to("#sun", { attr: { offset: "0.6" } }, 0);
     sun2.to("#bg_grad stop:nth-child(2)", { attr: { offset: "0.7" } }, 0);
-    sun2.to("#sun", { attr: { "stop-color": "#ffff00" } }, 0);
-    sun2.to("#lg4 stop:nth-child(1)", { attr: { "stop-color": "#623951" } }, 0);
-    sun2.to("#lg4 stop:nth-child(2)", { attr: { "stop-color": "#261F36" } }, 0);
+    sun2.to("#sun", { attr: { "stopColor": "#ffff00" } }, 0);
+    sun2.to("#lg4 stop:nth-child(1)", { attr: { "stopColor": "#623951" } }, 0);
+    sun2.to("#lg4 stop:nth-child(2)", { attr: { "stopColor": "#261F36" } }, 0);
     sun2.to(
       "#bg_grad stop:nth-child(6)",
-      { attr: { "stop-color": "#45224A" } },
+      { attr: { "stopColor": "#45224A" } },
       0
     );
 
@@ -215,10 +212,6 @@ function Bgeffect() {
 
     //stars
     scene3.fromTo("#stars", { opacity: 0 }, { opacity: 0.5, y: -500 }, 0);
-
-    // Scroll Back text
-    scene3.fromTo("#arrow2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.25);
-    scene3.fromTo("#text2", { opacity: 0 }, { opacity: 0.7, y: -710 }, 0.3);
 
     //gradient value change
     scene3.to("#bg2-grad", { attr: { cy: 600 } }, 0);
@@ -267,8 +260,8 @@ function Bgeffect() {
             gradientTransform="matrix(-1, 0, 0, 1.36, 231.36, -100.14)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.07" stop-color="#9c536b" />
-            <stop offset="0.98" stop-color="#d98981" />
+            <stop offset="0.07" stopColor="#9c536b" />
+            <stop offset="0.98" stopColor="#d98981" />
           </linearGradient>
           <radialGradient
             id="bg_grad"
@@ -277,12 +270,12 @@ function Bgeffect() {
             r="318.69"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.1" stop-color="#F5C54E" id="sun" />
-            <stop offset="0.1" stop-color="#FFDBA6" />
-            <stop offset="0.0" stop-color="#F7BB93" />
-            <stop offset="0.0" stop-color="#F2995E" />
-            <stop offset="0.0" stop-color="#f07560" />
-            <stop offset="0.8" stop-color="#FFAB93" />
+            <stop offset="0.1" stopColor="#F5C54E" id="sun" />
+            <stop offset="0.1" stopColor="#FFDBA6" />
+            <stop offset="0.0" stopColor="#F7BB93" />
+            <stop offset="0.0" stopColor="#F2995E" />
+            <stop offset="0.0" stopColor="#f07560" />
+            <stop offset="0.8" stopColor="#FFAB93" />
           </radialGradient>
           <linearGradient
             id="grad2"
@@ -292,8 +285,8 @@ function Bgeffect() {
             y2="356.25"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#fbbd93" />
-            <stop offset="0.98" stop-color="#c46976" />
+            <stop offset="0" stopColor="#fbbd93" />
+            <stop offset="0.98" stopColor="#c46976" />
           </linearGradient>
           <linearGradient
             id="grad3"
@@ -303,8 +296,8 @@ function Bgeffect() {
             y2="225.47"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.01" stop-color="#ffb8bd" />
-            <stop offset="1" stop-color="#914d64" />
+            <stop offset="0.01" stopColor="#ffb8bd" />
+            <stop offset="1" stopColor="#914d64" />
           </linearGradient>
           <linearGradient
             id="grad4"
@@ -314,8 +307,8 @@ function Bgeffect() {
             y2="600.82"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#70375a" />
-            <stop offset="0.96" stop-color="#8a6e95" />
+            <stop offset="0" stopColor="#70375a" />
+            <stop offset="0.96" stopColor="#8a6e95" />
           </linearGradient>
           <linearGradient
             id="grad5"
@@ -325,8 +318,8 @@ function Bgeffect() {
             y2="413.12"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#433d6c" />
-            <stop offset="1" stop-color="#392e54" />
+            <stop offset="0" stopColor="#433d6c" />
+            <stop offset="1" stopColor="#392e54" />
           </linearGradient>
           <linearGradient
             id="grad6"
@@ -336,8 +329,8 @@ function Bgeffect() {
             y2="498.93"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#2b2850" />
-            <stop offset="0.99" stop-color="#563a6a" />
+            <stop offset="0" stopColor="#2b2850" />
+            <stop offset="0.99" stopColor="#563a6a" />
           </linearGradient>
           <linearGradient
             id="grad7"
@@ -347,9 +340,9 @@ function Bgeffect() {
             y2="516.33"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.3" stop-color="#1c1b38" />
-            <stop offset="0.38" stop-color="#201e3e" />
-            <stop offset="0.9" stop-color="#383263" />
+            <stop offset="0.3" stopColor="#1c1b38" />
+            <stop offset="0.38" stopColor="#201e3e" />
+            <stop offset="0.9" stopColor="#383263" />
           </linearGradient>
           <linearGradient
             id="grad8"
@@ -359,10 +352,10 @@ function Bgeffect() {
             y2="500.39"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#0e0a1a" />
-            <stop offset="0.3" stop-color="#100d1f" />
-            <stop offset="0.64" stop-color="#17142c" />
-            <stop offset="0.95" stop-color="#201f3f" />
+            <stop offset="0" stopColor="#0e0a1a" />
+            <stop offset="0.3" stopColor="#100d1f" />
+            <stop offset="0.64" stopColor="#17142c" />
+            <stop offset="0.95" stopColor="#201f3f" />
           </linearGradient>
           <linearGradient
             id="grad9"
@@ -372,8 +365,8 @@ function Bgeffect() {
             y2="623.69"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0.01" stop-color="#120e22" />
-            <stop offset="1" stop-color="#221d42" />
+            <stop offset="0.01" stopColor="#120e22" />
+            <stop offset="1" stopColor="#221d42" />
           </linearGradient>
 
           <linearGradient
@@ -384,8 +377,8 @@ function Bgeffect() {
             y2="334.36"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#2c2c50" />
-            <stop offset="1" stop-color="#434375" />
+            <stop offset="0" stopColor="#2c2c50" />
+            <stop offset="1" stopColor="#434375" />
           </linearGradient>
           <linearGradient
             id="lg5"
@@ -428,16 +421,16 @@ function Bgeffect() {
             gradientTransform="translate(750 552.6) rotate(180) scale(1 1.11)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="hsla(349, 94%, 75%, 1)" />
-            <stop offset="0.12" stop-color="hsla(342, 49%, 62%, 1)" />
-            <stop offset="0.18" stop-color="hsla(328, 37%, 56%, 1)" />
-            <stop offset="0.33" stop-color="hsla(281, 33%, 48%, 1)" />
-            <stop offset="0.41" stop-color="hsla(268, 38%, 48%, 1)" />
-            <stop offset="0.45" stop-color="hsla(266, 38%, 43%, 1)" />
-            <stop offset="0.55" stop-color="hsla(261, 37%, 32%, 1)" />
-            <stop offset="0.64" stop-color="hsla(253, 36%, 24%, 1)" />
-            <stop offset="0.72" stop-color="hsla(244, 33%, 19%, 1)" />
-            <stop offset="0.78" stop-color="hsla(240, 33%, 17%, 1)" />
+            <stop offset="0" stopColor="hsla(349, 94%, 75%, 1)" />
+            <stop offset="0.12" stopColor="hsla(342, 49%, 62%, 1)" />
+            <stop offset="0.18" stopColor="hsla(328, 37%, 56%, 1)" />
+            <stop offset="0.33" stopColor="hsla(281, 33%, 48%, 1)" />
+            <stop offset="0.41" stopColor="hsla(268, 38%, 48%, 1)" />
+            <stop offset="0.45" stopColor="hsla(266, 38%, 43%, 1)" />
+            <stop offset="0.55" stopColor="hsla(261, 37%, 32%, 1)" />
+            <stop offset="0.64" stopColor="hsla(253, 36%, 24%, 1)" />
+            <stop offset="0.72" stopColor="hsla(244, 33%, 19%, 1)" />
+            <stop offset="0.78" stopColor="hsla(240, 33%, 17%, 1)" />
           </radialGradient>
           <radialGradient
             id="fstar-grad"
@@ -447,16 +440,16 @@ function Bgeffect() {
             gradientTransform="matrix(0.89, -0.45, -0.45, -0.89, -473.7, 640.57)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#fff" />
-            <stop offset="0.06" stop-color="#fff" stop-opacity="0.8" />
-            <stop offset="0.12" stop-color="#fff" stop-opacity="0.62" />
-            <stop offset="0.19" stop-color="#fff" stop-opacity="0.45" />
-            <stop offset="0.26" stop-color="#fff" stop-opacity="0.31" />
-            <stop offset="0.33" stop-color="#fff" stop-opacity="0.2" />
-            <stop offset="0.41" stop-color="#fff" stop-opacity="0.11" />
-            <stop offset="0.49" stop-color="#fff" stop-opacity="0.05" />
-            <stop offset="0.59" stop-color="#fff" stop-opacity="0.01" />
-            <stop offset="0.72" stop-color="#fff" stop-opacity="0" />
+            <stop offset="0" stopColor="#fff" />
+            <stop offset="0.06" stopColor="#fff" stopOpacity="0.8" />
+            <stop offset="0.12" stopColor="#fff" stopOpacity="0.62" />
+            <stop offset="0.19" stopColor="#fff" stopOpacity="0.45" />
+            <stop offset="0.26" stopColor="#fff" stopOpacity="0.31" />
+            <stop offset="0.33" stopColor="#fff" stopOpacity="0.2" />
+            <stop offset="0.41" stopColor="#fff" stopOpacity="0.11" />
+            <stop offset="0.49" stopColor="#fff" stopOpacity="0.05" />
+            <stop offset="0.59" stopColor="#fff" stopOpacity="0.01" />
+            <stop offset="0.72" stopColor="#fff" stopOpacity="0" />
           </radialGradient>
           <linearGradient
             id="linear-gradient"
@@ -466,8 +459,8 @@ function Bgeffect() {
             y2="461.56"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#fd75a8" />
-            <stop offset="1" stop-color="#5a2d81" />
+            <stop offset="0" stopColor="#fd75a8" />
+            <stop offset="1" stopColor="#5a2d81" />
           </linearGradient>
           <linearGradient
             id="linear-gradient-2"
@@ -542,7 +535,7 @@ function Bgeffect() {
             <path
               d="M430.89,152.88c-4.51,1.05,1.45-4.11-8.29-4.45-.47-4.18-5.81-4.39-8.89-5.1,2.82-2.94,8.14-3.47,12.12-3.3,2.3.49,6.16.37,7.5,2.31-1,3,4.29,12,5.26,5.94,2.05,3.21,5,.12,4.19,2-.45.53-1,2.54.08,2.34,4.46-.88,5.75-6.35,8.69-8.63,4.73-.13,12,1,13.29,6.25-5.84-2.77-7.67-2.4-10.21,2.8-2.93-.77-5.74.92-7.26,3.33-3.3-2.2-7.59.35-11,2.2.05-1.76-.79-4.15-2.71-4.6C433.18,152.94,431.88,152.9,430.89,152.88Z"
               fill="#112129"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             />
             <path
               d="M538.33,214.5s-2.52,6.57,2.07,7.47c-1.53.45-4.23,3.88-2.25,6.85-2.2-1.83-10.48,6.4-8.65,8.74-1.4-2.25-4.54-1.85-4.77,1-1.07-3.42-2.36-1.61-2.34.63-1.16-3.75-4.22-1.39-4.6.9-.4-5.23-9.49-5.18-11.89-3.51,1.45-2.79-2-6.28-4.59-5.95,0,0,1.62-5.85-3.43-7.48,6.16-3.41,16.13,10,22.07,8.92a8.47,8.47,0,0,1-.9-4.23l1.53,1.71,1.27-.09,1-2.7C525.28,238.88,530.76,216.88,538.33,214.5Z"
@@ -782,7 +775,7 @@ function Bgeffect() {
         </g>
       </svg>
 
-      <div class="scrollElement"></div>
+      <div className="scrollElement"></div>
     </div>
   );
 }

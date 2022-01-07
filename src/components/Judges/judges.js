@@ -21,8 +21,8 @@ export default function judges() {
                     <JudgesCard key={index} judge={element} />
                 )
             })} */}
-        <section class="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
-          <section class="grid lg:grid-cols-2 2xl:grid-cols-5 grid-cols-1 gap-20">
+        <section className="container mx-auto p-10 md:py-20 px-0 md:p-20 md:px-0 antialiased">
+          <section className="grid lg:grid-cols-2 2xl:grid-cols-5 grid-cols-1 gap-20">
             {judgesData.map((element, index) => {
               return <JudgesCard key={index} judge={element} />;
             })}

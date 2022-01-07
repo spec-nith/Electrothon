@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import slides from "./Carousel.json";
@@ -22,6 +22,17 @@ function shuffle(array) {
 }
 
 export default function Introduction() {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+  }, []);
+
   const properties = {
     duration: 3000,
     autoplay: true,
@@ -74,13 +85,18 @@ export default function Introduction() {
                     rel="noreferrer noopener"
                   >
                     <button
-                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${
-                        false ? "cursor-not-allowed" : "hover:bg-indigo-400"
-                      } md:py-4 md:text-lg md:px-10 z-1`}
+                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${false ? "cursor-not-allowed" : "hover:bg-indigo-400"
+                        } md:py-4 md:text-lg md:px-10 z-1`}
                     >
                       Register Now
                     </button>
                   </a>
+                  {/* <div
+                    className="apply-button"
+                    data-hackathon-slug="Electrothon_4.0"
+                    data-button-theme="light"
+                    // style={{height: "44px", width: "312px"}}
+                  ></div> */}
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
