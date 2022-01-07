@@ -11,7 +11,7 @@ import Milestone from "./components/Milestone/milestone";
 // import ProbStatements from "./components/Prob_statements/problems";
 import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
-import Sponsors from "./components/Sponsors/sponsors-tier";
+import Sponsors from "./components/Sponsors/sponsor-tier";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
 import Contact from "./components/Contact/Contact";
