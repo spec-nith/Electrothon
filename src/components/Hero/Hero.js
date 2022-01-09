@@ -1,8 +1,11 @@
-import React, {useEffect} from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
+import React, { useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+import { Pagination, Autoplay } from "swiper";
 import slides from "./Carousel.json";
-import "css-doodle";
+
+// Import Styles
+import "swiper/swiper.min.css";
+import "swiper/modules/pagination/pagination.min.css";
 
 function shuffle(array) {
   let currentIndex = array.length,
@@ -23,27 +26,15 @@ function shuffle(array) {
 
 export default function Introduction() {
   useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    }
+    };
   }, []);
-
-  const properties = {
-    duration: 3000,
-    autoplay: true,
-    transitionDuration: 1500,
-    arrows: false,
-    infinite: true,
-    easing: "ease",
-    pauseOnHover: true,
-    canSwipe: true,
-    // indicators: (i) => <div className="indicator">{i + 1}</div>
-  };
 
   return (
     <section
@@ -85,8 +76,9 @@ export default function Introduction() {
                     rel="noreferrer noopener"
                   >
                     <button
-                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${false ? "cursor-not-allowed" : "hover:bg-indigo-400"
-                        } md:py-4 md:text-lg md:px-10 z-1`}
+                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${
+                        false ? "cursor-not-allowed" : "hover:bg-indigo-400"
+                      } md:py-4 md:text-lg md:px-10 z-1`}
                     >
                       Register Now
                     </button>
@@ -131,28 +123,32 @@ export default function Introduction() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <Slide
-          {...properties}
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ dynamicBullets: true, clickable: true }}
+          loop={true}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          spaceBetween={0}
+          slidesPerView={1}
           className="hero-container mt-8 sm:mt-24 px-6 sm:px-10 md:px-0"
         >
-          {shuffle(slides).map((element, index) => (
-            <div className="each-slide overflow-hidden bg-contain" key={index}>
-              <img
-                src={"electrothon/" + element.url}
-                alt={element.caption}
-                className="hero-background"
-              />
-              {/* <picture className="">
-              <source srcSet={"webp/" + element.webp} type="image/jpeg" />
-              <img
-                src={"electrothon/" + element.url}
-                className="hero-background"
-                alt="Electrothon Logo"
-              />
-            </picture> */}
-            </div>
-          ))}
-        </Slide>
+          {shuffle(slides).map((image, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div
+                  className="each-slide overflow-hidden bg-contain"
+                  key={index}
+                >
+                  <img
+                    src={"electrothon/" + image.url}
+                    alt={image.caption}
+                    className="hero-background"
+                  />
+                </div>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </section>
   );

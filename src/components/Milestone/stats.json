@@ -3,7 +3,7 @@
     "name": "Participants",
     "value": "1.9",
     "decimals": "1",
-    "suffix": "K",
+    "suffix": " K",
     "src": "participant.png",
     "webp": "participant.png",
     "theme": "milestones-block1"
@@ -12,7 +12,7 @@
     "name": "Lines of Code",
     "value": "150",
     "decimals": "0",
-    "suffix": "K+",
+    "suffix": " K+",
     "src": "code.png",
     "webp": "code.png",
     "theme": "milestones-block2"

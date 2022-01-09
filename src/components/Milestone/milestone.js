@@ -1,19 +1,78 @@
-import React from "react";
+import React, { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import "./milestones.css";
-import CountUp from "react-countup";
-import VisibilitySensor from "react-visibility-sensor";
+
 import Stats from "./stats.json";
-import { useState } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Milestone = () => {
-  const [isItVisible, setIsItVisible] = useState(true);
-  const changeVisibility = (isVisible) => {
-    if (isVisible) {
-      setTimeout(() => {
-        setIsItVisible(false);
-      }, 2000);
-    }
-  };
+  useEffect(() => {
+    gsap.utils.toArray(".counter0").forEach(function (el) {
+      var target = { val: 0 };
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: "#milestone",
+          start: "top center",
+          toggleActions: "play complete complete complete",
+        },
+        val: el.getAttribute("data-number"),
+        duration: 3,
+        onUpdate: function () {
+          el.innerText = target.val.toFixed(1);
+        },
+      });
+    });
+
+    gsap.utils.toArray(".counter1").forEach(function (el) {
+      var target = { val: 0 };
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: "#milestone",
+          start: "top center",
+          toggleActions: "play complete complete complete",
+        },
+        val: el.getAttribute("data-number"),
+        duration: 3,
+        onUpdate: function () {
+          el.innerText = target.val.toFixed(0);
+        },
+      });
+    });
+
+    gsap.utils.toArray(".counter2").forEach(function (el) {
+      var target = { val: 0 };
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: "#milestone",
+          start: "top center",
+          toggleActions: "play complete complete complete",
+        },
+        val: el.getAttribute("data-number"),
+        duration: 3,
+        onUpdate: function () {
+          el.innerText = target.val.toFixed(0);
+        },
+      });
+    });
+    gsap.utils.toArray(".counter3").forEach(function (el) {
+      var target = { val: 0 };
+      gsap.to(target, {
+        scrollTrigger: {
+          trigger: "#milestone",
+          start: "top center",
+          toggleActions: "play complete complete complete",
+        },
+        val: el.getAttribute("data-number"),
+        duration: 3,
+        onUpdate: function () {
+          el.innerText = target.val.toFixed(0);
+        },
+      });
+    });
+  }, []);
   return (
     <section
       id="milestone"
@@ -36,7 +95,11 @@ const Milestone = () => {
         >
           {Stats.map((stat, index) => {
             return (
-              <div className="p-4 w-full h-96" key={index}>
+              <div
+                className="p-4 w-full"
+                style={{ height: "30rem" }}
+                key={index}
+              >
                 <div
                   className={
                     "h-full grid grid-cols-1 grid-rows-5 px-4 py-6 rounded-lg " +
@@ -49,36 +112,22 @@ const Milestone = () => {
                       <img src={stat.src} alt="participant" />
                     </picture>
                   </div>
-                  <VisibilitySensor
-                    active={isItVisible}
-                    onChange={changeVisibility}
-                  >
-                    {({ isVisible, active }) => (
-                      <div>
-                        <h2 className="title-font font-medium text-4xl text-white font-bold">
-                          {/* <CountUp start={0} end={stat.value} decimals={stat.decimals} duration={2} suffix={stat.suffix}/> */}
-                          {isVisible ? (
-                            <CountUp
-                              start={0}
-                              end={stat.value}
-                              decimals={stat.decimals}
-                              duration={2}
-                              suffix={stat.suffix}
-                            />
-                          ) : (
-                            <CountUp
-                              end={stat.value}
-                              decimals={stat.decimals}
-                              suffix={stat.suffix}
-                            />
-                          )}
-                        </h2>
-                        <span className="leading-relaxed font-medium text-lg text-white">
-                          {stat.name}
-                        </span>
-                      </div>
-                    )}
-                  </VisibilitySensor>
+
+                  <div className="counters">
+                    <p className="title-font font-medium text-4xl text-white font-bold my-2">
+                      <span
+                        className={`counter${index}`}
+                        data-number={stat.value}
+                      >
+                        0
+                      </span>
+                      {stat.suffix}
+                    </p>
+
+                    <span className="leading-relaxed font-medium text-xl text-white mb-2">
+                      {stat.name}
+                    </span>
+                  </div>
                 </div>
               </div>
             );

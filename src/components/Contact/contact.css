@@ -20,12 +20,12 @@
   margin: 1px;
   text-align: left;
   border-radius: 50px 0px 0px 50px;
-  transition: 0.7s;
+  transition: 0.0s;
 }
 
 .contact-icons a span {
   opacity: 0;
-  transition: 0.7s;
+  transition: 0.0s;
   padding-left: 10px;
 }
 

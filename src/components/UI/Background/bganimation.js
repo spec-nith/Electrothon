@@ -39,43 +39,43 @@ function Bgeffect() {
     scene1.to("#h1-8", { y: 3.5 * speed, x: 0.2 * speed }, 0);
     scene1.to("#h1-9", { y: 3.5 * speed, x: -0.2 * speed }, 0);
 
-    /*   Bird   */
-    gsap.fromTo(
-      "#bird",
-      { opacity: 1 },
-      {
-        y: -250,
-        x: 800,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".scrollElement",
-          start: "15% top",
-          end: "60% 100%",
-          scrub: 4,
-          onEnter: function () {
-            gsap.to("#bird", { scaleX: 1, rotation: 0 });
-          },
-          onLeave: function () {
-            gsap.to("#bird", { scaleX: -1, rotation: -15 });
-          },
-        },
-      }
-    );
+    // /*   Bird   */
+    // gsap.fromTo(
+    //   "#bird",
+    //   { opacity: 1 },
+    //   {
+    //     y: -250,
+    //     x: 800,
+    //     ease: "power2.out",
+    //     scrollTrigger: {
+    //       trigger: ".scrollElement",
+    //       start: "15% top",
+    //       end: "60% 100%",
+    //       scrub: 4,
+    //       onEnter: function () {
+    //         gsap.to("#bird", { scaleX: 1, rotation: 0 });
+    //       },
+    //       onLeave: function () {
+    //         gsap.to("#bird", { scaleX: -1, rotation: -15 });
+    //       },
+    //     },
+    //   }
+    // );
 
     /* Clouds  */
-    let clouds = gsap.timeline();
-    ScrollTrigger.create({
-      animation: clouds,
-      trigger: ".scrollElement",
-      start: "top top",
-      end: "70% 100%",
-      scrub: 1,
-    });
+    // let clouds = gsap.timeline();
+    // ScrollTrigger.create({
+    //   animation: clouds,
+    //   trigger: ".scrollElement",
+    //   start: "top top",
+    //   end: "70% 100%",
+    //   scrub: 1,
+    // });
 
-    clouds.to("#cloud1", { x: 500 }, 0);
-    clouds.to("#cloud2", { x: 1000 }, 0);
-    clouds.to("#cloud3", { x: -1000 }, 0);
-    clouds.to("#cloud4", { x: -700, y: 25 }, 0);
+    // clouds.to("#cloud1", { x: 500 }, 0);
+    // clouds.to("#cloud2", { x: 1000 }, 0);
+    // clouds.to("#cloud3", { x: -1000 }, 0);
+    // clouds.to("#cloud4", { x: -700, y: 25 }, 0);
 
     /* Sun motion Animation  */
     let sun = gsap.timeline();
@@ -96,11 +96,7 @@ function Bgeffect() {
     sun.to("#bg_grad stop:nth-child(3)", { attr: { offset: "0.18" } }, 0.0);
     sun.to("#bg_grad stop:nth-child(4)", { attr: { offset: "0.25" } }, 0.0);
     sun.to("#bg_grad stop:nth-child(5)", { attr: { offset: "0.46" } }, 0.0);
-    sun.to(
-      "#bg_grad stop:nth-child(6)",
-      { attr: { "stopColor": "#FF9171" } },
-      0
-    );
+    sun.to("#bg_grad stop:nth-child(6)", { attr: { stopColor: "#FF9171" } }, 0);
 
     /*   SCENE 2  */
     let scene2 = gsap.timeline();
@@ -120,38 +116,38 @@ function Bgeffect() {
     scene2.fromTo("#h2-6", { y: 900 }, { y: 0 }, 0.3);
 
     /* Bats */
-    gsap.fromTo(
-      "#bats",
-      { opacity: 1, y: 400, scale: 0 },
-      {
-        y: 120,
-        scale: 0.8,
-        transformOrigin: "50% 50%",
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: ".scrollElement",
-          start: "40% top",
-          end: "70% 100%",
-          scrub: 3,
-          onEnter: function () {
-            gsap.utils.toArray("#bats path").forEach((item, i) => {
-              gsap.to(item, {
-                scaleX: 0.5,
-                yoyo: true,
-                repeat: 11,
-                duration: 0.15,
-                delay: 0.7 + i / 10,
-                transformOrigin: "50% 50%",
-              });
-            });
-            gsap.set("#bats", { opacity: 1 });
-          },
-          onLeave: function () {
-            gsap.to("#bats", { opacity: 0, delay: 2 });
-          },
-        },
-      }
-    );
+    // gsap.fromTo(
+    //   "#bats",
+    //   { opacity: 1, y: 400, scale: 0 },
+    //   {
+    //     y: 120,
+    //     scale: 0.8,
+    //     transformOrigin: "50% 50%",
+    //     ease: "power3.out",
+    //     scrollTrigger: {
+    //       trigger: ".scrollElement",
+    //       start: "40% top",
+    //       end: "70% 100%",
+    //       scrub: 3,
+    //       onEnter: function () {
+    //         gsap.utils.toArray("#bats path").forEach((item, i) => {
+    //           gsap.to(item, {
+    //             scaleX: 0.5,
+    //             yoyo: true,
+    //             repeat: 11,
+    //             duration: 0.15,
+    //             delay: 0.7 + i / 10,
+    //             transformOrigin: "50% 50%",
+    //           });
+    //         });
+    //         gsap.set("#bats", { opacity: 1 });
+    //       },
+    //       onLeave: function () {
+    //         gsap.to("#bats", { opacity: 0, delay: 2 });
+    //       },
+    //     },
+    //   }
+    // );
 
     /* Sun increase */
     let sun2 = gsap.timeline();
@@ -165,12 +161,12 @@ function Bgeffect() {
 
     sun2.to("#sun", { attr: { offset: "0.6" } }, 0);
     sun2.to("#bg_grad stop:nth-child(2)", { attr: { offset: "0.7" } }, 0);
-    sun2.to("#sun", { attr: { "stopColor": "#ffff00" } }, 0);
-    sun2.to("#lg4 stop:nth-child(1)", { attr: { "stopColor": "#623951" } }, 0);
-    sun2.to("#lg4 stop:nth-child(2)", { attr: { "stopColor": "#261F36" } }, 0);
+    sun2.to("#sun", { attr: { stopColor: "#ffff00" } }, 0);
+    sun2.to("#lg4 stop:nth-child(1)", { attr: { stopColor: "#623951" } }, 0);
+    sun2.to("#lg4 stop:nth-child(2)", { attr: { stopColor: "#261F36" } }, 0);
     sun2.to(
       "#bg_grad stop:nth-child(6)",
-      { attr: { "stopColor": "#45224A" } },
+      { attr: { stopColor: "#45224A" } },
       0
     );
 
@@ -218,23 +214,23 @@ function Bgeffect() {
     scene3.to("#bg2-grad", { attr: { r: 500 } }, 0);
 
     /*   falling star   */
-    gsap.to("#fstar", {
-      x: -700,
-      y: -250,
-      ease: "power4.out",
-      scrollTrigger: {
-        trigger: ".scrollElement",
-        start: "4000 top",
-        end: "6000 100%",
-        scrub: 5,
-        onEnter: function () {
-          gsap.set("#fstar", { opacity: 1 });
-        },
-        onLeave: function () {
-          gsap.set("#fstar", { opacity: 0 });
-        },
-      },
-    });
+    // gsap.to("#fstar", {
+    //   x: -700,
+    //   y: -250,
+    //   ease: "power4.out",
+    //   scrollTrigger: {
+    //     trigger: ".scrollElement",
+    //     start: "4000 top",
+    //     end: "6000 100%",
+    //     scrub: 5,
+    //     onEnter: function () {
+    //       gsap.set("#fstar", { opacity: 1 });
+    //     },
+    //     onLeave: function () {
+    //       gsap.set("#fstar", { opacity: 0 });
+    //     },
+    //   },
+    // });
 
     //reset scrollbar position after refresh
     window.onbeforeunload = function () {
@@ -432,7 +428,7 @@ function Bgeffect() {
             <stop offset="0.72" stopColor="hsla(244, 33%, 19%, 1)" />
             <stop offset="0.78" stopColor="hsla(240, 33%, 17%, 1)" />
           </radialGradient>
-          <radialGradient
+          {/* <radialGradient
             id="fstar-grad"
             cx="1362.39"
             cy="-53.7"
@@ -450,7 +446,7 @@ function Bgeffect() {
             <stop offset="0.49" stopColor="#fff" stopOpacity="0.05" />
             <stop offset="0.59" stopColor="#fff" stopOpacity="0.01" />
             <stop offset="0.72" stopColor="#fff" stopOpacity="0" />
-          </radialGradient>
+          </radialGradient> */}
           <linearGradient
             id="linear-gradient"
             x1="472"
@@ -496,7 +492,7 @@ function Bgeffect() {
           fill="url(#bg_grad)"
         />
 
-        <g id="clouds" fill="#fefefe">
+        {/* <g id="clouds" fill="#fefefe">
           <path
             id="cloud4"
             transform="translate(600 0)"
@@ -520,10 +516,10 @@ function Bgeffect() {
             transform="translate(-600 0)"
             d="M402.18,271.3c-7.57-7.46-18.46-7.52-28.05-5.3-6.75-8.79-20.54-13.18-27.24-1.45-10.4-11.06-30.66-24.2-37.74-2.24a13.1,13.1,0,0,0-17.76,1.47c-11.23-25.69-58.46-41.29-64.24-4.06-9-8.26-20.15-2.62-27.47,4.4-11-2.87-22.18-7.58-31.72,2.7-8.44-.75-18.1-2.8-24.71,4.57"
           />
-        </g>
+        </g> */}
 
         <g id="scene2">
-          <g id="bats" style={{ opacity: "0" }}>
+          {/* <g id="bats" style={{ opacity: "0" }}>
             <path
               d="M486.65,187a9.22,9.22,0,0,1-4.29,6.38l-.06-.06c-.05-1.13-.06-2.62-.94-3.52a3.34,3.34,0,0,1,.15,1.63,1.9,1.9,0,0,0-1.66-.09,3.31,3.31,0,0,1,.33-1.61c-1,.81-1.05,2.22-1.37,3.38-3.9-5.13-5.67-10.29-13.64-9.74,5.67,3.29,5.9,10.62,12.85,11.87.09,6.46,4.06,6.69,4.88.28l-.2.1.18-.35c0,.08,0,.16,0,.25,7-.48,8.08-7.73,14.09-10.38A22.64,22.64,0,0,0,486.65,187Z"
               fill="#112129"
@@ -545,7 +541,7 @@ function Bgeffect() {
               d="M458.17,279.73c3.54.59,5.51,4.7,2.22,7.27,2.87-.72,4,4.71,2.47,5.94,4.88-1.34,9.07,5.6,8.25,9.17,3-1.07,4.18,4.15,3.52,5.52.89-1.82,3.82-5.49,5.73-1.71,2.43-5,7.84-6,12.35-3.64-1.94-4.42,4-5.2,6.22-3.91-1.29-3.74,1.35-5.73,4.78-4.66-7.88-8.5-15.53-.91-22.4,2.76a30.2,30.2,0,0,0,1-3.23l-4.33,3-1.56-5-.89,2.8C471.29,286,471.52,277,458.17,279.73Z"
               fill="#112129"
             />
-          </g>
+          </g> */}
 
           <g id="hills2">
             <path
@@ -592,7 +588,7 @@ function Bgeffect() {
             fill="url(#bg2-grad)"
           />
 
-          <g id="fstar">
+          {/* <g id="fstar">
             <image
               width="707"
               height="429"
@@ -607,7 +603,7 @@ function Bgeffect() {
               fill="url(#fstar-grad)"
               style={{ mixBlendMode: "overlay" }}
             />
-          </g>
+          </g> */}
 
           <g id="stars" fill="#fff" style={{ opacity: "0" }}>
             <path d="M699.71,128.24a1,1,0,1,1-1-1A1,1,0,0,1,699.71,128.24Z" />
@@ -750,12 +746,12 @@ function Bgeffect() {
               fill="url(#grad6)"
             />
 
-            <path
+            {/* <path
               id="bird"
               style={{ opacity: "0" }}
               d="M110.61,428.6c-2.5,2.06-13.64-.79-17.86.84,0,0,1-2.72,2-2,0,0-.12-1.36-1.07-1.21a3.73,3.73,0,0,0-3.88.79s-1.65-.58-2.32-.24c0,0-5.63-5.13-9.77-9.69S65.91,410,64,403.62c0,0-.81,2.45,2.63,6.06,0,0-5.81-5-6.19-7.68a10.73,10.73,0,0,0,4,7.44c-1.93-1.61-3.54-3.69-5.54-5.23l0-.06a.28.28,0,0,0,0,.06c0,1.75,2,3.92,3.22,5.57-1.37,0-4.53-5.34-4.08-3.26a2.1,2.1,0,0,1-.13-.26,13.7,13.7,0,0,0,2.74,4.58c-.53-.07-1.69-1.6-1.86-.88a1.19,1.19,0,0,1-.09-.15c-.16,0,1.38,4.78,4.17,6.74-3-.23,4,4.44,5.37,4.34.4,1.4,3.53,3.2,3.86,4.5,2.33,2.76,4.63,7.07,8.58,8,.46,3.8-10.7,6-4.75,7.88a2.43,2.43,0,0,0,2.36,1.48c.2,1,1.59,1.14,2.38.73.3.49,1.61,2,2,1.31a29.91,29.91,0,0,1,2.58-7.4c.48-.2.89-.53,1.37-.71-.47,1.42,2.28-.32,3-.38a50.42,50.42,0,0,0,11-1.25c.85.59,2.52,1.46,2.37-.34,1.23,1.09,4.19,1,1.77-1a3.33,3.33,0,0,0,2.63,0,6.86,6.86,0,0,1-1.71-1.15c1.88.38,6.14-.19,2.11-1.38A3.77,3.77,0,0,0,110.61,428.6Z"
               fill="#16122b"
-            />
+            /> */}
             <path
               id="h1-3"
               d="M599.72,500V408.89c-33.51-10.65-62.1-50.46-98.56-20.79a25.07,25.07,0,0,1-1.27-7.47c-1.85,2.68-1.48,6.14-1.8,9.12-1.25.67-2.51,1.33-3.77,2a4.34,4.34,0,0,0-2.9-2.48c-.47,1.55-.86,3.14-1.39,4.67l-.86.44c-1.9-3.54-1.9-8.23-3.08-12.14-1.52,6.24-.48,23.06-7.3,8.68a32,32,0,0,0-1.39,4.78c-3.06-6.27-5.18,1.34-7.2-8.14a62.77,62.77,0,0,0-1.85,6.68c-7.05-22.33-3.46,2-6.72,10.2a9,9,0,0,1-1.26-2.6q-1.31,2.31-2.6,4.62-1-5.08-2-10.15c-1.91,3.59-.5,8.47-1.62,12.42-2.47.74-5,1.44-7.45,2.06-.1-1-.18-2-.24-3a12.6,12.6,0,0,0-1.56,3.41l-1.69.38q-.46-6.3-.94-12.6a54.83,54.83,0,0,0-.53,12.93c-.82.17-1.64.31-2.45.47-1.42-5.4.55-11.39-1.18-16.87l-.54,8.7c-3.64-2.23-1.56-10.31-2.79-14.41l-.69,8.75c-1.43-6.09.32-14.52-3.43-19.51l-.21,20a53.6,53.6,0,0,0-2.18-5.75,47.85,47.85,0,0,0-1.62,11l-1.19-.57a51.53,51.53,0,0,1-2.64,9.14q-1.74-7.1-3.49-14.18A53.84,53.84,0,0,0,418,409.5c-3.5-4.54-3.22,3.32-3.7,5.54-1.35.13-2.69.28-4,.47a20.24,20.24,0,0,0-.39-7.28l-1,3.07a55.47,55.47,0,0,0-2.42-11q-.74,7.29-1.49,14.57c-1.51-1.13-3.44,1-3.55,2.68a46,46,0,0,0-6.84,3,6.2,6.2,0,0,0-1-2.39c-.12,1-.24,2.09-.37,3.13C358.7,452,331.33,448.79,309.12,500Z"
