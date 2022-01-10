@@ -10,9 +10,9 @@ export default function About() {
       data-aos-duration="1000"
       data-aos-easing="ease-in-out-cubic"
     >
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-16">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3  gap-4">
         <div
-          className="hidden md:block"
+          className="hidden md:flex justify-center items-center"
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1500"
