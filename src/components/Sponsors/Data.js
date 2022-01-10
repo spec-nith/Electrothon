@@ -153,8 +153,8 @@ export const data = [
         id: "title_2",
       },
       {
-        sponsorName: "NoticeBoard",
-        src: "sponsors/title/noticeboard.png",
+        sponsorName: "NoticeBard",
+        src: "sponsors/title/noticebard.png",
         url: "https://www.noticebard.com/",
         id: "title_3",
       },

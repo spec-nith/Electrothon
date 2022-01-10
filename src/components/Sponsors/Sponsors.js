@@ -37,7 +37,7 @@ export default function Sponsors() {
                   >
                     <img className="h-48 w-48 inline" src={sponsor.src} alt={sponsor.sponsorName}></img>
                    {/* for sponsorname */}
-                   {/* <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p> */}  
+                   <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p>  
                   </a>
                 </div>
               );
@@ -67,7 +67,8 @@ export default function Sponsors() {
                       >
                         <img className="h-48 w-48 inline" src={sponsor.src} alt={sponsor.sponsorName}></img>
                         {/* for sponsorname */}
-                        {/* <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p> */}  
+                        <p className="text-white tnpm rn start
+                        racking-wider text-lg mt-2">{sponsor.sponsorName}</p>  
                       </a>
                     </div>
                   );
@@ -79,14 +80,12 @@ export default function Sponsors() {
         
       </section>
       <div className="flex items-center justify-center">
-
-      <button
-          className="text-center px-8 text-base font-medium rounded-md text-white bg-indigo-700 hover:bg-indigo-400 hover:text-white md:py-4 md:text-lg md:px-10"
-          id="pin-foot"
-          >
-          Sponsorship Brochure
-        </button>
-          </div>
+        <a href="https://drive.google.com/file/d/1P_-npMEWQtOUAWnuJH66aK5h7sCxSgRy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <button className="text-center px-8 py-3 text-base font-medium rounded-md text-white bg-indigo-700 hover:bg-indigo-400 hover:text-white md:py-4 md:text-lg md:px-10" id="pin-foot">
+            Sponsorship Brochure
+            </button>
+          </a>
+        </div>
       {/* <div id="scrollSlide" className="relative mt-2 p-6 my-4 py-8 md:my-12 md:p-12">
       
       
