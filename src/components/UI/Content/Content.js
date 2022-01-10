@@ -18,8 +18,8 @@ export default function Content() {
           data-aos-duration="2500"
           data-aos-easing="ease-in-out-cubic"
         >
-          <div>
-            <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
+          <div className="flex flex-col justify-center">
+            <h1 className=" text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
               What's new this time?
             </h1>
             <div className="mt-3 text-normal md:mt-5 lg:mx-0 md:leading-normal content-theme">
@@ -53,7 +53,7 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div>
+          <div className="hidden  md:flex justify-center">
             <img src="whatsnew.png" alt="whatsnew" />
           </div>
         </div>
