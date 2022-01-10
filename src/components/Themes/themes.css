@@ -1,30 +1,23 @@
 .theme-box{
   border-radius: 10px;
-
 }
 .theme-block1{
   background: linear-gradient(135deg, #1cefff, rgb(44, 56, 221) 60%);
 }
-
-.theme-block4{
-  background: linear-gradient(135deg, #218cfb, #057efc 50%);
-}
-
 .theme-block2{
   background: linear-gradient(135deg, rgb(159, 206, 83), #03722e 50%);
 }
-
-.theme-block6{
-  background: linear-gradient(135deg,rgb(165, 168, 167), rgb(240, 232, 235) 70%);
-  
-}
 .theme-block3{
   background: linear-gradient(135deg, #FFC11F, #F33C04 40%,#DA1F05 50% );
-  
+}
+.theme-block4{
+  background: linear-gradient(135deg, #9f8ac2, #05fc89);
 }
 .theme-block5{
   background: linear-gradient(135deg, #FFF75D, #FFC11F 50%);
-  
+}
+.theme-block6{
+  background: linear-gradient(135deg,rgb(165, 168, 167), rgb(240, 232, 235) 70%); 
 }
 .clip-class-theme{
   background-color: rgba(34, 30, 30);

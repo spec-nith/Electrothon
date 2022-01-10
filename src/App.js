@@ -21,6 +21,8 @@ import "aos/dist/aos.css";
 import randomColor from "randomcolor";
 import BackgroundAnimation from "./components/UI/Background/bganimation";
 import "./mlh.css";
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-Y627M22EZY');
 
 AOS.init({
   once: true,

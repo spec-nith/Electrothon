@@ -12,13 +12,13 @@ export default function Content() {
         data-aos-easing="ease-in-out-cubic"
       >
         <div
-          className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16"
+          className="flex"
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="2500"
           data-aos-easing="ease-in-out-cubic"
         >
-          <div className="flex flex-col justify-center">
+          <div className="w-full md:w-1/2">
             <h1 className=" text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
               What's new this time?
             </h1>
@@ -53,11 +53,15 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div className="hidden  md:flex justify-center">
-            <img src="whatsnew.png" alt="whatsnew" />
+          <div className="hidden md:flex justify-center md:w-1/2">
+            <img
+              src="whatsnew.png"
+              alt="whatsnew"
+              style={{ height: "500px" }}
+            />
           </div>
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-x-16 pt-8 md:pt-24">
           <div
             data-aos="fade-right"
             data-aos-delay="190"

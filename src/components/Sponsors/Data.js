@@ -97,7 +97,7 @@ export const data = [
         src: "sponsors/silver/koii.png",
         url: "https://koii.network/",
         id: "silver_3",
-      }
+      },
     ],
     id: "2",
   },
@@ -127,7 +127,7 @@ export const data = [
         src: "sponsors/bronze/tezos.png",
         url: "https://tezos.com/",
         id: "bronze_3",
-      }
+      },
     ],
     id: "3",
   },
@@ -163,7 +163,7 @@ export const data = [
         src: "sponsors/title/streamyard.png",
         url: "https://streamyard.com/",
         id: "title_4",
-      }
+      },
     ],
     id: "0",
   },

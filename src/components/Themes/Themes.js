@@ -28,7 +28,7 @@ const slider = (
           >
             <div className="md:col-span-2 track-image flex items-center justify-center">
               <picture className="m-auto">
-                <source srcSet={"3d/webp/" + e.webp} type="image/jpeg" />
+                <source srcSet={"3d/webp/" + e.webp} type="image/webp" />
                 <img
                   src={"3d/" + e.image}
                   className="object-contain w-5/6 m-auto"

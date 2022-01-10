@@ -69,7 +69,7 @@ export default function Introduction() {
                 SEARCH | PLAN | ENGAGE | CREATE
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-                <div className="rounded-md shadow">
+                {/* <div className="rounded-md shadow">
                   <a
                     href="https://forms.gle/BA1EakiL14rA6xcX7/"
                     target="_blank"
@@ -83,20 +83,19 @@ export default function Introduction() {
                       Register Now
                     </button>
                   </a>
-                  {/* <div
-                    className="apply-button"
-                    data-hackathon-slug="Electrothon_4.0"
-                    data-button-theme="light"
-                    // style={{height: "44px", width: "312px"}}
-                  ></div> */}
-                </div>
+                </div> */}
+                <div
+                  className="apply-button h-full"
+                  data-hackathon-slug="electrothon-4"
+                  data-button-theme="light"
+                ></div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="https://specnith.com/electrothon.html"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-blue-500 hover:text-white md:py-4 md:text-lg md:px-10">
+                    <button className="w-full flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-sm text-indigo-700 bg-white hover:bg-blue-500 hover:text-white md:py-2 md:text-lg md:px-10">
                       Electrothon 3.0
                     </button>
                   </a>
