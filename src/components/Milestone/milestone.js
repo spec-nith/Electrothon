@@ -87,7 +87,7 @@ const Milestone = () => {
           Milestones
         </h1>
         <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center mt-2"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 text-center mt-2"
           data-aos="fade-up"
           data-aos-delay="50"
           data-aos-duration="1500"
@@ -106,10 +106,10 @@ const Milestone = () => {
                     stat.theme
                   }
                 >
-                  <div className="row-span-4 flex items-center">
+                  <div className="row-span-4 flex items-center justify-center flex-col">
                     <picture className="">
                       <source srcSet={stat.webp} type="image/webp" />
-                      <img src={stat.src} alt="participant" />
+                      <img className="" src={stat.src} alt="participant" />
                     </picture>
                   </div>
 
