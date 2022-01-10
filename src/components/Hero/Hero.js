@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import { Pagination, Autoplay } from "swiper";
 import slides from "./Carousel.json";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faInstagram, faLinkedin,faDiscord,faFacebook,faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 // Import Styles
 import "swiper/swiper.min.css";
@@ -65,10 +67,10 @@ export default function Introduction() {
                   19th-20th February, 2022
                 </span>
               </h1>
-              <p className="mt-6 text-base text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-6 text-base text-center md:text-left text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 SEARCH | PLAN | ENGAGE | CREATE
               </p>
-              <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+              <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">
                 {/* <div className="rounded-md shadow">
                   <a
                     href="https://forms.gle/BA1EakiL14rA6xcX7/"
@@ -89,28 +91,60 @@ export default function Introduction() {
                   data-hackathon-slug="electrothon-4"
                   data-button-theme="light"
                 ></div>
-                <div className="mt-3 sm:mt-0 sm:ml-3">
+                {/* Electrothon 3.0 button */}
+                {/* <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="https://specnith.com/electrothon.html"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    <button className="w-full flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-sm text-indigo-700 bg-white hover:bg-blue-500 hover:text-white md:py-2 md:text-lg md:px-10">
+                    <button className="w-full flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-sm text-indigo-700 bg-white hover:bg-blue-500 hover:text-white py-1.5 md:text-lg md:px-6 whitespace-nowrap">
                       Electrothon 3.0
                     </button>
                   </a>
-                </div>
+                </div> */}
               </div>
-              <span className="md:mt-0.5 mt-4 sm:flex sm:justify-center lg:justify-start">
+              <div className="flex justify-center md:justify-start space-x-5 mt-6 opacity-80">
+                <a
+                  href="https://discord.gg/cjMMRs7tHs"
+                  rel="noreferrer noopenor"
+                  target="_blank">
+                  <FontAwesomeIcon className="text-3xl text-blue-800 fill-current" icon={faDiscord} />
+                </a>
+                <a
+                  href="https://www.facebook.com/spec.ece/"
+                  rel="noreferrer noopenor"
+                  target="_blank">
+                  <FontAwesomeIcon className="text-3xl text-blue-600 fill-current" icon={faFacebook} />
+                </a>
+                <a
+                  href="https://twitter.com/SPEC__NITH"
+                  rel="noreferrer noopenor"
+                  target="_blank">
+                  <FontAwesomeIcon className="text-3xl text-blue-300 fill-current" icon={faTwitter} />
+                </a>
+                <a
+                  href="https://instagram.com/s.p.e.c_nith?utm_source=ig_profile_share&amp;igshid=1dd01jvv7xk83"
+                  rel="noreferrer noopenor"
+                  target="_blank">
+                  <FontAwesomeIcon className="text-3xl text-pink-600 fill-current" icon={faInstagram} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/s-p-e-c-nith-40214b197/"
+                  rel="noreferrer noopenor"
+                  target="_blank">
+                  <FontAwesomeIcon className="text-3xl text-blue-500 fill-current" icon={faLinkedin} />
+                </a>
+              </div>
+              <p className="mt-6 text-base text-gray-400 text-center md:text-left sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 <a
                   href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
-                  className="pt-4 text-sm text-gray-400 sm:text-base sm:max-w-xl sm:mx-auto md:text-lg lg:mx-0"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
                   CODE OF CONDUCT
                 </a>
-              </span>
+              </p>
             </div>
           </main>
         </div>

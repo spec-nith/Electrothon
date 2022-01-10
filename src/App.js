@@ -14,7 +14,6 @@ import Schedule from "./components/Schedule/schedule";
 import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
-import Contact from "./components/Contact/Contact";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -97,7 +96,6 @@ const App = () => {
               <FAQ />
             </div>
           </div>
-          <Contact />
           <Footer />
         </React.Fragment>
       )}
