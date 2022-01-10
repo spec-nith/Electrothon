@@ -103,7 +103,7 @@ export default function Content() {
                         />
                         <img
                           src={"speakers/miri.jpg"}
-                          className="w-12 h-12 rounded-full flex-1 object-cover shadow"
+                          className="w-12 h-10 rounded-full flex-1 object-cover shadow"
                           alt="avatar"
                         />
                       </picture>
@@ -131,7 +131,7 @@ export default function Content() {
                         />
                         <img
                           src={"speakers/profile_pic.jpg"}
-                          className="w-12 h-12 rounded-full object-cover shadow"
+                          className="w-12 h-10 rounded-full object-cover shadow"
                           alt="avatar"
                         />
                       </picture>
@@ -158,7 +158,7 @@ export default function Content() {
                         />
                         <img
                           src={"speakers/nayan.jpg"}
-                          className="w-12 h-12 rounded-full object-cover shadow"
+                          className="w-12 h-10 rounded-full object-cover shadow"
                           alt="avatar"
                         />
                       </picture>

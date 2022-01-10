@@ -30,6 +30,7 @@
   background-color: rgba(34, 30, 30);
   /* clip-path: polygon(0 0,100% 0, 100% 100%, 20% 100%); */
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10.1% 100%);
+  height: 280px;
 }
 @media only screen and (max-width:900px){
   .clip-class-theme{
