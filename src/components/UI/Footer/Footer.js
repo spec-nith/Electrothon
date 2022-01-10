@@ -9,12 +9,12 @@ export default function Footer() {
             href="https://specnith.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm md:text-lg md:font-bold text-white"
+            className="text-sm md:text-lg md:font-bold text-white hover:text-indigo-400"
           >
             SPEC
           </a>
         </div>
-        <div className="flex mb-6">
+        <div className="flex">
           <a
             href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
             target="_blank"
