@@ -100,11 +100,11 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", en
   /* background-color: hsla(30, 61%, 40%, 0.6); */
   background: hsla(0, 6%, 13%, 1);
 
-background: linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 61%, 40%, 0.6) 100%);
+background: linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 74%, 45%, 0.6) 100%);
 
-background: -moz-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 61%, 40%, 0.6) 100%);
+background: -moz-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 74%, 45%, 0.6) 100%);
 
-background: -webkit-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 61%, 40%, 0.6) 100%);
+background: -webkit-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 74%, 45%, 0.6) 100%);
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", endColorstr="#A46628", GradientType=1 );
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", endColorstr="#c8731e99", GradientType=1 );
 }

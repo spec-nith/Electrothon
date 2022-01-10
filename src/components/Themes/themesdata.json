@@ -12,16 +12,23 @@
     "webp": "pandemic.webp"
   },
   {
+    "title": "Cyber Bullying",
+    "content": "Build prudent solutions to help prevent people from succumbing to the spiral of cyberbullying and to combat misuse of technology and online harassment.",
+    "image": "cyber.png",
+    "webp": "cyber.webp"
+  },
+  {
     "title": "Natural Disasters",
     "content": "Harnessing the power of technology, vouch for innovative solutions to address the uprising challenges caused by natural calamities.",
     "image": "natural.png",
     "webp": "natural.webp"
   },
+
   {
-    "title": "Cyber Bullying",
-    "content": "Build prudent solutions to help prevent people from succumbing to the spiral of cyberbullying and to combat misuse of technology and online harassment.",
-    "image": "cyber.png",
-    "webp": "cyber.webp"
+    "title": "Hunger Eradication",
+    "content": "In order to shape a world where no one has to question the guarantee of a two square meal, devise projects that promise to eradicate hunger.",
+    "image": "hunger.png",
+    "webp": "hunger.webp"
   },
   {
     "title": "Open Innovation",
