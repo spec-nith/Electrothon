@@ -27,17 +27,17 @@ export default function Sponsors() {
             {title.data.map((sponsor) => {
               return (
                 <div
-                  className="m-2 overflow-hidden w-full sm:w-full md:w-1/2 lg:w-1/4 items-center justify-center object-cover"
+                  className="my-1 p-8 overflow-hidden w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 items-center justify-center object-cover"
                   key={sponsor.id} 
                 >
                   <a
                     href={sponsor.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    <img className="h-48 w-48 inline" src={sponsor.src} alt={sponsor.sponsorName}></img>
+                  > 
+                    <img src={sponsor.src} alt={sponsor.sponsorName}></img>
                    {/* for sponsorname */}
-                   <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p>  
+                   {/* <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p>   */}
                   </a>
                 </div>
               );
@@ -57,7 +57,7 @@ export default function Sponsors() {
                 {tier.data.map((sponsor) => {
                   return (
                     <div
-                      className="m-2 overflow-hidden w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"
+                      className="my-1 p-8 overflow-hidden w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/6 items-center justify-center object-cover"
                       key={sponsor.id}
                     >
                       <a
@@ -65,10 +65,10 @@ export default function Sponsors() {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <img className="h-48 w-48 inline" src={sponsor.src} alt={sponsor.sponsorName}></img>
+                        <img  src={sponsor.src} alt={sponsor.sponsorName}></img>
                         {/* for sponsorname */}
-                        <p className="text-white tnpm rn start
-                        racking-wider text-lg mt-2">{sponsor.sponsorName}</p>  
+                        {/* <p className="text-white tnpm rn start
+                        racking-wider text-lg mt-2">{sponsor.sponsorName}</p>   */}
                       </a>
                     </div>
                   );

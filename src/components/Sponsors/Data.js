@@ -52,7 +52,7 @@ export const data = [
       },
       {
         sponsorName: "Taskade",
-        src: "sponsors/gold/taskade.png",
+        src: "sponsors/gold/Taskade.png",
         url: "https://www.taskade.com/",
         id: "gold_8",
       },
@@ -136,7 +136,7 @@ export const data = [
     data: [
       {
         sponsorName: "GitHub",
-        src: "sponsors/title/github.png",
+        src: "sponsors/title/Github.png",
         url: "https://github.com/",
         id: "title_0",
       },
