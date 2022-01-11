@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import { Pagination, Autoplay } from "swiper";
 import slides from "./Carousel.json";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faInstagram, faLinkedin,faDiscord,faFacebook,faTwitter } from "@fortawesome/free-brands-svg-icons";
 
 // Import Styles
 import "swiper/swiper.min.css";
@@ -41,7 +39,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1"
+      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1 pt-24 md:pt-0"
     >
       <div
         className="m-auto md:col-span-2"
@@ -61,7 +59,7 @@ export default function Introduction() {
                   4.0
                 </span>
                 <span className="block text-indigo-600 text-normal font-medium md:mt-0 mt-1.5">
-                  2022
+                  2k22
                 </span>
                 <span className="block text-white text-xl tracking-wider mt-2">
                   19th-20th February, 2022
@@ -71,40 +69,13 @@ export default function Introduction() {
                 SEARCH | PLAN | ENGAGE | CREATE
               </p>
               <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">
-                {/* <div className="rounded-md shadow">
-                  <a
-                    href="https://forms.gle/BA1EakiL14rA6xcX7/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <button
-                      className={`w-full items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-700  ${
-                        false ? "cursor-not-allowed" : "hover:bg-indigo-400"
-                      } md:py-4 md:text-lg md:px-10 z-1`}
-                    >
-                      Register Now
-                    </button>
-                  </a>
-                </div> */}
                 <div
                   className="apply-button h-full"
                   data-hackathon-slug="electrothon-4"
                   data-button-theme="light"
                 ></div>
-                {/* Electrothon 3.0 button */}
-                {/* <div className="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="https://specnith.com/electrothon.html"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    <button className="w-full flex items-center justify-center px-8 border border-transparent text-base font-medium rounded-sm text-indigo-700 bg-white hover:bg-blue-500 hover:text-white py-1.5 md:text-lg md:px-6 whitespace-nowrap">
-                      Electrothon 3.0
-                    </button>
-                  </a>
-                </div> */}
               </div>
-              <div className="flex justify-center md:justify-start space-x-5 mt-6 opacity-80">
+              {/* <div className="flex justify-center md:justify-start space-x-5 mt-6 opacity-80">
                 <a
                   href="https://discord.gg/cjMMRs7tHs"
                   rel="noreferrer noopenor"
@@ -135,16 +106,7 @@ export default function Introduction() {
                   target="_blank">
                   <FontAwesomeIcon className="text-3xl text-blue-500 fill-current" icon={faLinkedin} />
                 </a>
-              </div>
-              <p className="mt-6 text-base text-gray-400 text-center md:text-left sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                <a
-                  href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  CODE OF CONDUCT
-                </a>
-              </p>
+              </div> */}
             </div>
           </main>
         </div>
@@ -163,6 +125,7 @@ export default function Introduction() {
           autoplay={{ delay: 4000, disableOnInteraction: false }}
           spaceBetween={0}
           slidesPerView={1}
+          lazy={true}
           className="hero-container mt-8 sm:mt-24 px-6 sm:px-10 md:px-0"
         >
           {shuffle(slides).map((image, index) => {
@@ -172,11 +135,19 @@ export default function Introduction() {
                   className="each-slide overflow-hidden bg-contain"
                   key={index}
                 >
-                  <img
+                  {/* <img
                     src={"electrothon/" + image.url}
                     alt={image.caption}
                     className="hero-background"
-                  />
+                  /> */}
+                  <picture className="hero-background">
+                    <source srcSet={image.webp} type="image/webp" />
+                    <img
+                      className="hero-background"
+                      src={image.url}
+                      alt={image.caption}
+                    />
+                  </picture>
                 </div>
               </SwiperSlide>
             );

@@ -142,7 +142,7 @@ export default function Schedule() {
     >
       <div className="container mx-auto flex flex-col items-start md:flex-row">
         <div
-          className="flex flex-col w-full sticky top-0 lg:w-1/3 mt-2 md:mt-12 pr-8"
+          className="flex flex-col w-full md:sticky top-0 lg:w-1/3 mt-2 md:mt-12 pr-8"
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1500"
@@ -165,7 +165,7 @@ export default function Schedule() {
             ONLINE
           </span>
         </div>
-        <div className="ml-0 md:ml-12 lg:w-2/3 sticky">
+        <div className="ml-0 md:ml-12 lg:w-2/3">
           <div className="container mx-auto w-full h-full pr-6 ">
             <div
               className={`relative wrap overflow-hidden py-10  h-full ${

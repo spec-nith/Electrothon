@@ -26,14 +26,19 @@ body {
   color:aliceblue
 }
 .nav-theme{
-  background-color: rgb(38, 38, 46);                                              
+  background-color: rgba(34, 30, 30, 0.83);                                              
   @apply md:opacity-90;
 
 }
-.xl3{font-size: 1.875rem !important; 
+@media only screen and (max-width: 768px) {
+  .nav-theme{
+    background-color: rgb(38, 38, 46); 
+  }                                             
+}
+
+.xl3{
   font-family: 'Poppins', sans-serif;
   font-weight: 351 !important;
-  
    /* font-family: 'Montserrat', sans-serif; */
 }
 .sponsor-bg-title{

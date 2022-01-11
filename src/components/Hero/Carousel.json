@@ -1,75 +1,77 @@
 [
   {
-    "url": "f3.jpg",
-
+    "url": "electrothon/f3.jpg",
+    "webp": "electrothon/webp/f3.webp",
     "caption": "Second Runner Up"
   },
   {
-    "url": "el1.jpg",
+    "url": "electrothon/el1.jpg",
+    "webp": "electrothon/webp/el1.webp",
     "caption": "Slide 1"
   },
   {
-    "url": "el2.jpg",
-
+    "url": "electrothon/el2.jpg",
+    "webp": "electrothon/webp/el2.webp",
     "caption": "Slide 2"
   },
   {
-    "url": "el3.jpg",
-
+    "url": "electrothon/el3.jpg",
+    "webp": "electrothon/webp/el3.webp",
     "caption": "Slide 3"
   },
   {
-    "url": "el4.jpg",
-
+    "url": "electrothon/el4.jpg",
+    "webp": "electrothon/webp/el4.webp",
     "caption": "Slide 4"
   },
   {
-    "url": "el5.jpg",
-
+    "url": "electrothon/el5.jpg",
+    "webp": "electrothon/webp/el5.webp",
     "caption": "Slide 5"
   },
   {
-    "url": "el7.jpg",
-
+    "url": "electrothon/el7.jpg",
+    "webp": "electrothon/webp/el7.webp",
     "caption": "Slide 7"
   },
   {
-    "url": "el8.jpg",
-
+    "url": "electrothon/el8.jpg",
+    "webp": "electrothon/webp/el8.webp",
     "caption": "Slide 8"
   },
   {
-    "url": "el9.jpg",
-
+    "url": "electrothon/el9.jpg",
+    "webp": "electrothon/webp/el9.webp",
     "caption": "Slide 9"
   },
   {
-    "url": "el10.jpg",
-
+    "url": "electrothon/el10.jpg",
+    "webp": "electrothon/webp/el10.webp",
     "caption": "Slide 10"
   },
   {
-    "url": "el11.jpg",
-
+    "url": "electrothon/el11.jpg",
+    "webp": "electrothon/webp/el11.webp",
     "caption": "Slide 11"
   },
   {
-    "url": "el12.jpg",
-
+    "url": "electrothon/el12.jpg",
+    "webp": "electrothon/webp/el12.webp",
     "caption": "Slide 12"
   },
   {
-    "url": "el13.jpg",
-
+    "url": "electrothon/el13.jpg",
+    "webp": "electrothon/webp/el13.webp",
     "caption": "Slide 13"
   },
   {
-    "url": "el14.jpg",
-
+    "url": "electrothon/el14.jpg",
+    "webp": "electrothon/webp/el14.webp",
     "caption": "Slide 14"
   },
   {
-    "url": "el15.jpg",
+    "url": "electrothon/el15.jpg",
+    "webp": "electrothon/webp/el15.webp",
     "caption": "Slide 15"
   }
 ]

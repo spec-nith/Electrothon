@@ -18,10 +18,8 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import randomColor from "randomcolor";
-import BackgroundAnimation from "./components/UI/Background/bganimation";
+import BackgroundStatic from "./components/UI/Background/bgstatic";
 import "./mlh.css";
-import ReactGA from 'react-ga';
-ReactGA.initialize('G-Y627M22EZY');
 
 AOS.init({
   once: true,
@@ -59,7 +57,7 @@ const App = () => {
         </div>
       ) : (
         <React.Fragment>
-          <BackgroundAnimation />
+          <BackgroundStatic />
           <Header />
           <a
             id="mlh-trust-badge"
