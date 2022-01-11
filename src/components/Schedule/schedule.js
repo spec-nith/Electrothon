@@ -142,7 +142,7 @@ export default function Schedule() {
     >
       <div className="container mx-auto flex flex-col items-start md:flex-row">
         <div
-          className="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 pr-8"
+          className="flex flex-col w-full sticky top-0 lg:w-1/3 mt-2 md:mt-12 pr-8"
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1500"

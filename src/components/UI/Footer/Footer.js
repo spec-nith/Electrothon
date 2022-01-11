@@ -11,7 +11,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-sm md:text-lg md:font-bold text-white hover:text-indigo-400"
           >
-            SPEC
+            <img className="h-28" src="logo.png"alt="spec_logo"/>
           </a>
         </div>
         <div className="flex">
