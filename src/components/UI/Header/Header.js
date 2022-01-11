@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 import navItems from "./Nav_tems";
+import BackTopBtn from "../BacktoTop/GoTop";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,10 +82,10 @@ const Nav = () => {
   };
 
   return (
-    <React.Fragment>
+    <div className="h-full">
       <nav
         className="fixed z-10 top-0 left-0 ml-4"
-        style={{ transform: "translate(0, 50%)" }}
+        style={{ transform: "translate(0, 25%)" }}
       >
         {/* <div className="hidden md:flex py-4 rotate-90">
             <div className=" text-gray-200 text-2xl font-black">
@@ -104,6 +105,7 @@ const Nav = () => {
             <NavbarLG item={item} key={item.id} />
           ))}
         </div>
+          <BackTopBtn/>
       </nav>
 
       <span className="fixed top-0 bg-transparent z-10">
@@ -155,7 +157,8 @@ const Nav = () => {
           </aside>
         </div>
       </span>
-    </React.Fragment>
+      
+    </div>
   );
 };
 

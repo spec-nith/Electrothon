@@ -15,6 +15,7 @@ import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import MediaIcons from './components/UI/MediaIcons/mediaicons';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import randomColor from "randomcolor";
@@ -90,6 +91,7 @@ const App = () => {
               {/* <Workshop /> */}
               {/* <Judges /> */}
               <Sponsors />
+              <MediaIcons/>
               {/* <Speakers/> */}
               <FAQ />
             </div>
