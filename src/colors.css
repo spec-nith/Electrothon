@@ -28,7 +28,7 @@ body {
 .nav-theme{
   background-color: rgb(38, 38, 46);                                              
   @apply md:opacity-90;
-  border-bottom: 1px solid white;
+
 }
 .xl3{font-size: 1.875rem !important; 
   font-family: 'Poppins', sans-serif;
@@ -107,4 +107,21 @@ background: -moz-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 74%, 4
 background: -webkit-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 74%, 45%, 0.6) 100%);
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", endColorstr="#c8731e99", GradientType=1 );
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(38, 38, 46);
+  color: rgb(195, 199, 204);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

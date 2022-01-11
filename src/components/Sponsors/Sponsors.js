@@ -18,7 +18,7 @@ export default function Sponsors() {
       >
         {/* Title Sponsor  */}
         <div className="justify-center text-center">
-          <div className="sticky top-0 md:top-16 justify-center text-center sponsor-bg-title px-4 py-2">
+          <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2">
             <h1 className="xl3 tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme font-semibold">
               {title.tierName}
             </h1>
@@ -48,7 +48,7 @@ export default function Sponsors() {
         {data.map((tier, index) => {
           return (
             <div className="justify-center text-center" key={tier.id}>
-              <div className={`sticky top-0 md:top-16 justify-center text-center px-4 sponsor-bg-${index} py-2`}>
+              <div className={`sticky top-0 justify-center text-center px-4 sponsor-bg-${index} py-2`}>
                 <h1 className="xl3 tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme font-semibold">
                   {tier.tierName}
                 </h1>

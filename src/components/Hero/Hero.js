@@ -41,7 +41,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="pt-16 min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1"
+      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1"
     >
       <div
         className="m-auto md:col-span-2"
