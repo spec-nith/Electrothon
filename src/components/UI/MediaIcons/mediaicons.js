@@ -8,13 +8,25 @@ import {
 import { faComments } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Transition } from "@headlessui/react";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const MediaIcons = (props) => {
   let [toggle, setToggle] = useState(true);
+  const ref = useRef();
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (!toggle && ref.current && !ref.current.contains(e.target)) {
+        setToggle(true);
+      }
+    };
+    document.addEventListener("mousedown", checkIfClickedOutside);
+    return () => {
+      document.removeEventListener("mousedown", checkIfClickedOutside);
+    };
+  }, [toggle]);
   return (
     <React.Fragment>
-      <div className="bottom-0 right-0 text-white fixed">
+      <div className="bottom-0 right-0 text-white fixed" ref={ref}>
         <div
           className={
             "w-10 transform ease-in-out transition-all duration-300  relative " +

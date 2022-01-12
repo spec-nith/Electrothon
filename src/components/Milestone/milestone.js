@@ -95,11 +95,7 @@ const Milestone = () => {
         >
           {Stats.map((stat, index) => {
             return (
-              <div
-                className="p-4 w-full"
-                style={{ height: "30rem" }}
-                key={index}
-              >
+              <div className="p-4 w-full h-28r md:h-30r" key={index}>
                 <div
                   className={
                     "h-full grid grid-cols-1 grid-rows-5 px-4 py-6 rounded-lg " +

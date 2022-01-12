@@ -51,7 +51,7 @@ export default class ScrollToTop extends Component {
     return (
       <div className="scroll-to-top">
         <div
-          className={"tooltip " + (is_visible ? "visible" : "invisible")}
+          className={"tooltip " + (is_visible ? "hidden md:block" : "hidden")}
           onClick={() => this.scrollToTop()}
         >
           <FontAwesomeIcon
