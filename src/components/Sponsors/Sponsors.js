@@ -37,11 +37,7 @@ export default function Sponsors() {
                   >
                     <picture className="">
                       <source srcSet={sponsor.webp} type="image/webp" />
-                      <img
-                        className=""
-                        src={sponsor.src}
-                        alt={sponsor.sponsorName}
-                      />
+                      <img src={sponsor.src} alt={sponsor.sponsorName} />
                     </picture>
                     {/* for sponsorname */}
                     {/* <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p>   */}
@@ -75,13 +71,9 @@ export default function Sponsors() {
                         rel="noopener noreferrer"
                       >
                         {/* <img src={sponsor.src} alt={sponsor.sponsorName}></img> */}
-                        <picture className="">
+                        <picture>
                           <source srcSet={sponsor.webp} type="image/webp" />
-                          <img
-                            className=""
-                            src={sponsor.src}
-                            alt={sponsor.sponsorName}
-                          />
+                          <img src={sponsor.src} alt={sponsor.sponsorName} />
                         </picture>
                         {/* for sponsorname */}
                         {/* <p className="text-white tnpm rn start

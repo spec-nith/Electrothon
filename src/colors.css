@@ -113,6 +113,15 @@ background: -webkit-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsla(30, 74%
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", endColorstr="#c8731e99", GradientType=1 );
 }
+
+.sponsor-bg-3{
+  background: hsla(137, 26%, 23%, 0.6);
+  background: linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsl(138deg 27% 23% / 60%) 100%);;
+  background: -moz-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsl(138deg 27% 23% / 60%) 100%);;
+  background: -webkit-linear-gradient(135deg, hsla(0, 6%, 13%, 0) 0%, hsl(138deg 27% 23% / 60%) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", endColorstr="#2b4a34;", GradientType=1 );
+}
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;

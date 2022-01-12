@@ -84,10 +84,8 @@ const Nav = () => {
   return (
     <div className="h-full">
       <div className=" h-full fixed flex flex-wrap z-10 top-0 left-0 ml-4">
-      <nav
-        className="items-center m-auto"
-      >
-        {/* <div className="hidden md:flex py-4 rotate-90">
+        <nav className="items-center m-auto">
+          {/* <div className="hidden md:flex py-4 rotate-90">
             <div className=" text-gray-200 text-2xl font-black">
             <a
             href="https://specnith.com/"
@@ -95,18 +93,18 @@ const Nav = () => {
             rel="noreferrer noopener"
             >
             {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
-        {/* SPEC
+          {/* SPEC
             </a>
             </div>
           </div> */}
 
-        <div className="hidden md:flex flex-col h-full justify-center items-center nav-theme rounded-full">
-          {navItems.map((item) => (
-            <NavbarLG item={item} key={item.id} />
-          ))}
-        </div>
-          <BackTopBtn/>
-      </nav>
+          <div className="hidden md:flex flex-col h-full justify-center items-center nav-theme rounded-full">
+            {navItems.map((item) => (
+              <NavbarLG item={item} key={item.id} />
+            ))}
+          </div>
+          <BackTopBtn />
+        </nav>
       </div>
 
       <span className="fixed top-0 bg-transparent z-10">
@@ -158,7 +156,6 @@ const Nav = () => {
           </aside>
         </div>
       </span>
-      
     </div>
   );
 };
