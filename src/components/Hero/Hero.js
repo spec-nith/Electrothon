@@ -51,6 +51,16 @@ export default function Introduction() {
         <div className="relative mx-0 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
           <main className="mt-2 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 lg:py-8 xl:mt-28">
             <div className="text-center lg:text-left">
+              <a href="https://specnith.com/" target="_blank" rel="noreferrer noopenor">
+                <picture>
+                  {/* <source srcSet="logo.webp" type="image/webp" /> */}
+                  <img
+                    src="logo.png"
+                    className="h-auto w-60 mx-auto"
+                    alt="SPEC Logo"
+                  />
+                </picture>
+              </a>
               <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-6xl">
                 <span className="xl:inline font-extrabold header-theme">
                   Electrothon
@@ -58,7 +68,7 @@ export default function Introduction() {
                 <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme">
                   4.0
                 </span>
-                <span className="block text-indigo-600 text-normal font-medium md:mt-0 mt-1.5">
+                <span className="block text-blue-400 text-normal font-medium md:mt-0 mt-1.5">
                   2k22
                 </span>
                 <span className="block text-white text-xl tracking-wider mt-2">

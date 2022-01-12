@@ -1,32 +1,40 @@
-.theme-box{
+.theme-box {
   border-radius: 10px;
 }
-.theme-block1{
+
+.theme-block1 {
   background: linear-gradient(135deg, #1cefff, rgb(44, 56, 221) 60%);
 }
-.theme-block2{
+
+.theme-block2 {
   background: linear-gradient(135deg, rgb(159, 206, 83), #03722e 50%);
 }
-.theme-block3{
-  background: linear-gradient(135deg, #9f8ac2, #05fc89);
+
+.theme-block3 {
+  background: linear-gradient(135deg, #4568dc, #b06ab3);
 }
-.theme-block4{
-  background: linear-gradient(135deg, #FFC11F, #F33C04 40%,#DA1F05 50% );
+
+.theme-block4 {
+  background: linear-gradient(135deg, #FFC11F, #F33C04 40%, #DA1F05 50%);
 }
-.theme-block5{
+
+.theme-block5 {
   background: linear-gradient(346deg, #336bef, #37f69a);
 }
-.theme-block6{
+
+.theme-block6 {
   background: linear-gradient(135deg, #FFF75D, #FFC11F 50%);
 }
-.clip-class-theme{
+
+.clip-class-theme {
   background-color: rgba(34, 30, 30);
   /* clip-path: polygon(0 0,100% 0, 100% 100%, 20% 100%); */
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10.1% 100%);
   height: 280px;
 }
-@media only screen and (max-width:900px){
-  .clip-class-theme{
+
+@media only screen and (max-width:900px) {
+  .clip-class-theme {
     clip-path: none;
   }
 }
