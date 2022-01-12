@@ -18,7 +18,7 @@ export default function Sponsors() {
       >
         {/* Title Sponsor  */}
         <div className="justify-center text-center">
-          <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2">
+          <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2 rounded-t-lg">
             <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
               {title.tierName}
             </h1>

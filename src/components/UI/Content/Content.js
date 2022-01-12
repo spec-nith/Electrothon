@@ -120,7 +120,7 @@ export default function Content() {
 
                         <p className="mt-3 text-white text-sm">
                           Global Head of internships at Microsoft and an
-                          award-winning storyteller.
+                          award-winning storyteller
                         </p>
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export default function Content() {
 
                         <p className="mt-3 text-white text-sm">
                           Developer Relations Engineer for Android at Google,
-                          Contributor at Aarogya Setu.
+                          Contributor at Aarogya Setu
                         </p>
                       </div>
                     </div>
