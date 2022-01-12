@@ -19,7 +19,7 @@ export default function Footer() {
         </div>
         <div className=" flex justify-center mb-4">
           <ul >
-            <li className=" text-gray-500 font-bold text-sm md:text-lg flex justify-center md:justify-start">ABOUT</li>
+            <li className=" text-gray-500 font-bold text-sm md:text-lg flex justify-center md:justify-start">RESOURCES</li>
             <li>
               <a
                 href="mailto:spec@nith.ac.in"
@@ -27,7 +27,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex justify-center md:justify-start text-sm md:md:text-sm  text-white hover:text-gray-300"
               >
-                Mail to: spec@nith.ac.in
+               spec@nith.ac.in
               </a>
               <li> <a
                 href="https://drive.google.com/file/d/1P_-npMEWQtOUAWnuJH66aK5h7sCxSgRy/view?usp=sharing"
@@ -60,8 +60,8 @@ export default function Footer() {
         <div className="text-white flex text-sm md:text-lg justify-center mb-4 ">
           <ul>
             <li className="text-gray-500 font-bold flex justify-center md:justify-start">ADDRESS</li>
-            <li className=" md:text-sm flex justify-center md:justify-start">NIT-Hamirpur</li>
-            <li className=" md:text-sm flex justify-center md:justify-start">Himachal Pradesh, India</li>
+            <li className=" md:text-sm flex justify-center md:justify-start">NIT Hamirpur</li>
+            <li className=" md:text-sm flex justify-center md:justify-start">Hamirpur, Himachal Pradesh, India</li>
             <li className=" md:text-sm flex justify-center md:justify-start">177005</li>
           </ul>
 
@@ -124,18 +124,6 @@ export default function Footer() {
                 <h2 className="text-4xl lg:text-5xl font-bold leading-tight header-theme">
                   Lets talk about everything!
                 </h2>
-                <div className="text-gray-300 mt-8">
-                  Hate forms? Send us an{" "}
-                  <a
-                    className="underline hover:text-gray-300"
-                    href="mailto:spec@nith.ac.in"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    email
-                  </a>{" "}
-                  instead.
-                </div>
               </div>
               <picture>
                 <source srcSet="webp/email-contact.webp" type="image/webp" />
@@ -178,14 +166,14 @@ export default function Footer() {
                 Lets talk about everything!
               </h2>
               <div className="text-gray-300 mt-8">
-                Hate forms? Send us an{" "}
+                Hate forms? Send us an email at {" "}
                 <a
-                  className="underline"
+                  className=""
                   href="mailto:spec@nith.ac.in"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  email
+                  spec@nith.ac.in
                 </a>{" "}
                 instead.
               </div>
@@ -197,7 +185,8 @@ export default function Footer() {
             />
           </div>
           <div>
-            <form onSubmit={handleSubmit}>
+            <form
+             onSubmit={handleSubmit}>
               <div>
                 <label
                   className="uppercase text-sm text-white font-bold"

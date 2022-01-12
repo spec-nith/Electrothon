@@ -41,6 +41,18 @@ export default function Introduction() {
       id="home"
       className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1 pt-24 md:pt-0"
     >
+      <div className="hidden md:block fixed top-0 left-0 z-10 m-4">
+      <a href="https://specnith.com/" target="_blank" rel="noreferrer noopenor">
+                <picture>
+                  {/* <source srcSet="logo.webp" type="image/webp" /> */}
+                  <img
+                    src="logo.png"
+                    className="h-auto w-32"
+                    alt="SPEC Logo"
+                  />
+                </picture>
+              </a>
+              </div>
       <div
         className="m-auto md:col-span-2"
         data-aos="fade-down"
@@ -50,17 +62,8 @@ export default function Introduction() {
       >
         <div className="relative mx-0 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
           <main className="mt-2 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 lg:py-8 xl:mt-28">
-            <div className="text-center lg:text-left">
-              <a href="https://specnith.com/" target="_blank" rel="noreferrer noopenor">
-                <picture>
-                  {/* <source srcSet="logo.webp" type="image/webp" /> */}
-                  <img
-                    src="logo.png"
-                    className="h-auto w-60 mx-auto"
-                    alt="SPEC Logo"
-                  />
-                </picture>
-              </a>
+            <div className="text-center lg:text-left ">
+              
               <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-6xl">
                 <span className="xl:inline font-extrabold header-theme">
                   Electrothon

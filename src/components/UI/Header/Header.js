@@ -83,9 +83,9 @@ const Nav = () => {
 
   return (
     <div className="h-full">
+      <div className=" h-full fixed flex flex-wrap z-10 top-0 left-0 ml-4">
       <nav
-        className="fixed z-10 top-0 left-0 ml-4"
-        style={{ transform: "translate(0, 25%)" }}
+        className="items-center m-auto"
       >
         {/* <div className="hidden md:flex py-4 rotate-90">
             <div className=" text-gray-200 text-2xl font-black">
@@ -107,6 +107,7 @@ const Nav = () => {
         </div>
           <BackTopBtn/>
       </nav>
+      </div>
 
       <span className="fixed top-0 bg-transparent z-10">
         <div className="md:hidden w-auto items-center pl-3 pr-10 h-16 text-gray-700 z-10 inline-block">
