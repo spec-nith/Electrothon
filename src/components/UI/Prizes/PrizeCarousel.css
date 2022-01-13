@@ -1,0 +1,108 @@
+.prize-swiper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex: 1 1 auto;
+}
+  
+  .prize-swiper-container {
+    position: relative;
+    /* width: 50vw; */
+    height: 100%;
+  }
+  
+  .prize-swiper-container > .prize-swiper-slide__content {
+    position: absolute;
+    top: 0;
+  }
+  
+  .prize-swiper-slide {
+    height: 27rem;
+    position: relative;
+    background: #eee;
+    align-items: center;
+    justify-content: center;
+    transition: all 200ms linear;
+    transform: scale(0.8);
+  }
+  /* .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+    background: #fc0;
+  } */
+  @media screen and (max-width: 640px) {
+    .prize-swiper-slide {
+      height: auto !important;
+    }
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .prize-swiper-slide {
+      height: 30rem !important;
+    }
+    /* .swiper-button-prev{
+      top:20% !important;
+    }
+    .swiper-button-next{
+      top:20% !important;
+    } */
+  }
+  @media screen and (max-width: 1024px) {
+    .prize-swiper-slide {
+      height: 27rem !important;
+    }
+  }
+  .prize-swiper-slide__content {
+    height: 300px;
+  }
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: calc(44px / 44 * 27);
+  height: 44px;
+  margin-top: calc(0px - (44/ 2));
+  z-index: 10;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #007aff;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-family: swiper-icons;
+  font-size: 44px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant: initial;
+  line-height: 1;
+}
+.swiper-button-prev {
+  left:0;
+  right: auto;
+  transform: rotate(180deg);
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: 'prev';
+}
+.swiper-button-next {
+  right:0;
+  left: auto;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: 'next';
+}
+.prize-Backdrop{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.7);
+}

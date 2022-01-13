@@ -151,7 +151,7 @@ export default function Introduction() {
           modules={[Pagination, Autoplay]}
           pagination={{ dynamicBullets: true, clickable: true }}
           loop={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           spaceBetween={0}
           slidesPerView={1}
           lazy={true}
