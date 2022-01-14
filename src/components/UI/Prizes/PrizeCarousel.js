@@ -6,6 +6,7 @@ import { prizesData } from "./prizesData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faRupeeSign } from "@fortawesome/free-solid-svg-icons";
 import { allParticipants } from "./prizesData";
+import Prizes from "./PrizeCard";
 
 const prizeCarousel = (props) => {
   return (
@@ -21,6 +22,11 @@ const prizeCarousel = (props) => {
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Prizes
         </h1>
+        <section className=" text-gray-200">
+        <div className="m-auto  px-1 py-24 ">
+          <Prizes/>
+        </div>
+      </section>
         <Swiper
           className="pt-10"
           modules={[Pagination, Navigation]}

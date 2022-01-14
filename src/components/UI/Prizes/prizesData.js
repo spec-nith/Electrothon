@@ -1,10 +1,13 @@
 export const podiumData = [
   {
-    name: "All Girls Team",
+    name: "Runners Up",
     amt: "Cash Prize",
-    img: "allgirl.png",
+    img: "prizes/runnerup.jpeg",
+    id:"r",
+    h:"24rem",
     desc: [
-      "Rs.500 Coupon From GFG",
+      "Rs.800 Coupon From GFG",
+      "Wolfram Award letter",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
       "Swags and Stickers",
@@ -13,7 +16,9 @@ export const podiumData = [
   {
     name: "Winner Team",
     amt: "Cash Prize",
-    img: "1prize.png",
+    img: "prizes/1prize.jpeg",
+    id:"w",
+    h:"25rem",
     desc: [
       "Rs.1200 Coupon From GFG",
       "Wolfram Award letter",
@@ -23,17 +28,18 @@ export const podiumData = [
     ],
   },
   {
-    name: "Runners Up",
+    name: "All Girls Team",
     amt: "Cash Prize",
-    img: "runnerup.png",
+    img: "prizes/allgirl.jpeg",
+    id:"g",
+    h:"23rem",
     desc: [
-      "Rs.800 Coupon From GFG",
-      "Wolfram Award letter",
+      "Rs.500 Coupon From GFG",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
       "Swags and Stickers",
     ],
-  },
+  }
 ];
 export const prizesData = [
   {
