@@ -1,42 +1,41 @@
 export const podiumData = [
-    {
-      name: "All Girls Team",
-      amt: "Cash Prize",
-      img: "allgirl.png",
-      desc: [
-        "Rs.500 Coupon From GFG",
-        "Lifetime upgrade of Taskade",
-        "Unlimited mock interviews from Interview Buddy",
-        "Swags and Stickers",
-      ],
-    },
-    {
-      name: "Winner Team",
-      amt: "Cash Prize",
-      img: "1prize.png",
-      desc: [
-        "Rs.1200 Coupon From GFG",
-        "Wolfram Award letter",
-        "Lifetime upgrade of Taskade",
-        "Unlimited mock interviews from Interview Buddy",
-        "Swags and Stickers",
-      ],
-    },
-    {
-      name: "Runners Up",
-      amt: "Cash Prize",
-      img: "runnerup.png",
-      desc: [
-        "Rs.800 Coupon From GFG",
-        "Wolfram Award letter",
-        "Lifetime upgrade of Taskade",
-        "Unlimited mock interviews from Interview Buddy",
-        "Swags and Stickers",
-      ],
-    }
-    
-  ];
-export const prizesData = [ 
+  {
+    name: "All Girls Team",
+    amt: "Cash Prize",
+    img: "allgirl.png",
+    desc: [
+      "Rs.500 Coupon From GFG",
+      "Lifetime upgrade of Taskade",
+      "Unlimited mock interviews from Interview Buddy",
+      "Swags and Stickers",
+    ],
+  },
+  {
+    name: "Winner Team",
+    amt: "Cash Prize",
+    img: "1prize.png",
+    desc: [
+      "Rs.1200 Coupon From GFG",
+      "Wolfram Award letter",
+      "Lifetime upgrade of Taskade",
+      "Unlimited mock interviews from Interview Buddy",
+      "Swags and Stickers",
+    ],
+  },
+  {
+    name: "Runners Up",
+    amt: "Cash Prize",
+    img: "runnerup.png",
+    desc: [
+      "Rs.800 Coupon From GFG",
+      "Wolfram Award letter",
+      "Lifetime upgrade of Taskade",
+      "Unlimited mock interviews from Interview Buddy",
+      "Swags and Stickers",
+    ],
+  },
+];
+export const prizesData = [
   {
     name: "Climate Change",
     amt: "Cash Prize",
@@ -60,7 +59,7 @@ export const prizesData = [
   {
     name: "Cyber Bullying",
     amt: "Cash Prize",
-    img: "prizes/cyber.jpg",
+    img: "prizes/cyber.png",
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
@@ -70,7 +69,7 @@ export const prizesData = [
   {
     name: "Natural Disaster",
     amt: "Cash Prize",
-    img: "prizes/disaster.jpg",
+    img: "prizes/disaster.png",
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
@@ -80,7 +79,7 @@ export const prizesData = [
   {
     name: "Hunger Eradication",
     amt: "Cash Prize",
-    img: "prizes/hunger.jpg",
+    img: "prizes/hunger.png",
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
@@ -90,7 +89,7 @@ export const prizesData = [
   {
     name: "Open Innovation",
     amt: "Cash Prize",
-    img: "prizes/innovation.jpg",
+    img: "prizes/innovation.png",
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
@@ -100,30 +99,29 @@ export const prizesData = [
   {
     name: "Best Beginner hack",
     amt: "Cash Prize",
-    img: "prizes/beginnerhack.jpg",
+    img: "prizes/beginnerhack.png",
     desc: [
       "Coding Minutes Course for each Team Member",
       "Egghead course for Web Development to each participant",
     ],
   },
-  
-
 ];
-// {
-//   name: "All Participants",
-//   amt: "Cash Prize",
-//   img: "allparticipants.png",
-//   desc: [
-//     "Full access licenses of Interview Cake for Interview prep",
-//     "Rs.300 Coupons from GFG",
-//     "5-Year free upgrades from Taskade",
-//     "Access to Wolfram|One for all your participants for thirty days",
-//     "90-day extended trial promo code for Balsamiq Cloud",
-//     "Coupens for top brands from GrabOn",
-//     "Premium Tier service from Echo3D",
-//     "Hacker Plan from Replit",
-//     "Professional License voiceflow",
-//     "Early Acess to platfrom From Cipher School",
-//     "Coupon Voucher from Interview Buddy",
-//   ],
-// },
+
+export const allParticipants = {
+  name: "All Participants",
+  amt: "Cash Prize",
+  img: "prizes/celebration.png",
+  desc: [
+    "Full access licenses of Interview Cake for Interview prep",
+    "Rs.300 Coupons from GFG",
+    "5-Year free upgrades from Taskade",
+    "Access to Wolfram | One for all your participants for thirty days",
+    "90-day extended trial promo code for Balsamiq Cloud",
+    "Coupens for top brands from GrabOn",
+    "Premium Tier service from Echo3D",
+    "Hacker Plan from Replit",
+    "Professional License voiceflow",
+    "Early Acess to platfrom From Cipher School",
+    "Coupon Voucher from Interview Buddy",
+  ],
+};
