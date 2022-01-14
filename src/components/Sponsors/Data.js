@@ -151,7 +151,7 @@ export const data = [
     id: "3",
   },
   {
-    tierName: "Other Sponsors",
+    tierName: "Our Partners",
     data: [
       {
         sponsorName: "GrabOn",

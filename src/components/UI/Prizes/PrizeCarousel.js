@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 import { Navigation, Pagination } from "swiper";
 import { prizesData } from "./prizesData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAward } from "@fortawesome/free-solid-svg-icons";
+import { faAward, faRupeeSign } from "@fortawesome/free-solid-svg-icons";
 import { allParticipants } from "./prizesData";
 
 const prizeCarousel = (props) => {
@@ -82,6 +82,11 @@ const prizeCarousel = (props) => {
                                     className="text-lg"
                                     fixedWidth
                                     icon={faAward}
+                                  />
+                                  <FontAwesomeIcon
+                                    className="text-lg"
+                                    fixedWidth
+                                    icon={faRupeeSign}
                                   />
                                   <p className="text-sm text-md md:text-lg flex items-center">
                                     {prize.amt}
