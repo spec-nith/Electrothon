@@ -56,7 +56,7 @@ export default function Schedule() {
             {props.index}
           </h1>
         </div>
-        <div className="order-1 rounded-lg shadow-xl w-5/12 px-6 py-4 text-right schedule-block2">
+        <div className="order-1 rounded-lg shadow-xl md:w-5/12 px-6 py-4 text-right schedule-block2">
           <p className="mb-3 text-base text-white">{props.props.date}</p>
           <span
             className="mb-3 font-bold text-lg md:text-2xl"
@@ -83,7 +83,7 @@ export default function Schedule() {
           </h1>
         </div>
         <div
-          className={`order-1 schedule-block${props.colr} rounded-lg shadow-xl w-5/12 px-4 py-4 text-left`}
+          className={`order-1 schedule-block${props.colr} rounded-lg shadow-xl md:w-5/12 px-4 py-4 text-left`}
           style={{ width: "85%" }}
         >
           <p className="mb-3 text-base text-white">{props.props.date}</p>
@@ -142,7 +142,7 @@ export default function Schedule() {
     >
       <div className="container mx-auto flex flex-col items-start md:flex-row">
         <div
-          className="flex flex-col w-full md:sticky top-0 lg:w-1/3 mt-2 md:mt-12 pr-8"
+          className="flex flex-col w-full md:sticky top-8 lg:w-1/3 md:mt-12 pr-8"
           data-aos="fade-right"
           data-aos-delay="50"
           data-aos-duration="1500"

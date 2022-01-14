@@ -7,7 +7,7 @@ import About from "./components/About/About";
 import FAQ from "./components/FAQs/faq";
 // import Judges from "./components/Judges/judges";
 import Milestone from "./components/Milestone/milestone";
-// import Prizes from "./components/Prizes/prizes";
+import Prizes from "./components/UI/Prizes/PrizeCarousel";
 // import ProbStatements from "./components/Prob_statements/problems";
 import Projects from "./components/Themes/Themes";
 import Schedule from "./components/Schedule/schedule";
@@ -87,7 +87,7 @@ const App = () => {
               <Schedule />
               <Projects />
               {/* <ProbStatements /> */}
-              {/* <Prizes /> */}
+              <Prizes />
               {/* <Workshop /> */}
               {/* <Judges /> */}
               <Sponsors />
