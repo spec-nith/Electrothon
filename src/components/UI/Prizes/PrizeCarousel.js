@@ -56,7 +56,7 @@ const prizeCarousel = (props) => {
                 <div className="swiper-button-next"></div>
                 {prizesData.map((prize, index) => {
                   return (
-                    <SwiperSlide className="md:w-4/5 lg:w-4/6">
+                    <SwiperSlide className="md:w-4/5 lg:w-4/6" key={index}>
                       {({ isActive }) => (
                         <div
                           className="prize-swiper-slide"
@@ -127,16 +127,16 @@ const prizeCarousel = (props) => {
               alt="prizes"
             />
           </div>
-          <div className="md:w-1/2 h-1/2 md:h-auto pl-6 content-theme">
+          <div className="md:w-1/2 h-1/2 md:h-auto md:pl-6 content-theme">
             <ul className="md:list-disc text-lg md:text-xl px-3 md:mb-1 md:p-3 md:text-left text-center">
               {allParticipants.desc.map((element, index) => {
-                return (
+                return (<React.Fragment key={index}>
                   <li
                     className="md:py-0 py-2 tracking-tighter md:tracking-normal"
-                    key={index}
                   >
                     {element}
                   </li>
+                  </React.Fragment>
                 );
               })}
             </ul>
