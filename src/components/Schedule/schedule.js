@@ -23,12 +23,12 @@ export default function Schedule() {
     {
       title: "Electrothon Registration",
       para: "Registration opens up for students to register with their respective teams and project ideas for Electrothon.",
-      date: "1st - 20th January 2022",
+      date: "1st - 31st January 2022",
     },
     {
-      title: "Registration Deadline",
+      title: "Last date of Registration",
       para: "Registered teams submit a brief proposal of their project ideas, describing the general workflow, complexity, design and its possible applications.",
-      date: "30th January 2022",
+      date: "31st January 2022",
     },
     {
       title: "Electrothon Main Event",
@@ -37,7 +37,7 @@ export default function Schedule() {
     },
     {
       title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our judging panel on 10th May, 2021 and the results will be announced on the Whatsapp groups and will be mailed to you",
+      para: "The ultimate genius will be revealed by our judging panel on 22nd Feburary, 2022 and the results will be announced on the Whatsapp groups and will be mailed to you",
       date: "22nd Feburary 2022",
     },
   ];

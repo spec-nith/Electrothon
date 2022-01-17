@@ -174,6 +174,13 @@ export const data = [
         url: "https://streamyard.com/",
         id: "title_4",
       },
+      {
+        sponsorName: "LeadingLearners",
+        webp: "sponsors/other/webp/leadinglearners.webp",
+        src: "sponsors/other/leadinglearners.png",
+        url: "http://linktr.ee/leadinglearners",
+        id: "title_5",
+      },
     ],
     id: "4",
   },

@@ -22,13 +22,11 @@ const prizeCarousel = (props) => {
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           Prizes
         </h1>
-        <section className=" text-gray-200">
         <div className="m-auto  px-1 py-24 ">
-          <Prizes/>
+          <Prizes />
         </div>
-      </section>
         <Swiper
-          className="pt-10"
+          className="pt-10 prize-slide"
           modules={[Pagination, Navigation]}
           pagination={{ dynamicBullets: true, clickable: true }}
           loop={true}
@@ -55,77 +53,59 @@ const prizeCarousel = (props) => {
             },
           }}
         >
-          <div className="prize-swiper">
-            <div className="prize-swiper-container">
-              <div className="swiper-wrapper prize-gradient">
-                <div className="swiper-button-prev"></div>
-                <div className="swiper-button-next"></div>
-                {prizesData.map((prize, index) => {
-                  return (
-                    <SwiperSlide className="md:w-4/5 lg:w-4/6" key={index}>
-                      {({ isActive }) => (
-                        <div
-                          className="prize-swiper-slide"
-                          style={isActive ? { transform: "scale(1)" } : {}}
-                        >
-                          <div className="hidden md:block">
-                            {!isActive && (
-                              <div className="prize-Backdrop rounded-3xl"></div>
-                            )}
-                          </div>
-                          <div className="w-full h-full md:max-w-full md:flex prize-gradient">
-                            <div className="h-1/2 md:h-auto md:w-1/2 lg:w-2/5 flex-none text-center overflow-hidden md:rounded-l-3xl md:rounded-r-none rounded-t-2xl">
-                              <img
-                                className="w-full h-full object-fit md:object-contain"
-                                src={prize.img}
-                                alt="prizes"
-                              />
-                            </div>
-                            <div className="h-1/2 md:h-auto p-4 flex flex-col justify-center items-center leading-normal md:w-1/2 lg:w-3/5 md:rounded-r-3xl md:rounded-l-none rounded-b-2xl content-theme ">
-                              <div className="px-3">
-                                <div className="flex items-center lg:pb-4">
-                                  <FontAwesomeIcon
-                                    className="text-lg"
-                                    fixedWidth
-                                    icon={faAward}
-                                  />
-                                  <FontAwesomeIcon
-                                    className="text-lg"
-                                    fixedWidth
-                                    icon={faRupeeSign}
-                                  />
-                                  <p className="text-sm text-md md:text-lg flex items-center">
-                                    {prize.amt}
-                                  </p>
-                                </div>
-                                <div className=" font-bold text-xl md:text-3xl md:mb-2">
-                                  {prize.name}
-                                </div>
-                                <ul className="list-decimal text-lg md:text-xl px-3 md:mb-1 md:p-3">
-                                  <p className="">
-                                    {prize.desc.map((element, index) => {
-                                      return (
-                                        <li
-                                          className="md:pt-1 md:tracking-tighter"
-                                          key={index}
-                                        >
-                                          {element}
-                                        </li>
-                                      );
-                                    })}
-                                  </p>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
+          {prizesData.map((prize, index) => {
+            return (
+              <SwiperSlide className="md:w-4/5 lg:w-4/6" key={index}>
+                {() => (
+                  <div className="w-full h-full md:max-w-full md:flex prize-gradient">
+                    <div className="h-1/2 md:h-auto md:w-1/2 lg:w-2/5 flex-none text-center overflow-hidden md:rounded-l-3xl md:rounded-r-none rounded-t-2xl">
+                      <img
+                        className="w-full h-full object-fit md:object-contain"
+                        src={prize.img}
+                        alt="prizes"
+                      />
+                    </div>
+                    <div className="h-1/2 md:h-auto p-4 flex flex-col justify-center items-center leading-normal md:w-1/2 lg:w-3/5 md:rounded-r-3xl md:rounded-l-none rounded-b-2xl content-theme ">
+                      <div className="px-3">
+                        <div className="flex items-center lg:pb-4">
+                          <FontAwesomeIcon
+                            className="text-lg"
+                            fixedWidth
+                            icon={faAward}
+                          />
+                          <FontAwesomeIcon
+                            className="text-lg"
+                            fixedWidth
+                            icon={faRupeeSign}
+                          />
+                          <p className="text-sm text-md md:text-lg flex items-center">
+                            {prize.amt}
+                          </p>
                         </div>
-                      )}
-                    </SwiperSlide>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+                        <div className=" font-bold text-xl md:text-3xl md:mb-2">
+                          {prize.name}
+                        </div>
+                        <ul className="list-decimal text-lg md:text-xl px-3 md:mb-1 md:p-3">
+                          <p className="">
+                            {prize.desc.map((element, index) => {
+                              return (
+                                <li
+                                  className="md:pt-1 md:tracking-tighter"
+                                  key={index}
+                                >
+                                  {element}
+                                </li>
+                              );
+                            })}
+                          </p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
         <h1 className="mt-16 text-center text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           {allParticipants.name}
@@ -139,14 +119,13 @@ const prizeCarousel = (props) => {
             />
           </div>
           <div className="md:w-1/2 h-1/2 md:h-auto md:pl-6 content-theme">
-            <ul className="md:list-disc text-lg md:text-xl px-3 md:mb-1 md:p-3 md:text-left text-center">
+            <ul className="md:list-disc text-lg px-3 md:mb-1 md:p-3 md:text-left text-center">
               {allParticipants.desc.map((element, index) => {
-                return (<React.Fragment key={index}>
-                  <li
-                    className="md:py-0 py-2 tracking-tighter md:tracking-normal"
-                  >
-                    {element}
-                  </li>
+                return (
+                  <React.Fragment key={index}>
+                    <li className="md:py-0 py-2 tracking-tighter md:tracking-normal">
+                      {element}
+                    </li>
                   </React.Fragment>
                 );
               })}
