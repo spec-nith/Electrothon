@@ -2,6 +2,7 @@ export const podiumData = [
   {
     name: "Runners Up",
     amt: "Cash Prize",
+    webp: "prizes/webp/runnerup.webp",
     img: "prizes/runnerup.png",
     id: "r",
     cStyle: {
@@ -20,6 +21,7 @@ export const podiumData = [
   {
     name: "Winner Team",
     amt: "Cash Prize",
+    webp: "prizes/webp/winner.webp",
     img: "prizes/winner.png",
     id: "w",
     cStyle: {
@@ -38,6 +40,7 @@ export const podiumData = [
   {
     name: "All Girls Team",
     amt: "Cash Prize",
+    webp: "prizes/webp/girls.webp",
     img: "prizes/girls.png",
     id: "g",
     cStyle: {
@@ -55,6 +58,7 @@ export const prizesData = [
   {
     name: "Climate Change",
     amt: "Cash Prize",
+    webp: "prizes/webp/climate.webp",
     img: "prizes/climate.png",
     desc: [
       "Wolfram Award letter",
@@ -65,6 +69,7 @@ export const prizesData = [
   {
     name: "Pandemic",
     amt: "Cash Prize",
+    webp: "prizes/webp/pandemic.webp",
     img: "prizes/pandemic.png",
     desc: [
       "Wolfram Award letter",
@@ -75,6 +80,7 @@ export const prizesData = [
   {
     name: "Cyber Bullying",
     amt: "Cash Prize",
+    webp: "prizes/webp/cyber.webp",
     img: "prizes/cyber.png",
     desc: [
       "Wolfram Award letter",
@@ -85,6 +91,7 @@ export const prizesData = [
   {
     name: "Natural Disaster",
     amt: "Cash Prize",
+    webp: "prizes/webp/disaster.webp",
     img: "prizes/disaster.png",
     desc: [
       "Wolfram Award letter",
@@ -95,6 +102,7 @@ export const prizesData = [
   {
     name: "Hunger Eradication",
     amt: "Cash Prize",
+    webp: "prizes/webp/hunger.webp",
     img: "prizes/hunger.png",
     desc: [
       "Wolfram Award letter",
@@ -105,6 +113,7 @@ export const prizesData = [
   {
     name: "Open Innovation",
     amt: "Cash Prize",
+    webp: "prizes/webp/innovation.webp",
     img: "prizes/innovation.png",
     desc: [
       "Wolfram Award letter",
@@ -115,6 +124,7 @@ export const prizesData = [
   {
     name: "Best Beginner hack",
     amt: "Cash Prize",
+    webp: "prizes/webp/beginnerhack.webp",
     img: "prizes/beginnerhack.png",
     desc: [
       "Coding Minutes Course for each Team Member",
@@ -126,6 +136,7 @@ export const prizesData = [
 export const allParticipants = {
   name: "All Participants",
   amt: "Cash Prize",
+  webp: "prizes/webp/celebration.webp",
   img: "prizes/celebration.png",
   desc: [
     "Full access licenses of Interview Cake for Interview prep",

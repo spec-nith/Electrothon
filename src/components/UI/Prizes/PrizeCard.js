@@ -1,6 +1,6 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 // import './prize.css';
-import { podiumData, prizeData } from "./prizesData";
+import { podiumData } from "./prizesData";
 
 import "swiper/swiper.min.css";
 import "swiper/modules/pagination/pagination.min.css";

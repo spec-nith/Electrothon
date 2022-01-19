@@ -59,11 +59,14 @@ const prizeCarousel = (props) => {
                 {() => (
                   <div className="w-full h-full md:max-w-full md:flex prize-gradient">
                     <div className="h-1/2 md:h-auto md:w-1/2 lg:w-2/5 flex-none text-center overflow-hidden md:rounded-l-3xl md:rounded-r-none rounded-t-2xl">
-                      <img
-                        className="w-full h-full object-fit md:object-contain"
-                        src={prize.img}
-                        alt="prizes"
-                      />
+                      <picture>
+                        <source srcSet={prize.webp} type="image/webp" />
+                        <img
+                          className="w-full h-full object-fit md:object-contain"
+                          src={prize.img}
+                          alt="prizes"
+                        />
+                      </picture>
                     </div>
                     <div className="h-1/2 md:h-auto p-4 flex flex-col justify-center items-center leading-normal md:w-1/2 lg:w-3/5 md:rounded-r-3xl md:rounded-l-none rounded-b-2xl content-theme ">
                       <div className="px-3">
@@ -112,11 +115,15 @@ const prizeCarousel = (props) => {
         </h1>
         <div className="w-full h-full md:max-w-6xl md:flex m-auto">
           <div className="h-1/2 md:h-auto md:w-1/2 text-center overflow-hidden">
-            <img
-              className="w-full h-full object-fit md:object-contain"
-              src={allParticipants.img}
-              alt="prizes"
-            />
+            <picture>
+              <source srcSet={allParticipants.webp} type="image/webp" />
+              <img
+                className="w-full h-full object-fit md:object-contain"
+                src={allParticipants.img}
+                alt="prizes"
+              />
+            </picture>
+
           </div>
           <div className="md:w-1/2 h-1/2 md:h-auto md:pl-6 content-theme">
             <ul className="md:list-disc text-lg px-3 md:mb-1 md:p-3 md:text-left text-center">
