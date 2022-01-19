@@ -85,7 +85,7 @@ const prizeCarousel = (props) => {
                         <div className=" font-bold text-xl md:text-3xl md:mb-2">
                           {prize.name}
                         </div>
-                        <ul className="list-decimal text-lg md:text-xl px-3 md:mb-1 md:p-3">
+                        <ul className="list-decimal text-base md:text-xl px-3 md:mb-1 md:p-3">
                           <p className="">
                             {prize.desc.map((element, index) => {
                               return (

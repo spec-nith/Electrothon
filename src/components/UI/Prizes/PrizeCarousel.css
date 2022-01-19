@@ -1,3 +1,56 @@
+@media only screen and (min-width: 768px) {
+  .prize-slide .swiper-slide-active{
+    transform: scale(1);
+  }
+  
+  /* .prize-slide .swiper-slide-active:after {
+    border-radius: 0.8rem;
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(90deg, hsla(0, 6%, 13%, 0) 0%, hsla(0, 6%, 13%, 0) 100%);
+  } */
+  
+  .prize-slide .swiper-slide-prev{
+    transform: scale(0.85);
+  }
+  /* .prize-slide .swiper-slide-prev:after {
+    border-radius: 0.8rem;
+    position: absolute;
+    content:"";
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(90deg, hsla(0, 6%, 13%, 1) 70%, hsla(0, 6%, 13%, 0.4) 100%);
+    transition: all 200ms linear;
+  } */
+  .prize-slide .swiper-slide-next{
+    transform: scale(0.85);
+  }
+  
+  .prize-slide .swiper-slide-duplicate-active{
+    transform: scale(1);
+  }
+  
+  .prize-slide .swiper-slide-duplicate-prev{
+    transform: scale(0.85);
+    
+  }
+  
+  .prize-slide .swiper-slide-duplicate-next{
+    transform: scale(0.85);
+  }
+
+  .prize-slide .swiper-slide{
+    margin-left: -1.2rem !important;
+    margin-right: -1.2rem !important;
+  }
+  
+}
 .prize-Backdrop{
   width: 100%;
   height: 100%;
@@ -8,55 +61,8 @@
   background: rgb(0,0,0,0.5);
 }
 
-.prize-slide .swiper-slide-active{
-  transform: scale(1);
-}
-
-/* .prize-slide .swiper-slide-active:after {
-  border-radius: 0.8rem;
-  position: absolute;
-  content:"";
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  background: linear-gradient(90deg, hsla(0, 6%, 13%, 0) 0%, hsla(0, 6%, 13%, 0) 100%);
-} */
-
-.prize-slide .swiper-slide-prev{
-  transform: scale(0.85);
-}
-/* .prize-slide .swiper-slide-prev:after {
-  border-radius: 0.8rem;
-  position: absolute;
-  content:"";
-  height:100%;
-  width:100%;
-  top:0;
-  left:0;
-  background: linear-gradient(90deg, hsla(0, 6%, 13%, 1) 70%, hsla(0, 6%, 13%, 0.4) 100%);
-  transition: all 200ms linear;
-} */
-.prize-slide .swiper-slide-next{
-  transform: scale(0.85);
-}
-
-.prize-slide .swiper-slide-duplicate-active{
-  transform: scale(1);
-}
-
-.prize-slide .swiper-slide-duplicate-prev{
-  transform: scale(0.85);
-  
-}
-
-.prize-slide .swiper-slide-duplicate-next{
-  transform: scale(0.85);
-}
 
 .prize-slide .swiper-slide{
-  margin-left: -1.2rem !important;
-  margin-right: -1.2rem !important;
   background: hsla(0, 6%, 13%, 1);
 
   background: linear-gradient(90deg, hsla(0, 6%, 13%, 0.6) 0%, hsla(0, 0%, 0%, 0.2) 100%);

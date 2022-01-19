@@ -6,6 +6,7 @@ import {
   faSearch,
   faUsers,
   faWindowRestore,
+  faTrophy
 } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
@@ -28,6 +29,11 @@ const navItems = [
     name: "Themes",
     id: "themes",
     icon: faWindowRestore,
+  },
+  {
+    name: "Prizes",
+    id: "prizes",
+    icon: faTrophy,
   },
   {
     name: "Sponsors",

@@ -39,7 +39,7 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href="https://drive.google.com/file/d/10KVmRYHKAQIkMVR3nFIqbaPpL1wpMYTz/view?usp=drivesdk"
+                href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex justify-center md:justify-start text-sm md:md:text-sm text-gray-400 pb-2 hover:text-gray-300"

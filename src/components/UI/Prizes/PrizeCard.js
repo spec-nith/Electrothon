@@ -6,8 +6,8 @@ import "swiper/swiper.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 import "swiper/modules/navigation/navigation.min.css";
 
-const [winner, girls, runner] = podiumData;
-const podium = [girls, winner, runner];
+const [r, w, g] = podiumData;
+const podium = [w, r, g];
 const custom = {
   gridColumn: 1,
   gridRow: 1,
@@ -106,9 +106,20 @@ const Prizes = () => {
         return (
           <div
             className={
-              "flex overflow-hidden w-full md:w-1/3 items-center object-cover justify-" +
+              "hidden md:flex my-4 overflow-hidden w-full md:w-1/3 items-center object-cover justify-" +
               alignment[index]
             }
+            key={index}
+          >
+            <PodiumCard data={data} />
+          </div>
+        );
+      })}
+
+{podium.map((data, index) => {
+        return (
+          <div
+            className="flex md:hidden my-4 overflow-hidden w-full md:w-1/3 items-center object-cover justify-center"
             key={index}
           >
             <PodiumCard data={data} />
