@@ -147,6 +147,13 @@ export const data = [
         url: "https://interviewbuddy.in/",
         id: "silver_2",
       },
+      {
+        sponsorName: "Coil",
+        webp: "sponsors/bronze/webp/coil.webp",
+        src: "sponsors/bronze/coil.png",
+        url: "https://coil.com/",
+        id: "silver_3",
+      },
     ],
     id: "3",
   },

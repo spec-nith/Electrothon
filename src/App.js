@@ -14,6 +14,7 @@ import Schedule from "./components/Schedule/schedule";
 import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
+import Challenges from "./components/Challenges/Challenges";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import MediaIcons from "./components/UI/MediaIcons/mediaicons";
 import AOS from "aos";
@@ -88,6 +89,7 @@ const App = () => {
               <Projects />
               {/* <ProbStatements /> */}
               <Prizes />
+              <Challenges/>
               {/* <Workshop /> */}
               {/* <Judges /> */}
               <Sponsors />
