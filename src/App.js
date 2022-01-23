@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./components/UI/Header/Header";
 import Footer from "./components/UI/Footer/Footer";
 import Intro from "./components/Hero/Hero";
-import Content from "./components/UI/Content/Content";
+// import Content from "./components/UI/Content/Content";
 import About from "./components/About/About";
 import FAQ from "./components/FAQs/faq";
 // import Judges from "./components/Judges/judges";
@@ -22,6 +22,7 @@ import "aos/dist/aos.css";
 import randomColor from "randomcolor";
 import BackgroundStatic from "./components/UI/Background/bgstatic";
 import "./mlh.css";
+
 
 AOS.init({
   once: true,
@@ -81,7 +82,7 @@ const App = () => {
               <section id="general-content">
                 <About />
                 <Milestone />
-                <Content />
+                {/* <Content /> */}
               </section>
               {/* <Judges /> */}
               {/* <Speakers/> */}

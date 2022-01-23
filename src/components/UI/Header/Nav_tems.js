@@ -1,25 +1,25 @@
 import {
   faCalendarDay,
   faHandshake,
-  faHome,
+  // faHome,
   faIdCardAlt,
   faSearch,
-  faUsers,
+  // faUsers,
   faWindowRestore,
   faTrophy
 } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [
-  {
-    name: "Home",
-    id: "home",
-    icon: faHome,
-  },
-  {
-    name: "About Us",
-    id: "general-content",
-    icon: faUsers,
-  },
+  // {
+  //   name: "Home",
+  //   id: "home",
+  //   icon: faHome,
+  // },
+  // {
+  //   name: "About Us",
+  //   id: "general-content",
+  //   icon: faUsers,
+  // },
   {
     name: "Schedule",
     id: "schedule",
