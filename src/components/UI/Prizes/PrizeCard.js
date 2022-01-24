@@ -11,6 +11,7 @@ const podium = [w, r, g];
 const custom = {
   gridColumn: 1,
   gridRow: 1,
+  backgroundColor:"#201621"
 };
 
 class PodiumCard extends React.Component {
@@ -66,7 +67,7 @@ class PodiumCard extends React.Component {
           </div>
         </div>
         <div
-          className="max-w-sm rounded overflow-hidden shadow-lg bg-blue-200 leading-normal tracking-tight"
+          className="max-w-sm rounded overflow-hidden shadow-lg leading-normal tracking-tight"
           style={custom}
         >
           <img
@@ -75,7 +76,7 @@ class PodiumCard extends React.Component {
             src={this.props.data.img}
             alt="Sunset in the mountains"
           />
-          <div className="px-6 text-center min-h-40 bg-blue-600 pt-4 text-white">
+          <div className="px-6 text-center min-h-40 pt-4 text-white" style={{backgroundColor:"#1b141c"}}>
             <div className="font-bold text-2xl mb-2 ">
               {this.props.data.name}
             </div>

@@ -1,28 +1,29 @@
 import React, { useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
-import { Pagination, Autoplay } from "swiper";
-import slides from "./Carousel.json";
+// import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
+// import { Pagination, Autoplay } from "swiper";
+// import slides from "./Carousel.json";
+import Timer from '../UI/CountDown/countDown'
 
 // Import Styles
 import "swiper/swiper.min.css";
 import "swiper/modules/pagination/pagination.min.css";
 
-function shuffle(array) {
-  let currentIndex = array.length,
-    randomIndex;
+// function shuffle(array) {
+//   let currentIndex = array.length,
+//     randomIndex;
 
-  while (currentIndex !== 0) {
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex--;
+//   while (currentIndex !== 0) {
+//     randomIndex = Math.floor(Math.random() * currentIndex);
+//     currentIndex--;
 
-    [array[currentIndex], array[randomIndex]] = [
-      array[randomIndex],
-      array[currentIndex],
-    ];
-  }
+//     [array[currentIndex], array[randomIndex]] = [
+//       array[randomIndex],
+//       array[currentIndex],
+//     ];
+//   }
 
-  return array;
-}
+//   return array;
+// }
 
 export default function Introduction() {
   useEffect(() => {
@@ -60,7 +61,7 @@ export default function Introduction() {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out-cubic"
       >
-        <div className="relative mx-0 pb-8 sm:pb-16 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
+        <div className="relative mx-0 md:pb-20 lg:pb-28 xl:pb-32 lg:max-w-2xl lg:w-full">
           <main className="mt-2 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 lg:py-8 xl:mt-28">
             <div className="text-center lg:text-left ">
               <div className="flex justify-center md:hidden">
@@ -140,14 +141,11 @@ export default function Introduction() {
           </main>
         </div>
       </div>
-      <div
-        className="mx-auto block h-full w-full col-span-3"
-        data-aos="fade-left"
-        data-aos-delay="50"
-        data-aos-duration="1000"
-        data-aos-easing="ease-in-out-cubic"
+       <div
+        className="flex items-center justify-center block h-4/5 w-full col-span-3"
       >
-        <Swiper
+        <Timer />
+       {/* <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ dynamicBullets: true, clickable: true }}
           loop={true}
@@ -163,13 +161,13 @@ export default function Introduction() {
                 <div
                   className="each-slide overflow-hidden bg-contain"
                   key={index}
-                >
+                > */}
                   {/* <img
                     src={"electrothon/" + image.url}
                     alt={image.caption}
                     className="hero-background"
                   /> */}
-                  <picture className="hero-background">
+                  {/* <picture className="hero-background">
                     <source srcSet={image.webp} type="image/webp" />
                     <img
                       className="hero-background"
@@ -181,8 +179,8 @@ export default function Introduction() {
               </SwiperSlide>
             );
           })}
-        </Swiper>
-      </div>
+        </Swiper>*/}
+      </div> 
     </section>
   );
 }
