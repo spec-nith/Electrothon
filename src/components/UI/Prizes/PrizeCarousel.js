@@ -113,7 +113,7 @@ const prizeCarousel = (props) => {
         <h1 className="mt-16 text-center text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
           {allParticipants.name}
         </h1>
-        <div className="w-full h-full md:max-w-6xl md:flex m-auto">
+        <div className="w-full h-full md:max-w-6xl md:flex m-auto  rounded-2xl p-4 mt-2 bg-black bg-opacity-25">
           <div className="h-1/2 md:h-auto md:w-1/2 text-center overflow-hidden">
             <picture>
               <source srcSet={allParticipants.webp} type="image/webp" />
@@ -126,11 +126,11 @@ const prizeCarousel = (props) => {
 
           </div>
           <div className="md:w-1/2 h-1/2 md:h-auto md:pl-6 content-theme">
-            <ul className="md:list-disc text-lg px-3 md:mb-1 md:p-3 md:text-left text-center">
+            <ul className="md:list-decimal text-lg px-3 md:mb-1 md:p-3 md:text-left text-center ">
               {allParticipants.desc.map((element, index) => {
                 return (
                   <React.Fragment key={index}>
-                    <li className="md:py-0 py-2 tracking-tighter md:tracking-normal">
+                    <li className="md:py-0 my-4 tracking-tighter md:tracking-normal ">
                       {element}
                     </li>
                   </React.Fragment>
