@@ -40,7 +40,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1 pt-24 md:pt-0"
+      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1 md:pt-0"
     >
       <div className=" hidden md:block fixed top-0 left-0 z-10 m-4">
         <a
@@ -80,7 +80,7 @@ export default function Introduction() {
                   </picture>
                 </a>
               </div>
-              <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-7xl">
                 <span className="xl:inline font-extrabold header-theme"></span>
                 <span className="xl:inline font-extrabold header-theme">
                   Electrothon
