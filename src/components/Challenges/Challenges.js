@@ -25,11 +25,14 @@ const Challenges = () => {
                 key={challenge.key}
               >
                 <div className="lg:w-2/5 p-5 float-left">
-                  <img
-                    className="w-full h-full object-fit md:object-contain"
-                    src={challenge.img}
-                    alt="challenge"
-                  />
+                  <picture>
+                    <source srcSet={challenge.webp} type="image/webp" />
+                    <img
+                      src={challenge.img}
+                      className="w-full h-full object-fit md:object-contain"
+                      alt={challenge.key + "-challenge"}
+                    />
+                  </picture>
                 </div>
                 <div className="lg:w-3/5 flex flex-col justify-center">
                   <div className="px-3">
