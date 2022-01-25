@@ -92,7 +92,7 @@ const Nav = () => {
             target="_blank"
             rel="noreferrer noopener"
             >
-            {/* <img src="logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
+            {/* <img src="spec_logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
           {/* SPEC
             </a>
             </div>

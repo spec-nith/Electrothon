@@ -19,7 +19,10 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="text-sm md:text-lg md:font-bold text-white hover:text-gray-300 "
           >
-            <img className="h-10 md:h-28" src="logo.png" alt="spec_logo" />
+            <picture>
+              <source srcSet="spec_logo.webp" type="image/webp" />
+              <img className="h-10 md:h-28" src="spec_logo.png" alt="spec_logo" />
+            </picture>
           </a>
         </div>
         <div className=" flex justify-center mb-4">
