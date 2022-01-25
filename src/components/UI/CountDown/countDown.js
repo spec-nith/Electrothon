@@ -57,29 +57,29 @@ const Timer=()=>{
                         </div>) : */}
                         <div className="flex md:items-stretch md:p-10">
                             <div className="flex flex-col items-center counter-cell">
-                                <span className="text-4xl md:text-6xl lg:text-7xl p-4 md:p-5 text-pink-400">{('0'+timerDays).slice(-2)}</span>
-                                <div className=" w-full text-center p-2 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
+                                <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">{('0'+timerDays).slice(-2)}</span>
+                                <div className=" w-full text-center p-1.5 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
                                     <span className="">Days</span>
                                 </div>
                             </div>
-                            <span className="text-3xl md:text-8xl px-2 pt-4">:</span>
+                            <span className="text-3xl md:text-8xl px-1 md:px-2 pt-4">:</span>
                             <div className="flex flex-col items-center counter-cell">
-                                <span className="text-4xl md:text-6xl lg:text-7xl p-4 md:p-5 text-pink-400">{('0'+timerHours).slice(-2)}</span>
-                                <div className=" w-full text-center p-2 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
+                                <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">{('0'+timerHours).slice(-2)}</span>
+                                <div className=" w-full text-center p-1.5 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
                                     <span className="">Hours</span>
                                 </div>
                             </div>
-                            <span className="text-3xl md:text-8xl px-2 pt-4">:</span>
+                            <span className="text-3xl md:text-8xl px-1 md:px-2 pt-4">:</span>
                             <div className="flex flex-col items-center counter-cell">
-                                <span className="text-4xl md:text-6xl lg:text-7xl p-4 md:p-5 text-pink-400">{('0'+timerMinutes).slice(-2)}</span>
-                                <div className=" w-full text-center p-2 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
+                                <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">{('0'+timerMinutes).slice(-2)}</span>
+                                <div className=" w-full text-center p-1.5 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
                                     <span className="">Minutes</span>
                                 </div>
                             </div>
-                            <span className="text-3xl md:text-8xl px-2 pt-4">:</span>
+                            <span className="text-3xl md:text-8xl px-1 md:px-2 pt-4">:</span>
                             <div className="flex flex-col items-center counter-cell">  
-                                <span className="text-4xl md:text-6xl lg:text-7xl p-4 md:p-5 text-pink-400">{('0'+timerSeconds).slice(-2)}</span>
-                                <div className=" w-full text-center p-2 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
+                                <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">{('0'+timerSeconds).slice(-2)}</span>
+                                <div className=" w-full text-center p-1.5 md:p-3 md:text-xl rounded-b-lg" style={{backgroundColor:"#1b141c"}}>
                                     <span className="">Seconds</span>
                                 </div>
                             </div>
