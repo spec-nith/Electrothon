@@ -1,5 +1,5 @@
 import React from "react";
-import speakerData  from "./speakerdata.json";
+import speakerData from "./speakerdata.json";
 import JudgesCard from "../Judges/judgesCard";
 
 const Speakers = () => {

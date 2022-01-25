@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 // import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 // import { Pagination, Autoplay } from "swiper";
 // import slides from "./Carousel.json";
-import Timer from '../UI/CountDown/countDown'
+import Timer from "../UI/CountDown/countDown";
 
 // Import Styles
 import "swiper/swiper.min.css";
@@ -40,7 +40,7 @@ export default function Introduction() {
   return (
     <section
       id="home"
-      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 gap-1 md:pt-0"
+      className="min-h-screen grid grid-cols-1 xl:grid-cols-5 md:gap-1"
     >
       <div className=" hidden md:block fixed top-0 left-0 z-10 m-4">
         <a
@@ -49,8 +49,8 @@ export default function Introduction() {
           rel="noreferrer noopenor"
         >
           <picture>
-            {/* <source srcSet="logo.webp" type="image/webp" /> */}
-            <img src="logo.png" className="h-auto w-32" alt="SPEC Logo" />
+            <source srcSet="spec_logo.webp" type="image/webp" />
+            <img src="spec_logo.png" className="h-auto w-32" alt="SPEC Logo" />
           </picture>
         </a>
       </div>
@@ -71,9 +71,9 @@ export default function Introduction() {
                   rel="noreferrer noopenor"
                 >
                   <picture>
-                    {/* <source srcSet="logo.webp" type="image/webp" /> */}
+                    <source srcSet="spec_logo.webp" type="image/webp" />
                     <img
-                      src="logo.png"
+                      src="spec_logo.png"
                       className="h-auto w-32"
                       alt="SPEC Logo"
                     />
@@ -141,11 +141,9 @@ export default function Introduction() {
           </main>
         </div>
       </div>
-       <div
-        className="flex items-center justify-center block h-4/5 w-full col-span-3"
-      >
+      <div className="flex md:items-center justify-center block h-4/5 w-full md:col-span-3">
         <Timer />
-       {/* <Swiper
+        {/* <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ dynamicBullets: true, clickable: true }}
           loop={true}
@@ -162,12 +160,12 @@ export default function Introduction() {
                   className="each-slide overflow-hidden bg-contain"
                   key={index}
                 > */}
-                  {/* <img
+        {/* <img
                     src={"electrothon/" + image.url}
                     alt={image.caption}
                     className="hero-background"
                   /> */}
-                  {/* <picture className="hero-background">
+        {/* <picture className="hero-background">
                     <source srcSet={image.webp} type="image/webp" />
                     <img
                       className="hero-background"
@@ -180,7 +178,7 @@ export default function Introduction() {
             );
           })}
         </Swiper>*/}
-      </div> 
+      </div>
     </section>
   );
 }

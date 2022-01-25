@@ -6,7 +6,7 @@ import {
   faSearch,
   // faUsers,
   faWindowRestore,
-  faTrophy
+  faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 
 const navItems = [

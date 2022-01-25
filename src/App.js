@@ -23,7 +23,6 @@ import randomColor from "randomcolor";
 import BackgroundStatic from "./components/UI/Background/bgstatic";
 import "./mlh.css";
 
-
 AOS.init({
   once: true,
 });
@@ -90,7 +89,7 @@ const App = () => {
               <Projects />
               {/* <ProbStatements /> */}
               <Prizes />
-              <Challenges/>
+              <Challenges />
               {/* <Workshop /> */}
               {/* <Judges /> */}
               <Sponsors />

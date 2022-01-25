@@ -123,7 +123,6 @@ const prizeCarousel = (props) => {
                 alt="prizes"
               />
             </picture>
-
           </div>
           <div className="md:w-1/2 h-1/2 md:h-auto md:pl-6 content-theme">
             <ul className="md:list-decimal text-lg px-3 md:mb-1 md:p-3 md:text-left text-center ">

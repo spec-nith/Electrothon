@@ -11,7 +11,7 @@ const podium = [w, r, g];
 const custom = {
   gridColumn: 1,
   gridRow: 1,
-  backgroundColor:"#201621"
+  backgroundColor: "#201621",
 };
 
 class PodiumCard extends React.Component {
@@ -76,7 +76,10 @@ class PodiumCard extends React.Component {
             src={this.props.data.img}
             alt="Sunset in the mountains"
           />
-          <div className="px-6 text-center min-h-40 pt-4 text-white" style={{backgroundColor:"#1b141c"}}>
+          <div
+            className="px-6 text-center min-h-40 pt-4 text-white"
+            style={{ backgroundColor: "#1b141c" }}
+          >
             <div className="font-bold text-2xl mb-2 ">
               {this.props.data.name}
             </div>
@@ -117,7 +120,7 @@ const Prizes = () => {
         );
       })}
 
-{podium.map((data, index) => {
+      {podium.map((data, index) => {
         return (
           <div
             className="flex md:hidden my-4 overflow-hidden w-full md:w-1/3 items-center object-cover justify-center"

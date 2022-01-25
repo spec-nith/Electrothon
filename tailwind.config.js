@@ -8,6 +8,9 @@ module.exports = {
         "30r": "30rem",
         "28r": "28rem",
       },
+      width: {
+        "18r": "4.5rem",
+      },
     },
   },
   variants: {
