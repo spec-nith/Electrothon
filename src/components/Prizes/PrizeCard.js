@@ -47,7 +47,7 @@ class PodiumCard extends React.Component {
         <div
           className={
             "absolute transition-all text-white text-justify z-10 rounded overflow-hidden shadow-lg " +
-            (this.state.show ? "top-0 h-full" : "top-full")
+            (this.state.show ? "top-0 h-full w-full" : "top-full")
           }
           style={{ background: "rgb(20, 20, 24)" }}
         >
@@ -108,14 +108,14 @@ class PodiumCard extends React.Component {
 }
 
 const Prizes = () => {
-  const alignment = ["end", "center", "start"];
+  const alignment = ["justify-end", "justify-center", "justify-start"];
   return (
     <div className="flex flex-wrap overflow-hidden justify-center items-end ">
       {podiumData.map((data, index) => {
         return (
           <div
             className={
-              "hidden md:flex my-4 overflow-hidden w-full md:w-1/3 items-center object-cover justify-" +
+              "hidden md:flex my-4 overflow-hidden w-full md:w-1/3 items-center object-cover " +
               alignment[index]
             }
             key={index}
