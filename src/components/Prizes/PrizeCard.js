@@ -70,12 +70,15 @@ class PodiumCard extends React.Component {
           className="max-w-sm rounded overflow-hidden shadow-lg leading-normal tracking-tight"
           style={custom}
         >
-          <img
-            style={this.props.data.cStyle}
-            className="w-full"
-            src={this.props.data.img}
-            alt="Sunset in the mountains"
-          />
+          <picture>
+            <source srcSet={this.props.data.webp} type="image/webp" />
+            <img
+              style={this.props.data.cStyle}
+              className="w-full"
+              src={this.props.data.img}
+              alt="Sunset in the mountains"
+            />
+          </picture>
           <div
             className="px-6 text-center min-h-40 pt-4 text-white"
             style={{ backgroundColor: "#1b141c" }}
@@ -83,7 +86,7 @@ class PodiumCard extends React.Component {
             <div className="font-bold text-2xl mb-2 ">
               {this.props.data.name}
             </div>
-            <p className="text-lg pb-2">{this.props.data.amt}</p>
+            <p className="text-2xl pb-4">{this.props.data.amt}</p>
           </div>
           {/* <div
                   className="px-6 justify-end flex z-10 bg-blue-600 pb-2"

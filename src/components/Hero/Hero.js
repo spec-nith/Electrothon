@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 // import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
 // import { Pagination, Autoplay } from "swiper";
 // import slides from "./Carousel.json";
-import Timer from "../UI/CountDown/countDown";
+import Timer from "./CountDown/countDown";
 
 // Import Styles
 import "swiper/swiper.min.css";

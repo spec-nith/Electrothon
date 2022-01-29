@@ -27,7 +27,7 @@ export default function Schedule() {
     },
     {
       title: "Last date of Registration",
-      para: "Registered teams submit a brief proposal of their project ideas, describing the general workflow, complexity, design and its possible applications.",
+      para: "Registered teams submit a brief proposal of their project ideas, describing the general workflow, complexity, design, and possible applications.",
       date: "31st January 2022",
     },
     {
@@ -37,7 +37,7 @@ export default function Schedule() {
     },
     {
       title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our judging panel on 22nd Feburary, 2022 and the results will be announced on the Whatsapp groups and will be mailed to you",
+      para: "The ultimate genius will be revealed by our Judging Panel on 22nd February 2022 through our social media handles.",
       date: "22nd Feburary 2022",
     },
   ];

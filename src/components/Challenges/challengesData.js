@@ -1,7 +1,7 @@
 export const challengesData = [
   {
     desc: [
-      "Tezos, a decentralized open-source blockchain, is giving away a cash prize for best Dapp built on the same.",
+      "Tezos, a decentralized open-source blockchain, is giving away a cash prize for the best Dapp built on the same.",
     ],
     img: "sponsors/silver/tezos.png",
     webp: "sponsors/silver/webp/tezos.webp",
@@ -23,8 +23,8 @@ export const challengesData = [
 
   {
     desc: [
-      "Write a creative template for an Atomic NFT",
-      "Write a creative SmartWeave contract",
+      "Write a creative template for an Atomic NFT.",
+      "Write a creative SmartWeave contract.",
       "Build an app compatible with the Finnie wallet.",
     ],
     img: "sponsors/silver/koii.png",

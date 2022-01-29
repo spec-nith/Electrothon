@@ -21,7 +21,11 @@ export default function Footer() {
           >
             <picture>
               <source srcSet="spec_logo.webp" type="image/webp" />
-              <img className="h-10 md:h-28" src="spec_logo.png" alt="spec_logo" />
+              <img
+                className="h-10 md:h-28"
+                src="spec_logo.png"
+                alt="spec_logo"
+              />
             </picture>
           </a>
         </div>

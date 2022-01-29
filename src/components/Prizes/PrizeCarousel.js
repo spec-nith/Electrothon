@@ -1,7 +1,7 @@
 import React from "react";
 import "./PrizeCarousel.css";
 import { Swiper, SwiperSlide } from "swiper/react/swiper-react";
-import { Navigation, Pagination } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import { prizesData } from "./prizesData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAward, faRupeeSign } from "@fortawesome/free-solid-svg-icons";
@@ -27,7 +27,7 @@ const prizeCarousel = (props) => {
         </div>
         <Swiper
           className="pt-10 prize-slide"
-          modules={[Pagination, Navigation]}
+          modules={[Pagination, Navigation, Autoplay]}
           pagination={{ dynamicBullets: true, clickable: true }}
           loop={true}
           navigation={true}
@@ -35,6 +35,7 @@ const prizeCarousel = (props) => {
           centeredSlides={true}
           slidesPerGroup={1}
           roundLengths={true}
+          autoplay={{ delay: 2000, disableOnInteraction: false }}
           loopAdditionalSlides={30}
           breakpoints={{
             640: {

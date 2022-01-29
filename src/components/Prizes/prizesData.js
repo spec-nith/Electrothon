@@ -1,7 +1,7 @@
 export const podiumData = [
   {
     name: "Runners Up",
-    amt: "Cash Prize",
+    amt: "15000/- INR",
     webp: "prizes/webp/runnerup.webp",
     img: "prizes/runnerup.png",
     id: "r",
@@ -20,7 +20,7 @@ export const podiumData = [
   },
   {
     name: "Winner Team",
-    amt: "Cash Prize",
+    amt: "20000/- INR",
     webp: "prizes/webp/winner.webp",
     img: "prizes/winner.png",
     id: "w",
@@ -38,16 +38,17 @@ export const podiumData = [
     ],
   },
   {
-    name: "All Girls Team",
-    amt: "Cash Prize",
-    webp: "prizes/webp/girls.webp",
-    img: "prizes/girls.png",
+    name: "2nd Runner Up",
+    amt: "10000/- INR",
+    webp: "prizes/webp/3rd.webp",
+    img: "prizes/3rd.png",
     id: "g",
     cStyle: {
       paddingTop: "0rem",
     },
     desc: [
       "Rs.500 Coupon From GFG",
+      "Wolfram Award letter",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
       "Swags and Stickers",
@@ -57,7 +58,7 @@ export const podiumData = [
 export const prizesData = [
   {
     name: "Climate Change",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/climate.webp",
     img: "prizes/climate.png",
     desc: [
@@ -68,7 +69,7 @@ export const prizesData = [
   },
   {
     name: "Pandemic",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/pandemic.webp",
     img: "prizes/pandemic.png",
     desc: [
@@ -79,7 +80,7 @@ export const prizesData = [
   },
   {
     name: "Cyber Bullying",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/cyber.webp",
     img: "prizes/cyber.png",
     desc: [
@@ -90,7 +91,7 @@ export const prizesData = [
   },
   {
     name: "Natural Disaster",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/disaster.webp",
     img: "prizes/disaster.png",
     desc: [
@@ -101,7 +102,7 @@ export const prizesData = [
   },
   {
     name: "Hunger Eradication",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/hunger.webp",
     img: "prizes/hunger.png",
     desc: [
@@ -112,7 +113,7 @@ export const prizesData = [
   },
   {
     name: "Open Innovation",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/innovation.webp",
     img: "prizes/innovation.png",
     desc: [
@@ -123,7 +124,7 @@ export const prizesData = [
   },
   {
     name: "Best Beginner hack",
-    amt: "Cash Prize",
+    amt: "Worth 5000/- INR",
     webp: "prizes/webp/beginnerhack.webp",
     img: "prizes/beginnerhack.png",
     desc: [
@@ -148,7 +149,6 @@ export const allParticipants = {
     "Premium Tier service from Echo3D",
     "Hacker Plan from Repl.it",
     "Professional License Voiceflow",
-    "Early Acess to platform From Cipher School",
     "Coupon Voucher from Interview Buddy",
   ],
 };

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
 import navItems from "./Nav_tems";
-import BackTopBtn from "../BacktoTop/GoTop";
+import BackTopBtn from "./BacktoTop/GoTop";
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
