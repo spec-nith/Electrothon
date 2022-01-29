@@ -15,6 +15,7 @@ export const podiumData = [
       "Wolfram Award letter",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
+      "Leading Learners Expansion Pack",
       "Swags and Stickers",
     ],
   },
@@ -34,6 +35,7 @@ export const podiumData = [
       "Wolfram Award letter",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
+      "Leading Learners Expansion Pack",
       "Swags and Stickers",
     ],
   },
@@ -51,6 +53,7 @@ export const podiumData = [
       "Wolfram Award letter",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
+      "Leading Learners Expansion Pack",
       "Swags and Stickers",
     ],
   },
@@ -64,6 +67,7 @@ export const prizesData = [
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
       "Swags and Stickers",
     ],
   },
@@ -75,6 +79,7 @@ export const prizesData = [
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
       "Swags and Stickers",
     ],
   },
@@ -86,6 +91,7 @@ export const prizesData = [
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
       "Swags and Stickers",
     ],
   },
@@ -97,6 +103,7 @@ export const prizesData = [
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
       "Swags and Stickers",
     ],
   },
@@ -108,6 +115,7 @@ export const prizesData = [
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
       "Swags and Stickers",
     ],
   },
@@ -119,6 +127,7 @@ export const prizesData = [
     desc: [
       "Wolfram Award letter",
       "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
       "Swags and Stickers",
     ],
   },
@@ -130,6 +139,18 @@ export const prizesData = [
     desc: [
       "Coding Minutes Course for each Team Member",
       "Egghead course for Web Development to each participant",
+    ],
+  },
+  {
+    name: "All Girls Team",
+    amt: "Worth 5000/- INR",
+    webp: "prizes/webp/girls.webp",
+    img: "prizes/girls.png",
+    desc: [
+      "Wolfram Award letter",
+      "Coding Minutes Course for each Team Member",
+      "Leading Learners Expansion packs",
+      "Swags and Stickers",
     ],
   },
 ];

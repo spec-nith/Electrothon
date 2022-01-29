@@ -9,9 +9,7 @@ import "swiper/modules/navigation/navigation.min.css";
 const [r, w, g] = podiumData;
 const podium = [w, r, g];
 const custom = {
-  gridColumn: 1,
-  gridRow: 1,
-  backgroundColor: "#201621",
+  backgroundColor: "rgba(20,15,20,0.35)",
 };
 
 class PodiumCard extends React.Component {
@@ -41,21 +39,23 @@ class PodiumCard extends React.Component {
   render() {
     return (
       <div
-        className="grid rounded-8x1"
+        className="overflow-hidden relative"
         ref={(node) => {
           this.node = node;
         }}
       >
         <div
           className={
-            "bg-gray-800 text-white text-justify z-10 max-w-sm rounded overflow-hidden shadow-lg " +
-            (this.state.show ? "block" : "hidden")
+            "absolute transition-all text-white text-justify z-10 rounded overflow-hidden shadow-lg " +
+            (this.state.show ? "top-0 h-full" : "top-full")
           }
-          style={custom}
+          style={{ background: "rgb(20, 20, 24)" }}
         >
           <div className="p-auto" style={{ paddingTop: this.props.data.h }}>
-            <h2 className="text-center text-5xl pt-2 text-blue-900 ">Perks</h2>
-            <ul className="list-disc p-8 text-4x1">
+            <h2 className="text-center text-3xl md:text-5xl pt-2 text-white mt-8">
+              Perks
+            </h2>
+            <ul className="list-disc p-4 md:p-8 text-sm md:text-4x1">
               {this.props.data.desc.map((bullets, index) => {
                 return (
                   <li className="py-2 border-b-2 " key={index}>
@@ -80,26 +80,28 @@ class PodiumCard extends React.Component {
             />
           </picture>
           <div
-            className="px-6 text-center min-h-40 pt-4 text-white"
+            className="px-6 text-center min-h-40 pt-4 text-white pb-12"
             style={{ backgroundColor: "#1b141c" }}
           >
-            <div className="font-bold text-2xl mb-2 ">
+            <div className="font-bold text-xl md:text-2xl md:mb-2 ">
               {this.props.data.name}
             </div>
-            <p className="text-2xl pb-4">{this.props.data.amt}</p>
+            <p className="text-lg md:text-2xl pb-2 md:pb-4">
+              {this.props.data.amt}
+            </p>
           </div>
-          {/* <div
-                  className="px-6 justify-end flex z-10 bg-blue-600 pb-2"
-                  style={custom}
-                >
-                  <button
-                    className="inline-block bg-blue-600 rounded-full px-3 py-1 text-3x1 font-semibold text-black mr-2 leading-normal tracking-tight"
-                    onClick={this.handleClick}
-                  >
-                    Show More
-                  </button>
-                </div> */}
         </div>
+        <button
+          className={
+            "absolute z-20 bottom-0 w-full p-2 text-3x1 font-semibold leading-normal tracking-tight transition-all" +
+            (this.state.show
+              ? " bg-white text-black"
+              : " activeColor text-white")
+          }
+          onClick={this.handleClick}
+        >
+          {this.state.show ? "Hide" : "See More"}
+        </button>
       </div>
     );
   }
