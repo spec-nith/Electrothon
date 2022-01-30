@@ -15,7 +15,7 @@ const prizeCarousel = (props) => {
       className="relative overflow-hidden mt-12 container-theme p-6"
       data-aos="fade"
       data-aos-delay="50"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out-cubic"
     >
       <div className="container mx-auto">

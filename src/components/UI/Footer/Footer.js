@@ -169,7 +169,7 @@ export default function Footer() {
                 </div>
               </div>
               <picture>
-                <source srcSet="webp/email-contact.webp" type="image/webp" />
+                <source srcSet="email-contact.webp" type="image/webp" />
                 <img
                   src="email-contact.png"
                   className="hidden md:block "
@@ -222,7 +222,7 @@ export default function Footer() {
               </div>
             </div>
             <picture>
-              <source srcSet="webp/email-contact.webp" type="image/webp" />
+              <source srcSet="email-contact.webp" type="image/webp" />
               <img
                 src="email-contact.png"
                 className="hidden md:block "

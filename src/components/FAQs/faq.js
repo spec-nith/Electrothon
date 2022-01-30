@@ -45,7 +45,7 @@ export default function faq() {
       className="relative overflow-hidden mt-10 lg:px-8 px-2 py-6 container-theme"
       data-aos="fade"
       data-aos-delay="50"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out-cubic"
     >
       <h1

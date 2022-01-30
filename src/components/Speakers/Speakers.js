@@ -9,7 +9,7 @@ const Speakers = () => {
       className="relative overflow-hidden mt-2 container-theme p-6"
       data-aos="fade"
       data-aos-delay="50"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out-cubic"
     >
       <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center">

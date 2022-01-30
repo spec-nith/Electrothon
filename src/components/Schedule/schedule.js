@@ -137,7 +137,7 @@ export default function Schedule() {
       className="py-2 container-theme pl-6  mt-2 md:py-8"
       data-aos="fade"
       data-aos-delay="50"
-      data-aos-duration="1000"
+      data-aos-duration="500"
       data-aos-easing="ease-in-out-cubic"
     >
       <div className="container mx-auto flex flex-col items-start md:flex-row">

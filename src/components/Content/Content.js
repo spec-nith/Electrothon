@@ -8,7 +8,7 @@ export default function Content() {
         className="relative overflow-hidden mt-2 container-theme p-6"
         data-aos="fade"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out-cubic"
       >
         <div

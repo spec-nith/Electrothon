@@ -13,7 +13,7 @@ export default function Sponsors() {
         style={{ padding: 0 }}
         data-aos="fade"
         data-aos-delay="50"
-        data-aos-duration="1000"
+        data-aos-duration="500"
         data-aos-easing="ease-in-out-cubic"
       >
         {/* Title Sponsor  */}
