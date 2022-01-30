@@ -37,18 +37,16 @@ const Challenges = () => {
                 <div className="lg:w-3/5 flex flex-col justify-center">
                   <div className="px-3">
                     <ul className={challenge.list}>
-                      <p className="">
-                        {challenge.desc.map((element, index) => {
-                          return (
-                            <li
-                              className="md:pt-1 md:tracking-tighter"
-                              key={index}
-                            >
-                              {element}
-                            </li>
-                          );
-                        })}
-                      </p>
+                      {challenge.desc.map((element, index) => {
+                        return (
+                          <li
+                            className="md:pt-1 md:tracking-tighter"
+                            key={index}
+                          >
+                            {element}
+                          </li>
+                        );
+                      })}
                     </ul>
                     <p>{challenge.addon}</p>
                     <div className="flex flex-wrap justify-between md:items-end items-center mt-4 md:mt-2">

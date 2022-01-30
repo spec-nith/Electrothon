@@ -22,7 +22,7 @@ export default function Footer() {
             <picture>
               <source srcSet="spec_logo.webp" type="image/webp" />
               <img
-                className="h-10 md:h-28"
+                className="w-8 md:w-16"
                 src="spec_logo.png"
                 alt="spec_logo"
               />
@@ -221,11 +221,14 @@ export default function Footer() {
                 instead.
               </div>
             </div>
-            <img
-              src="email-contact.png"
-              className="hidden md:block "
-              alt="imageContact"
-            />
+            <picture>
+              <source srcSet="webp/email-contact.webp" type="image/webp" />
+              <img
+                src="email-contact.png"
+                className="hidden md:block "
+                alt="imageContact"
+              />
+            </picture>
           </div>
           <div>
             <form onSubmit={handleSubmit}>

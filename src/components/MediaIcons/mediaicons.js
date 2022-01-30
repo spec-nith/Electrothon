@@ -51,6 +51,8 @@ const MediaIcons = (props) => {
                 href="https://discord.gg/cjMMRs7tHs"
                 target="_blank"
                 rel="noreferrer noopenor"
+                aria-label="Discord"
+                name="discord"
               >
                 <FontAwesomeIcon fixedWidth icon={faDiscord} />
               </a>
@@ -64,6 +66,8 @@ const MediaIcons = (props) => {
                 href="https://www.linkedin.com/in/s-p-e-c-nith-40214b197/"
                 rel="noreferrer noopenor"
                 target="_blank"
+                aria-label="LinkedIn"
+                name="LinkedIn"
               >
                 <FontAwesomeIcon fixedWidth icon={faLinkedinIn} />
               </a>
@@ -77,6 +81,8 @@ const MediaIcons = (props) => {
                 href="https://instagram.com/s.p.e.c_nith?utm_source=ig_profile_share&amp;igshid=1dd01jvv7xk83"
                 rel="noreferrer noopenor"
                 target="_blank"
+                aria-label="Instagram"
+                name="instagram"
               >
                 <FontAwesomeIcon fixedWidth icon={faInstagram} />
               </a>
@@ -90,6 +96,8 @@ const MediaIcons = (props) => {
                 href="https://twitter.com/SPEC__NITH"
                 rel="noreferrer noopenor"
                 target="_blank"
+                aria-label="Twitter"
+                name="twitter"
               >
                 <FontAwesomeIcon fixedWidth icon={faTwitter} />
               </a>
@@ -103,6 +111,8 @@ const MediaIcons = (props) => {
                 href="https://www.facebook.com/spec.ece/"
                 rel="noreferrer noopenor"
                 target="_blank"
+                aria-label="Facebook"
+                name="facebook"
               >
                 <FontAwesomeIcon fixedWidth icon={faFacebookF} />
               </a>
@@ -111,6 +121,7 @@ const MediaIcons = (props) => {
         </div>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold p-4 rounded-full mb-4 mr-4"
+          aria-label="Social Media"
           onClick={() => setToggle((prevState) => !prevState)}
         >
           <FontAwesomeIcon className="text-2xl" icon={faComments} />

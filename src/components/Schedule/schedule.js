@@ -228,7 +228,7 @@ export default function Schedule() {
                 data-aos-easing="ease-in-out-cubic"
               >
                 <picture>
-                  <source srcSet="rocket.png" type="image/webp" />
+                  <source srcSet="rocket.webp" type="image/webp" />
                   <img
                     className="mx-auto -mt-36 md:-mt-36"
                     src="rocket.png"

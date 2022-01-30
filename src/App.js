@@ -1,27 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import Header from "./components/UI/Header/Header";
-import Footer from "./components/UI/Footer/Footer";
 import Intro from "./components/Hero/Hero";
 // import Content from "./components/UI/Content/Content";
 import About from "./components/About/About";
-import FAQ from "./components/FAQs/faq";
 // import Judges from "./components/Judges/judges";
 import Milestone from "./components/Milestone/milestone";
-import Prizes from "./components/Prizes/PrizeCarousel";
-// import ProbStatements from "./components/Prob_statements/problems";
-import Projects from "./components/Themes/Themes";
-import Schedule from "./components/Schedule/schedule";
-import Sponsors from "./components/Sponsors/Sponsors";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
-import Challenges from "./components/Challenges/Challenges";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-import MediaIcons from "./components/MediaIcons/mediaicons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import randomColor from "randomcolor";
 import BackgroundStatic from "./components/UI/Background/bgstatic";
 import "./mlh.css";
+
+const Projects = React.lazy(() => import("./components/Themes/Themes"));
+const Schedule = React.lazy(() => import("./components/Schedule/schedule"));
+const Prizes = React.lazy(() => import("./components/Prizes/PrizeCarousel"));
+const Challenges = React.lazy(() =>
+  import("./components/Challenges/Challenges")
+);
+const Sponsors = React.lazy(() => import("./components/Sponsors/Sponsors"));
+const MediaIcons = React.lazy(() =>
+  import("./components/MediaIcons/mediaicons")
+);
+const FAQ = React.lazy(() => import("./components/FAQs/faq"));
+const Footer = React.lazy(() => import("./components/UI/Footer/Footer"));
 
 AOS.init({
   once: true,
@@ -42,7 +46,7 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1500);
   }, []);
   return (
     <React.Fragment>
@@ -85,20 +89,26 @@ const App = () => {
               </section>
               {/* <Judges /> */}
               {/* <Speakers/> */}
-              <Schedule />
-              <Projects />
-              {/* <ProbStatements /> */}
-              <Prizes />
-              <Challenges />
+              <Suspense fallback={<div>Loading...</div>}>
+                <Schedule />
+                <Projects />
+                {/* <ProbStatements /> */}
+                <Prizes />
+                <Challenges />
+              </Suspense>
               {/* <Workshop /> */}
               {/* <Judges /> */}
-              <Sponsors />
-              <MediaIcons />
-              {/* <Speakers/> */}
-              <FAQ />
+              <Suspense fallback={<div>Loading...</div>}>
+                <Sponsors />
+                <MediaIcons />
+                {/* <Speakers/> */}
+                <FAQ />
+              </Suspense>
             </div>
           </div>
-          <Footer />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Footer />
+          </Suspense>
         </React.Fragment>
       )}
       {/* {AddLibrary()} */}

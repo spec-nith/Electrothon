@@ -5,7 +5,7 @@
     "decimals": "1",
     "suffix": " K",
     "src": "participant.png",
-    "webp": "participant.png",
+    "webp": "participant.webp",
     "theme": "milestones-block1"
   },
   {
@@ -14,7 +14,7 @@
     "decimals": "0",
     "suffix": " K+",
     "src": "code.png",
-    "webp": "code.png",
+    "webp": "code.webp",
     "theme": "milestones-block2"
   },
   {
@@ -23,7 +23,7 @@
     "decimals": "0",
     "suffix": "+",
     "src": "sponsors.png",
-    "webp": "sponsors.png",
+    "webp": "sponsors.webp",
     "theme": "milestones-block3"
   },
   {
@@ -32,7 +32,7 @@
     "decimals": "0",
     "suffix": "+",
     "src": "trophy.png",
-    "webp": "trophy.png",
+    "webp": "trophy.webp",
     "theme": "milestones-block4"
   }
 ]
