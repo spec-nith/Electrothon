@@ -134,6 +134,13 @@ export const data = [
         url: "http://hackp.ac/mlh-stickermule-hackathons",
         id: "silver_6",
       },
+      {
+        sponsorName: "Alan AI",
+        webp: "sponsors/silver/webp/alan.webp",
+        src: "sponsors/silver/alan.png",
+        url: "https://bit.ly/3o8VFwm",
+        id: "silver_7",
+      },
     ],
     id: "2",
   },
