@@ -21,14 +21,14 @@ export default function Schedule() {
   });
   const array = [
     {
-      title: "Electrothon Registration",
+      title: "Registration Begins",
       para: "Registration opens up for students to register with their respective teams and project ideas for Electrothon.",
-      date: "1st - 31st January 2022",
+      date: "1st January 2022",
     },
     {
       title: "Last date of Registration",
       para: "Registered teams submit a brief proposal of their project ideas, describing the general workflow, complexity, design, and possible applications.",
-      date: "31st January 2022",
+      date: "10th February 2022",
     },
     {
       title: "Electrothon Main Event",
@@ -64,7 +64,7 @@ export default function Schedule() {
           >
             {props.props.title}
           </span>
-          <p className="text-sm md:text-base leading-snug text-black-50 text-opacity-100 p-4">
+          <p className="text-sm md:text-base leading-snug text-black-50 p-4 w-full">
             {props.props.para}
           </p>
         </div>
