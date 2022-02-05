@@ -11,6 +11,7 @@ import {
 export default function Footer() {
   const BottomFooter = () => {
     return (
+      <React.Fragment>
       <div className="md:flex justify-center gap-5 lg:gap-40 mt-5 font-sans">
         <div className=" md:visible flex justify-center mb-2">
           <a
@@ -137,6 +138,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      <div className="text-sm flex justify-center pb-2 text-gray-400">© 2022, SPEC NITH</div>
+      </React.Fragment>
     );
   };
 
