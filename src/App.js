@@ -6,7 +6,7 @@ import About from "./components/About/About";
 // import Judges from "./components/Judges/judges";
 import Milestone from "./components/Milestone/milestone";
 // import Workshop from "./components/Workshop/Workshop";
-// import Speakers from "./components/Speakers/Speakers";
+import Speakers from "./components/Speakers/Speakers";
 import MLHChallenges from "./components/Challenges/mlhChallenges";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
@@ -103,7 +103,7 @@ const App = () => {
               <Suspense fallback={<div>Loading...</div>}>
                 <Sponsors />
                 <MediaIcons />
-                {/* <Speakers/> */}
+                <Speakers />
                 <FAQ />
               </Suspense>
             </div>

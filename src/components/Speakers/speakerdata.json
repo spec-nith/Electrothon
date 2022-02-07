@@ -1,30 +1,26 @@
 [
   {
-    "name": "Miri Rodriguez",
-    "image": "speakers/miri.jpg",
-    "desc": "Author, Storyteller",
-    "insta": "",
-    "linkedin": ""
+    "name": "Gaurav Juyal",
+    "image": "speakers/gaurav.jpg",
+    "webp": "speakers/webp/gaurav.webp",
+    "desc": "TEDx speaker | Host - Walt Disney's Art Attack India",
+    "insta": "https://www.instagram.com/the.millennial.guide",
+    "linkedin": "https://www.linkedin.com/in/gaurav-juyal",
+    "facebook": "https://www.facebook.com/gauravjuyalofficial",
+    "workshopDate": "2022-02-15T00:00:00.000+05:30",
+    "registerDate": "2022-02-08T00:00:00.000+05:30",
+    "registerLink": "https://google.com"
   },
   {
-    "name": "Niharika Arora",
-    "image": "speakers/profile_pic.jpg",
-    "desc": "Arogya Setu Developer",
+    "name": "Doreen Lorenzo",
+    "image": "speakers/doreen.jpg",
+    "webp": "speakers/webp/doreen.webp",
+    "desc": "TEDx Speaker | Former President of Frog design and Quirky ",
     "insta": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Nayan Mitra",
-    "image": "speakers/nayan.jpg",
-    "desc": "Aspire for her, Founder",
-    "insta": "",
-    "linkedin": ""
-  },
-  {
-    "name": "Nayan Mitra",
-    "image": "speakers/nayan.jpg",
-    "desc": "Aspire for her, Founder",
-    "insta": "",
-    "linkedin": ""
+    "linkedin": "https://www.linkedin.com/in/doreenlorenzo",
+    "facebook": "",
+    "workshopDate": "2022-02-15T00:00:00.000+05:30",
+    "registerDate": "2022-02-08T00:00:00.000+05:30",
+    "registerLink": "https://google.com"
   }
 ]

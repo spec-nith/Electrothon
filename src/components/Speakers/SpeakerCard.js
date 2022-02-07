@@ -1,38 +1,115 @@
 import React from "react";
-import { faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./SpeakerCard.css";
 
-const SpeakerCard = ({ speaker }) => {
+const SpeakerCard = ({ judge }) => {
+  var registerDate = new Date(judge.registerDate);
+  var workshopDate = new Date(judge.workshopDate);
+  var curr_date = new Date();
+  function isOpen() {
+    return curr_date >= registerDate && curr_date < workshopDate;
+  }
   return (
     <React.Fragment>
-      <div className="speaker-section">
-        <div className="container">
-          <div className="">
-            <div className="speaker-card bg-black bg-opacity-25">
-              <div className="speaker-picture">
-                <img
-                  className="h- object-cover speaker-img"
-                  src="https://picsum.photos/130/130?image=1027"
-                  alt="speaker"
+      <div
+        className="w-full sm:w-1/2 md:w-1/2 lg:w-1/4 mb-4 px-2 "
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out-cubic"
+      >
+        <div
+          className={
+            "relative bg-black bg-opacity-25 rounded-3xl overflow-hidden shadow-lg " +
+            (isOpen()
+              ? ""
+              : "opacity-70 hover:opacity-90 transition-all duration-300")
+          }
+        >
+          <picture>
+            <source srcSet={judge.webp} type="image/webp" />
+            <img
+              className="object-cover h-80 p-4 w-full rounded-3xl "
+              src={judge.image}
+              alt={judge.name}
+            />
+          </picture>
+          <div className="p-2">
+            <center>
+              {" "}
+              <h3 className="text-2xl font-medium ">
+                <div className="text-white pl-2  ">{judge.name}</div>
+              </h3>
+              <div className="block text-base text-gray-300 px-1 mt-1">
+                {judge.desc}
+              </div>
+            </center>
+          </div>
+          <div className="flex flex-row justify-center my-2">
+            {judge.linkedin ? (
+              <a
+                href={judge.linkedin}
+                rel="noreferrer noopenor"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="text-3xl text-white fill-current mx-1 p-1"
+                  icon={faLinkedinIn}
                 />
-              </div>
-              <div className="">
-                <h3 className="speaker-heading text-white">{speaker.name}</h3>
-              </div>
-              <ul className="speaker-social">
-                <li>
-                  <a href={speaker.instagram} aria-hidden="true">
-                    <FontAwesomeIcon icon={faInstagram} />
-                  </a>
-                </li>
-                <li>
-                  <a href={speaker.lnikedin} aria-hidden="true">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                  </a>
-                </li>
-              </ul>
-            </div>
+              </a>
+            ) : (
+              ""
+            )}
+            {judge.insta ? (
+              <a href={judge.insta} rel="noreferrer noopenor" target="_blank">
+                <FontAwesomeIcon
+                  className="text-3xl text-white fill-current mx-1 p-1"
+                  icon={faInstagram}
+                />
+              </a>
+            ) : (
+              ""
+            )}
+            {judge.facebook ? (
+              <a
+                href={judge.facebook}
+                rel="noreferrer noopenor"
+                target="_blank"
+              >
+                <FontAwesomeIcon
+                  className="text-3xl text-white fill-current mx-1 p-1"
+                  icon={faFacebook}
+                />
+              </a>
+            ) : (
+              ""
+            )}
+          </div>
+          <div className="flex justify-center my-4">
+            {isOpen() ? (
+              <a
+                href={judge.registerLink}
+                rel="noreferrer noopenor"
+                target="_blank"
+              >
+                <button className="text-lg text-white border-2 rounded-xl py-2 px-4 hover:text-black hover:bg-white transition-all duration-300">
+                  Register Now
+                </button>
+              </a>
+            ) : (
+              <button
+                className="text-lg text-white border-2 rounded-xl py-2 px-4 cursor-not-allowed"
+                disabled
+              >
+                {curr_date > workshopDate
+                  ? "Registration Closed"
+                  : "Coming Soon"}
+              </button>
+            )}
           </div>
         </div>
       </div>

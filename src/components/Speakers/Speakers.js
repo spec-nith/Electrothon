@@ -1,6 +1,6 @@
 import React from "react";
 import speakerData from "./speakerdata.json";
-import JudgesCard from "../Judges/judgesCard";
+import SpeakerCard from "./SpeakerCard";
 
 const Speakers = () => {
   return (
@@ -19,7 +19,7 @@ const Speakers = () => {
         <div className="container mx-auto mt-8">
           <div className="flex flex-row flex-wrap -mx-2 justify-center">
             {speakerData.map((element, index) => {
-              return <JudgesCard key={index} judge={element} />;
+              return <SpeakerCard key={index} judge={element} />;
             })}
           </div>
         </div>
