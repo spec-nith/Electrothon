@@ -1,6 +1,28 @@
 export const challengesData = [
   {
     desc: [
+      "Build a developer tool and host the code on GitHub for other developers to take a look at.",
+    ],
+    img: "sponsors/title/Github.png.png",
+    webp: "sponsors/title/webp/Github.webp",
+    link: "#",
+    prize: ["5000 and GitHub exclusive T-shirts"],
+    key: "Github",
+    noButton: true,
+  },
+  {
+    desc: [
+      "Build a project using AlanAI platform or you can integrate AlanAI platform in your hack",
+    ],
+    img: "sponsors/silver/alan.png",
+    webp: "sponsors/silver/webp/alan.webp",
+    link: "#",
+    prize: ["6000"],
+    key: "Alan AI",
+    noButton: true,
+  },
+  {
+    desc: [
       "Tezos, a decentralized open-source blockchain, is giving away a cash prize for the best Dapp built on the same.",
     ],
     img: "sponsors/silver/tezos.png",

@@ -1,12 +1,13 @@
 import React from "react";
-import { challengesData } from "./challengesData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRupeeSign, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faTrophy } from "@fortawesome/free-solid-svg-icons";
 
-const Challenges = () => {
+const challengesData = require("./mlhChallenges.json");
+
+const MLHChallenges = () => {
   return (
     <section
-      id="prizes"
+      id="mlh-challenges"
       className="relative overflow-hidden mt-12 container-theme p-6"
       data-aos="fade"
       data-aos-delay="50"
@@ -15,7 +16,7 @@ const Challenges = () => {
     >
       <div className="container mx-auto">
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
-          Challenges
+          MLH Challenges
         </h1>
         <div className="grid md:grid-cols-2 grid-cols-1 content-theme">
           {challengesData.map((challenge, index) => {
@@ -51,16 +52,12 @@ const Challenges = () => {
                     <p>{challenge.addon}</p>
                     <div className="flex flex-wrap justify-between md:items-end items-center mt-4 md:mt-2">
                       <ul className="flex md:flex-row flex-col">
-                        <li className="md:pr-2">
+                        <li className="md:pr-2 font-semibold">
                           {" "}
                           <FontAwesomeIcon
                             className="text-yellow-400"
                             icon={faTrophy}
                             fixedWidth
-                          />
-                          <FontAwesomeIcon
-                            className="text-sm ml-2"
-                            icon={faRupeeSign}
                           />{" "}
                           {challenge.prize[0]}
                         </li>
@@ -72,28 +69,10 @@ const Challenges = () => {
                               icon={faTrophy}
                               fixedWidth
                             />
-                            <FontAwesomeIcon
-                              icon={faRupeeSign}
-                              className="ml-2 text-sm mr-1"
-                            />
                             {challenge.prize[1]}
                           </li>
                         )}
                       </ul>
-                      {challenge.noButton ? (
-                        ""
-                      ) : (
-                        <a
-                          className="md:mt-2 block"
-                          href={challenge.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <span className="p-2 border-2 border-gray-200 rounded-md text-base hover:bg-gray-200 hover:border-gray-200 cursor-pointer hover:text-black mx-auto">
-                            And More
-                          </span>
-                        </a>
-                      )}
                     </div>
                   </div>
                 </div>
@@ -105,4 +84,4 @@ const Challenges = () => {
     </section>
   );
 };
-export default Challenges;
+export default MLHChallenges;

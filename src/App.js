@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Milestone from "./components/Milestone/milestone";
 // import Workshop from "./components/Workshop/Workshop";
 // import Speakers from "./components/Speakers/Speakers";
+import MLHChallenges from "./components/Challenges/mlhChallenges";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -95,6 +96,7 @@ const App = () => {
                 {/* <ProbStatements /> */}
                 <Prizes />
                 <Challenges />
+                <MLHChallenges />
               </Suspense>
               {/* <Workshop /> */}
               {/* <Judges /> */}
