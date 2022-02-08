@@ -17,7 +17,7 @@ export const challengesData = [
     img: "sponsors/silver/alan.png",
     webp: "sponsors/silver/webp/alan.webp",
     link: "#",
-    prize: ["6000"],
+    prize: ["5500", "2500"],
     key: "Alan AI",
     noButton: true,
   },

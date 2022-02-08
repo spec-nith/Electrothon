@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import speakerData from "./speakerdata.json";
 import SpeakerCard from "./SpeakerCard";
 
-const Speakers = () => {
+const Speakers = ({ anchorID }) => {
+  const ref = useRef(null);
+  useEffect(
+    (anchorID) => {
+      if (anchorID === "speakers") {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+      }
+    },
+    [anchorID]
+  );
   return (
     <section
       id="speakers"
+      ref={ref}
       className="relative overflow-hidden mt-2 container-theme p-6"
       data-aos="fade"
       data-aos-delay="50"
@@ -26,5 +36,9 @@ const Speakers = () => {
       </div>
     </section>
   );
+};
+
+Speakers.defaultProps = {
+  anchorID: "",
 };
 export default Speakers;
