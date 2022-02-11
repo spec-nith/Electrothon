@@ -199,7 +199,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="flex justify-center px-4 text-gray-800 shadow-lg"
+      className="flex justify-center px-4 text-gray-800 shadow-lg -mb-6"
       style={{ backgroundColor: "rgba(34, 30, 30, 1)" }}
       data-aos="fade"
       data-aos-delay="50"

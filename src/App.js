@@ -6,7 +6,7 @@ import About from "./components/About/About";
 // import Judges from "./components/Judges/judges";
 import Milestone from "./components/Milestone/milestone";
 // import Workshop from "./components/Workshop/Workshop";
-import Speakers from "./components/Speakers/Speakers";
+// import Speakers from "./components/Speakers/Speakers";
 import MLHChallenges from "./components/Challenges/mlhChallenges";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import AOS from "aos";
@@ -53,7 +53,7 @@ const App = () => {
     <React.Fragment>
       <div
         className={
-          "fixed flex justify-center items-center w-full h-screen bg-cover " +
+          "fixed flex justify-center items-center w-full h-full bg-cover " +
           (loading ? "" : "hidden")
         }
         style={{
@@ -103,11 +103,11 @@ const App = () => {
           <Suspense fallback={<div>Loading...</div>}>
             <Sponsors />
             <MediaIcons />
-            <Speakers
+            {/* <Speakers
               anchorID={window.location.href.slice(
                 window.location.href.indexOf("#") + 1
               )}
-            />
+            /> */}
             <FAQ />
           </Suspense>
         </div>

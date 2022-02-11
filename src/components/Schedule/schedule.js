@@ -26,9 +26,9 @@ export default function Schedule() {
       date: "1st January 2022",
     },
     {
-      title: "Last date of Registration",
-      para: "Registered teams submit a brief proposal of their project ideas, describing the general workflow, complexity, design, and possible applications.",
-      date: "10th February 2022",
+      title: "Inviting Foreign Applicants",
+      para: "To increase our horizons, we are inviting participants from APAC region.",
+      date: "11th - 17th February 2022",
     },
     {
       title: "Electrothon Main Event",
