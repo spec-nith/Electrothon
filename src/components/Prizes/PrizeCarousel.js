@@ -19,10 +19,10 @@ const prizeCarousel = (props) => {
       data-aos-easing="ease-in-out-cubic"
     >
       <div className="container mx-auto">
-        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme">
+        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme text-center">
           Prizes
         </h1>
-        <div className="m-auto  px-1 py-24 ">
+        <div className="m-auto px-1 py-8 ">
           <Prizes />
         </div>
         <Swiper

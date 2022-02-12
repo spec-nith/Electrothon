@@ -7,20 +7,33 @@
     "insta": "https://www.instagram.com/the.millennial.guide",
     "linkedin": "https://www.linkedin.com/in/gaurav-juyal",
     "facebook": "https://www.facebook.com/gauravjuyalofficial",
-    "workshopDate": "2022-02-15T00:00:00.000+05:30",
-    "registerDate": "2022-02-08T00:00:00.000+05:30",
-    "registerLink": "https://google.com"
+    "workshopDate": "2022-02-15T18:00:00.000+05:30",
+    "registerDate": "2022-02-12T12:00:00.000+05:30",
+    "registerLink": "https://forms.gle/X7dkH9dff3svFPyi6"
   },
   {
     "name": "Doreen Lorenzo",
     "image": "speakers/doreen.jpg",
     "webp": "speakers/webp/doreen.webp",
-    "desc": "TEDx Speaker | Former President of Frog design and Quirky ",
+    "desc": "TEDx Speaker | Former President of Frog design and Quirky",
     "insta": "",
     "linkedin": "https://www.linkedin.com/in/doreenlorenzo",
     "facebook": "",
-    "workshopDate": "2022-02-15T00:00:00.000+05:30",
-    "registerDate": "2022-02-08T00:00:00.000+05:30",
-    "registerLink": "https://google.com"
+    "twitter": "https://twitter.com/doreenl",
+    "workshopDate": "2022-02-16T20:30:00.000+05:30",
+    "registerDate": "2022-02-13T12:00:00.000+05:30",
+    "registerLink": "https://forms.gle/xwDPxriGscytUceE8"
+  },
+  {
+    "name": "Prateek Narang",
+    "image": "speakers/prateek.jpg",
+    "webp": "speakers/webp/prateek.webp",
+    "desc": "Technopreneur | Ex-Google | Teacher of 100K+ Coders",
+    "insta": "https://www.instagram.com/prateeknarang27",
+    "linkedin": "https://in.linkedin.com/in/prateeknarang27",
+    "facebook": "https://www.facebook.com/prateek.narang.27",
+    "workshopDate": "2022-02-18T17:00:00.000+05:30",
+    "registerDate": "2022-02-14T12:00:00.000+05:30",
+    "registerLink": "https://forms.gle/pTa33y7xnnTPxMudA"
   }
 ]

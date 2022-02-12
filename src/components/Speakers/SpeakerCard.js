@@ -3,8 +3,10 @@ import {
   faFacebook,
   faInstagram,
   faLinkedinIn,
+  faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./speaker.css";
 
 const SpeakerCard = ({ judge }) => {
   var registerDate = new Date(judge.registerDate);
@@ -13,6 +15,7 @@ const SpeakerCard = ({ judge }) => {
   function isOpen() {
     return curr_date >= registerDate && curr_date < workshopDate;
   }
+
   return (
     <React.Fragment>
       <div
@@ -33,12 +36,22 @@ const SpeakerCard = ({ judge }) => {
           <picture>
             <source srcSet={judge.webp} type="image/webp" />
             <img
-              className="object-cover h-80 p-4 w-full rounded-3xl "
+              className={
+                "object-cover h-80 p-4 w-full rounded-3xl " +
+                (isOpen() || curr_date > workshopDate ? "" : "blur-content")
+              }
               src={judge.image}
               alt={judge.name}
             />
           </picture>
-          <div className="p-2">
+          <div
+            className={
+              "p-2 " +
+              (isOpen() || curr_date > workshopDate
+                ? ""
+                : "blur-content disable-select")
+            }
+          >
             <center>
               {" "}
               <h3 className="text-2xl font-medium ">
@@ -49,7 +62,14 @@ const SpeakerCard = ({ judge }) => {
               </div>
             </center>
           </div>
-          <div className="flex flex-row justify-center my-2">
+          <div
+            className={
+              "flex flex-row justify-center my-2 " +
+              (isOpen() || curr_date > workshopDate
+                ? ""
+                : "blur-content  pointer-events-none")
+            }
+          >
             {judge.linkedin ? (
               <a
                 href={judge.linkedin}
@@ -83,6 +103,16 @@ const SpeakerCard = ({ judge }) => {
                 <FontAwesomeIcon
                   className="text-3xl text-white fill-current mx-1 p-1"
                   icon={faFacebook}
+                />
+              </a>
+            ) : (
+              ""
+            )}
+            {judge.twitter ? (
+              <a href={judge.twitter} rel="noreferrer noopenor" target="_blank">
+                <FontAwesomeIcon
+                  className="text-3xl text-white fill-current mx-1 p-1"
+                  icon={faTwitter}
                 />
               </a>
             ) : (

@@ -46,13 +46,13 @@ class PodiumCard extends React.Component {
       >
         <div
           className={
-            "absolute transition-all text-white text-justify z-10 rounded overflow-hidden shadow-lg " +
-            (this.state.show ? "top-0 h-full w-full" : "top-full")
+            "absolute transition-all text-white text-justify z-10 rounded overflow-hidden shadow-lg duration-300 w-full " +
+            (this.state.show ? "top-0 h-full" : "top-full")
           }
           style={{ background: "rgb(20, 20, 24)" }}
         >
           <div className="p-auto" style={{ paddingTop: this.props.data.h }}>
-            <h2 className="text-center text-3xl md:text-5xl pt-2 text-white mt-8">
+            <h2 className="text-center text-2xl md:text-4xl pt-2 text-white mt-8">
               Perks
             </h2>
             <ul className="list-disc p-4 md:p-8 text-sm md:text-4x1">
@@ -93,7 +93,7 @@ class PodiumCard extends React.Component {
         </div>
         <button
           className={
-            "absolute z-20 bottom-0 w-full p-2 text-3x1 font-semibold leading-normal tracking-tight transition-all" +
+            "absolute z-20 bottom-0 w-full py-2 text-3x1 font-semibold leading-normal tracking-tight transition-all" +
             (this.state.show
               ? " bg-white text-black"
               : " activeColor text-white")
