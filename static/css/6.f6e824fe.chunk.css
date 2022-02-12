@@ -1,0 +1,2 @@
+.faqs-tab{overflow:hidden}.faqs-tab-content{transition:.8s;max-height:0}.faqs-tab,.faqs-tab svg{transition-duration:.5s;color:#949494}input:checked+.faqs-tab-label .faqs-test{background-color:#444}input:checked~.faqs-tab-content{max-height:100vh;transition:1.5s}input:checked+.faqs-tab-label .faqs-test svg{stroke:#fff;color:#fff;-webkit-transform:rotate(180deg);transform:rotate(180deg)}
+/*# sourceMappingURL=6.f6e824fe.chunk.css.map */
