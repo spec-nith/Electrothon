@@ -92,7 +92,7 @@ export default function Introduction() {
                   2k22
                 </span>
                 <span className="block text-white text-xl tracking-wider mt-2">
-                  19th-20th February, 2022
+                  18th-20th February, 2022
                 </span>
               </h1>
               <p className="mt-6 text-base text-center md:text-left text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">

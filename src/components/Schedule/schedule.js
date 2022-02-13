@@ -33,7 +33,7 @@ export default function Schedule() {
     {
       title: "Electrothon Main Event",
       para: "Electrothon will be a two-day event consisting of various guest lectures, workshops, and project evaluation.",
-      date: "19th - 20th February 2022",
+      date: "18th - 20th February 2022",
     },
     {
       title: "Result Declaration",
