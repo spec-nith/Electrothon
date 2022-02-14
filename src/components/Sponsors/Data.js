@@ -229,6 +229,13 @@ export const data = [
         url: "https://about.gitlab.com/",
         id: "title_1",
       },
+      {
+        sponsorName: "The @ Company",
+        webp: "sponsors/title/webp/atcomp.webp",
+        src: "sponsors/title/atcomp.png",
+        url: "https://atsign.com/",
+        id: "title_2",
+      }
     ],
     id: "0",
   },
