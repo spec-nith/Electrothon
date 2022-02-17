@@ -76,4 +76,14 @@ export const challengesData = [
     prize: ["20000"],
     key: "cfilecoin",
   },
+  {
+    desc: [
+      "Build your metaverse and run your independent digital economy on mobile!",
+    ],
+    img: "challenges/doss.png",
+    webp: "challenges/webp/doss.webp",
+    link: "https://www.notion.so/DOSS-Challenge-4f1492a7fe974d649930f3452e15ddca",
+    prize: ["Cash Prize"],
+    key: "cdoss",
+  },
 ];
