@@ -153,6 +153,14 @@ export const prizesData = [
       "Swags and Stickers",
     ],
   },
+      //   {
+  //   name: "Github",
+  //   amt: "Exiciting Prizes",
+  //   img: "sponsors/title/Github.png",
+  //   webp: "sponsors/title/webp/Github.webp",
+  //   desc: ["Win this weekend’s Most Creative Use of GitHub prize category, first by signing up for GitHub Global Campus and second by using a GitHub repository to host your hackathon project’s code! Make sure your use of GitHub stands out with a detailed ReadMe page, meaningful pull requests and collaboration history, and even a GitHub pages deployment!"
+  //   ],
+  // }
 ];
 
 export const allParticipants = {

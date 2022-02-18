@@ -35,5 +35,16 @@
     "workshopDate": "2022-02-18T17:00:00.000+05:30",
     "registerDate": "2022-02-14T12:00:00.000+05:30",
     "registerLink": "https://forms.gle/pTa33y7xnnTPxMudA"
+  },
+  {
+    "name": "Arihant Godha",
+    "image": "speakers/arihant.jpg",
+    "webp": "speakers/webp/arihant.webp",
+    "desc": "Senior Support Engineer at GitLab Inc.| Open Source contributor",
+    "linkedin": "https://www.linkedin.com/in/arihant-godha/",
+    "workshopDate": "2022-02-19T10:00:00.000+05:30",
+    "registerDate": "2022-02-14T12:00:00.000+05:30",
+    "registerLink": "https://forms.gle/54TX1tPNr3JVciUU9"
   }
+  
 ]
