@@ -55,7 +55,7 @@
   },
   {
     "desc": [
-      "Sign-Up for <a href='https://hackp.ac/github' class='font-medium text-white'>GitHub Global Campus</a> and use a GitHub repository to host your hack!",
+      "Sign-Up for <a href='https://hackp.ac/github' class='font-medium text-white' target='_blank' rel='noreferrer noopenor'>GitHub Global Campus</a> and use a GitHub repository to host your hack!",
       "Make sure your repository has an amazing README, meaningful pull requests and collaboration history, and a Github pages deployment!"
     ],
     "img": "sponsors/title/Github.png",
