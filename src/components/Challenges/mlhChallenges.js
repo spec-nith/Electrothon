@@ -43,9 +43,8 @@ const MLHChallenges = () => {
                           <li
                             className="md:pt-1 md:tracking-tighter"
                             key={index}
-                          >
-                            {element}
-                          </li>
+                            dangerouslySetInnerHTML={{ __html: element }}
+                          ></li>
                         );
                       })}
                     </ul>

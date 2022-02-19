@@ -235,7 +235,7 @@ export const data = [
         src: "sponsors/title/atcomp.png",
         url: "https://atsign.com/",
         id: "title_2",
-      }
+      },
     ],
     id: "0",
   },

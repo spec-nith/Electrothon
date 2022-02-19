@@ -52,5 +52,15 @@
     "webp": "challenges/webp/Deso.webp",
     "prize": ["$100 worth of $DESO coin, DeSo Tumble"],
     "key": "DeSo"
+  },
+  {
+    "desc": [
+      "Sign-Up for <a href='https://hackp.ac/github' class='font-medium text-white'>GitHub Global Campus</a> and use a GitHub repository to host your hack!",
+      "Make sure your repository has an amazing README, meaningful pull requests and collaboration history, and a Github pages deployment!"
+    ],
+    "img": "sponsors/title/Github.png",
+    "webp": "sponsors/title/webp/Github.webp",
+    "prize": ["Industry tools, events & learning resources"],
+    "key": "Github"
   }
 ]
