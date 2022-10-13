@@ -357,6 +357,14 @@ const BackgroundStatic = () => {
       //     </g>
       //   </g> */}
       {/* </svg> */}
+      <picture className="block fixed z-[-5] opacity-90">
+        <source srcSet="bg.webp" type="image/webp" />
+        <img
+          className="object-cover w-full h-screen"
+          src="bg.jpg"
+          alt="hero-bg"
+        />
+      </picture>
     </>
   );
 };

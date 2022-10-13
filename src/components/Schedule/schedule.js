@@ -23,7 +23,7 @@ export default function Schedule() {
     {
       title: "Registration Begins",
       para: "Registration opens up for students to register with their respective teams and project ideas for Electrothon.",
-      date: "17 DECEMBER 2022",
+      date: "17 December 2022",
     },
     {
       title: "Inviting Foreign Applicants",
@@ -37,7 +37,7 @@ export default function Schedule() {
     },
     {
       title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our Judging Panel on 22nd February 2022 through our social media handles.",
+      para: "The ultimate genius will be revealed by our Judging Panel on 19th February 2023 through our social media handles.",
       date: "19th Feburary 2023",
     },
   ];
@@ -153,7 +153,7 @@ export default function Schedule() {
             Working Process of Fest
           </p>
           <p className="text-sm md:text-base text-black-50 mb-4 content-theme">
-            Here’s your guide to the Electrothon 4.0 process. Go through all the
+            Here’s your guide to the Electrothon 5.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>
           <span className="text-xl text-blue-500">

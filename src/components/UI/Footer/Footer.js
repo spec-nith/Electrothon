@@ -23,7 +23,7 @@ export default function Footer() {
               <picture>
                 <source srcSet="spec_logo.webp" type="image/webp" />
                 <img
-                  className="w-8 md:w-16"
+                  className="w-8 md:w-32"
                   src="spec_logo.png"
                   alt="spec_logo"
                 />
@@ -85,7 +85,7 @@ export default function Footer() {
             </div>
 
             <div className="justify-center flex space-x-2 md:space-x-5 mt-1 md:mt-1 opacity-80 mb-10">
-              <a
+              {/* <a
                 href="https://discord.gg/cjMMRs7tHs"
                 rel="noreferrer noopenor"
                 target="_blank"
@@ -94,7 +94,7 @@ export default function Footer() {
                   className="text-1xl md:text-2xl text-blue-800 fill-current"
                   icon={faDiscord}
                 />
-              </a>
+              </a> */}
               <a
                 href="https://www.facebook.com/spec.ece/"
                 rel="noreferrer noopenor"

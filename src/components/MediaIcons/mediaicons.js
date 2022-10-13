@@ -42,7 +42,7 @@ const MediaIcons = (props) => {
             leaveFrom="transform scale-100 opacity-100"
             leaveTo="transform scale-95 opacity-0"
           >
-            <span
+            {/* <span
               className="absolute"
               style={{ transform: "translate(0,-1000%)" }}
             >
@@ -56,7 +56,7 @@ const MediaIcons = (props) => {
               >
                 <FontAwesomeIcon fixedWidth icon={faDiscord} />
               </a>
-            </span>
+            </span> */}
             <span
               className="absolute"
               style={{ transform: "translate(0,-800%)" }}

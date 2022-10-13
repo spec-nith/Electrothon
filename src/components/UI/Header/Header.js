@@ -13,7 +13,7 @@ const Nav = () => {
     return (
       <Link
         activeClass={
-          props.item.hide != null ? "" : "text-purple-100 border-b-2 "
+          props.item.hide != null ? "" : "text-blue-500 border-b-2 "
         }
         to={props.item.id}
         spy={true}
@@ -22,7 +22,7 @@ const Nav = () => {
         duration={1000}
         className="flex flex-row items-center py-2 xl:text-md text-gray-400 border-transparent transition duration-300 transition-all cursor-pointer align-middle"
       >
-        <span className="flex items-center justify-center h-14 w-12 text-lg rounded-lg hover:text-white tooltip relative">
+        <span className="flex items-center justify-center h-14 w-12 text-lg rounded-lg hover:text-blue-500 tooltip relative">
           {props.item.id === "faq" ? (
             <svg
               className="w-8"
@@ -66,7 +66,7 @@ const Nav = () => {
         // offset={+10}
         smooth={true}
         duration={1000}
-        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 hover:text-white text-gray-400"
+        className="flex flex-row items-center h-12 transform transition-transform ease-in duration-200 hover:text-blue-500 text-gray-400"
         onClick={() => setIsOpen((prevState) => !prevState)}
       >
         <span className="flex items-center justify-center h-12 w-12 text-lg">

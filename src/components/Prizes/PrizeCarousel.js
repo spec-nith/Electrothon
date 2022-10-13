@@ -25,7 +25,7 @@ const prizeCarousel = (props) => {
         <div className="m-auto px-1 py-8 ">
           <Prizes />
         </div>
-        <Swiper
+        {/* <Swiper
           className="pt-10 prize-slide"
           modules={[Pagination, Navigation, Autoplay]}
           pagination={{ dynamicBullets: true, clickable: true }}
@@ -136,7 +136,7 @@ const prizeCarousel = (props) => {
               })}
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

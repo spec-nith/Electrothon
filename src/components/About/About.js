@@ -38,12 +38,7 @@ export default function About() {
             About Us
           </h1>
           <div className="mt-3 text-normal content-theme md:mt-5 md:text-xl lg:mx-0 md:leading-normal">
-            Electrothon is a student-run hackathon, under the aegis of the
-            National Institute of Technology Hamirpur, India. An exceptional
-            place for young and dedicated minds, a platform for organizations to
-            meet a wide range of talented, and with over 1700+ registrations,
-            Electrothon serves as a hub of ingenious ideas, innovation,
-            entrepreneurship and technical skills.
+          Taking moonshots is no smooth sailing. It's an inherently unpredictable ride. As we launch the 5th in-person lunation of Electrothon, we strive for nothing less than the moon. Run by the student community SPEC under the moonlight of NIT Hamirpur, Electrothon has impacted over 5000 students. The budding hackers who joined Electrothon over its previous iterations left no stone unturned to ideate and amalgamate technologies that transfigure visions into reality.
           </div>
         </div>
       </div>

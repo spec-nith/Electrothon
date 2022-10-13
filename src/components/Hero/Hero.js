@@ -82,13 +82,13 @@ export default function Introduction() {
               </div>
               <h1 className="text-4xl md:tracking-tight text-center md:text-left sm:text-5xl md:text-7xl">
                 <span className="xl:inline font-extrabold header-theme"></span>
-                <span className="xl:inline font-extrabold header-theme">
+                <span className="xl:inline font-extrabold text-blue-700">
                   Electrothon
                 </span>
-                <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme ">
+                <span className="ml-5 md:ml-3 xl:inline font-extrabold text-blue-700 ">
                   5.0
                 </span>
-                <span className="block text-blue-700 text-normal font-medium md:mt-0 mt-1.5">
+                <span className="block text-white text-normal font-medium md:mt-0 mt-1.5">
                   2k23
                 </span>
                 <span className="block text-white text-xl tracking-wider mt-2">

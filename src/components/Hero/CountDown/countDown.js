@@ -52,7 +52,7 @@ const Timer = () => {
                         </div>) : */}
           <div className="flex md:items-stretch md:p-10">
             <div className="flex flex-col items-center counter-cell w-18r md:w-32">
-              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">
+              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-blue-700">
                 {("0" + timerDays).slice(-2)}
               </span>
               <div
@@ -64,7 +64,7 @@ const Timer = () => {
             </div>
             <span className="text-3xl md:text-8xl px-1 md:px-2 pt-4">:</span>
             <div className="flex flex-col items-center counter-cell w-18r md:w-32">
-              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">
+              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-blue-700">
                 {("0" + timerHours).slice(-2)}
               </span>
               <div
@@ -76,7 +76,7 @@ const Timer = () => {
             </div>
             <span className="text-3xl md:text-8xl px-1 md:px-2 pt-4">:</span>
             <div className="flex flex-col items-center counter-cell w-18r md:w-32">
-              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">
+              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-blue-700">
                 {("0" + timerMinutes).slice(-2)}
               </span>
               <div
@@ -88,7 +88,7 @@ const Timer = () => {
             </div>
             <span className="text-3xl md:text-8xl px-1 md:px-2 pt-4">:</span>
             <div className="flex flex-col items-center counter-cell w-18r md:w-32">
-              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-pink-400">
+              <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 text-blue-700">
                 {("0" + timerSeconds).slice(-2)}
               </span>
               <div
