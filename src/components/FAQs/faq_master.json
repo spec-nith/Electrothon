@@ -8,6 +8,10 @@
     "content": "No, you do not require any prior experience in development. We will provide you with mentors to help you figure out things. Of course, a will to think, learn, and collaborate will be the cherry on the cake."
   },
   {
+    "title": "Will the hackathon be conducted online?",
+    "content": "Yes, the hackathon will be conducted in both online and offline mode."
+  },
+  {
     "title": "Can a college have multiple teams?",
     "content": "Yes, there is no restriction here. We also welcome inter-college teams."
   },
@@ -34,6 +38,11 @@
   {
     "title": "Are there any sponsored challenges and API prizes?",
     "content": " There will be API prizes from multiple sponsors to build a hack on top of their APIs or SDKs. Keep an eye out on the website and social media handles, where we'll be adding more ideas to hack on closer to the event. Teams are free to pick from them as well."
+  },
+
+  {
+    "title": "Cost of participation in Hackathon?",
+    "content": "There is no registeration fee and the hackathon is completely free to participate in. "
   },
   {
     "title": "What if I have more queries?",
