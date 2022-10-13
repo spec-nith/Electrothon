@@ -23,22 +23,22 @@ export default function Schedule() {
     {
       title: "Registration Begins",
       para: "Registration opens up for students to register with their respective teams and project ideas for Electrothon.",
-      date: "1st January 2022",
+      date: "17 DECEMBER 2022",
     },
     {
       title: "Inviting Foreign Applicants",
       para: "To increase our horizons, we are inviting participants from APAC region.",
-      date: "11th - 17th February 2022",
+      date: "30th January 2023",
     },
     {
       title: "Electrothon Main Event",
       para: "Electrothon will be a two-day event consisting of various guest lectures, workshops, and project evaluation.",
-      date: "18th - 20th February 2022",
+      date: "10th-12th February 2023",
     },
     {
       title: "Result Declaration",
       para: "The ultimate genius will be revealed by our Judging Panel on 22nd February 2022 through our social media handles.",
-      date: "22nd Feburary 2022",
+      date: "19th Feburary 2023",
     },
   ];
   const LeftCard = (props) => {

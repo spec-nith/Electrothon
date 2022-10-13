@@ -67,7 +67,7 @@ const App = () => {
       </div>
       <BackgroundStatic />
       <Header />
-      <a
+      {/* <a
         id="mlh-trust-badge"
         className="mlh"
         href="https://mlh.io/seasons/2022/events?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=gray"
@@ -79,7 +79,7 @@ const App = () => {
           alt="Major League Hacking 2022 Hackathon Season"
           className="w-full"
         />
-      </a>
+      </a> */}
       <div className="sm:mx-20">
         <Intro />
         <div className="container mx-auto px-4 text-justify">
@@ -92,11 +92,11 @@ const App = () => {
           {/* <Speakers/> */}
           <Suspense fallback={<div>Loading...</div>}>
             <Schedule />
-            <Projects />
+            {/* <Projects /> */}
             {/* <ProbStatements /> */}
             <Prizes />
-            <Challenges />
-            <MLHChallenges />
+            {/* <Challenges /> */}
+            {/* <MLHChallenges /> */}
           </Suspense>
           {/* <Workshop /> */}
           {/* <Judges /> */}
