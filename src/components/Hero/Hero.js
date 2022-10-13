@@ -85,17 +85,17 @@ export default function Introduction() {
                 <span className="xl:inline font-extrabold header-theme">
                   Electrothon
                 </span>
-                <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme">
-                  4.0
+                <span className="ml-5 md:ml-3 xl:inline font-extrabold header-theme ">
+                  5.0
                 </span>
-                <span className="block text-pink-400 text-normal font-medium md:mt-0 mt-1.5">
-                  2k22
+                <span className="block text-blue-700 text-normal font-medium md:mt-0 mt-1.5">
+                  2k23
                 </span>
                 <span className="block text-white text-xl tracking-wider mt-2">
-                  18th-20th February, 2022
+                  Dates out soon...
                 </span>
               </h1>
-              <p className="mt-6 text-base text-center md:text-left text-gray-400 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-6 text-base text-center md:text-left text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 SEARCH | PLAN | ENGAGE | CREATE
               </p>
               <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">

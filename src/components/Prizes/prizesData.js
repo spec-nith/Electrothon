@@ -1,7 +1,7 @@
 export const podiumData = [
   {
     name: "Runners Up",
-    amt: "15000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/runnerup.webp",
     img: "prizes/runnerup.png",
     id: "r",
@@ -21,7 +21,7 @@ export const podiumData = [
   },
   {
     name: "Winner Team",
-    amt: "20000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/winner.webp",
     img: "prizes/winner.png",
     id: "w",
@@ -31,7 +31,7 @@ export const podiumData = [
       position: "relative",
     },
     desc: [
-      "Rs.1200 Coupon From GFG",
+      "Coupon From GFG",
       "Wolfram Award letter",
       "Lifetime upgrade of Taskade",
       "Unlimited mock interviews from Interview Buddy",
@@ -41,7 +41,7 @@ export const podiumData = [
   },
   {
     name: "2nd Runner Up",
-    amt: "10000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/3rd.webp",
     img: "prizes/3rd.png",
     id: "g",
@@ -60,8 +60,8 @@ export const podiumData = [
 ];
 export const prizesData = [
   {
-    name: "Climate Change",
-    amt: "Worth 5000/- INR",
+    name: "DOMAIN 1",
+    amt: "Coming Soon...",
     webp: "prizes/webp/climate.webp",
     img: "prizes/climate.png",
     desc: [
@@ -73,7 +73,7 @@ export const prizesData = [
   },
   {
     name: "Pandemic",
-    amt: "Worth 5000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/pandemic.webp",
     img: "prizes/pandemic.png",
     desc: [
@@ -85,7 +85,7 @@ export const prizesData = [
   },
   {
     name: "Cyber Bullying",
-    amt: "Worth 5000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/cyber.webp",
     img: "prizes/cyber.png",
     desc: [
@@ -97,7 +97,7 @@ export const prizesData = [
   },
   {
     name: "Natural Disaster",
-    amt: "Worth 5000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/disaster.webp",
     img: "prizes/disaster.png",
     desc: [
@@ -109,7 +109,7 @@ export const prizesData = [
   },
   {
     name: "Hunger Eradication",
-    amt: "Worth 5000/- INR",
+    amt: "Coming Soon...",
     webp: "prizes/webp/hunger.webp",
     img: "prizes/hunger.png",
     desc: [

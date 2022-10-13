@@ -20,7 +20,8 @@ export default function Sponsors() {
         <div className="justify-center text-center">
           <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2 rounded-t-lg">
             <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
-              {title.tierName}
+              {" "}
+              Previous {title.tierName}
             </h1>
           </div>
           <div className="flex px-4 flex-wrap -mx-px overflow-hidden justify-center ">
@@ -55,7 +56,8 @@ export default function Sponsors() {
                 className={`sticky top-0 justify-center text-center px-4 sponsor-bg-${index} py-2`}
               >
                 <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
-                  {tier.tierName}
+                  {" "}
+                  Previous {tier.tierName}
                 </h1>
               </div>
               <div className="flex flex-wrap -mx-px overflow-hidden justify-center px-4">
