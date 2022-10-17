@@ -60,7 +60,7 @@ const Nav = () => {
   const NavbarSM = (props) => {
     return (
       <Link
-        activeClass="text-indigo-400 nav-theme"
+        activeClass="text-blue-500 nav-theme"
         to={props.item.id}
         spy={true}
         // offset={+10}

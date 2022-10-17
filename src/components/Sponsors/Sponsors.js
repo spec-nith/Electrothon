@@ -16,12 +16,15 @@ export default function Sponsors() {
         data-aos-duration="500"
         data-aos-easing="ease-in-out-cubic"
       >
+        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center py-6">
+        Previous Sponsors
+      </h1>
         {/* Title Sponsor  */}
         <div className="justify-center text-center">
           <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2 rounded-t-lg">
             <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
               {" "}
-              Previous {title.tierName}
+              {title.tierName}
             </h1>
           </div>
           <div className="flex px-4 flex-wrap -mx-px overflow-hidden justify-center ">
@@ -57,7 +60,7 @@ export default function Sponsors() {
               >
                 <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
                   {" "}
-                  Previous {tier.tierName}
+                  {tier.tierName}
                 </h1>
               </div>
               <div className="flex flex-wrap -mx-px overflow-hidden justify-center px-4">

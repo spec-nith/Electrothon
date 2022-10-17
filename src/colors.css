@@ -19,6 +19,12 @@ body {
 }
 
 .subhead-theme {
+  /* color: rgb(212, 212, 212); */
+  color:#0891b2;
+  /* @apply text-left; */
+}
+
+.faq-theme{
   color: rgb(212, 212, 212);
   @apply text-left;
 }
