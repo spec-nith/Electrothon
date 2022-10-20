@@ -10,8 +10,7 @@ const Timer = () => {
   let interval = useRef();
 
   const startTimer = () => {
-    const countDownDate = new Date("2022-02-18T18:00:00.000+05:30").getTime();
-
+    const countDownDate = new Date("2023-02-12T18:00:00.000+05:30").getTime();
     interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;
@@ -51,9 +50,10 @@ const Timer = () => {
                             <span>Time's Up</span>
                         </div>) : */}
           <div className="flex md:items-stretch md:p-10">
-            <div className="flex flex-col items-center counter-cell w-18r md:w-32">
+            <div className="flex flex-col items-center counter-cell w-18r md:w-40">
               <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 subhead-theme">
-                {("0" + timerDays).slice(-2)}
+                {/* {("0" + timerDays).slice(-3)} */}
+                {timerDays}
               </span>
               <div
                 className=" w-full text-center p-1.5 md:p-3 md:text-xl rounded-b-lg"
