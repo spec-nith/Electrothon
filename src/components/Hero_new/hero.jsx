@@ -50,7 +50,7 @@ export default function Hero(props) {
           </p>
         </div>
         <div className="text-center">
-          <p className="[background:linear-gradient(180deg,_white,_rgba(21,_22,_24,_0.24))] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] absolute m-0 w-[862px] left-[289px] top-[323px] text-[123px] leading-[normal]">
+          <p className="bg-gradient-to-b from-white [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] absolute m-0 w-[862px] left-[289px] top-[323px] text-[123px] leading-[normal]">
             ELECTROTHON
           </p>
         </div>
