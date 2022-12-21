@@ -1,6 +1,9 @@
 import React, { useState, useEffect, Suspense } from "react";
 import Header from "./components/UI/Header/Header";
-import Intro from "./components/Hero/Hero";
+// import Intro from "./components/Hero/Hero";
+//New Hero her: ----------------------------------------------------------------
+import Hero from "./components/Hero_new/hero";
+//----------------------------------------------------------------
 // import Content from "./components/UI/Content/Content";
 import About from "./components/About/About";
 // import Judges from "./components/Judges/judges";
@@ -65,8 +68,8 @@ const App = () => {
       >
         <ClimbingBoxLoader color={colour} loading={loading} size={25} />
       </div>
-      <BackgroundStatic />
-      <Header />
+      {/* <BackgroundStatic /> */}
+      {/* <Header /> */}
       {/* <a
         id="mlh-trust-badge"
         className="mlh"
@@ -81,7 +84,7 @@ const App = () => {
         />
       </a> */}
       <div className="sm:mx-20">
-        <Intro />
+        <Hero />
         <div className="container mx-auto px-4 text-justify">
           <section id="general-content">
             <About />
