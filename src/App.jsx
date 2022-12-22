@@ -3,6 +3,7 @@ import Hero from "./components/Hero_new/hero";
 import Header from "./components/UI/Header/Header";
 // import Explore from "./components/Tracks/Explore";
 import "./App.css";
+import "./App copy.css";
 import Footer from "./components/UI/Footer/Footer";
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
       {/* <div className="gradient-03 z-0">
         <Explore />
       </div> */}
-
       {/* <Footer /> */}
     </>
   );
