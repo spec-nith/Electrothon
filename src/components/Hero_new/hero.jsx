@@ -1,3 +1,4 @@
+import React, { useState, useEffect, Suspense } from "react";
 import Frame from "./assets/Frame";
 import Background__Bottom_ from "./assets/Background__Bottom_";
 import Official_Plate from "./assets/Official_Plate";
@@ -65,6 +66,7 @@ import Ellipse9 from "./assets2/Ellipse9";
 import { Button } from "react-scroll";
 import Milestone from "../milestones_new/milestone";
 import Timeline from "../Timeline_new/Timeline";
+import Sponsors from "../Sponsors/Sponsors";
 
 export default function Hero(props) {
   return (
@@ -73,6 +75,7 @@ export default function Hero(props) {
       style={props.style}
     >
       <div className="max-w-[1240px] " />
+
       <div
         className={`inset-x-0 absolute top-0 w-[1440px] bottom-[46.59%] bg-[rgba(13,11,12,1)] overflow-clip h-[1121px] font-['Gugi']`}
       >
@@ -89,7 +92,7 @@ export default function Hero(props) {
         </div>
         <div className="text-left text-[rgba(114,114,114,1)] ">
           <div className="[box-shadow:0px_0px_0px_1px_rgba(114,_114,_114,_1)_inset] [box-shadow-width:1px] absolute gap-2.5 flex justify-center items-center p-2.5 w-[191.62px] h-[57px] left-[736.36px] top-[710px] rounded-[1000px]">
-            <button className="text-xl m-0 leading-[normal] hover:bg-white   ">
+            <button className="text-xl m-0 leading-[normal] hover:bg-white  ">
               Learn more
             </button>
           </div>
@@ -152,6 +155,9 @@ export default function Hero(props) {
 
       {/* Timeline */}
       <Timeline />
+      {/* ---------------------------------------------------------------- */}
+
+      {/* Speakers */}
     </div>
   );
 }

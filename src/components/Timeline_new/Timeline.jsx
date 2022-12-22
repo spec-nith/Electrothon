@@ -60,7 +60,7 @@ import { Button } from "react-scroll";
 export default function Timeline(props) {
   return (
     <>
-      <div className={`font-normal font-['Gugi']`}>
+      <div id="schedule" className={`font-normal font-['Gugi']`}>
         <div className="[background-blend-mode:multiply,normal] absolute w-[428px] h-[926px] top-[2417px] left-[calc(50%_-_214px_+_-256px)] drop-shadow-lg bg-[rgba(66,66,66,0.36)] overflow-clip rounded-[22px]">
           <Ellipse4 />
           <Group5 />
