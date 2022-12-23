@@ -6,6 +6,7 @@ import "./App.css";
 import "./App copy.css";
 import Footer from "./components/UI/Footer/Footer";
 import Sponsors from "./components/Sponsors/Sponsors.js";
+import SpeakersNew from "./components/Speaker_new/speaker";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
       <div>
         <Sponsors />
       </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <SpeakersNew />
+      </Suspense>
     </>
   );
 }

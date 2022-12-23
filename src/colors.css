@@ -187,7 +187,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", en
   background: -webkit-linear-gradient(
     135deg,
     hsla(0, 6%, 13%, 0) 0%,
-    hsl(138deg 27% 23% / 60%) 100%
+    rgba(45, 184, 205, 0.6) 100%
   );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#221E1E", endColorstr="#2b4a34;", GradientType=1 );
 }

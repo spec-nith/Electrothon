@@ -1,33 +1,3 @@
-import Group31 from "./assets2/Group31";
-import Rectangle1037 from "./assets2/Rectangle1037";
-import Rectangle1039 from "./assets2/Rectangle1039";
-import Rectangle1040 from "./assets2/Rectangle1040";
-import Ellipse10 from "./assets2/Ellipse10";
-import Ellipse5 from "./assets2/Ellipse5";
-import Ellipse11 from "./assets2/Ellipse11";
-import Ellipse4 from "./assets2/Ellipse4";
-import Group5 from "./assets2/Group5";
-import Group15 from "./assets2/Group15";
-import Line57 from "./assets2/Line57";
-import Subtract from "./assets2/Subtract";
-import SimpleIconsOxygen from "./assets2/SimpleIconsOxygen";
-import Group18 from "./assets2/Group18";
-import Group20 from "./assets2/Group20";
-import Frame2 from "./assets2/Frame2";
-import Ellipse3 from "./assets2/Ellipse3";
-import Ellipse12 from "./assets2/Ellipse12";
-import Group6 from "./assets2/Group6";
-import Group8 from "./assets2/Group8";
-import Planet09 from "./assets2/Planet09";
-import Ellipse25 from "./assets2/Ellipse25";
-import Group32 from "./assets2/Group32";
-import Frame1 from "./assets2/Frame1";
-import Planet08 from "./assets2/Planet08";
-import _rgb from "./assets2/_rgb";
-import MaskGroup from "./assets2/MaskGroup";
-import Group22 from "./assets2/Group22";
-
-import Ellipse282 from "./assets2/Ellipse282";
 import Ellipse283 from "./assets2/Ellipse283";
 import Ellipse284 from "./assets2/Ellipse284";
 import Ellipse285 from "./assets2/Ellipse285";
@@ -49,12 +19,6 @@ import Ellipse300 from "./assets2/Ellipse300";
 import Ellipse301 from "./assets2/Ellipse301";
 import Ellipse302 from "./assets2/Ellipse302";
 import Ellipse34 from "./assets2/Ellipse34";
-import MaskGroup1 from "./assets2/MaskGroup1";
-import MaskGroup2 from "./assets2/MaskGroup2";
-import MaskGroup3 from "./assets2/MaskGroup3";
-import Group34 from "./assets2/Group34";
-import Ellipse9 from "./assets2/Ellipse9";
-import { Button } from "react-scroll";
 
 export default function Milestone(props) {
   return (
