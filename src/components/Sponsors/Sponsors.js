@@ -16,7 +16,9 @@ export default function Sponsors() {
         data-aos-duration="500"
         data-aos-easing="ease-in-out-cubic"
       >
-        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center py-6">
+        <h1
+          className={`text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center py-6text-center text-white font-normal font-['Gugi']`}
+        >
           Previous Sponsors
         </h1>
         {/* Title Sponsor  */}

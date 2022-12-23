@@ -114,7 +114,9 @@ export default function Milestone(props) {
           Participants
         </p>
       </div>
-      <Ellipse34 />
+      <div className="flex flex-col justify-center items-center">
+        <Ellipse34 />
+      </div>
     </>
   );
 }

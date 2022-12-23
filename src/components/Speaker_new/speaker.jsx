@@ -81,8 +81,12 @@ const SpeakersNew = () => {
 
   return (
     <Section>
-      <Ellipse34 />
-      <Title>Our Past Speakers!</Title>
+      <div className="flex flex-col justify-center items-center">
+        <Ellipse34 />
+      </div>
+      <Title className={`text-center text-white font-normal font-['Gugi']`}>
+        Our Past Speakers!
+      </Title>
       <Carousal>
         <Slider {...settings}>
           <Card

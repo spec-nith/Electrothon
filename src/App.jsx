@@ -4,9 +4,11 @@ import Header from "./components/UI/Header/Header";
 // import Explore from "./components/Tracks/Explore";
 import "./App.css";
 import "./App copy.css";
-import Footer from "./components/UI/Footer/Footer";
+// import Footer from "./components/UI/Footer/Footer";
 import Sponsors from "./components/Sponsors/Sponsors.js";
 import SpeakersNew from "./components/Speaker_new/speaker";
+import Ellipse34 from "./components/Speaker_new/Ellipse34";
+import Footer from "./components/Footer_new/footer";
 
 function App() {
   return (
@@ -19,11 +21,16 @@ function App() {
       <div className="invisible ">
         <Sponsors />
       </div>
+
       <div>
         <Sponsors />
       </div>
+      <Ellipse34 />
       <Suspense fallback={<div>Loading...</div>}>
         <SpeakersNew />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
       </Suspense>
     </>
   );
