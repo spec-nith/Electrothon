@@ -1,11 +1,5 @@
 import Frame from "./assets/Frame";
-import Group31 from "./assets2/Group31";
-import Rectangle1037 from "./assets2/Rectangle1037";
-import Rectangle1039 from "./assets2/Rectangle1039";
-import Rectangle1040 from "./assets2/Rectangle1040";
-import Ellipse10 from "./assets2/Ellipse10";
-import Ellipse5 from "./assets2/Ellipse5";
-import Ellipse11 from "./assets2/Ellipse11";
+
 import Ellipse4 from "./assets2/Ellipse4";
 import Group5 from "./assets2/Group5";
 import Group15 from "./assets2/Group15";
@@ -14,7 +8,7 @@ import Subtract from "./assets2/Subtract";
 import SimpleIconsOxygen from "./assets2/SimpleIconsOxygen";
 import Group18 from "./assets2/Group18";
 import Group20 from "./assets2/Group20";
-import Frame2 from "./assets2/Frame2";
+
 import Ellipse3 from "./assets2/Ellipse3";
 import Ellipse12 from "./assets2/Ellipse12";
 import Group6 from "./assets2/Group6";
@@ -22,45 +16,13 @@ import Group8 from "./assets2/Group8";
 import Planet09 from "./assets2/Planet09";
 import Ellipse25 from "./assets2/Ellipse25";
 import Group32 from "./assets2/Group32";
-import Frame1 from "./assets2/Frame1";
-import Planet08 from "./assets2/Planet08";
-import _rgb from "./assets2/_rgb";
-import MaskGroup from "./assets2/MaskGroup";
-import Group22 from "./assets2/Group22";
 
-import Ellipse282 from "./assets2/Ellipse282";
-import Ellipse283 from "./assets2/Ellipse283";
-import Ellipse284 from "./assets2/Ellipse284";
-import Ellipse285 from "./assets2/Ellipse285";
-import Ellipse286 from "./assets2/Ellipse286";
-import Ellipse287 from "./assets2/Ellipse287";
-import Ellipse288 from "./assets2/Ellipse288";
-import Ellipse289 from "./assets2/Ellipse289";
-import Ellipse290 from "./assets2/Ellipse290";
-import Ellipse291 from "./assets2/Ellipse291";
-import Ellipse292 from "./assets2/Ellipse292";
-import Ellipse293 from "./assets2/Ellipse293";
-import Ellipse294 from "./assets2/Ellipse294";
-import Ellipse295 from "./assets2/Ellipse295";
-import Ellipse296 from "./assets2/Ellipse296";
-import Ellipse297 from "./assets2/Ellipse297";
-import Ellipse298 from "./assets2/Ellipse298";
-import Ellipse299 from "./assets2/Ellipse299";
-import Ellipse300 from "./assets2/Ellipse300";
-import Ellipse301 from "./assets2/Ellipse301";
-import Ellipse302 from "./assets2/Ellipse302";
-import Ellipse34 from "./assets2/Ellipse34";
-import MaskGroup1 from "./assets2/MaskGroup1";
-import MaskGroup2 from "./assets2/MaskGroup2";
-import MaskGroup3 from "./assets2/MaskGroup3";
-import Group34 from "./assets2/Group34";
-import Ellipse9 from "./assets2/Ellipse9";
-import { Button } from "react-scroll";
+import Planet08 from "./assets2/Planet08";
 
 export default function Timeline(props) {
   return (
     <>
-      <div className={`font-normal font-['Gugi']`}>
+      <div id="schedule" className={`font-normal font-['Gugi']`}>
         <div className="[background-blend-mode:multiply,normal] absolute w-[428px] h-[926px] top-[2417px] left-[calc(50%_-_214px_+_-256px)] drop-shadow-lg bg-[rgba(66,66,66,0.36)] overflow-clip rounded-[22px]">
           <Ellipse4 />
           <Group5 />
