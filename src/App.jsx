@@ -9,6 +9,7 @@ import Sponsors from "./components/Sponsors/Sponsors.js";
 import SpeakersNew from "./components/Speaker_new/speaker";
 import Ellipse34 from "./components/Speaker_new/Ellipse34";
 import Footer from "./components/Footer_new/footer";
+// import Accordion from "./components/Faq_new/faq";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <SpeakersNew />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
+        {/* <Accordion /> */}
         <Footer />
       </Suspense>
     </>
