@@ -25,8 +25,12 @@ const Explore = () => {
         <TitleText
           title={
             <>
-              Choose the world you want <br className="md:block hidden" /> to
-              explore
+              <div
+                className={`text-center text-white font-normal font-['Gugi']`}
+              >
+                Choose the world you want <br className="md:block hidden" /> to
+                explore
+              </div>
             </>
           }
           textStyles="text-center"

@@ -15,40 +15,115 @@ export default function Example() {
   return (
     <div className="w-full bg-black text-white text-center">
       <Fragment>
-        <h1>Commonly Asked Questions</h1>
+        <h1
+          className={`text-6xl text-center text-white font-normal font-['Gugi']`}
+        >
+          Commonly Asked Questions
+        </h1>
         <br />
         <br />
-
         <Accordion open={open === 1}>
-          <AccordionHeader onClick={() => handleOpen(1)}>
-            What is Electrothon?
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(1)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-1xl">
             Electrothon is a student-run hackathon, under the aegis of the
             National Institute of Technology Hamirpur, India. An exceptional
             place for young and dedicated minds.
           </AccordionBody>
         </Accordion>
         <Accordion open={open === 2}>
-          <AccordionHeader onClick={() => handleOpen(2)}>
-            How to apply?
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(2)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
           </AccordionHeader>
           <AccordionBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Lorem convert.
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
           </AccordionBody>
-        </Accordion>
+        </Accordion>{" "}
         <Accordion open={open === 3}>
-          <AccordionHeader onClick={() => handleOpen(3)}>
-            Can a college have multiple teams?
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(3)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
           </AccordionHeader>
           <AccordionBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Lorem convert.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Lorem convert.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem
-            ipsum dolor sit amet, consectetur adipisicing elit. Lorem convert.
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
+          </AccordionBody>
+        </Accordion>{" "}
+        <Accordion open={open === 4}>
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(4)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
+          </AccordionHeader>
+          <AccordionBody>
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
+          </AccordionBody>
+        </Accordion>{" "}
+        <Accordion open={open === 5}>
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(5)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
+          </AccordionHeader>
+          <AccordionBody>
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
+          </AccordionBody>
+        </Accordion>{" "}
+        <Accordion open={open === 6}>
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(6)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
+          </AccordionHeader>
+          <AccordionBody>
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
+          </AccordionBody>
+        </Accordion>{" "}
+        <Accordion open={open === 7}>
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(1)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
+          </AccordionHeader>
+          <AccordionBody>
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
+          </AccordionBody>
+        </Accordion>{" "}
+        <Accordion open={open === 7}>
+          <AccordionHeader
+            className={`text-center text-4xl text-white font-normal font-['Gugi']`}
+            onClick={() => handleOpen(1)}
+          >
+            <h1 className="text-center text-4xl">What is Electrothon?</h1>
+          </AccordionHeader>
+          <AccordionBody>
+            Electrothon is a student-run hackathon, under the aegis of the
+            National Institute of Technology Hamirpur, India. An exceptional
+            place for young and dedicated minds.
           </AccordionBody>
         </Accordion>
       </Fragment>

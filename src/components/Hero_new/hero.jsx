@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Suspense } from "react";
 
-import FullMoon from "./assets/FullMoon";
+import FullMoon from "../assets_main/assets/FullMoon";
 
 import Milestone from "../milestones_new/milestone";
 import Timeline from "../Timeline_new/Timeline";

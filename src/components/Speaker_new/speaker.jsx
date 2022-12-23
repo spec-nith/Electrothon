@@ -2,8 +2,9 @@ import React, { lazy } from "react";
 import styled from "styled-components";
 
 import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+
+import "slick-carousel/slick/slick-theme.css";
 import Ellipse34 from "./Ellipse34";
 
 const Card = lazy(() => import("./card.jsx"));
