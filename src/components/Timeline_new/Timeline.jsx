@@ -1,23 +1,23 @@
-import Frame from "./assets/Frame";
+import Frame from "../assets_main/assets/Frame";
 
-import Ellipse4 from "./assets2/Ellipse4";
-import Group5 from "./assets2/Group5";
-import Group15 from "./assets2/Group15";
-import Line57 from "./assets2/Line57";
-import Subtract from "./assets2/Subtract";
-import SimpleIconsOxygen from "./assets2/SimpleIconsOxygen";
-import Group18 from "./assets2/Group18";
-import Group20 from "./assets2/Group20";
+import Ellipse4 from "../assets_main/assets2/Ellipse4";
+import Group5 from "../assets_main/assets2/Group5";
+import Group15 from "../assets_main/assets2/Group15";
+import Line57 from "../assets_main/assets2/Line57";
+import Subtract from "../assets_main/assets2/Subtract";
+import SimpleIconsOxygen from "../assets_main/assets2/SimpleIconsOxygen";
+import Group18 from "../assets_main/assets2/Group18";
+import Group20 from "../assets_main/assets2/Group20";
 
-import Ellipse3 from "./assets2/Ellipse3";
-import Ellipse12 from "./assets2/Ellipse12";
-import Group6 from "./assets2/Group6";
-import Group8 from "./assets2/Group8";
-import Planet09 from "./assets2/Planet09";
-import Ellipse25 from "./assets2/Ellipse25";
-import Group32 from "./assets2/Group32";
+import Ellipse3 from "../assets_main/assets2/Ellipse3";
+import Ellipse12 from "../assets_main/assets2/Ellipse12";
+import Group6 from "../assets_main/assets2/Group6";
+import Group8 from "../assets_main/assets2/Group8";
+import Planet09 from "../assets_main/assets2/Planet09";
+import Ellipse25 from "../assets_main/assets2/Ellipse25";
+import Group32 from "../assets_main/assets2/Group32";
 
-import Planet08 from "./assets2/Planet08";
+import Planet08 from "../assets_main/assets2/Planet08";
 
 export default function Timeline(props) {
   return (

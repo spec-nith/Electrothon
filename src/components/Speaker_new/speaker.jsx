@@ -2,8 +2,9 @@ import React, { lazy } from "react";
 import styled from "styled-components";
 
 import Slider from "react-slick";
-import "../../../node_modules/slick-carousel/slick/slick.css";
-import "../../../node_modules/slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+
+import "slick-carousel/slick/slick-theme.css";
 import Ellipse34 from "./Ellipse34";
 
 const Card = lazy(() => import("./card.jsx"));
@@ -81,8 +82,12 @@ const SpeakersNew = () => {
 
   return (
     <Section>
-      <Ellipse34 />
-      <Title>Our Past Speakers!</Title>
+      <div className="flex flex-col justify-center items-center">
+        <Ellipse34 />
+      </div>
+      <Title className={`text-center text-white font-normal font-['Gugi']`}>
+        Our Past Speakers!
+      </Title>
       <Carousal>
         <Slider {...settings}>
           <Card

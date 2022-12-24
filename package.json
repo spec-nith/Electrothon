@@ -1,49 +1,41 @@
 {
-  "name": "electrothon",
+  "name": "elect-5",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^6.4.5",
     "@formspree/react": "^2.2.4",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
-    "@headlessui/react": "^1.4.1",
-    "aos": "^2.3.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-scroll": "^1.8.4",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@headlessui/react": "^1.7.7",
+    "@material-tailwind/react": "^1.2.4",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^8.0.2",
+    "i": "^0.3.7",
+    "npm": "^9.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.8.9",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "styled-components": "^5.3.6",
-    "swiper": "^7.4.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d build -b gh-pages",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^9.8.8",
-    "gh-pages": "^3.2.3",
-    "gsap": "^3.8.0",
-    "postcss": "^7.0.39",
-    "prettier": "^2.4.1",
-    "randomcolor": "^0.6.2",
-    "react-spinners": "^0.11.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.16"
   },
   "browserslist": {
     "production": [
@@ -55,7 +47,11 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
-    ],
-    "homepage": "http://spec-nith.github.io/Electrothon"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.20",
+    "tailwindcss": "^3.2.4"
   }
 }
