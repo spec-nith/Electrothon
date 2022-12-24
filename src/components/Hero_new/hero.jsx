@@ -24,7 +24,7 @@ export default function Hero(props) {
           <div className=" left-px absolute w-[1440px] h-[978px] top-[139px]" />
         </div>
         <div className="text-white text-center">
-          <p className="absolute text-6xl m-0 w-[535px] left-[calc(50%_-_267.5px_+_0.5px)] top-[calc(50%_-_38.5px_+_456px)] tracking-[-0.32px] leading-[1.2]">
+          <p className="absolute text-3xl sm:text-4xl md:text-5xl lg:text-6xl m-0 w-[535px] left-[calc(50%_-_267.5px_+_0.5px)] top-[calc(50%_-_38.5px_+_456px)] tracking-[-0.32px] leading-[1.2]">
             About Us
           </p>
         </div>
@@ -66,7 +66,7 @@ export default function Hero(props) {
       ></div>
 
       <p
-        className={`absolute text-2xl text-center inline m-0 left-[12.71%] right-[12.71%] h-[239px] w-[1074px] top-[53.45%] bottom-[35.16%] font-['Gugi'] leading-[34px] text-[rgba(200,195,195,1)]`}
+        className={`absolute text-xs sm:text-sm md:text-base lg:text-lg text-center inline m-0 left-[12.71%] right-[12.71%] h-[239px] w-[1074px] top-[53.45%] bottom-[35.16%] font-['Gugi'] leading-[34px] text-[rgba(200,195,195,1)]`}
       >
         Taking moonshots is no smooth sailing. It's an inherently unpredictable
         ride. As we launch the 5th in-person lunation of Electrothon, we strive
