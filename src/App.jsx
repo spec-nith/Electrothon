@@ -12,6 +12,7 @@ import Footer from "./components/Footer_new/footer";
 import Card from "./components/Prizes/cards";
 
 import Accordion from "./components/Faq_new/faq";
+import NewMilestone from "./components/new_milestones/newMilestone";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
       <Header />
       <div className="grid place-items-start md:place-items-center">
         <Hero />
+      </div>
+      <div className="milestones">
+        <NewMilestone />
       </div>
 
       <div className="invisible ">
