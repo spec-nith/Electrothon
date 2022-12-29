@@ -1,0 +1,31 @@
+/* body {
+  background-color: #000;
+} */
+.circle {
+  border-radius: 100%;
+}
+@media screen and (max-width: 786px) {
+  .section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle-top {
+    top: 0;
+    right: -25%;
+  }
+  .circle-odd {
+    left: -25%;
+  }
+}
+.circle {
+  background-image: url("https://uortjlczjmucmpaqqhqm.supabase.co/storage/v1/object/public/firejet-converted-images/images/7c6907c2ef4f6a9b636ee06a99c26b9112f9d603.webp");
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* padding: 0.rem; */
+  background-size: 87% 87%;
+  background-position: center;
+}
+.head-para {
+  text-align: center;
+}
