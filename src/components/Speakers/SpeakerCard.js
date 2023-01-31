@@ -30,7 +30,7 @@ const SpeakerCard = ({ judge }) => {
             "relative bg-black bg-opacity-25 rounded-3xl overflow-hidden shadow-lg " +
             (isOpen()
               ? ""
-              : "opacity-70 hover:opacity-90 transition-all duration-300")
+              : "opacity-90 transition-all duration-300")
           }
         >
           <picture>
@@ -136,7 +136,7 @@ const SpeakerCard = ({ judge }) => {
                 disabled
               >
                 {curr_date > workshopDate
-                  ? "Registration Closed"
+                  ? "Talk Completed"
                   : "Coming Soon"}
               </button>
             )}

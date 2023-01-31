@@ -23,7 +23,7 @@ export default function Schedule() {
     {
       title: "Registration Begins",
       para: "Registration opens up for students to register with their respective teams and project ideas for Electrothon.",
-      date: "6 Feb - 7 Mar 2023",
+      date: "6 February 2023 onwards",
     },
     // {
     //   title: "Inviting Foreign Applicants",
@@ -37,8 +37,8 @@ export default function Schedule() {
     },
     {
       title: "Result Declaration",
-      para: "The ultimate genius will be revealed by our Judging Panel on 9th April 2023 through our social media handles.",
-      date: "9th April 2023",
+      para: "The ultimate genius will be revealed by our Judging Panel, within a week, through our social media handles.",
+      date: "Within a week",
     },
   ];
   const LeftCard = (props) => {
@@ -156,14 +156,14 @@ export default function Schedule() {
             Here’s your guide to the Electrothon 5.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>
-          <span className="text-xl text-blue-500">
+          <a className="text-xl text-blue-500" href="https://goo.gl/maps/ocgMhDtcZXf4FVau7" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon
               className="text-lg"
               icon={faMapMarkerAlt}
               fixedWidth
             />{" "}
-            ONLINE
-          </span>
+            NIT Hamirpur
+          </a>
         </div>
         <div className="ml-0 md:ml-12 lg:w-2/3">
           <div className="container mx-auto w-full h-full pr-6 ">

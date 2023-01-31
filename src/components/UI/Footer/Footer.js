@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://drive.google.com/file/d/1P_-npMEWQtOUAWnuJH66aK5h7sCxSgRy/view?usp=sharing"
+                  href="https://drive.google.com/file/d/15Kt6nRhNIgc7XbZNILL035yh8dhro_QP/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex justify-center md:justify-start text-sm md:md:text-sm text-gray-400 pb-2 hover:text-gray-300"
@@ -45,7 +45,7 @@ export default function Footer() {
                   Sponsorship Brochure
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
                   target="_blank"
@@ -54,7 +54,7 @@ export default function Footer() {
                 >
                   Code of Conduct
                 </a>{" "}
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="text-white flex text-sm md:text-lg justify-center mb-4 ">
@@ -139,7 +139,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-sm flex justify-center pb-2 text-gray-400">
-          © 2022, SPEC NITH
+          © 2023, SPEC NITH
         </div>
       </React.Fragment>
     );

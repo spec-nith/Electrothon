@@ -91,20 +91,21 @@ export default function Introduction() {
                 <span className="block text-normal font-medium md:mt-0 mt-1.5 subhead-theme">
                   2k23
                 </span>
-                <span className="block text-white text-xl tracking-wider mt-2">
-                  Dates out soon...
-                </span>
               </h1>
               <p className="mt-6 text-base text-center md:text-left text-gray-200 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                 SEARCH | PLAN | ENGAGE | CREATE
               </p>
-              <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">
+              <a className="block text-white text-base hover:underline tracking-wider mt-2" href="https://drive.google.com/file/d/15Kt6nRhNIgc7XbZNILL035yh8dhro_QP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                  Why Sponsor us?
+                </a>
+                {/* DevFoliov BTN */}
+              {/* <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">
                 <div
                   className="apply-button h-full"
                   data-hackathon-slug="electrothon-4"
                   data-button-theme="light"
                 ></div>
-              </div>
+              </div> */}
               {/* <div className="flex justify-center md:justify-start space-x-5 mt-6 opacity-80">
                 <a
                   href="https://discord.gg/cjMMRs7tHs"

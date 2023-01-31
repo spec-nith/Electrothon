@@ -23,7 +23,7 @@ const Speakers = ({ anchorID }) => {
       data-aos-easing="ease-in-out-cubic"
     >
       <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center">
-        Previous Speakers
+        Past Speakers
       </h1>
       <div className="mt-5 md:mt-0">
         <div className="container mx-auto mt-8">
