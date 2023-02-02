@@ -236,6 +236,13 @@ export const data = [
         url: "https://atsign.com/",
         id: "title_2",
       },
+      {
+        sponsorName: "Major League Hacking",
+        webp: "sponsors/title/webp/mlh.webp",
+        src: "sponsors/title/mlh.png",
+        url: "https://mlh.io/",
+        id: "title_3",
+      },
     ],
     id: "0",
   },

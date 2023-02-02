@@ -92,7 +92,7 @@ const App = () => {
           {/* <Speakers/> */}
           <Suspense fallback={<div>Loading...</div>}>
             <Schedule />
-            {/* <Projects /> */}
+            <Projects />
             {/* <ProbStatements /> */}
             <Prizes />
             {/* <Challenges /> */}

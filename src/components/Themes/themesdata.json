@@ -1,39 +1,39 @@
 [
   {
-    "title": "Climate Change",
-    "content": "Lead a brawl against climate change by fabricating an innovative solution to forge a world where the future generations don't have to worry.",
-    "image": "climate.png",
-    "webp": "climate.webp"
+    "title": "Enhancing Education",
+    "content": "",
+    "image": "education.png",
+    "webp": "education.webp"
   },
   {
-    "title": "Pandemic",
-    "content": "Integrate an approach that helps people build up resilience to cope with the inevitable new normal by figuring strategies in the wake of pandemic.",
-    "image": "pandemic.png",
-    "webp": "pandemic.webp"
+    "title": "Fintech",
+    "content": "",
+    "image": "fintech.png",
+    "webp": "fintech.webp"
   },
   {
-    "title": "Cyber Bullying",
-    "content": "Build prudent solutions to help prevent people from succumbing to the spiral of cyberbullying and to combat misuse of technology and online harassment.",
-    "image": "cyber.png",
-    "webp": "cyber.webp"
+    "title": "Health & Hygiene",
+    "content": "",
+    "image": "health.png",
+    "webp": "health.webp"
+  },
+  
+  {
+    "title": "Crime Prevention",
+    "content": "",
+    "image": "crime.png",
+    "webp": "crime.webp"
   },
   {
-    "title": "Natural Disasters",
-    "content": "Harnessing the power of technology, vouch for innovative solutions to address the uprising challenges caused by natural calamities.",
-    "image": "natural.png",
-    "webp": "natural.webp"
-  },
-
-  {
-    "title": "Hunger Eradication",
-    "content": "In order to shape a world where no one has to question the guarantee of a two square meal, devise projects that promise to eradicate hunger.",
-    "image": "hunger.png",
-    "webp": "hunger.webp"
+    "title": "Travel & Tourism",
+    "content": "",
+    "image": "travel1.png",
+    "webp": "travel1.webp"
   },
   {
     "title": "Open Innovation",
-    "content": "Let your imagination go haywire as you envision ideas that hold the capability to solve any problem that has been distressing mankind for ages.",
-    "image": "idea.png",
-    "webp": "idea.webp"
+    "content": "",
+    "image": "innovation.png",
+    "webp": "innovation.webp"
   }
 ]
