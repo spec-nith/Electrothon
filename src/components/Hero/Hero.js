@@ -142,7 +142,7 @@ export default function Introduction() {
           </main>
         </div>
       </div>
-      <div className="flex md:items-center justify-center block h-4/5 w-full md:col-span-3">
+      <div className="flex md:items-center justify-center md:ml-12 block h-4/5 w-full md:col-span-3">
         <Timer />
         {/* <Swiper
           modules={[Pagination, Autoplay]}
