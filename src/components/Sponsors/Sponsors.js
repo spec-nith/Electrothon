@@ -2,7 +2,7 @@ import React from "react";
 import { data } from "./Data";
 import "../../colors.css";
 
-const title = data.pop();
+// const title = data.pop();
 
 export default function Sponsors() {
   return (
@@ -17,10 +17,10 @@ export default function Sponsors() {
         data-aos-easing="ease-in-out-cubic"
       >
         <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center py-6">
-        Previous Sponsors
+        Our Sponsors
       </h1>
         {/* Title Sponsor  */}
-        <div className="justify-center text-center">
+        {/* <div className="justify-center text-center">
           <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2 rounded-t-lg">
             <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
               {" "}
@@ -31,7 +31,7 @@ export default function Sponsors() {
             {title.data.map((sponsor) => {
               return (
                 <div
-                  className="my-1 p-3 md:p-8 overflow-hidden w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"
+                  className="my-1 p-3 flex md:p-8 overflow-hidden w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"
                   key={sponsor.id}
                 >
                   <a
@@ -43,14 +43,12 @@ export default function Sponsors() {
                       <source srcSet={sponsor.webp} type="image/webp" />
                       <img src={sponsor.src} alt={sponsor.sponsorName} />
                     </picture>
-                    {/* for sponsorname */}
-                    {/* <p className="text-white tracking-wider text-lg mt-2">{sponsor.sponsorName}</p>   */}
                   </a>
                 </div>
               );
             })}
           </div>
-        </div>
+        </div> */}
         {/* Gold, Silver, Bronze  */}
         {data.map((tier, index) => {
           return (
@@ -67,7 +65,7 @@ export default function Sponsors() {
                 {tier.data.map((sponsor) => {
                   return (
                     <div
-                      className="my-1 p-3 md:p-8 overflow-hidden w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"
+                      className="my-1 p-3 md:p-8 flex overflow-hidden w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"
                       key={sponsor.id}
                     >
                       <a

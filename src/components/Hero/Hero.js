@@ -27,15 +27,15 @@ import "swiper/modules/pagination/pagination.min.css";
 
 export default function Introduction() {
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
     script.async = true;
     script.defer = true;
     document.body.appendChild(script);
     return () => {
       document.body.removeChild(script);
-    };
-  }, []);
+    }
+}, []);
 
   return (
     <section
@@ -99,13 +99,13 @@ export default function Introduction() {
                   Why Sponsor us?
                 </a>
                 {/* DevFoliov BTN */}
-              {/* <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">
+              <div className="mt-5 sm:mt-8 sm:flex justify-center md:justify-start">
                 <div
                   className="apply-button h-full"
-                  data-hackathon-slug="electrothon-4"
+                  data-hackathon-slug="electrothon-5"
                   data-button-theme="light"
                 ></div>
-              </div> */}
+              </div>
               {/* <div className="flex justify-center md:justify-start space-x-5 mt-6 opacity-80">
                 <a
                   href="https://discord.gg/cjMMRs7tHs"
