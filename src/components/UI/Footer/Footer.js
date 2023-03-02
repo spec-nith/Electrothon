@@ -45,16 +45,16 @@ export default function Footer() {
                   Sponsorship Brochure
                 </a>
               </li>
-              {/* <li>
+              <li>
                 <a
-                  href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  href="https://harshmello.notion.site/harshmello/Code-of-Conduct-11809eecfb9a47259aa8557d8d044ec1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex justify-center md:justify-start text-sm md:md:text-sm text-gray-400 pb-2 hover:text-gray-300"
                 >
                   Code of Conduct
                 </a>{" "}
-              </li> */}
+              </li>
             </ul>
           </div>
           <div className="text-white flex text-sm md:text-lg justify-center mb-4 ">
