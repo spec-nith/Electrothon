@@ -1,0 +1,78 @@
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.card-img-top {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  width: 14rem;
+  /* right: 0rem; */
+}
+/* .overflow {
+  overflow: hidden;
+} */
+.card {
+  margin-top: 1rem;
+  color: #fff;
+  height: 30em;
+  width: 22rem;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border: 1px solid #6a6a6a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
+}
+h4.card-title {
+  font-family: "Gugi";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  /* line-height: 44px; */
+  text-align: center;
+}
+
+.button {
+  /* top: 65%; */
+  background-color: #4c43cd;
+  color: #fff;
+  /* border-radius: 100px; */
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #7946ab 0%, #2565c9 100%);
+  border-radius: 1000px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 70%;
+}
+@media screen and (max-width: 986px) {
+  .row {
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

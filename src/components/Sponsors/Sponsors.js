@@ -1,6 +1,10 @@
 import React from "react";
 import { data } from "./Data";
 import "../../colors.css";
+import { motion } from "framer-motion";
+import { TitleText } from "../Tracks_new/CustomTexts";
+import { staggerContainer } from "../Tracks_new/motion";
+import styles from "../Tracks_new/style";
 
 // const title = data.pop();
 
@@ -9,29 +13,42 @@ export default function Sponsors() {
     <div>
       <section
         id="sponsors"
-        className="container-theme mt-2 my-4 md:my-12"
+        className=" md:my-12"
         style={{ padding: 0 }}
-        data-aos="fade"
-        data-aos-delay="50"
-        data-aos-duration="500"
-        data-aos-easing="ease-in-out-cubic"
       >
-        <h1 className="text-3xl tracking-tight md:text-4xl leading-normal md:leading-relaxed header-theme flex justify-center py-6">
-        Our Sponsors
-      </h1>
+        <div className="mb-20 text-center">
+        <motion.div
+        variants={staggerContainer}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.25 }}
+        className={`${styles.innerWidth} mx-auto flex flex-col`}
+      >
+        <TitleText
+          title={
+            <>
+          <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald]">
+            Our Sponsors
+          </div>
+        </>
+          }
+          textStyles="text-center"
+        />
+      </motion.div>
+        </div>
         {/* Title Sponsor  */}
         {/* <div className="justify-center text-center">
-          <div className="sticky top-0 justify-center text-center sponsor-bg-title px-4 py-2 rounded-t-lg">
-            <h1 className="xl3 tracking-tight text-xl md:text-3xl leading-normal md:leading-relaxed header-theme font-semibold">
+          <div className="sticky top-0 justify-center px-4 py-2 text-center rounded-t-lg sponsor-bg-title">
+            <h1 className="text-xl font-semibold leading-normal tracking-tight xl3 md:text-3xl md:leading-relaxed header-theme">
               {" "}
               {title.tierName}
             </h1>
           </div>
-          <div className="flex px-4 flex-wrap -mx-px overflow-hidden justify-center ">
+          <div className="flex flex-wrap justify-center px-4 -mx-px overflow-hidden ">
             {title.data.map((sponsor) => {
               return (
                 <div
-                  className="my-1 p-3 flex md:p-8 overflow-hidden w-1/2 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"
+                  className="items-center justify-center object-cover w-1/2 p-3 my-1 overflow-hidden md:p-8 sm:w-1/2 md:w-1/2 lg:w-1/4 xl:w-1/5"
                   key={sponsor.id}
                 >
                   <a
@@ -42,8 +59,10 @@ export default function Sponsors() {
                     <picture className="">
                       <source srcSet={sponsor.webp} type="image/webp" />
                       <img src={sponsor.src} alt={sponsor.sponsorName} />
-                    </picture>
-                  </a>
+                    </picture> */}
+                    {/* for sponsorname */}
+                    {/* <p className="mt-2 text-lg tracking-wider text-white">{sponsor.sponsorName}</p>   */}
+                  {/* </a>
                 </div>
               );
             })}
@@ -96,7 +115,7 @@ export default function Sponsors() {
             rel="noopener noreferrer"
           >
             <button
-              className="text-center px-8 py-3 text-base font-medium rounded-md text-white bg-indigo-700 hover:bg-indigo-400 hover:text-white md:py-4 md:text-lg md:px-10"
+              className="px-8 py-3 text-base font-medium text-center text-white bg-indigo-700 rounded-md hover:bg-indigo-400 hover:text-white md:py-4 md:text-lg md:px-10"
               id="pin-foot"
             >
               Sponsorship Brochure
@@ -105,7 +124,7 @@ export default function Sponsors() {
         </div> */}
       </section>
 
-      {/* <div id="scrollSlide" className="relative mt-2 p-6 my-4 py-8 md:my-12 md:p-12">
+      {/* <div id="scrollSlide" className="relative p-6 py-8 my-4 mt-2 md:my-12 md:p-12">
       
       
         </div>

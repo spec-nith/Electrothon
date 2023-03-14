@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap');
 
 body {
   margin: 0;
@@ -52,3 +54,11 @@ code {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555; }
+  
+  .timeline-index{
+    background: linear-gradient(90deg, #7946AB 0%, #2565C9 100%)
+  }
+
+ .heading-glow{
+  text-shadow: 0 0 10px rgb(162, 160, 160), 0 0 42px rgb(222, 220, 220);
+ }
