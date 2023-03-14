@@ -48,20 +48,20 @@ export default function Hero(props) {
       <div className="lg:hidden" id="header-handler">
         <Header />
       </div>
-      <div className="w-full h-screen flex flex-col justify-center items-center text-white">
-        <div className="text-center flex flex-col justify-center items-center lg:w-1/2 m-auto font-thin">
+      <div className="flex flex-col items-center justify-center w-full h-screen text-white">
+        <div className="flex flex-col items-center justify-center m-auto font-thin text-center lg:w-1/2">
           <p className="text-4xl md:text-6xl lg:text-8xl tracking-widest md:tracking-[0.6rem] lg:tracking-[1rem] hero-heading heading-glow font-bold md:font-light">
             ELECTROTHON
           </p>
-          <p className="text-4xl md:text-6xl lg:text-8xl hero-heading heading-glow font-bold md:font-light">
+          <p className="text-4xl font-bold md:text-6xl lg:text-8xl hero-heading heading-glow md:font-light">
             5.0
           </p>
-          <p className="text-md md:text-lg lg:text-2xl font-semibold mt-2 hero-heading">
+          <p className="mt-2 font-semibold text-md md:text-lg lg:text-2xl hero-heading">
             MOONSHOT YOUR EUREKA
           </p>
-          <div className="flex w-full justify-center mt-6 hero-heading">
+          <div className="flex z-[100] w-full justify-center mt-6 hero-heading">
             <div
-              className="apply-button h-full"
+              className="h-full apply-button"
               data-hackathon-slug="electrothon-5"
               data-button-theme="light"
             ></div>
@@ -71,10 +71,10 @@ export default function Hero(props) {
       </div>
         </div>
         {/* <div className="font-[Poppins] mx-6 md:mx-24 lg:mx-auto lg:w-1/2 lg:mt-16 m-auto border-2 border-violet-500 bg-black/30 hero-about">
-          <p className="text-2xl font-semibold lg:font-light md:text-4xl text-center p-4">
+          <p className="p-4 text-2xl font-semibold text-center lg:font-light md:text-4xl">
             About Us
           </p>
-          <p className="text-md md:text-xl xl:text-xl text-center lg:font-light px-2 md:px-6 pb-4 md:pb-8 leading-normal md:leading-relaxed">
+          <p className="px-2 pb-4 leading-normal text-center text-md md:text-xl xl:text-xl lg:font-light md:px-6 md:pb-8 md:leading-relaxed">
             Taking moonshots is no smooth sailing. It's an inherently
             unpredictable ride. As we launch the 5th in-person lunation of
             Electrothon, we strive for nothing less than the moon. Run by the
@@ -93,7 +93,7 @@ export default function Hero(props) {
       </div>
 
       <div className="md:w-[900px] rounded-xl p-8 text-white mx-auto opacity-60">
-        <p className="paraContent text-center">
+        <p className="text-center paraContent">
           Taking moonshots is no smooth sailing. It's an inherently
           unpredictable ride. As we launch the 5th in-person lunation of
           Electrothon, we strive for nothing less than the moon. Run by the

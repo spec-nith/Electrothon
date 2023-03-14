@@ -8,9 +8,9 @@ const SocialMediaLG = (props) => {
         href={props.item.link}
         target="_blank"
         rel="noreferrer noopener"
-        className="flex flex-row items-center py-2 xl:text-md text-gray-300 border-transparent transition duration-300 transition-all cursor-pointer align-middle"
+        className="flex flex-row items-center py-2 text-gray-300 align-middle transition-all transition duration-300 border-transparent cursor-pointer xl:text-md"
       >
-        <span className="flex items-center justify-center h-14 w-12 text-lg rounded-lg hover:text-blue-500 tooltip relative">
+        <span className="relative flex items-center justify-center w-12 text-lg rounded-lg h-14 hover:text-blue-500 tooltip">
             <FontAwesomeIcon
               className="text-3xl"
               icon={props.item.icon}
@@ -25,22 +25,22 @@ const SocialMediaLG = (props) => {
 
 const Social = () => {
     return(
-        <div className=" h-full w-full fixed flex flex-wrap left-0 ml-6 lg:ml-12 social-handler opacity-0">
-        <nav className="items-center my-auto h-1/2 my-auto">
-          {/* <div className="hidden md:flex py-4 rotate-90">
-            <div className=" text-gray-200 text-2xl font-black">
+        <div className="fixed left-0 flex flex-wrap w-full h-full ml-6 opacity-0  lg:ml-12 social-handler">
+        <nav className="items-center my-auto h-1/2">
+          {/* <div className="hidden py-4 rotate-90 md:flex">
+            <div className="text-2xl font-black text-gray-200 ">
             <a
             href="https://specnith.com/"
             target="_blank"
             rel="noreferrer noopener"
             >
-            {/* <img src="spec_logo.png" alt="Logo"  className="h-8 w-8 mr-2" /> */}
+            {/* <img src="spec_logo.png" alt="Logo"  className="w-8 h-8 mr-2" /> */}
           {/* SPEC
             </a>
             </div>
           </div> */}
 
-          <div className="hidden md:flex flex-col h-full justify-center items-center rounded-full z-50">
+          <div className="z-50 flex-col items-center justify-center hidden h-full rounded-full md:flex">
             {socialItems.map((item) => (
               <SocialMediaLG item={item} key={item.link} />
             ))}
