@@ -21,11 +21,11 @@ const Timeline = () => {
         <TitleText
           title={
             <>
-              
+
               <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] tracking-wider my-4 lg:my-6 font-[Oswald] text-center">
                 TimeLine
               </div>
-              
+
             </>
           }
           textStyles="text-center"
@@ -57,7 +57,7 @@ const Timeline = () => {
                 icon={faComputer}
               />
             </div>
-            <div class="timeline__event__date ">6 FEB-20 MAR 2023</div>
+            <div class="timeline__event__date ">6 FEB-31 MAR 2023</div>
             <div class="timeline__event__content ">
               <div class="timeline__event__title">Registration Begins</div>
               <div class="timeline__event__description">
@@ -77,7 +77,7 @@ const Timeline = () => {
             <div class="timeline__event__icon">
               <FontAwesomeIcon className="text-3xl" icon={faPeopleGroup} />
             </div>
-            <div class="timeline__event__date">8th MAR 2023</div>
+            <div class="timeline__event__date">8th APRIL 2023</div>
             <div class="timeline__event__content">
               <div class="timeline__event__title">Electrothon Main Event</div>
               <div class="timeline__event__description">
@@ -97,7 +97,7 @@ const Timeline = () => {
             <div class="timeline__event__icon">
               <FontAwesomeIcon className="text-3xl" icon={faAward} />
             </div>
-            <div class="timeline__event__date">9th MAR 2023</div>
+            <div class="timeline__event__date">9th APRIL 2023</div>
             <div class="timeline__event__content">
               <div class="timeline__event__title">Result Declaration</div>
               <div class="timeline__event__description">
