@@ -5,6 +5,7 @@ import "./App.css";
 // import Footer from "./components/UI/Footer/Footer";
 import Sponsors from "./components/Sponsors/Sponsors.js";
 import SpeakersNew from "./components/Speaker/speaker";
+import Organizers from "./components/Organizers/Organizers";
 // import Ellipse34 from "./components/Speaker/Ellipse34";
 import Footer from "./components/Footer/footer";
 import Card from "./components/Prizes/cards";
@@ -45,6 +46,7 @@ function App() {
 
       <Suspense fallback={<div>Loading...</div>}>
         <SpeakersNew />
+        <Organizers />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <FAQs />

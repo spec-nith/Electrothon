@@ -6,7 +6,7 @@ import { TitleText } from "../Tracks_new/CustomTexts";
 import { staggerContainer } from "../Tracks_new/motion";
 import styles from "../Tracks_new/style";
 
-// const title = data.pop();
+const title = data.pop();
 
 export default function Sponsors() {
   return (
@@ -37,7 +37,7 @@ export default function Sponsors() {
       </motion.div>
         </div>
         {/* Title Sponsor  */}
-        {/* <div className="justify-center text-center">
+        <div className="justify-center text-center">
           <div className="sticky top-0 justify-center px-4 py-2 text-center rounded-t-lg sponsor-bg-title">
             <h1 className="text-xl font-semibold leading-normal tracking-tight xl3 md:text-3xl md:leading-relaxed header-theme">
               {" "}
@@ -59,15 +59,15 @@ export default function Sponsors() {
                     <picture className="">
                       <source srcSet={sponsor.webp} type="image/webp" />
                       <img src={sponsor.src} alt={sponsor.sponsorName} />
-                    </picture> */}
+                    </picture>
                     {/* for sponsorname */}
                     {/* <p className="mt-2 text-lg tracking-wider text-white">{sponsor.sponsorName}</p>   */}
-                  {/* </a>
+                  </a>
                 </div>
               );
             })}
           </div>
-        </div> */}
+        </div>
         {/* Gold, Silver, Bronze  */}
         {data.map((tier, index) => {
           return (

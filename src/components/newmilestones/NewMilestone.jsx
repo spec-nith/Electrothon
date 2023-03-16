@@ -63,8 +63,8 @@ export const NewMilestone = () => {
             </button>
           </div>
         </div>
-        <div className="chart bg-gradient-to-br from-[rgba(209,209,209,0.2)] to-[rgba(209,209,209,0.1)] backdrop-blur-[1px] rounded-3xl">
-          <div className="chartimg">
+        <div className="chart bg-gradient-to-br from-[rgba(209,209,209,0.2)] to-[rgba(209,209,209,0.1)] backdrop-blur-[1px] rounded-3xl h-auto">
+          <div className="flex justify-center items-center">
             <picture>
               <source srcSet="Frame55-1.webp" type="image/webp" />
               <img src="Frame55-1.png" className="" alt="chart" />

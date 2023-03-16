@@ -90,7 +90,21 @@ const Nav = () => {
             </a>
             </div>
           </div> */}
-
+          <a
+              href="https://specnith.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-white fixed hidden lg:block top-10 left-5 md:text-lg md:font-bold hover:text-gray-300 "
+            >
+              <picture>
+                <source srcSet="spec_logo.webp" type="image/webp" />
+                <img
+                  className="w-16 md:w-32"
+                  src="spec_logo.png"
+                  alt="spec_logo"
+                />
+              </picture>
+            </a>
           <div className="hidden lg:flex flex-col z-50 h-full justify-center items-center rounded-full">
             {navItems.map((item) => (
               <NavbarLG item={item} key={item.id} />

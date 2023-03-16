@@ -15,8 +15,9 @@ const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 90vw;
   overflow: hidden;
+  margin: 0 auto;
 `;
 
 const Title = styled.h1`
@@ -102,7 +103,7 @@ const SpeakersNew = () => {
         />
       </motion.div>
       <Section>
-        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-7 m-2  max-w-[80vw] mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-7 m-2  md:max-w-[85vw] lg:max-w-[80vw] mx-auto">
           {speakers.map((speaker, index) => {
             return <Card props={speaker} />
           })}</div>
