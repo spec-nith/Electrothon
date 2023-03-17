@@ -12,6 +12,8 @@ import Card from "./components/Prizes/cards";
 import Background from "./components/Background/bgstatic";
 import "./mlh.css";
 import FAQs from "./components/Faq/faq";
+import { NewMilestone } from "./components/newmilestones/NewMilestone";
+import Timeline from "./components/Timeline_new/Timeline_new";
 
 function App() {
   return (
@@ -36,22 +38,21 @@ function App() {
       >
         <Hero />
       </div>
-
       <div className="mx-6 mt-40 lg:mx-36">
+        <NewMilestone />
+        <Timeline />
         <Sponsors />
+        <Explore />
+        <Card />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SpeakersNew />
+          <Organizers />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <FAQs />
+          <Footer />
+        </Suspense>
       </div>
-      {/* <Ellipse34 /> */}
-      <Explore />
-      <Card />
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <SpeakersNew />
-        <Organizers />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <FAQs />
-        <Footer />
-      </Suspense>
     </div>
   );
 }

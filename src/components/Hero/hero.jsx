@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import Timeline from "../Timeline_new/Timeline_new";
 import Header from "../Header/Header";
 import anime from "animejs";
 import SocialHeader from "../SocialMedia/SocialMedia";
-import { NewMilestone } from "../newmilestones/NewMilestone";
 import Timer from '../CountDown/countDown'
 
 export default function Hero(props) {
@@ -67,8 +65,8 @@ export default function Hero(props) {
             ></div>
           </div>
           <div>
-        <Timer/>
-      </div>
+            <Timer />
+          </div>
         </div>
         {/* <div className="font-[Poppins] mx-6 md:mx-24 lg:mx-auto lg:w-1/2 lg:mt-16 m-auto border-2 border-violet-500 bg-black/30 hero-about">
           <p className="p-4 text-2xl font-semibold text-center lg:font-light md:text-4xl">
@@ -104,16 +102,6 @@ export default function Hero(props) {
           visions into reality.
         </p>
       </div>
-      
-      {/* ---------------------------------------------------------------- */}
-
-      {/* Milestones */}
-      <NewMilestone />
-      {/* <Milestone /> */}
-
-      {/* Timeline */}
-      <Timeline />
-      {/* ---------------------------------------------------------------- */}
     </div>
   );
 }

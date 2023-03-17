@@ -15,7 +15,6 @@ const Section = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 90vw;
   overflow: hidden;
   margin: 0 auto;
 `;

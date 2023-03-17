@@ -11,30 +11,26 @@ const title = data.pop();
 export default function Sponsors() {
   return (
     <div>
-      <section
-        id="sponsors"
-        className=" md:my-12"
-        style={{ padding: 0 }}
-      >
+      <section id="sponsors" className=" md:my-12" style={{ padding: 0 }}>
         <div className="mb-20 text-center">
-        <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
-      >
-        <TitleText
-          title={
-            <>
-          <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald]">
-            Our Sponsors
-          </div>
-        </>
-          }
-          textStyles="text-center"
-        />
-      </motion.div>
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className={`${styles.innerWidth} mx-auto flex flex-col`}
+          >
+            <TitleText
+              title={
+                <>
+                  <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald]">
+                    Our Sponsors
+                  </div>
+                </>
+              }
+              textStyles="text-center"
+            />
+          </motion.div>
         </div>
         {/* Title Sponsor  */}
         <div className="justify-center text-center">
