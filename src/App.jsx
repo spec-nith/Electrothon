@@ -38,7 +38,7 @@ function App() {
       >
         <Hero />
       </div>
-      <div className="mx-6 mt-40 lg:mx-36">
+      <div className="mx-6 mt-16 lg:mx-36">
         <NewMilestone />
         <Timeline />
         <Sponsors />

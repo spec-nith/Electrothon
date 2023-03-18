@@ -3,37 +3,43 @@ export const exploreWorlds = [
     id: "world-1",
     imgUrl: "/fintech.png",
     title: "FinTech  ",
-    content:"Ally the Fintech revolution and unleash your coding potential into game-changing solutions that challenge the status quo."
+    content:
+      "Ally the Fintech revolution and unleash your coding potential into game-changing solutions that challenge the status quo.",
   },
   {
     id: "world-2",
     imgUrl: "/travel.png",
     title: "Tourism & Travel",
-    content:"Bring about a new era of eco-friendly, equitable, and enjoyable vacations by unleashing your imagination and revolutionizing the way we travel."
+    content:
+      "Bring about a new era of eco-friendly, equitable, and enjoyable vacations by unleashing your imagination and revolutionizing the way we travel.",
   },
   {
     id: "world-3",
     imgUrl: "/health.png",
     title: "Health & Hygiene",
-    content:"Unleash your potential to improve health and hygiene by creating a cutting-edge solution to ensure a world where individuals have access to proper sanitation and healthy living standards."
+    content:
+      "Unleash your potential to improve health and hygiene by creating a cutting-edge solution to ensure a world where individuals have access to proper sanitation and healthy living standards.",
   },
   {
     id: "world-4",
     imgUrl: "/educate.jpg",
     title: "Enhancing Education",
-    content:"Foster your creative potential by empowering education with an innovative solution to build people who are knowledgeable and equipped to handle the challenges of tomorrow."
+    content:
+      "Foster your creative potential by empowering education with an innovative solution to build people who are knowledgeable and equipped to handle the challenges of tomorrow.",
   },
   {
     id: "world-5",
     imgUrl: "/crime.jpeg",
     title: "Crime Prevention",
-    content:"Prevention is better than cure, following this, let your creativity soar as you quest for hacks to society's problems."
+    content:
+      "Prevention is better than cure, following this, let your creativity soar as you quest for hacks to society's problems.",
   },
   {
     id: "world-6",
     imgUrl: "/openinn.jpeg",
     title: "Open Innovation",
-    content:"Let your imagination go haywire as you envision ideas that hold the capability to solve any problem that has been distressing mankind for ages."
+    content:
+      "Let your imagination go haywire as you envision ideas that hold the capability to solve any problem that has been distressing mankind for ages.",
   },
 ];
 

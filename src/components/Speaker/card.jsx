@@ -37,21 +37,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //   }
 // `;
 
-
 const Card = ({ props }) => {
   return (
     <div className="mt-28 md:mt-20 relative border-2 bg-gradient-to-b w-[15rem] from-[rgba(255,255,255,0.1)] to-['transparent'] border-[#6A6A6A] flex flex-col items-center rounded-xl">
       <div className="relative -translate-y-2/4 overflow-visible">
-       <img src={props.image} alt="speakers" className="w-40 h-40 lg:w-42 h-44 object-cover rounded-full"/>
+        <img
+          src={props.image}
+          alt="speakers"
+          className="w-40 h-40 lg:w-42 h-44 object-cover rounded-full"
+        />
       </div>
-      <div className="px-4 flex justify-center flex-col items-center text-white text-center -mt-20 h-60 m-auto">
-        <p className="text-lg lg:text-xl">{props.desc}</p>
-        <p className="mb-2 md:mb-0 lg:mb-4 text-2xl md:text-xl lg:text-3xl  mt-2">{props.name}</p>
+      <div className="px-4 flex justify-center flex-col items-center text-white text-center -mt-28 md:-mt-24 h-60 m-auto">
+        <p className="text-sm lg:text-base">{props.desc}</p>
+        <p className="md:mb-0 lg:mb-4 text-2xl my-4">{props.name}</p>
         <div>
           <div
-            className={
-              "flex flex-row justify-center h-full align-center"
-            }
+            className={"flex flex-row justify-center h-full align-center mt-2"}
           >
             {props.linkedin ? (
               <a
@@ -60,7 +61,7 @@ const Card = ({ props }) => {
                 target="_blank"
               >
                 <FontAwesomeIcon
-                  className="text-2xl md:text-xl lg:text-3xl text-white hover:text-[#0A66C2] fill-current mx-1 p-1 ease-in-out duration-200"
+                  className="text-xl md:text-2xl text-white hover:text-[#0A66C2] fill-current mx-1 p-1 ease-in-out duration-200"
                   icon={faLinkedinIn}
                 />
               </a>
@@ -70,7 +71,7 @@ const Card = ({ props }) => {
             {props.insta ? (
               <a href={props.insta} rel="noreferrer noopenor" target="_blank">
                 <FontAwesomeIcon
-                  className="text-2xl md:text-xl lg:text-3xl text-white hover:text-[#d62976] fill-current mx-1 p-1 ease-in-out duration-200"
+                  className="text-xl md:text-2xl text-white hover:text-[#d62976] fill-current mx-1 p-1 ease-in-out duration-200"
                   icon={faInstagram}
                 />
               </a>
@@ -84,7 +85,7 @@ const Card = ({ props }) => {
                 target="_blank"
               >
                 <FontAwesomeIcon
-                  className="text-2xl md:text-xl lg:text-3xl text-white hover:text-[#3b5998] fill-current mx-1 p-1 ease-in-out duration-200"
+                  className="text-xl md:text-2xl text-white hover:text-[#3b5998] fill-current mx-1 p-1 ease-in-out duration-200"
                   icon={faFacebook}
                 />
               </a>
@@ -94,7 +95,7 @@ const Card = ({ props }) => {
             {props.twitter ? (
               <a href={props.twitter} rel="noreferrer noopenor" target="_blank">
                 <FontAwesomeIcon
-                  className="text-2xl md:text-xl lg:text-3xl text-white hover:text-[#00acee] fill-current mx-1 p-1 ease-in-out duration-200"
+                  className="text-xl md:text-2xl text-white hover:text-[#00acee] fill-current mx-1 p-1 ease-in-out duration-200"
                   icon={faTwitter}
                 />
               </a>

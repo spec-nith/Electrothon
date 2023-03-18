@@ -15,7 +15,6 @@ export default function Example() {
   const [loadMore, setloadMore] = useState(false);
 
   const handleOpen = (value) => {
-    console.log(value);
     setOpen(open === value ? 0 : value);
   };
 

@@ -2,7 +2,6 @@ export const data = [
   {
     tierName: "Full Moon",
     data: [
-     
       {
         sponsorName: "Devfolio",
         webp: "sponsors/fullmoon/webp/devfolio.webp",
@@ -23,15 +22,14 @@ export const data = [
         src: "sponsors/fullmoon/polygon.png",
         url: "https://polygon.technology/",
         id: "gold_6",
-      }, 
+      },
       {
         sponsorName: "Showwcase",
         webp: "sponsors/fullmoon/webp/showwcase.webp",
         src: "sponsors/fullmoon/showwcase.png",
         url: "https://www.showwcase.com/",
         id: "gold_3",
-      }, 
-      
+      },
     ],
     id: "1",
   },
@@ -106,7 +104,7 @@ export const data = [
         webp: "sponsors/gibbous/webp/InterviewCake.webp",
         src: "sponsors/gibbous/InterviewCake.png",
         url: "https://www.interviewcake.com/",
-        id: "gibbous_5",
+        id: "gibbous_7",
       },
       // {
       //   sponsorName: "Tezos",
@@ -156,7 +154,7 @@ export const data = [
         url: "https://julialang.org/",
         id: "crescent_1",
       },
-      
+
       {
         sponsorName: "Voiceflow",
         webp: "sponsors/crescent/webp/voiceflow.webp",
@@ -171,7 +169,7 @@ export const data = [
         url: "https://www.wolfram.com/",
         id: "crescent_10",
       },
-    
+
       {
         sponsorName: "Balsamiq",
         webp: "sponsors/crescent/webp/balsamiq.webp",
@@ -185,7 +183,7 @@ export const data = [
   // {
   //   tierName: "Previous Sponsors",
   //   data: [
-     
+
   //     {
   //       sponsorName: "GitLab",
   //       webp: "sponsors/previous/webp/gitlab.webp",

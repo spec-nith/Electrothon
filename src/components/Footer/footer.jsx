@@ -20,7 +20,7 @@ export default function Footer() {
         <div className="md:flex justify-center gap-5 lg:gap-40 mt-5 font-['Gugi'] ">
           <div className="flex justify-center mb-2 md:visible">
             <a
-              href="https://specnith.com/"
+              href="https://spec.nith.ac.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-white md:text-lg md:font-bold hover:text-gray-300 "
@@ -172,11 +172,9 @@ export default function Footer() {
                   <TitleText
                     title={
                       <>
-                        
                         <h2 className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald] ">
                           Lets talk about everything!
                         </h2>
-                        
                       </>
                     }
                     textStyles="text-center"
@@ -235,11 +233,9 @@ export default function Footer() {
             <TitleText
               title={
                 <>
-                  
-                  <h2 className="text-4xl lg:text-6xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald] ">
+                  <span className="text-4xl lg:text-6xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald] ">
                     Lets talk about everything!
-                  </h2>
-                  
+                  </span>
                 </>
               }
               textStyles="text-center"
@@ -255,9 +251,9 @@ export default function Footer() {
               height="200"
               className="shadow-lg invert-[0.8] rounded-xl"
               // style="border:0"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div className="hidden md:block " style={{ margin: "auto" }}>
@@ -268,9 +264,9 @@ export default function Footer() {
               height="400"
               className=" shadow-lg invert-[0.8] rounded-3xl"
               // style="border:0"
-              allowfullscreen=""
+              allowFullScreen=""
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <div

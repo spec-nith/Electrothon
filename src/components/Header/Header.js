@@ -62,7 +62,7 @@ const Nav = () => {
         className="flex items-center py-2 text-gray-300 z-50"
       >
         <FontAwesomeIcon
-          className="text-3xl"
+          className="text-2xl"
           icon={props.item.icon}
           fixedWidth
         />
@@ -78,7 +78,7 @@ const Nav = () => {
           {/* <div className="hidden md:flex py-4 rotate-90">
             <div className=" text-gray-200 text-2xl font-black">
             <a
-            href="https://specnith.com/"
+            href="https://spec.nith.ac.in/"
             target="_blank"
             rel="noreferrer noopener"
             >
@@ -88,7 +88,7 @@ const Nav = () => {
             </div>
           </div> */}
           <a
-            href="https://specnith.com/"
+            href="https://spec.nith.ac.in/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-white fixed hidden lg:block top-10 left-5 md:text-lg md:font-bold hover:text-gray-300 "
@@ -111,7 +111,7 @@ const Nav = () => {
         </nav>
       </div>
       <div className="lg:hidden w-screen items-center fixed inline-block z-50 overflow-x-hidden">
-        <div class="bg-[#1F0439] rounded-t-3xl w-full h-16 flex justify-around text-gray-100 fixed bottom-0 z-50 border-t-2 border-violet-700">
+        <div className="bg-[#111111] rounded-t-3xl w-full h-16 flex justify-around text-gray-100 fixed bottom-0 z-50 border-t-2 border-violet-500">
           {navItems.map((item) => (
             <NavbarSM item={item} key={item.id} />
           ))}
