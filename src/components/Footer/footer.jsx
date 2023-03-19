@@ -59,6 +59,14 @@ export default function Footer() {
                 >
                   Code of Conduct
                 </a>{" "}
+                <a
+                  href="https://same-uranium-0e7.notion.site/Hacker-s-Guide-to-ELECTROTHON-5-0-94659968f7d648fda39772bb09660766"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex justify-center pb-2 font-sans text-sm text-gray-400 md:justify-start md:md:text-sm hover:text-gray-300"
+                >
+                  Hacker Guide
+                </a>{" "}
               </li>
             </ul>
           </div>
@@ -221,7 +229,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="flex justify-center px-4 text-gray-800 shadow-lg -mb-6 mt-10 md:mt-20"
+      className="flex justify-center px-4 mt-10 -mb-6 text-gray-800 shadow-lg md:mt-20"
     >
       <div className="container flex flex-col justify-center py-6 m-2 text-center">
         <div className="m-auto text-center ">

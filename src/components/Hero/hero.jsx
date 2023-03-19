@@ -59,12 +59,17 @@ export default function Hero(props) {
           <p className="mt-2 font-semibold text-md md:text-lg lg:text-2xl hero-heading">
             MOONSHOT YOUR EUREKA
           </p>
-          <div className="flex z-[100] w-full justify-center mt-6 hero-heading">
+          
+          <div className="flex z-[100] flex-col lg:flex-row w-full justify-center mt-6 hero-heading">
             <div
               className="h-full apply-button"
               data-hackathon-slug="electrothon-5"
               data-button-theme="light"
             ></div>
+
+            <a className="flex items-center px-4 font-semibold text-white duration-200 ease-in-out bg-blue-600 md:ml-8 hover:bg-blue-400 text-bold rounded-xl" target="_blank" href = "https://same-uranium-0e7.notion.site/Hacker-s-Guide-to-ELECTROTHON-5-0-94659968f7d648fda39772bb09660766">
+              Hackers Guide
+            </a>
           </div>
           <div>
         <Timer/>
