@@ -11,7 +11,8 @@ import Card from "./components/Prizes/cards";
 import Background from "./components/Background/bgstatic";
 import "./mlh.css";
 import FAQs from "./components/Faq/faq";
-
+import Challenges from "./components/Challanges/Challange";
+import MLHChallenges from "./components/Challanges/MLHChallenges";
 function App() {
   return (
     <div className="">
@@ -30,7 +31,7 @@ function App() {
         />
       </a>
       <div
-        className="grid place-items-start md:place-items-center overflow-x-hidden"
+        className="grid overflow-x-hidden place-items-start md:place-items-center"
         id="hero-section"
       >
         <Hero />
@@ -39,10 +40,10 @@ function App() {
       <div className="mx-6 mt-40 lg:mx-36">
         <Sponsors />
       </div>
-      {/* <Ellipse34 /> */}
       <Explore />
       <Card />
-
+      {/* <Challenges />
+            <MLHChallenges /> */}
       <Suspense fallback={<div>Loading...</div>}>
         <SpeakersNew />
       </Suspense>

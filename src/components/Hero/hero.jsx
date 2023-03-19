@@ -50,7 +50,7 @@ export default function Hero(props) {
       </div>
       <div className="flex flex-col items-center justify-center w-full h-screen text-white">
         <div className="flex flex-col items-center justify-center m-auto font-thin text-center lg:w-1/2">
-          <p className="text-4xl md:text-6xl lg:text-8xl tracking-widest md:tracking-[0.6rem] lg:tracking-[1rem] hero-heading heading-glow font-bold md:font-light">
+          <p className="select-none text-4xl md:text-6xl lg:text-8xl tracking-widest md:tracking-[0.6rem] lg:tracking-[1rem] hero-heading heading-glow font-bold md:font-light">
             ELECTROTHON
           </p>
           <p className="text-4xl font-bold md:text-6xl lg:text-8xl hero-heading heading-glow md:font-light">

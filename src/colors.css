@@ -4,8 +4,8 @@ body {
 
 .container-theme {
   border-radius: 10px;
-  background-color: rgba(34, 30, 30, 0.83);
-  @apply my-4 py-8 md:my-12 md:p-12;
+  background-color: #221e1ed4;
+  @apply py-8 my-4 md:my-12 md:p-12;
 }
 .counter-cell {
   background-color: rgba(34, 30, 30, 0.83);

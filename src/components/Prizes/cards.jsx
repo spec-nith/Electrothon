@@ -49,9 +49,9 @@ function Prizes() {
           <span className="flex items-center justify-center w-[5rem] h-[4rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#f4941d] to-[#ffd200] rounded-full">
             1st
           </span>
-          <div className="flex flex-col items-start ml-4 md:ml-16 text-center">
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16">
             <span className="text-3xl font-semibold ">Soon To Be Released</span>
-            <span onClick={() => setShowModal(true)} className="cursor-pointer w-full">
+            <span onClick={() => setShowModal(true)} className="w-full cursor-pointer">
               Click to know more
             </span>
           </div>
@@ -60,9 +60,9 @@ function Prizes() {
           <span className="flex items-center justify-center w-[5rem] h-[4rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#757f9a] to-[#d7dde8] rounded-full">
             2nd
           </span>
-          <div className="flex flex-col items-start ml-4 md:ml-16 text-center">
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16">
             <span className="text-3xl font-semibold ">Soon To Be Released</span>
-            <span onClick={() => setShowModal(true)} className="cursor-pointer w-full">
+            <span onClick={() => setShowModal(true)} className="w-full cursor-pointer">
               Click to know more
             </span>
           </div>
@@ -71,9 +71,9 @@ function Prizes() {
           <span className="flex items-center justify-center w-[5rem] h-[4rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#232526] to-[#414344] rounded-full">
             3rd
           </span>
-          <div className="flex flex-col items-start ml-4 md:ml-16 text-center">
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16">
             <span className="text-3xl font-semibold ">Soon To Be Released</span>
-            <span onClick={() => setShowModal(true)} className="cursor-pointer w-full">
+            <span onClick={() => setShowModal(true)} className="w-full cursor-pointer">
               Click to know more
             </span>
           </div>
