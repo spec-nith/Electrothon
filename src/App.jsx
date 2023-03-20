@@ -14,6 +14,7 @@ import "./mlh.css";
 import FAQs from "./components/Faq/faq";
 import { NewMilestone } from "./components/newmilestones/NewMilestone";
 import Timeline from "./components/Timeline_new/Timeline_new";
+import { Event } from "./components/Events/Event";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <div className="mx-6 mt-16 lg:mx-36">
         <NewMilestone />
         <Timeline />
+        <Event />
         <Sponsors />
         <Explore />
         <Card />
