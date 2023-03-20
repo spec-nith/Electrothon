@@ -1,67 +1,66 @@
 [
-    {
-      "desc": [
-        "Use any one of Linode's wide array of cloud products and take your hack to the next level! "
-      ],
-      "img": "challenges/linode.png",
-      "webp": "challenges/webp/linode.webp",
-      "prize": ["Raspberry Pi 4 Starter Kit"],
-      "key": "Linode"
-    },
-    {
-      "desc": [
-        "Using your preferred hardware, build a hack for your chance to win a Grove Beginner Kit, with embedded Arduino Uno compatible board."
-      ],
-      "img": "challenges/Digikey.png",
-      "webp": "challenges/webp/Digikey.webp",
-      "prize": ["Grove Beginner Kit"],
-      "key": "Digi-Key"
-    },
-    {
-      "desc": [
-        "Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! "
-      ],
-      "img": "challenges/Godaddy.png",
-      "webp": "challenges/webp/Godaddy.webp",
-      "prize": ["Hack from Home Kit"],
-      "key": "GoDaddy"
-    },
-    {
-      "desc": [
-        "Build your hackathon project on CockroachDB's open source and indestructible SQL database."
-      ],
-      "img": "challenges/CockroachDB.png",
-      "webp": "challenges/webp/CockroachDB.webp",
-      "prize": ["3D printing pen"],
-      "key": "CockroachDB"
-    },
-    {
-      "desc": [
-        "Build a hack that simplifies your life using any one of Twilio’s APIs."
-      ],
-      "img": "challenges/twillio.png",
-      "webp": "challenges/webp/twillio.webp",
-      "prize": ["Twilio Swag Box, GameGo Console"],
-      "key": "Twilio"
-    },
-    {
-      "desc": [
-        "Launch an app that writes to the DeSo blockchain and/or implements DeSo identity. One can also build financial apps, marketplaces, and more."
-      ],
-      "img": "challenges/Deso.png",
-      "webp": "challenges/webp/Deso.webp",
-      "prize": ["$100 worth of $DESO coin, DeSo Tumble"],
-      "key": "DeSo"
-    },
-    {
-      "desc": [
-        "Sign-Up for <a href='https://hackp.ac/github' class='font-medium text-white' target='_blank' rel='noreferrer noopenor'>GitHub Global Campus</a> and use a GitHub repository to host your hack!",
-        "Make sure your repository has an amazing README, meaningful pull requests and collaboration history, and a Github pages deployment!"
-      ],
-      "img": "sponsors/fullmoon/Github.png",
-      "webp": "sponsors/fullmoon/webp/Github.webp",
-      "prize": ["Industry tools, events & learning resources"],
-      "key": "Github"
-    }
-  ]
-  
+  {
+    "desc": [
+      "Use any one of Linode's wide array of cloud products and take your hack to the next level! "
+    ],
+    "img": "challenges/linode.png",
+    "webp": "challenges/webp/linode.webp",
+    "prize": ["Raspberry Pi 4 Starter Kit"],
+    "key": "Linode"
+  },
+  {
+    "desc": [
+      "Using your preferred hardware, build a hack for your chance to win a Grove Beginner Kit, with embedded Arduino Uno compatible board."
+    ],
+    "img": "challenges/Digikey.png",
+    "webp": "challenges/webp/Digikey.webp",
+    "prize": ["Grove Beginner Kit"],
+    "key": "Digi-Key"
+  },
+  {
+    "desc": [
+      "Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! "
+    ],
+    "img": "challenges/Godaddy.png",
+    "webp": "challenges/webp/Godaddy.webp",
+    "prize": ["Hack from Home Kit"],
+    "key": "GoDaddy"
+  },
+  {
+    "desc": [
+      "Build your hackathon project on CockroachDB's open source and indestructible SQL database."
+    ],
+    "img": "challenges/CockroachDB.png",
+    "webp": "challenges/webp/CockroachDB.webp",
+    "prize": ["3D printing pen"],
+    "key": "CockroachDB"
+  },
+  {
+    "desc": [
+      "Build a hack that simplifies your life using any one of Twilio’s APIs."
+    ],
+    "img": "challenges/twillio.png",
+    "webp": "challenges/webp/twillio.webp",
+    "prize": ["Twilio Swag Box, GameGo Console"],
+    "key": "Twilio"
+  },
+  {
+    "desc": [
+      "Launch an app that writes to the DeSo blockchain and/or implements DeSo identity. One can also build financial apps, marketplaces, and more."
+    ],
+    "img": "challenges/Deso.png",
+    "webp": "challenges/webp/Deso.webp",
+    "prize": ["$100 worth of $DESO coin, DeSo Tumble"],
+    "key": "DeSo"
+  },
+  {
+    "desc": [
+      "Sign-Up for <a href='https://hackp.ac/github' class='font-medium text-white' target='_blank' rel='noreferrer noopenor'>GitHub Global Campus</a> and use a GitHub repository to host your hack!",
+      "Make sure your repository has an amazing README, meaningful pull requests and collaboration history, and a Github pages deployment!"
+    ],
+    "img": "sponsors/fullmoon/Github.png",
+    "webp": "sponsors/fullmoon/webp/Github.webp",
+    "prize": ["Industry tools, events & learning resources"],
+    "key": "Github"
+  }
+]

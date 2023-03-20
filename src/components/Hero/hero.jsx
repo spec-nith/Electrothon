@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Header from "../Header/Header";
 import SocialHeader from "../SocialMedia/SocialMedia";
 import Timer from "../CountDown/countDown";
+import Marquee from "react-fast-marquee";
+import { LiveEvents } from ".././Events/Data";
 
 export default function Hero(props) {
   // const animationRef = useRef(null);
@@ -44,6 +46,32 @@ export default function Hero(props) {
           <div>
             <Timer />
           </div>
+        </div>
+        <div
+          id="marquee-handler"
+          className="absolute md:fixed bottom-[70px] md:bottom-0 w-screen z-10"
+        >
+          <Marquee
+            className="bg-black/[.2] md:bg-black/[.8]"
+            gradient={false}
+            speed="60"
+          >
+            {LiveEvents.map((event, index) => {
+              return (
+                <kbd className="text-white p-2" key={index}>
+                  <a
+                    href={event.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white p-2"
+                  >
+                    {event.name}:{" "}
+                    <span className="text-blue-500">Register Now</span>
+                  </a>
+                </kbd>
+              );
+            })}
+          </Marquee>
         </div>
       </div>
       <div className="text-4xl lg:text-6xl font-bold text-[#8471ae] tracking-wider my-4 lg:my-6 font-[Oswald] text-center">

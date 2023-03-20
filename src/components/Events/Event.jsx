@@ -4,11 +4,7 @@ import styles from "../Tracks_new/style";
 import { TitleText } from "../Tracks_new/CustomTexts";
 import { staggerContainer } from "../Tracks_new/motion";
 
-import {
-  PreviousEvents,
-  LiveEvents,
-  UpcomingEvents,
-} from "./Data";
+import { PreviousEvents, LiveEvents, UpcomingEvents } from "./Data";
 import EventCard from "./Event_card";
 
 const tabs = [
@@ -17,7 +13,6 @@ const tabs = [
   { title: "Upcoming", data: { ...UpcomingEvents } },
 ];
 export const Event = () => {
-
   const [currentTab, setTabState] = useState(1);
 
   return (
@@ -41,7 +36,6 @@ export const Event = () => {
         />
       </motion.div>
 
-
       <div className="bg-[#1a1a1d] rounded-xl bg-opacity-50 pt-10 pb-4 mx-auto max-w-[1200px] md:mx-auto">
         <div
           id="tabs"
@@ -52,10 +46,11 @@ export const Event = () => {
               <span
                 key={id}
                 onClick={() => setTabState(id)}
-                className={` mx-4 mb-2 text-xl cursor-pointer ${currentTab === id
-                  ? " text-white border-b-2 border-[#CEB7FF]"
-                  : "text-gray-400"
-                  }`}
+                className={` mx-4 mb-2 text-xl cursor-pointer ${
+                  currentTab === id
+                    ? " text-white border-b-2 border-[#CEB7FF]"
+                    : "text-gray-400"
+                }`}
               >
                 {tab.title}
               </span>
@@ -63,11 +58,12 @@ export const Event = () => {
           })}
         </div>
         <div className="m-8 flex justify-center">
-          <EventCard data={Object.values(tabs[currentTab].data)} title={tabs[currentTab].title} />
-
+          <EventCard
+            data={Object.values(tabs[currentTab].data)}
+            title={tabs[currentTab].title}
+          />
         </div>
       </div>
     </div>
-
   );
 };
