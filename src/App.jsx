@@ -15,7 +15,8 @@ import FAQs from "./components/Faq/faq";
 import { NewMilestone } from "./components/newmilestones/NewMilestone";
 import Timeline from "./components/Timeline_new/Timeline_new";
 import { Event } from "./components/Events/Event";
-
+import Challenges from "./components/Challenges/Challenges";
+import MLHChallenges from "./components/Challenges/MLHChallenges";
 function App() {
   return (
     <div className="">
@@ -46,6 +47,8 @@ function App() {
         <Sponsors />
         <Explore />
         <Card />
+        {/* <Challenges /> */}
+        {/* <MLHChallenges /> */}
         <Suspense fallback={<div>Loading...</div>}>
           <SpeakersNew />
           <Organizers />
