@@ -51,7 +51,7 @@ function Prizes() {
           </span>
           <div className="flex flex-col items-start ml-4 md:ml-16 text-center">
             <span className="text-xl md:text-3xl font-semibold ">
-              Stay Tuned
+              ₹ 30,000 Worth Prizes
             </span>
             <span
               onClick={() => setShowModal(true)}
@@ -67,7 +67,7 @@ function Prizes() {
           </span>
           <div className="flex flex-col items-start ml-4 md:ml-16 text-center">
             <span className="text-xl md:text-3xl font-semibold ">
-              Stay Tuned
+              ₹ 15,000 Worth Prizes
             </span>
             <span
               onClick={() => setShowModal(true)}
@@ -83,7 +83,7 @@ function Prizes() {
           </span>
           <div className="flex flex-col items-start ml-4 md:ml-16 text-center">
             <span className="text-xl md:text-3xl font-semibold ">
-              Stay Tuned
+              ₹ 10,000 Worth Prizes
             </span>
             <span
               onClick={() => setShowModal(true)}
@@ -157,11 +157,10 @@ export default function Cards() {
               <span
                 key={id}
                 onClick={() => setTabState(id)}
-                className={` mx-4 mb-2 text-xl cursor-pointer ${
-                  currentTab == id
-                    ? " text-white border-b-2 border-[#CEB7FF]"
-                    : "text-gray-400"
-                }`}
+                className={` mx-4 mb-2 text-xl cursor-pointer ${currentTab == id
+                  ? " text-white border-b-2 border-[#CEB7FF]"
+                  : "text-gray-400"
+                  }`}
               >
                 {tab.title}
               </span>

@@ -7,6 +7,7 @@ const sliderSettings = {
   // dots: true,
   centerMode: true,
   // className: "center",
+  // adaptiveHeight: true,
   centerPadding: "60px",
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -41,7 +42,7 @@ export default function EventCard(props) {
   const [sliderRef, setSliderRef] = useState(null);
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  console.log(props.data);
+  // console.log(props.data, currentSlide);
   return (
     <div className="w-full">
       {props.data.length !== 0 ? (
