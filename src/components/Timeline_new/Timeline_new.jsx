@@ -103,7 +103,7 @@ const Timeline = () => {
               <div className="timeline__event__description text-sm lg:text-base">
                 <p>
                   The ultimate genius will be revealed by our Judging Panel on
-                  19th February 2023 through our social media handles
+                  9th April 2023 through our social media handles
                 </p>
               </div>
             </div>
