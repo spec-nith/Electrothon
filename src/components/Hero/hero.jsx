@@ -3,7 +3,7 @@ import Header from "../Header/Header";
 import SocialHeader from "../SocialMedia/SocialMedia";
 import Timer from "../CountDown/countDown";
 import Marquee from "react-fast-marquee";
-import { LiveEvents } from ".././Events/Data";
+import { liveEvents } from ".././Events/Data";
 
 export default function Hero(props) {
   // const animationRef = useRef(null);
@@ -56,7 +56,7 @@ export default function Hero(props) {
             gradient={false}
             speed="60"
           >
-            {LiveEvents.map((event, index) => {
+            {liveEvents.map((event, index) => {
               return (
                 <kbd className="text-white p-2" key={index}>
                   <a

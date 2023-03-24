@@ -51,8 +51,8 @@ export default function EventCard(props) {
             <Slider
               ref={setSliderRef}
               {...sliderSettings}
-              afterChange={(index) => {
-                setCurrentSlide(index);
+              afterChange={(index) => async()=>{
+                await setCurrentSlide(index);
               }}
             >
               {props.data.map((event, index) => (

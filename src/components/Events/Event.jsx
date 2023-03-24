@@ -4,12 +4,12 @@ import styles from "../Tracks_new/style";
 import { TitleText } from "../Tracks_new/CustomTexts";
 import { staggerContainer } from "../Tracks_new/motion";
 
-import { PreviousEvents, LiveEvents, UpcomingEvents } from "./Data";
+import { pastEvents, liveEvents, UpcomingEvents } from "./Data";
 import EventCard from "./Event_card";
 
 const tabs = [
-  { title: "Previous", data: { ...PreviousEvents } },
-  { title: "Live", data: { ...LiveEvents } },
+  { title: "Previous", data: { ...pastEvents } },
+  { title: "Live", data: { ...liveEvents } },
   { title: "Upcoming", data: { ...UpcomingEvents } },
 ];
 export const Event = () => {
