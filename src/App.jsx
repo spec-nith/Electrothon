@@ -42,8 +42,8 @@ function App() {
       </div>
       <Explore />
       <Card />
-      {/* <Challenges />
-            <MLHChallenges /> */}
+      <Challenges />
+            {/* <MLHChallenges /> */}
       <Suspense fallback={<div>Loading...</div>}>
         <SpeakersNew />
       </Suspense>

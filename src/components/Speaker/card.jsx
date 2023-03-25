@@ -35,9 +35,9 @@ const Card = ({ props }) => {
   return (
     <CARD>
       <Image img={props.image} width="200" height="200" />
-      <div className="px-4 flex justify-center flex-col items-center text-white text-center -mt-20 h-60 m-auto">
+      <div className="flex flex-col items-center justify-center px-4 m-auto -mt-20 text-center text-white h-72">
         <p className="text-lg lg:text-xl">{props.desc}</p>
-        <p className="mb-4 text-3xl mt-2">{props.name}</p>
+        <p className="mt-2 mb-4 text-3xl">{props.name}</p>
         <div>
           <div
             className={

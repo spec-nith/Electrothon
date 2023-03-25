@@ -64,9 +64,10 @@ const Challenges = () => {
                       {challenge.desc.map((element, index) => {
                         return (
                           <li
-                            className="md:pt-1 md:tracking-tighter"
+                            className="md:pt-1 "
                             key={index}
                           >
+                            
                             {element}
                           </li>
                         );
@@ -124,12 +125,13 @@ const Challenges = () => {
                         ""
                       ) : (
                         <a
-                          className="block mt-4 "
+                          className="block mt-6"
                           href={challenge.link}
                           target="_blank"
                           rel="noopener noreferrer"
+                          
                         >
-                          <span className="p-2 mx-auto mt-4 text-base border-2 border-gray-200 rounded-md cursor-pointer hover:bg-gray-200 hover:border-gray-200 hover:text-black">
+                          <span className="p-2 mx-auto mt-2 text-base border-2 border-gray-200 rounded-md cursor-pointer hover:bg-gray-200 hover:border-gray-200 hover:text-black">
                             And More
                           </span>
                         </a>

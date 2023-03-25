@@ -94,7 +94,7 @@ const SpeakersNew = () => {
           title={
             <>
               <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald]">
-                Our Past Speakers
+                Our Speakers
               </div>
             </>
           }

@@ -12,36 +12,24 @@
       "registerLink": "https://forms.gle/X7dkH9dff3svFPyi6"
     },
     {
-      "name": "Doreen Lorenzo",
-      "image": "speakers/doreen.jpg",
-      "webp": "speakers/webp/doreen.webp",
-      "desc": "TEDx Speaker | Former President of Frog design and Quirky",
-      "insta": "",
-      "linkedin": "https://www.linkedin.com/in/doreenlorenzo",
-      "facebook": "",
+      "name": "Insha Ramin",
+      "image": "speakers/insha.jpg",
+      "webp": "speakers/webp/insha.webp",
+      "desc": "Lead DevRel India @Showwcase | Fostering Developer communities",
+    
+      "linkedin": "https://www.linkedin.com/in/insha-ramin-104065183",
+      
       "twitter": "https://twitter.com/doreenl",
       "workshopDate": "2022-02-16T20:30:00.000+05:30",
       "registerDate": "2022-02-13T12:00:00.000+05:30",
       "registerLink": "https://forms.gle/xwDPxriGscytUceE8"
-    },
+    },    
     {
-      "name": "Prateek Narang",
-      "image": "speakers/prateek.jpg",
-      "webp": "speakers/webp/prateek.webp",
-      "desc": "Technopreneur | Ex-Google | Teacher of 100K+ Coders",
-      "insta": "https://www.instagram.com/prateeknarang27",
-      "linkedin": "https://in.linkedin.com/in/prateeknarang27",
-      "facebook": "https://www.facebook.com/prateek.narang.27",
-      "workshopDate": "2022-02-18T17:00:00.000+05:30",
-      "registerDate": "2022-02-14T12:00:00.000+05:30",
-      "registerLink": "https://forms.gle/pTa33y7xnnTPxMudA"
-    },
-    {
-      "name": "Arihant Godha",
-      "image": "speakers/arihant.jpeg",
-      "webp": "speakers/webp/arihant.webp",
-      "desc": "Senior Support Engineer at GitLab Inc.| Open Source contributor",
-      "linkedin": "https://www.linkedin.com/in/arihant-godha/",
+      "name": "Devang Sharma",
+      "image": "speakers/Devang.jpeg",
+      "webp": "speakers/webp/Devang.webp",
+      "desc": "Senior Engineer @BMO Canada | SRF @NASA | Founder @TechElite",
+      "linkedin": "https://www.linkedin.com/in/devang25",
       "workshopDate": "2022-02-19T10:00:00.000+05:30",
       "registerDate": "2022-02-14T12:00:00.000+05:30",
       "registerLink": "https://forms.gle/54TX1tPNr3JVciUU9"
