@@ -42,15 +42,15 @@ const Timer = () => {
     };
   });
   return (
-    <section id="timer" className="relative overflow-hidden lg:mt-20 mt-28 lg:mt-0 lg:p-6">
-      <div className="container mx-auto lg:mt-12">
+    <section id="timer" className="relative overflow-hidden lg:mt-8 mt-16">
+      <div className="container mx-auto">
         <div className="flex flex-col items-center w-full text-white">
           {/* { timeUp ?
                         (<div className="text-8xl pb-4">
                             <span>Time's Up</span>
                         </div>) : */}
           <div className="flex md:items-stretch md:p-10">
-            <div className="flex flex-col items-center counter-cell w-18r md:w-40">
+            <div className="flex flex-col items-center counter-cell w-18r md:w-32">
               <span className="text-4xl md:text-6xl lg:text-7xl p-3 md:p-5 subhead-theme">
                 {/* {("0" + timerDays).slice(-3)} */}
                 {timerDays}

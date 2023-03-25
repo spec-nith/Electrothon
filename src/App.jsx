@@ -5,14 +5,18 @@ import "./App.css";
 // import Footer from "./components/UI/Footer/Footer";
 import Sponsors from "./components/Sponsors/Sponsors.js";
 import SpeakersNew from "./components/Speaker/speaker";
+import Organizers from "./components/Organizers/Organizers";
 // import Ellipse34 from "./components/Speaker/Ellipse34";
 import Footer from "./components/Footer/footer";
 import Card from "./components/Prizes/cards";
 import Background from "./components/Background/bgstatic";
 import "./mlh.css";
 import FAQs from "./components/Faq/faq";
-import Challenges from "./components/Challanges/Challange";
-import MLHChallenges from "./components/Challanges/MLHChallenges";
+import { NewMilestone } from "./components/newmilestones/NewMilestone";
+import Timeline from "./components/Timeline_new/Timeline_new";
+import { Event } from "./components/Events/Event";
+import Challenges from "./components/Challenges/Challenges";
+import MLHChallenges from "./components/Challenges/MLHChallenges";
 function App() {
   return (
     <div className="">
@@ -36,21 +40,24 @@ function App() {
       >
         <Hero />
       </div>
-
-      <div className="mx-6 mt-40 lg:mx-36">
+      <div className="mx-6 mt-16 lg:mx-36">
+        <NewMilestone />
+        <Timeline />
+        <Event />
         <Sponsors />
+        <Explore />
+        <Card />
+        {/* <Challenges /> */}
+        {/* <MLHChallenges /> */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <SpeakersNew />
+          <Organizers />
+        </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <FAQs />
+          <Footer />
+        </Suspense>
       </div>
-      <Explore />
-      <Card />
-      <Challenges />
-            {/* <MLHChallenges /> */}
-      <Suspense fallback={<div>Loading...</div>}>
-        <SpeakersNew />
-      </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-        <FAQs />
-        <Footer />
-      </Suspense>
     </div>
   );
 }

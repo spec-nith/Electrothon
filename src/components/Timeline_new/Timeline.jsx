@@ -55,10 +55,18 @@ const Timeline = () => {
   const TimelineCard = (props) => {
     return (
       <div className=" items-center w-full border-[#6A6A6A] rounded-2xl border-2 bg-gradient-to-b from-[rgba(255,255,255,0.33)] rounded-xl">
-        <div className={"order-1 rounded-lg shadow-xl px-2 py-2 schedule-block2 "+(props.leftBox?"text-right ":"text-left ")}>
+        <div
+          className={
+            "order-1 rounded-lg shadow-xl px-2 py-2 schedule-block2 " +
+            (props.leftBox ? "text-right " : "text-left ")
+          }
+        >
           <p className="mb-3 text-base text-white px-0.5">{props.date}</p>
           <p
-            className={"font-bold text-lg w-full px-0.5 "+(props.leftBox?"text-right ":"text-left ")}
+            className={
+              "font-bold text-lg w-full px-0.5 " +
+              (props.leftBox ? "text-right " : "text-left ")
+            }
             style={{ color: "#EEEEEE" }}
           >
             {props.title}
@@ -95,7 +103,13 @@ const Timeline = () => {
   return (
     <div className="w-full font-['Gugi'] mt-36" id="schedule">
       <div className="flex flex-col md:flex-row justify-evenly items-center ">
-        <div className="md:w-thirty mx-6 bg-neutral-700/40 rounded-3xl" style={{"backgroundImage":"url('screen1.png')","backgroundSize":"cover"}}>
+        <div
+          className="md:w-thirty mx-6 bg-neutral-700/40 rounded-3xl"
+          style={{
+            backgroundImage: "url('screen1.png')",
+            backgroundSize: "cover",
+          }}
+        >
           <div className="mx-3 md:mx-0 lg:mx-6 h-auto md:px-[2.6rem]">
             <div className="md:px-4 mt-16 h-auto relative">
               <h1 className="text-white text-6xl md:text-7xl text-center">
@@ -158,7 +172,13 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-        <div className="md:w-thirty mx-6 bg-neutral-700/40 rounded-3xl mt-20 md:mt-0 z-10"  style={{"backgroundImage":"url('screen2.jpg')","backgroundSize":"cover"}}>
+        <div
+          className="md:w-thirty mx-6 bg-neutral-700/40 rounded-3xl mt-20 md:mt-0 z-10"
+          style={{
+            backgroundImage: "url('screen2.jpg')",
+            backgroundSize: "cover",
+          }}
+        >
           <div className="py-4 px-6">
             <h1 className="text-white text-4xl text-center py-6">
               Event Details

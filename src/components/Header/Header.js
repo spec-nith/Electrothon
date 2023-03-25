@@ -4,13 +4,10 @@ import navItems from "./Nav_tems";
 import BackTopBtn from "./BacktoTop/GoTop";
 
 const Nav = () => {
-
   const NavbarLG = (props) => {
     return (
       <Link
-        activeClass={
-          props.item.hide != null ? "" : "text-blue-500 border-b-2 "
-        }
+        activeClass={props.item.hide != null ? "" : "text-blue-500 border-b-2 "}
         to={props.item.id}
         spy={true}
         offset={-61}
@@ -65,7 +62,7 @@ const Nav = () => {
         className="flex items-center py-2 text-gray-300 z-50"
       >
         <FontAwesomeIcon
-          className="text-3xl"
+          className="text-2xl"
           icon={props.item.icon}
           fixedWidth
         />
@@ -76,12 +73,12 @@ const Nav = () => {
 
   return (
     <div className="h-full">
-       <div className=" h-full fixed flex flex-wrap top-0 left-0 md:ml-12">
+      <div className=" h-full fixed flex flex-wrap top-0 left-0 md:ml-12">
         <nav className="items-center m-auto">
           {/* <div className="hidden md:flex py-4 rotate-90">
             <div className=" text-gray-200 text-2xl font-black">
             <a
-            href="https://specnith.com/"
+            href="https://spec.nith.ac.in/"
             target="_blank"
             rel="noreferrer noopener"
             >
@@ -90,7 +87,21 @@ const Nav = () => {
             </a>
             </div>
           </div> */}
-
+          <a
+            href="https://spec.nith.ac.in/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-white fixed hidden lg:block top-10 left-5 md:text-lg md:font-bold hover:text-gray-300 "
+          >
+            <picture>
+              <source srcSet="spec_logo.webp" type="image/webp" />
+              <img
+                className="w-16 md:w-32"
+                src="spec_logo.png"
+                alt="spec_logo"
+              />
+            </picture>
+          </a>
           <div className="hidden lg:flex flex-col z-50 h-full justify-center items-center rounded-full">
             {navItems.map((item) => (
               <NavbarLG item={item} key={item.id} />
@@ -98,13 +109,13 @@ const Nav = () => {
           </div>
           <BackTopBtn />
         </nav>
-       </div>         
+      </div>
       <div className="lg:hidden w-screen items-center fixed inline-block z-50 overflow-x-hidden">
-          <div class="bg-[#1F0439] rounded-t-3xl w-full h-16 flex justify-around text-gray-100 fixed bottom-0 z-50 border-t-2 border-violet-700">
-                {navItems.map((item) => (
-                  <NavbarSM item={item} key={item.id} />
-                ))}
-          </div>
+        <div className="bg-[#111111] rounded-t-3xl w-full h-16 flex justify-around text-gray-100 fixed bottom-0 z-50 border-t-2 border-violet-500">
+          {navItems.map((item) => (
+            <NavbarSM item={item} key={item.id} />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -2,10 +2,8 @@
   margin-top: 7vw;
 }
 .whySponsors {
-  width: 80%;
   /* height: 400px; */
   /* background-color: white; */
-  margin: 4.5rem auto -1rem;
   opacity: 80%;
   display: flex;
   justify-content: space-between;
@@ -27,7 +25,6 @@
 }
 .chart {
   width: 43%;
-  height: 50vh;
   margin-right: 2rem;
   z-index: 1;
 }
@@ -72,20 +69,10 @@
   }
   .paraHead {
     color: white;
-    font-weight: 400;
     font-size: 1rem;
   }
   .paraContent {
     color: white;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 0.9rem;
   }
-  .buttons-milestones {
-     margin-top: 2rem;
-    /* align-items: flex-end; */
-  }
-}
-.buttons-milestones {
-  margin-top: 4rem;
-  /* align-items: flex-end; */
 }

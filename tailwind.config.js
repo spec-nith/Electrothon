@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        'thirty': '30%',
+        thirty: "30%",
       },
-      screens:{
-        '3xl':'1850px'
-      }
+      screens: {
+        "3xl": "1850px",
+      },
     },
   },
   plugins: [],

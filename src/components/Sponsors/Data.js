@@ -3,13 +3,6 @@ export const data = [
     tierName: "Full Moon",
     data: [
       {
-        sponsorName: "Major League Hacking",
-        webp: "sponsors/fullmoon/webp/mlh.webp",
-        src: "sponsors/fullmoon/mlh.png",
-        url: "https://mlh.io/",
-        id: "gold_3",
-      },
-      {
         sponsorName: "Devfolio",
         webp: "sponsors/fullmoon/webp/devfolio.webp",
         src: "sponsors/fullmoon/devfolio.png",
@@ -29,13 +22,13 @@ export const data = [
         src: "sponsors/fullmoon/polygon.png",
         url: "https://polygon.technology/",
         id: "gold_6",
-      }, 
+      },
       {
-        sponsorName: "GitHub",
-        webp: "sponsors/fullmoon/webp/Github.webp",
-        src: "sponsors/fullmoon/Github.png",
-        url: "https://github.com/",
-        id: "gold_1",
+        sponsorName: "Showwcase",
+        webp: "sponsors/fullmoon/webp/showwcase.webp",
+        src: "sponsors/fullmoon/showwcase.png",
+        url: "https://www.showwcase.com/",
+        id: "gold_3",
       },
     ],
     id: "1",
@@ -111,7 +104,7 @@ export const data = [
         webp: "sponsors/gibbous/webp/InterviewCake.webp",
         src: "sponsors/gibbous/InterviewCake.png",
         url: "https://www.interviewcake.com/",
-        id: "gibbous_5",
+        id: "gibbous_7",
       },
       // {
       //   sponsorName: "Tezos",
@@ -161,7 +154,7 @@ export const data = [
         url: "https://julialang.org/",
         id: "crescent_1",
       },
-      
+
       {
         sponsorName: "Voiceflow",
         webp: "sponsors/crescent/webp/voiceflow.webp",
@@ -176,7 +169,7 @@ export const data = [
         url: "https://www.wolfram.com/",
         id: "crescent_10",
       },
-    
+
       {
         sponsorName: "Balsamiq",
         webp: "sponsors/crescent/webp/balsamiq.webp",
@@ -190,7 +183,7 @@ export const data = [
   // {
   //   tierName: "Previous Sponsors",
   //   data: [
-     
+
   //     {
   //       sponsorName: "GitLab",
   //       webp: "sponsors/previous/webp/gitlab.webp",
@@ -250,10 +243,24 @@ export const data = [
   //   ],
   //   id: "4",
   // },
-  // {
-  //   tierName: "Title Sponsors",
-  //   data: [
-  //   ],
-  //   id: "0",
-  // },
+  {
+    tierName: "Title Sponsors",
+    data: [
+      {
+        sponsorName: "Major League Hacking",
+        webp: "sponsors/fullmoon/webp/mlh.webp",
+        src: "sponsors/fullmoon/mlh.png",
+        url: "https://mlh.io/",
+        id: "title_0",
+      },
+      {
+        sponsorName: "GitHub",
+        webp: "sponsors/fullmoon/webp/Github.webp",
+        src: "sponsors/fullmoon/Github.png",
+        url: "https://github.com/",
+        id: "title_1",
+      },
+    ],
+    id: "0",
+  },
 ];

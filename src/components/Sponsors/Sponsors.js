@@ -6,38 +6,34 @@ import { TitleText } from "../Tracks_new/CustomTexts";
 import { staggerContainer } from "../Tracks_new/motion";
 import styles from "../Tracks_new/style";
 
-// const title = data.pop();
+const title = data.pop();
 
 export default function Sponsors() {
   return (
     <div>
-      <section
-        id="sponsors"
-        className=" md:my-12"
-        style={{ padding: 0 }}
-      >
+      <section id="sponsors" className=" md:my-12" style={{ padding: 0 }}>
         <div className="mb-20 text-center">
-        <motion.div
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
-      >
-        <TitleText
-          title={
-            <>
-          <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 lg:my-6 font-[Oswald]">
-            Our Sponsors
-          </div>
-        </>
-          }
-          textStyles="text-center"
-        />
-      </motion.div>
+          <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}
+            className={`${styles.innerWidth} mx-auto flex flex-col`}
+          >
+            <TitleText
+              title={
+                <>
+                  <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] mt-4 lg:my-6 font-[Oswald]">
+                    Our Sponsors
+                  </div>
+                </>
+              }
+              textStyles="text-center"
+            />
+          </motion.div>
         </div>
         {/* Title Sponsor  */}
-        {/* <div className="justify-center text-center">
+        <div className="justify-center text-center">
           <div className="sticky top-0 justify-center px-4 py-2 text-center rounded-t-lg sponsor-bg-title">
             <h1 className="text-xl font-semibold leading-normal tracking-tight xl3 md:text-3xl md:leading-relaxed header-theme">
               {" "}
@@ -59,15 +55,15 @@ export default function Sponsors() {
                     <picture className="">
                       <source srcSet={sponsor.webp} type="image/webp" />
                       <img src={sponsor.src} alt={sponsor.sponsorName} />
-                    </picture> */}
+                    </picture>
                     {/* for sponsorname */}
                     {/* <p className="mt-2 text-lg tracking-wider text-white">{sponsor.sponsorName}</p>   */}
-                  {/* </a>
+                  </a>
                 </div>
               );
             })}
           </div>
-        </div> */}
+        </div>
         {/* Gold, Silver, Bronze  */}
         {data.map((tier, index) => {
           return (
