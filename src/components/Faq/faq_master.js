@@ -1,5 +1,11 @@
 const initalQues = [
   {
+    title:
+      "Will the travel and food + accommodation charges be covered by the hackathon organizers? ",
+    content:
+      "There will be no travel reimbursements provided to the hackathon attendees. But we will take care of your food and accommodation.",
+  },
+  {
     title: "Will the hackathon be conducted online on in-person?",
     content:
       "Well if the Gods of pandemic keep their wrath under control, we are all set for an in-person hackathon.",

@@ -51,7 +51,7 @@ export default function EventCard(props) {
             <Slider
               ref={setSliderRef}
               {...sliderSettings}
-              afterChange={(index) => async()=>{
+              afterChange={async (index) => {
                 await setCurrentSlide(index);
               }}
             >
@@ -72,7 +72,7 @@ export default function EventCard(props) {
             </Slider>
           </div>
           <div className="text-white hidden md:flex md:justify-center items-center w-[50%]  bg-gradient-to-br from-[rgba(209,209,209,0.2)] to-[rgba(209,209,209,0.1)] backdrop-blur-[5px] rounded-3xl lg:h-auto md:h-[600px]">
-            <div className="flex flex-col justify-between p-8 space-y-8 h-[90%]">
+            <div className="flex flex-col justify-evenly p-8 space-y-8 h-[90%]">
               <div className="text-center p-2 text-4xl font-bold">
                 {props.data[currentSlide].name}
               </div>
