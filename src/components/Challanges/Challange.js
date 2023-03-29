@@ -33,7 +33,7 @@ const Challenges = () => {
     
     <section
       id="prizes"
-      className="relative p-6 md:p-10 max-w-[1400px] mx-20 min-[1600px]:mx-auto  mt-12 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
+      className="relative p-6 md:p-10 max-w-[1400px] xl:mx-20 min-[1600px]:mx-auto  mt-12 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
       data-aos="fade"
       data-aos-delay="50"
       data-aos-duration="500"

@@ -32,7 +32,7 @@ const MLHChallenges = () => {
 
       <section
         id="mlh-challenges"
-        className="relative max-w-[1400px]  p-6 md:p-10  mx-20 min-[1600px]:mx-auto mt-12 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
+        className="relative max-w-[1400px]  p-6 md:p-10  md:mx-20 min-[1600px]:mx-auto mt-12 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
         data-aos="fade"
         data-aos-delay="50"
         data-aos-duration="500"

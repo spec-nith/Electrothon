@@ -47,7 +47,7 @@ function App() {
         <Sponsors />
         <Explore />
         <Card />
-        {/* <Challenges /> */}
+        <Challenges />
         {/* <MLHChallenges /> */}
         <Suspense fallback={<div>Loading...</div>}>
           <SpeakersNew />
