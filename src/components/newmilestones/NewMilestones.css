@@ -36,7 +36,7 @@
 }
 .paraContent {
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.4vw;
   text-align: justify;
   font-weight: 400;
 }
@@ -75,4 +75,11 @@
     color: white;
     font-size: 0.9rem;
   }
+}
+
+@media screen and (max-width:820px) and (min-width:820px){
+    .paraContent{
+      font-size:2vw;
+      padding-right: 5rem;
+    }
 }
