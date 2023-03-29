@@ -37,14 +37,14 @@ export default function Hero(props) {
             MOONSHOT YOUR EUREKA
           </p>
           
-          <div className="flex z-[100] flex-col lg:flex-row w-full justify-center mt-6 hero-heading">
+          <div className="flex z-[100] flex-col ipadIssue w-full justify-center items-center gap-y-4 mt-6 hero-heading">
             <div
               className="h-full apply-button"
               data-hackathon-slug="electrothon-5"
               data-button-theme="light"
             ></div>
 
-            <a className="flex items-center px-4 py-2 my-4 font-semibold text-white duration-200 ease-in-out bg-blue-600 md:my-0 md:ml-8 hover:bg-blue-400 text-bold rounded-xl" target="_blank" href = "https://same-uranium-0e7.notion.site/Hacker-s-Guide-to-ELECTROTHON-5-0-94659968f7d648fda39772bb09660766">
+            <a rel="noreferrer" className="items-center px-4 py-2 my-4 font-semibold text-white duration-200 ease-in-out bg-blue-600 md:my-0 hover:bg-blue-400 text-bold rounded-xl ipadIssue2 w-[312px]" target="_blank" href = "https://same-uranium-0e7.notion.site/Hacker-s-Guide-to-ELECTROTHON-5-0-94659968f7d648fda39772bb09660766">
               Hackers Guide
             </a>
           </div>

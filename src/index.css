@@ -62,3 +62,12 @@ code {
  .heading-glow{
   text-shadow: 0 0 10px rgb(162, 160, 160), 0 0 42px rgb(222, 220, 220);
  }
+
+ @media screen and (max-width: 820px) and (min-width:820px) {
+  .ipadIssue{
+     flex-direction: column;
+  }  
+  .ipadIssue2{
+    margin-left: 0rem !important;
+  }  
+}
