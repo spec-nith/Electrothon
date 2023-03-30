@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense,useState,useEffect } from "react";
 import Hero from "./components/Hero/hero";
 import Explore from "./components/Tracks_new/Track";
 import "./App.css";
@@ -17,9 +17,33 @@ import Timeline from "./components/Timeline_new/Timeline_new";
 import { Event } from "./components/Events/Event";
 import Challenges from "./components/Challenges/Challenges";
 import MLHChallenges from "./components/Challenges/MLHChallenges";
+import Animate from "./components/IntroAnimate/Animate";
+
+
 function App() {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
   return (
-    <div className="">
+      <React.Fragment>
+        <div
+          className={
+            (loading ? "" : "hidden")
+          }
+          style={{
+            //   backgroundImage: `url("./loading_art.jpg")`,
+            backgroundColor: "rgba(34, 30, 30)",
+            //   backgroundBlendMode: "lighten",
+            zIndex: "999999",
+          }}
+        ><Animate/></div>
+      <div className={
+            (loading ? "hidden" : "")
+          }>
       <Background />
       <a
         id="mlh-trust-badge"
@@ -59,6 +83,7 @@ function App() {
         </Suspense>
       </div>
     </div>
+    </React.Fragment>
   );
 }
 export default App;
