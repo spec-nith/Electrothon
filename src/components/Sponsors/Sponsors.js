@@ -91,7 +91,7 @@ export default function Sponsors() {
                         {/* <img src={sponsor.src} alt={sponsor.sponsorName}></img> */}
                         <picture>
                           <source srcSet={sponsor.webp} type="image/webp" />
-                          <img src={sponsor.src} alt={sponsor.sponsorName} />
+                          <img src={sponsor.src} alt={sponsor.sponsorName} className={" " + (sponsor.sponsorName=="Showwcase"?"max-w-none w-[250px]":"")} />
                         </picture>
                         {/* for sponsorname */}
                         {/* <p className="text-white tnpm rn start
