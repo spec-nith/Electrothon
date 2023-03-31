@@ -30,6 +30,13 @@ export const data = [
         url: "https://www.showwcase.com/",
         id: "gold_3",
       },
+      {
+        sponsorName: "5ire",
+        webp: "sponsors/fullmoon/webp/5ire.webp",
+        src: "sponsors/fullmoon/5ire.png",
+        url: "https://www.5ire.org/",
+        id: "gold_4",
+      },
     ],
     id: "1",
   },

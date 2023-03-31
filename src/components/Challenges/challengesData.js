@@ -49,4 +49,17 @@ export const challengesData = [
     list: "list-decimal px-3",
     key: "filecoin",
   },
+  {
+    desc: [
+      "A bounty of 10,000 INR for the best hacks built on 5ire",
+      "The swag-kit will be provided to anyone who builds on 5ire during the hackathon. (even if they don’t win the track prize!)",
+      "The winners will also get an opportunity to apply for internships or full-time roles at 5ireLabs.",
+    ],
+    img: "sponsors/fullmoon/5ire.png",
+    webp: "sponsors/fullmoon/webp/5ire.webp",
+    link: "https://5ire.notion.site/5ireLabs-Build-Track-Hackathons-3b0c51d9c1e346b78722597f68dd6167",
+    prize: ["$ 250"],
+    list: "list-decimal px-3",
+    key: "5ire",
+  },
 ];
