@@ -6,6 +6,7 @@ import {
   faTwitter,
   faLinkedin,
   faInstagram,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 // import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import { motion } from "framer-motion";
@@ -98,8 +99,8 @@ export default function Footer() {
             </div>
 
             <div className="flex justify-center mt-1 mb-10 space-x-2 md:space-x-5 md:mt-1 opacity-80">
-              {/* <a
-                href="https://discord.gg/cjMMRs7tHs"
+              <a
+                href="https://discord.gg/tTra8Ssuh2"
                 rel="noreferrer noopenor"
                 target="_blank"
               >
@@ -107,7 +108,7 @@ export default function Footer() {
                   className="text-blue-800 fill-current text-1xl md:text-2xl"
                   icon={faDiscord}
                 />
-              </a> */}
+              </a>
               <a
                 href="https://www.facebook.com/spec.ece/"
                 rel="noreferrer noopenor"

@@ -1,4 +1,5 @@
 import {
+  faDiscord,
   faFacebook,
   faInstagram,
   faLinkedinIn,
@@ -16,11 +17,11 @@ const navItems = [
   //   id: "general-content",
   //   icon: faUsers,
   // },
-  // {
-  //   name: "Discord",
-  //   link: "schedule",
-  //   icon: faDiscord,
-  // },
+  {
+    name: "Discord",
+    link: "https://discord.gg/tTra8Ssuh2",
+    icon: faDiscord,
+  },
   {
     name: "Instagram",
     link: "https://www.instagram.com/s.p.e.c_nith/?utm_source=ig_profile_share&igshid=1dd01jvv7xk83",
