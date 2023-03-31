@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.756d599f.css",
-    "main.js": "/static/js/main.f559de73.js",
+    "main.js": "/static/js/main.8559e25f.js",
     "static/js/652.3742e5a0.chunk.js": "/static/js/652.3742e5a0.chunk.js",
     "static/media/prize-card.jpg": "/static/media/prize-card.3c96e5ce45c1253700e9.jpg",
     "index.html": "/index.html",
@@ -10,11 +10,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.756d599f.css.map": "/static/css/main.756d599f.css.map",
-    "main.f559de73.js.map": "/static/js/main.f559de73.js.map",
+    "main.8559e25f.js.map": "/static/js/main.8559e25f.js.map",
     "652.3742e5a0.chunk.js.map": "/static/js/652.3742e5a0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.756d599f.css",
-    "static/js/main.f559de73.js"
+    "static/js/main.8559e25f.js"
   ]
 }
