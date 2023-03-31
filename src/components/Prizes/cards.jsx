@@ -7,7 +7,7 @@ import { staggerContainer } from "../Tracks_new/motion";
 import styles from "../Tracks_new/style";
 const tabs = [
   { title: "Prizes", component: <Prizes /> },
-  { title: "Sponsored Prizes", component: <SponsoredPrizes /> },
+  // { title: "Sponsored Prizes", component: <SponsoredPrizes /> },
   { title: "Swags for all", component: <AllPrize /> },
 ];
 function Prizes() {
@@ -104,22 +104,28 @@ function Prizes() {
   );
 }
 
-function SponsoredPrizes() {
-  return (
-    <>
-      <div className="flex items-center justify-center w-full text-2xl text-white h-72">
-        Coming Soon
-      </div>
-    </>
-  );
-}
+// function SponsoredPrizes() {
+//   return (
+//     <>
+//       <div className="flex items-center justify-center w-full text-2xl text-white h-72">
+//         Coming Soon
+//       </div>
+//     </>
+//   );
+// }
 
 function AllPrize() {
   return (
     <>
-      <div className="flex items-center justify-center w-full text-2xl text-white h-72">
-        Coming Soon
-      </div>
+
+      <ul className="w-[90%] list-decimal mx-auto p-8 text-white text-left mt-7 text-lg flex flex-col space-y-4">
+        <li>30-day Wolfram | One access for participants including Desktop/Cloud access, Wolfram Language/Knowledgebase, FreeCDF Deployment, 5000 Wolfram | Alpha API calls, and 5000 Cloud Credits worth $25</li>
+        <li>Top eight teams get the Wolfram Award, which includes one year of Wolfram | One Personal Edition and a one-year subscription to Wolfram | Alpha Pro, valued at $375 per person.</li>
+        <li>Voiceflow Team License valued at $50/month per account for all attendees with a coupon code to retrieve their subscription.</li>
+        <li>Gift vouchers from HoverRobotix Hoverboards India worth Rs 10000/- each.</li>
+        <li>Complimentary certified mentoring session/workshop invites from MENTORx.</li>
+        <li>Discount vouchers from RevUP LifeSkills.</li>
+      </ul>
     </>
   );
 }
