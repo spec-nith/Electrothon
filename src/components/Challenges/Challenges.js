@@ -8,7 +8,7 @@ import { staggerContainer } from "../Tracks_new/motion";
 import styles from "../Tracks_new/style";
 const Challenges = () => {
   return (
-    <div className="mt-40">
+    <div className="">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -30,7 +30,7 @@ const Challenges = () => {
 
       <section
         id="prizes"
-        className="relative p-2 md:p-10 mx-auto w-[80%]  mt-12 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
+        className="relative p-2 md:p-10 mx-auto w-[80%]  mt-2 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
         data-aos="fade"
         data-aos-delay="50"
         data-aos-duration="500"
@@ -40,7 +40,7 @@ const Challenges = () => {
           {challengesData.map((challenge, index) => {
             return (
               <div
-                className="flex lg:flex-row flex-col m-4 mb-6 rounded-xl"
+                className="flex lg:flex-row flex-col m-4 mb-6 rounded-xl shadow-2xl p-4"
                 key={challenge.key}
               >
                 <div className="float-left p-5 lg:w-2/5 h-[140px] flex justify-center ">
@@ -78,7 +78,7 @@ const Challenges = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="lg:w-1/3 w-full text-center p-2 mx-auto lg:ml-6 text-base border-2 border-gray-200 rounded-md cursor-pointer hover:bg-gray-200 hover:border-gray-200 hover:text-black">
+                      <div className="lg:w-2/3 w-full text-center p-2 mx-auto lg:ml-6 text-base border-2 border-gray-200 rounded-md cursor-pointer hover:bg-gray-200 hover:border-gray-200 hover:text-black">
                         More Details
                       </div>
                     </a>
