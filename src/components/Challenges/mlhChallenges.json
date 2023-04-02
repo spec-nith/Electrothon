@@ -1,22 +1,5 @@
 [
-  {
-    "desc": [
-      "Use any one of Linode's wide array of cloud products and take your hack to the next level! "
-    ],
-    "img": "challenges/linode.png",
-    "webp": "challenges/webp/linode.webp",
-    "prize": ["Raspberry Pi 4 Starter Kit"],
-    "key": "Linode"
-  },
-  {
-    "desc": [
-      "Using your preferred hardware, build a hack for your chance to win a Grove Beginner Kit, with embedded Arduino Uno compatible board."
-    ],
-    "img": "challenges/Digikey.png",
-    "webp": "challenges/webp/Digikey.webp",
-    "prize": ["Grove Beginner Kit"],
-    "key": "Digi-Key"
-  },
+
   {
     "desc": [
       "Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit! "
@@ -28,16 +11,7 @@
   },
   {
     "desc": [
-      "Build your hackathon project on CockroachDB's open source and indestructible SQL database."
-    ],
-    "img": "challenges/CockroachDB.png",
-    "webp": "challenges/webp/CockroachDB.webp",
-    "prize": ["3D printing pen"],
-    "key": "CockroachDB"
-  },
-  {
-    "desc": [
-      "Build a hack that simplifies your life using any one of Twilio’s APIs."
+      "Build a hack that simplifies your life using any one of Twilio’s APIs. Get started with $50 in free credit!"
     ],
     "img": "challenges/twillio.png",
     "webp": "challenges/webp/twillio.webp",
@@ -46,12 +20,21 @@
   },
   {
     "desc": [
-      "Launch an app that writes to the DeSo blockchain and/or implements DeSo identity. One can also build financial apps, marketplaces, and more."
+      "Build a Blockchain project on Hedera's test network for a chance to win amazing Glorious Modular Compact Mechanical Keyboards for your team."
     ],
-    "img": "challenges/Deso.png",
-    "webp": "challenges/webp/Deso.webp",
-    "prize": ["$100 worth of $DESO coin, DeSo Tumble"],
-    "key": "DeSo"
+    "img": "challenges/hedera.png",
+    "webp": "challenges/webp/hedera.webp",
+    "prize": ["Glorious Modular Compact Mechanical Keyboards"],
+    "key": "Hedera"
+  },
+  {
+    "desc": [
+      "Build your hackathon project with the Microsoft Cloud that tackles a social impact issue of your choice, and have a chance to win a LinkedIn Premium 12-Month subscription and an XBox Ultimate 3-Month Game Pass."
+    ],
+    "img": "challenges/azure.jpg",
+    "webp": "challenges/webp/azure.webp",
+    "prize": ["LinkedIn Premium 12-Month subscription, XBox Ultimate 3-Month Game Pass."],
+    "key": "Azure"
   },
   {
     "desc": [

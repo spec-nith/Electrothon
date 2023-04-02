@@ -72,7 +72,7 @@ function App() {
         <Explore />
         <Card />
         <Challenges />
-        {/* <MLHChallenges /> */}
+        <MLHChallenges />
         <Suspense fallback={<div>Loading...</div>}>
           <SpeakersNew />
           <Organizers />

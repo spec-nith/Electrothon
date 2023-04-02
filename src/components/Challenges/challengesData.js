@@ -12,18 +12,6 @@ export const challengesData = [
     list: "list-decimal px-3",
     key: "polygon",
   },
-
-  {
-    desc: [
-      "Upto $USDC 850 up for grabs, for the best hack built on top of Solana Blockchain at Devfolio-powered community Hackathons",
-    ],
-    img: "sponsors/gibbous/solana.png",
-    webp: "sponsors/gibbous/webp/solana.webp",
-    link: "https://replit.com/@devfolio/Solana-Starter?v=1#README.md",
-    prize: ["$ 500", "$ 250", "$ 100"],
-    list: "list-decimal px-3",
-    key: "solana",
-  },
   {
     desc: [
       "$50 to winning project of the hackathon (must be deployed on Replit)",
@@ -61,5 +49,16 @@ export const challengesData = [
     prize: ["$ 250"],
     list: "list-decimal px-3",
     key: "5ire",
+  },
+  {
+    desc: [
+      "Upto $USDC 850 up for grabs, for the best hack built on top of Solana Blockchain at Devfolio-powered community Hackathons",
+    ],
+    img: "sponsors/gibbous/solana.png",
+    webp: "sponsors/gibbous/webp/solana.webp",
+    link: "https://replit.com/@devfolio/Solana-Starter?v=1#README.md",
+    prize: ["$ 500", "$ 250", "$ 100"],
+    list: "list-decimal px-3",
+    key: "solana",
   },
 ];
