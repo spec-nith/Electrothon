@@ -125,6 +125,8 @@ function AllPrize() {
         <li>Gift vouchers from HoverRobotix Hoverboards India worth Rs 10000/- each.</li>
         <li>Complimentary certified mentoring session/workshop invites from MENTORx.</li>
         <li>Discount vouchers from RevUP LifeSkills.</li>
+        <li>Taskade lifetime upgrades for winners and 5-Year free upgrades for everyone else.</li>
+        <li>Full access licenses so attendees can get access to Interview Cake coding interview prep course.</li>
       </ul>
     </>
   );
