@@ -41,7 +41,7 @@ const SpeakersNew = () => {
         />
       </motion.div>
       <Section>
-        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-7 m-2  md:max-w-[85vw] lg:max-w-[80vw] mx-auto">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 md:gap-x-16 md:gap-y-10 lg:grid-cols-3 m-2  md:max-w-[85vw] lg:max-w-[80vw] mx-auto">
           {speakers.map((speaker, index) => {
             return <Card props={speaker} key={index} />;
           })}

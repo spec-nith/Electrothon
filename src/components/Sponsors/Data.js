@@ -93,6 +93,20 @@ export const data = [
         id: "gibbous_4",
       },
       {
+        sponsorName: "Jumbochain",
+        webp: "sponsors/gibbous/webp/jumbochain.webp",
+        src: "sponsors/gibbous/jumbochain.png",
+        url: "https://www.jumbochain.org/",
+        id: "gibbous_8",
+      },
+      {
+        sponsorName: "XYZ Domains",
+        webp: "sponsors/gibbous/webp/xyz.webp",
+        src: "sponsors/gibbous/xyz.png",
+        url: "https://gen.xyz/",
+        id: "gibbous_9",
+      },
+      {
         sponsorName: "MentorX",
         webp: "sponsors/gibbous/webp/mentor.webp",
         src: "sponsors/gibbous/mentor.png",
