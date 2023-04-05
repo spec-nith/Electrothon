@@ -5,13 +5,28 @@ import { motion } from "framer-motion";
 import { TitleText } from "../Tracks_new/CustomTexts";
 import { staggerContainer } from "../Tracks_new/motion";
 import styles from "../Tracks_new/style";
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
+import { initalPrizes, morePrizes } from "./prizeforall";
+
 const tabs = [
   { title: "Prizes", component: <Prizes /> },
   // { title: "Sponsored Prizes", component: <SponsoredPrizes /> },
   { title: "Swags for all", component: <AllPrize /> },
 ];
+const modalDataList = [
+  {
+  title : "Winner Prize", 
+  content : "Lifetime upgrades for taskade account."
+
+}];
 function Prizes() {
   const [showModal, setShowModal] = React.useState(false);
+  const [modalData, setModalData] = useState(modalDataList[0]);
+
   return (
     <>
       {showModal ? (
@@ -115,19 +130,97 @@ function Prizes() {
 // }
 
 function AllPrize() {
+  const [open, setOpen] = useState(-1);
+  const [loadMore, setloadMore] = useState(false);
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
   return (
     <>
+      <div className="flex ml-8">
+      <div className="mt-20 md:mx-10 lg:grid lg:grid-cols-2 gap-x-10">
+          <div>
+            {initalPrizes.map((faq, index) => {
+              return (
+                <Accordion
+                  key={faq.title + index}
+                  className=""
+                  open={open === parseInt(index + 1)}
+                >
+                  <AccordionHeader
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, rgba(255,255,255,0.2) , rgba(0,0,0,0.02)",
+                    }}
+                    className={`border-b-0 p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800 text-white my-2 mb-4`}
+                    onClick={() => handleOpen(index + 1)}
+                  >
+                    <h1 className="w-full text-center lg:text-left sm:text-xl md:text-2xl font-normal">
+                      {faq.title}
+                    </h1>
+                  </AccordionHeader>
+                  <AccordionBody className="text-sm md:text-base h-auto text-justify lg:text-left text-white rounded-xl p-4 bg-[rgba(0,0,0,0.4)]">
+                    {faq.content}
+                  </AccordionBody>
+                </Accordion>
+              );
+            })}
+          </div>
+          <div className={"lg:block " + (loadMore ? " " : "hidden ")}>
+            {morePrizes.map((faq, index) => {
+              return (
+                <Accordion
+                  key={faq.title + index}
+                  className=""
+                  open={open === parseInt(index + 8)}
+                >
+                  <AccordionHeader
+                    style={{
+                      background:
+                        "linear-gradient(to bottom, rgba(255,255,255,0.2) , rgba(0,0,0,0.02)",
+                    }}
+                    className={`border-b-0 p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800 text-white my-2 mb-4`}
+                    onClick={() => handleOpen(index + 8)}
+                  >
+                    <h1 className="w-full text-center lg:text-left sm:text-xl md:text-2xl font-normal">
+                      {faq.title}
+                    </h1>
+                  </AccordionHeader>
+                  <AccordionBody className="text-sm md:text-base h-auto text-left text-white rounded-xl p-4 bg-[rgba(0,0,0,0.4)]">
+                    {faq.content}
+                  </AccordionBody>
+                </Accordion>
+              );
+            })}
+          </div>
+          <div className="flex items-center justify-center block w-full lg:hidden">
+            <button
+              onClick={() => setloadMore(!loadMore)}
+              className="p-3 mt-4 mb-10 text-2xl bg-[#503883] rounded-xl text-gray-300"
+            >
+              {loadMore ? "Show Less" : "Show More"}
+            </button>
+          </div>
+        </div>
+     
+{/* 
+      <ul className=" mx-auto p-8 text-white text-left mt-7 text-sm lg:text-lg flex flex-col space-y-4 xl:w-3/5">
 
-      <ul className="w-[90%] list-decimal mx-auto p-8 text-white text-left mt-7 text-sm lg:text-lg flex flex-col space-y-4">
-        <li>30-day Wolfram | One access for participants including Desktop/Cloud access, Wolfram Language/Knowledgebase, FreeCDF Deployment, 5000 Wolfram | Alpha API calls, and 5000 Cloud Credits worth $25</li>
-        <li>Top eight teams get the Wolfram Award, which includes one year of Wolfram | One Personal Edition and a one-year subscription to Wolfram | Alpha Pro, valued at $375 per person.</li>
-        <li>Voiceflow Team License valued at $50/month per account for all attendees with a coupon code to retrieve their subscription.</li>
-        <li>Gift vouchers from HoverRobotix Hoverboards India worth Rs 10000/- each.</li>
-        <li>Complimentary certified mentoring session/workshop invites from MENTORx.</li>
-        <li>Discount vouchers from RevUP LifeSkills.</li>
-        <li>Taskade lifetime upgrades for winners and 5-Year free upgrades for everyone else.</li>
-        <li>Full access licenses so attendees can get access to Interview Cake coding interview prep course.</li>
-      </ul>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Swags for all participants from Github.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">30-day Wolfram | One access for participants including Desktop/Cloud access, Wolfram Language/Knowledgebase, FreeCDF Deployment, 5000 Wolfram | Alpha API calls, and 5000 Cloud Credits worth $25</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Top eight teams get the Wolfram Award, which includes one year of Wolfram | One Personal Edition and a one-year subscription to Wolfram | Alpha Pro, valued at $375 per person.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Voiceflow Team License valued at $50/month per account for all attendees with a coupon code to retrieve their subscription.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Gift vouchers from HoverRobotix Hoverboards India worth Rs 10000/- each.</div>
+        <div>Complimentary certified mentoring session/workshop invites from MENTORx.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Discount vouchers from RevUP LifeSkills.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Taskade lifetime upgrades for winners and 5-Year free upgrades for everyone else.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Full access licenses so attendees can get access to Interview Cake coding interview prep course.</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">90-day extended trial promo code for Balsamiq Cloud</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Free domain to all participants from .xyz</div>
+        <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Eligibility to apply for internship/full-time roles at Replit</div>
+      </ul> */}
+     
+      </div>
     </>
   );
 }

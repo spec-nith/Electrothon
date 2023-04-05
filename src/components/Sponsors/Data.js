@@ -274,13 +274,13 @@ export const data = [
   {
     tierName: "Title Sponsors",
     data: [
-      {
-        sponsorName: "Major League Hacking",
-        webp: "sponsors/fullmoon/webp/mlh.webp",
-        src: "sponsors/fullmoon/mlh.png",
-        url: "https://mlh.io/",
-        id: "title_0",
-      },
+      // {
+      //   sponsorName: "Major League Hacking",
+      //   webp: "sponsors/fullmoon/webp/mlh.webp",
+      //   src: "sponsors/fullmoon/mlh.png",
+      //   url: "https://mlh.io/",
+      //   id: "title_0",
+      // },
       {
         sponsorName: "GitHub",
         webp: "sponsors/fullmoon/webp/Github.webp",
