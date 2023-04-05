@@ -24,6 +24,13 @@ export const data = [
         id: "gold_6",
       },
       {
+        sponsorName: "Quine",
+        webp: "sponsors/fullmoon/webp/quine.webp",
+        src: "sponsors/fullmoon/quine.png",
+        url: "https://devfolio.co/",
+        id: "gold_5",
+      },
+      {
         sponsorName: "Showwcase",
         webp: "sponsors/fullmoon/webp/showwcase.webp",
         src: "sponsors/fullmoon/showwcase.png",
