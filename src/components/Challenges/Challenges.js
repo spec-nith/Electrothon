@@ -29,7 +29,7 @@ const Challenges = () => {
       </motion.div>
 
       <section
-        id="prizes"
+        id="challenges"
         className="relative p-2 md:p-10 mx-auto w-100% md:w-[80%]  mt-2 overflow-hidden bg-[#221e1e] bg-opacity-50 rounded-3xl"
         data-aos="fade"
         data-aos-delay="50"

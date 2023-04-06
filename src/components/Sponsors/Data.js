@@ -27,7 +27,7 @@ export const data = [
         sponsorName: "Quine",
         webp: "sponsors/fullmoon/webp/quine.webp",
         src: "sponsors/fullmoon/quine.png",
-        url: "https://devfolio.co/",
+        url: "https://quine.sh/",
         id: "gold_5",
       },
       {

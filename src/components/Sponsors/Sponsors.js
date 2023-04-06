@@ -80,7 +80,7 @@ export default function Sponsors() {
                 {tier.data.map((sponsor) => {
                   return (
                     <div
-                      className={"my-1 p-3 md:p-8 flex overflow-hidden w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"+ (sponsor.sponsorName=="Showwcase"?"w-[38%] sm:w-[38%] md:w-[38%] lg:w-[38%] xl:w-[30%] 2xl:w-[1/5]":"")} 
+                      className={"my-1 p-3 md:p-8 flex overflow-hidden w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"+ (sponsor.sponsorName=="Showwcase"?" w-[40%] sm:w-[38%] md:w-[38%] lg:w-[38%] xl:w-[30%] 2xl:w-[1/5]":"")} 
                       key={sponsor.id}
                     >
                       <a

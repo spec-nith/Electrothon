@@ -16,16 +16,29 @@ const tabs = [
   { title: "Prizes", component: <Prizes /> },
   // { title: "Sponsored Prizes", component: <SponsoredPrizes /> },
   { title: "Swags for all", component: <AllPrize /> },
+  { title: "Track Prizes", component: <TrackPrizes /> },
 ];
 const modalDataList = [
   {
-  title : "Winner Prize", 
-  content : "Lifetime upgrades for taskade account."
+    title: "Winner Prize",
+    content: "Lifetime upgrades for taskade account.",
+  },
+];
 
-}];
 function Prizes() {
   const [showModal, setShowModal] = React.useState(false);
-  const [modalData, setModalData] = useState(modalDataList[0]);
+  const [modalData, setModalData] = useState("");
+
+  function modalHandler(event) {
+    const text =
+      event.currentTarget.querySelector("span:first-child").textContent;
+    setShowModal(true);
+    if (text == "₹ 30,000 Worth Prizes")
+      setModalData("₹ 20,000 Cash Prize + All Participants swags");
+    else if (text == "₹ 20,000 Worth Prizes")
+      setModalData("₹ 15,000 Cash Prize + All Participants swags");
+    else setModalData("₹ 10,000 Cash Prize + All Participants swags");
+  }
 
   return (
     <>
@@ -50,7 +63,7 @@ function Prizes() {
                 {/*body*/}
                 <div className="relative flex-auto p-6">
                   <p className="my-4 text-lg leading-relaxed text-slate-500">
-                    Coming Soon
+                    {modalData}
                   </p>
                 </div>
               </div>
@@ -64,48 +77,42 @@ function Prizes() {
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#f4941d] to-[#ffd200] rounded-full">
             1st
           </span>
-          <div className="flex flex-col items-start ml-4 text-center md:ml-16">
+          <div
+            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
+            onClick={modalHandler}
+          >
             <span className="text-xl font-semibold md:text-3xl ">
               ₹ 30,000 Worth Prizes
             </span>
-            <span
-              onClick={() => setShowModal(true)}
-              className="w-full cursor-pointer"
-            >
-              Click to know more
-            </span>
+            <span className="w-full">Click to know more</span>
           </div>
         </div>
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#757f9a] to-[#d7dde8] rounded-full">
             2nd
           </span>
-          <div className="flex flex-col items-start ml-4 text-center md:ml-16">
+          <div
+            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
+            onClick={modalHandler}
+          >
             <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 15,000 Worth Prizes
+              ₹ 20,000 Worth Prizes
             </span>
-            <span
-              onClick={() => setShowModal(true)}
-              className="w-full cursor-pointer"
-            >
-              Click to know more
-            </span>
+            <span className="w-full">Click to know more</span>
           </div>
         </div>
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#232526] to-[#414344] rounded-full">
             3rd
           </span>
-          <div className="flex flex-col items-start ml-4 text-center md:ml-16">
+          <div
+            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
+            onClick={modalHandler}
+          >
             <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 10,000 Worth Prizes
+              ₹ 15,000 Worth Prizes
             </span>
-            <span
-              onClick={() => setShowModal(true)}
-              className="w-full cursor-pointer"
-            >
-              Click to know more
-            </span>
+            <span className="w-full cursor-pointer">Click to know more</span>
           </div>
         </div>
       </div>
@@ -138,7 +145,7 @@ function AllPrize() {
   return (
     <>
       <div className="flex ml-8">
-      <div className="mt-20 md:mx-10 lg:grid lg:grid-cols-2 gap-x-10">
+        <div className="mt-20 md:mx-10 lg:grid lg:grid-cols-2 gap-x-10">
           <div>
             {initalPrizes.map((faq, index) => {
               return (
@@ -202,8 +209,8 @@ function AllPrize() {
             </button>
           </div>
         </div>
-     
-{/* 
+
+        {/* 
       <ul className=" mx-auto p-8 text-white text-left mt-7 text-sm lg:text-lg flex flex-col space-y-4 xl:w-3/5">
 
         <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Swags for all participants from Github.</div>
@@ -219,9 +226,66 @@ function AllPrize() {
         <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Free domain to all participants from .xyz</div>
         <div className="p-2 bg-gray-400 bg-opacity-25 rounded-md border-l-4 border-blue-800">Eligibility to apply for internship/full-time roles at Replit</div>
       </ul> */}
-     
       </div>
     </>
+  );
+}
+
+function TrackPrizes() {
+  const trackData = [
+    {
+      title: "Best Beginner's Hack",
+      content: ["Rs. 1500 Cash Prize."],
+    },
+    {
+      title: "Best All Girls Team",
+      content: ["Rs. 2500 Cash Prize."],
+    },
+    {
+      title: "Theme Prizes",
+      content:
+        ["Rs. 1500 Cash Prize per theme", "Hidden prize for Open Innovation."],
+    },
+    {
+      title: "Hardware Only Hack",
+      content:
+        ["Win a free electronics gadget kit in our hardware competition."],
+    },
+  ];
+  return (
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 text-white px-8 py-6">
+      {trackData.map((track, index) => (
+              <div
+                className="flex flex-col md:m-4 mb-6 rounded-xl shadow-2xl p-4  bg-black/30"
+                key={track.key}
+              >
+                <div className="text-2xl text-start md:text-center md:text-3xl p-3 md:p-5 md:whitespace-nowrap">{track.title}</div>
+                <div className="flex h-full space-y-4 pb-4">
+                  <div className="px-3">
+                    <ul className="list-disc px-3 text-start">
+                      {track.content.map((element, index) => {
+                        return (
+                          <li
+                            className="md:pt-1 md:tracking-tighter"
+                            key={index}
+                          >
+                            {element}
+                          </li>
+                        );
+                      })}
+                    </ul>{" "}
+                  </div>
+                  </div>
+                  </div>))}
+      {/* {trackData.map((track, index) => {
+        return (
+          <div className="flex flex-col text-white px-8 py-2 bg-black/30 rounded-xl">
+          <div className="text-2xl">{track.title}</div>
+          <div className="text-lg px-8">{track.content}</div>
+        </div>
+      )
+      })} */}
+    </div>
   );
 }
 export default function Cards() {
@@ -258,10 +322,11 @@ export default function Cards() {
               <span
                 key={id}
                 onClick={() => setTabState(id)}
-                className={` mx-4 mb-2 text-xl cursor-pointer ${currentTab == id
-                  ? " text-white border-b-2 border-[#CEB7FF]"
-                  : "text-gray-400"
-                  }`}
+                className={` mx-4 mb-2 text-xl cursor-pointer ${
+                  currentTab == id
+                    ? " text-white border-b-2 border-[#CEB7FF]"
+                    : "text-gray-400"
+                }`}
               >
                 {tab.title}
               </span>
