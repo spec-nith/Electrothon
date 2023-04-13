@@ -122,3 +122,67 @@ export const organizersThird = [
     link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
   },
 ];
+
+export const organizersSecond = [
+  {
+    name: "Abhishek Nautiyal",
+    img: "organizers/abhishek nautiyal.png",
+    webp: "organizers/webp/Abhishek Nautiyal.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Anirudh Attri",
+    img: "organizers/Anirudh.png",
+    webp: "organizers/webp/Anirudh.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+
+  {
+    name: "Bucheti Naga Padmini",
+    img: "organizers/padmini.png",
+    webp: "organizers/webp/Busheti Naga Padmini.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Gauri Kaushal",
+    img: "organizers/Gauri Kuashal.png",
+    webp: "organizers/webp/Gauri Kuashal.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Aman Asrani",
+    img: "organizers/asrani.jpg",
+    webp: "organizers/webp/asrani.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Harshita Bhatiya",
+    img: "organizers/Harshita.png",
+    webp: "organizers/webp/HarshitaBhatia.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Mukesh Singh",
+    img: "organizers/mukesh.png",
+    webp: "organizers/webp/Mukesh .webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Shrestha Jaiswal",
+    img: "organizers/shREStha.png",
+    webp: "organizers/webp/Shrestha.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Tanuj Khanna",
+    img: "organizers/Tanuj.png",
+    webp: "organizers/webp/Tanuj.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+  {
+    name: "Rishab Pal",
+    img: "organizers/rishab.jpg",
+    webp: "organizers/webp/rishab.webp",
+    link: "https://www.linkedin.com/in/abhay-kumar-mittal-423a38202/",
+  },
+];

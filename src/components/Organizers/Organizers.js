@@ -8,7 +8,9 @@ import {
   organizersFinal,
   organizersThird,
   leadOrganizers,
+  organizersSecond,
 } from "./OrganizersData";
+
 import OrganizerCard from "./OrganizerCard";
 
 export default function Carousel() {
@@ -72,6 +74,16 @@ export default function Carousel() {
         <div className="mt-20">
           <Slider ref={setSliderRef} {...sliderSettings}>
             {organizersThird.map((card, index) => (
+              <OrganizerCard data={card} key={index} />
+            ))}
+          </Slider>
+        </div>
+        <div className="text-2xl lg:text-4xl font-bold text-[#8471ae] tracking-wider my-16 lg:my-24 font-[Oswald] text-center">
+          Coordinators
+        </div>
+        <div className="mt-20">
+          <Slider ref={setSliderRef} {...sliderSettings}>
+            {organizersSecond.map((card, index) => (
               <OrganizerCard data={card} key={index} />
             ))}
           </Slider>
