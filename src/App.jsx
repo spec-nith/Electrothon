@@ -28,6 +28,7 @@ function App() {
       setLoading(false);
     }, 1500);
   }, []);
+  
   return (
       <React.Fragment>
         <div

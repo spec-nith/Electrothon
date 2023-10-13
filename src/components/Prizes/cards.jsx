@@ -304,7 +304,7 @@ export default function Cards() {
           title={
             <>
               <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 tracking-wider lg:my-6 font-[Oswald] my-8">
-                Prizes
+               Previous Prizes
               </div>
             </>
           }
