@@ -43,22 +43,22 @@ const Timeline = () => {
           />
         </div>
         <div className="flex flex-col relativ">
-          <div className="timeline__event animated fadeInUp delay-3s timeline__event--type1">
+          <div className="timeline_event animated fadeInUp delay-3s timeline_event--type1">
             <FontAwesomeIcon
               fixedWidth
               className="text-3xl md:hidden absolute top-[45%] text-[#9251ac] block left-[-4.1rem]"
               icon={faComputer}
             />
-            <div className="timeline__event__icon">
+            <div className="timeline_event_icon">
               <FontAwesomeIcon
                 className="text-3xl absolute top-[46%] block left-[-4.1rem] md:static"
                 icon={faComputer}
               />
             </div>
-            <div className="timeline__event__date">6 FEB-31 MAR 2023</div>
-            <div className="timeline__event__content ">
-              <div className="timeline__event__title">Registration Begins</div>
-              <div className="timeline__event__description text-sm lg:text-base">
+            <div className="timeline_event_date">First Step</div>
+            <div className="timeline_event_content ">
+              <div className="timeline_event_title">Registration Begins</div>
+              <div className="timeline_event_description text-sm lg:text-base">
                 <p>
                   Registration opens up for students to register with their
                   respective teams and project ideas for Electrothon.
@@ -66,21 +66,21 @@ const Timeline = () => {
               </div>
             </div>
           </div>
-          <div className="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+          <div className="timeline_event animated fadeInUp delay-2s timeline_event--type2">
             <FontAwesomeIcon
               fixedWidth
               className="text-3xl md:hidden absolute top-[45%] text-[#858af3] block left-[-4.1rem]"
               icon={faPeopleGroup}
             />
-            <div className="timeline__event__icon">
+            <div className="timeline_event_icon">
               <FontAwesomeIcon className="text-3xl" icon={faPeopleGroup} />
             </div>
-            <div className="timeline__event__date">8th APRIL 2023</div>
-            <div className="timeline__event__content">
-              <div className="timeline__event__title">
+            <div className="timeline_event_date">Second Step</div>
+            <div className="timeline_event_content">
+              <div className="timeline_event_title">
                 Electrothon Main Event
               </div>
-              <div className="timeline__event__description text-sm lg:text-base">
+              <div className="timeline_event_description text-sm lg:text-base">
                 <p>
                   Electrothon will be a two-day event consisting of various
                   guest lectures, workshops, and project evaluation.
@@ -88,22 +88,22 @@ const Timeline = () => {
               </div>
             </div>
           </div>
-          <div className="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+          <div className="timeline_event animated fadeInUp delay-1s timeline_event--type3">
             <FontAwesomeIcon
               fixedWidth
               className="text-3xl md:hidden absolute top-[45%] text-[#24b47e] block left-[-4.1rem]"
               icon={faAward}
             />
-            <div className="timeline__event__icon">
+            <div className="timeline_event_icon">
               <FontAwesomeIcon className="text-3xl" icon={faAward} />
             </div>
-            <div className="timeline__event__date">9th APRIL 2023</div>
-            <div className="timeline__event__content">
-              <div className="timeline__event__title">Result Declaration</div>
-              <div className="timeline__event__description text-sm lg:text-base">
+            <div className="timeline_event_date">Final Step</div>
+            <div className="timeline_event_content">
+              <div className="timeline_event_title">Result Declaration</div>
+              <div className="timeline_event_description text-sm lg:text-base">
                 <p>
                   The ultimate genius will be revealed by our Judging Panel on
-                  9th April 2023 through our social media handles
+                  Final Day through our social media handles
                 </p>
               </div>
             </div>

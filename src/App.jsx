@@ -18,7 +18,7 @@ import { Event } from "./components/Events/Event";
 import Challenges from "./components/Challenges/Challenges";
 import MLHChallenges from "./components/Challenges/MLHChallenges";
 import Animate from "./components/IntroAnimate/Animate";
-
+ import Gallary from "./components/gallary/gallary";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -66,7 +66,7 @@ function App() {
         <Hero />
       </div>
       <div className="mx-6 mt-16 lg:mx-36">
-        <NewMilestone />
+   <Gallary/>
         <Timeline />
         <Event />
         <Sponsors />

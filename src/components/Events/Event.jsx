@@ -12,9 +12,10 @@ const tabs = [
   { title: "Live", data: { ...liveEvents } },
   { title: "Upcoming", data: { ...UpcomingEvents } },
 ];
+
 export const Event = () => {
   const [currentTab, setTabState] = useState(1);
-
+ 
   return (
     <div className="">
       <motion.div

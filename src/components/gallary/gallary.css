@@ -1,0 +1,62 @@
+ /* Slick Carousel CSS import */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+/* Carousel styling */
+.App {
+  width: 100%;
+  margin: 10rem auto;
+  height: 570px;
+  position: relative;
+}
+
+.slide img {
+  width: 30rem;
+  margin: 10 auto;
+  border-radius: 2rem;
+}
+
+.slide {
+  transform: scale(0.2);
+  opacity: 0.5;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+
+/* Arrow styling */
+.arrow {
+ color: white;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow svg {
+  width: 100%; /* Make the SVG fill the arrow container */
+  height: 100%; /* Make the SVG fill the arrow container */
+  transition: fill 300ms;
+}
+
+.arrow:hover svg {
+  fill: #2e074a;
+}
+
+.next {
+  right: 0;
+  top: 50%;
+}
+
+.prev {
+  left: 0;
+  top: 50%;
+}
