@@ -55,7 +55,7 @@ const Timeline = () => {
                 icon={faComputer}
               />
             </div>
-            <div className="timeline__event__date">6 FEB-31 MAR 2023</div>
+            <div className="timeline__event__date">First Step</div>
             <div className="timeline__event__content ">
               <div className="timeline__event__title">Registration Begins</div>
               <div className="timeline__event__description text-sm lg:text-base">
@@ -75,7 +75,7 @@ const Timeline = () => {
             <div className="timeline__event__icon">
               <FontAwesomeIcon className="text-3xl" icon={faPeopleGroup} />
             </div>
-            <div className="timeline__event__date">8th APRIL 2023</div>
+            <div className="timeline__event__date">Second Step</div>
             <div className="timeline__event__content">
               <div className="timeline__event__title">
                 Electrothon Main Event
@@ -97,13 +97,13 @@ const Timeline = () => {
             <div className="timeline__event__icon">
               <FontAwesomeIcon className="text-3xl" icon={faAward} />
             </div>
-            <div className="timeline__event__date">9th APRIL 2023</div>
+            <div className="timeline__event__date">Final Step</div>
             <div className="timeline__event__content">
               <div className="timeline__event__title">Result Declaration</div>
               <div className="timeline__event__description text-sm lg:text-base">
                 <p>
                   The ultimate genius will be revealed by our Judging Panel on
-                  9th April 2023 through our social media handles
+                  Final Day through our social media handles
                 </p>
               </div>
             </div>

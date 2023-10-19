@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM, { hydrate } from "react-dom";
 import "./index.css";
 import "./colors.css";
 import App from "./App";
@@ -10,3 +10,4 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+console.log("hyd");
