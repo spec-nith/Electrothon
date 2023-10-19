@@ -72,47 +72,53 @@ function Prizes() {
           <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
         </>
       ) : null}
-      <div id="left-prize" className="flex flex-col w-full p-8 xl:w-2/5">
+      <div id="left-prize" className="flex flex-col w-full p-8 xl:w-3/5">
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#f4941d] to-[#ffd200] rounded-full">
             1st
           </span>
-          <div
-            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
-            onClick={modalHandler}
-          >
-            <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 30,000 Worth Prizes
+          <div className="flex flex-col items-start w-[9rem] ml-4 text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold md:text-2xl ">
+              &nbsp;First &nbsp;Prize
             </span>
-            <span className="w-full">Click to know more</span>
+          </div>
+          <div className="flex flex-col items-start ml-auto  md:ml-16 cursor-pointer">
+            <span className="text-sm text-left font-semibold w-[10rem] h-[5rem] sm:text-1xl">
+            1. Daksh <br></br>2. Nishant Sharma<br></br>3. Priyanshi Babbar <br></br>
+              
+            </span>
           </div>
         </div>
+
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#757f9a] to-[#d7dde8] rounded-full">
             2nd
           </span>
-          <div
-            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
-            onClick={modalHandler}
-          >
-            <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 20,000 Worth Prizes
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold md:text-2xl ">
+              Second Prize
             </span>
-            <span className="w-full">Click to know more</span>
+          </div>
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer">
+            <span className="text-sm text-left font-semibold w-[10rem] h-[5rem] sm:text-1xl ">
+             1. Nancy <br></br>2. Shivam Gupta<br></br>3. Priyansh Saw<br></br>
+            </span>
           </div>
         </div>
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#232526] to-[#414344] rounded-full">
             3rd
           </span>
-          <div
-            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
-            onClick={modalHandler}
-          >
-            <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 15,000 Worth Prizes
+          <div className="flex flex-col items-start ml-4 w-[9rem] text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold md:text-2xl ">
+              Third Prize
             </span>
-            <span className="w-full cursor-pointer">Click to know more</span>
+          </div>
+          <div className="flex flex-col items-start ml-auto  md:ml-16 cursor-pointer">
+            <span className="text-sm text-left font-semibold w-[10rem] h-[5rem] sm:text-1xl">
+            1. Sumit Dhiman <br></br>2. Divyansh Tripathi<br></br>3. Swasthik Sharma <br></br> 4. Ekansh Verma
+              
+            </span>
           </div>
         </div>
       </div>
