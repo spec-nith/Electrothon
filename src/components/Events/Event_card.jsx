@@ -58,7 +58,7 @@ export default function EventCard(props) {
                 setCurrentSlide(index);
               }}
             >
-              {props.data.map((event, index) => (
+             {props.data.map((event, index) => (
                 <picture className="">
                   <source
                     srcSet={event.webp}

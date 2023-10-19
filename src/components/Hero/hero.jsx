@@ -75,6 +75,7 @@ export default function Hero(props) {
           </Marquee>
         </div>
       </div>
+
       <div className="text-4xl lg:text-6xl font-bold text-[#8471ae] tracking-wider my-4 lg:my-6 font-[Oswald] text-center">
         About Us
       </div>

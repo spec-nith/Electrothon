@@ -24,7 +24,7 @@ export default function Sponsors() {
               title={
                 <>
                   <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] mt-4 lg:my-6 font-[Oswald]">
-                    Our Sponsors
+                    Previous Sponsors
                   </div>
                 </>
               }
