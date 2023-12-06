@@ -1,3 +1,5 @@
+// components-->prizes-->cards.jsx
+
 import React, { useState } from "react";
 import Card from "./cardUI";
 import "./card-style.css";
@@ -46,9 +48,9 @@ function Prizes() {
         <>
           <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
             <div className="relative w-auto max-w-3xl mx-auto my-6">
-              {/*content*/}
+              {/content/}
               <div className="relative flex flex-col w-full bg-[#1a1a1d] border-0 rounded-lg shadow-lg outline-none focus:outline-none text-white">
-                {/*header*/}
+                {/header/}
                 <div className="flex items-start justify-between p-5 border-b border-solid rounded-t border-slate-200">
                   <h3 className="mr-10 text-3xl font-semibold">Coming Soon</h3>
                   <button
@@ -60,7 +62,7 @@ function Prizes() {
                     </span>
                   </button>
                 </div>
-                {/*body*/}
+                {/body/}
                 <div className="relative flex-auto p-6">
                   <p className="my-4 text-lg leading-relaxed text-slate-500">
                     {modalData}
@@ -72,47 +74,58 @@ function Prizes() {
           <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
         </>
       ) : null}
-      <div id="left-prize" className="flex flex-col w-full p-8 xl:w-2/5">
+      <div id="left-prize" className="flex flex-col w-full p-8 xl:w-3/5">
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#f4941d] to-[#ffd200] rounded-full">
             1st
           </span>
-          <div
-            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
-            onClick={modalHandler}
-          >
-            <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 30,000 Worth Prizes
+          <div className="flex flex-col items-start w-[9rem] ml-4 text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold md:text-2xl ">
+              &nbsp;First &nbsp;Prize
             </span>
-            <span className="w-full">Click to know more</span>
+          </div>
+          <div className="flex flex-col items-start ml-auto  md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold my-2 text-yellow-400">
+              Team 404
+            </span>
+            <span className="text-sm text-left font-semibold w-[10rem] h-[5rem] sm:text-1xl">
+              1. Daksh <br></br>2. Nishant Sharma<br></br>3. Priyanshi Babbar{" "}
+              <br></br>
+            </span>
           </div>
         </div>
+
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#757f9a] to-[#d7dde8] rounded-full">
             2nd
           </span>
-          <div
-            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
-            onClick={modalHandler}
-          >
-            <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 20,000 Worth Prizes
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold md:text-2xl ">Second Prize</span>
+          </div>
+          <div className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold my-2 text-red-500">
+              Hash Heroes
             </span>
-            <span className="w-full">Click to know more</span>
+            <span className="text-sm text-left font-semibold w-[10rem] h-[5rem] sm:text-1xl ">
+              1. Nancy <br></br>2. Shivam Gupta<br></br>3. Priyansh Saw<br></br>
+            </span>
           </div>
         </div>
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#232526] to-[#414344] rounded-full">
             3rd
           </span>
-          <div
-            className="flex flex-col items-start ml-4 text-center md:ml-16 cursor-pointer"
-            onClick={modalHandler}
-          >
-            <span className="text-xl font-semibold md:text-3xl ">
-              ₹ 15,000 Worth Prizes
+          <div className="flex flex-col items-start ml-4 w-[9rem] text-center md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold md:text-2xl ">Third Prize</span>
+          </div>
+          <div className="flex flex-col items-start ml-auto  md:ml-16 cursor-pointer">
+            <span className="text-xl font-bold my-2 text-blue-500">
+              Acess : Denied
             </span>
-            <span className="w-full cursor-pointer">Click to know more</span>
+            <span className="text-sm text-left font-semibold w-[10rem] h-[5rem] sm:text-1xl">
+              1. Sumit Dhiman <br></br>2. Divyansh Tripathi<br></br>3. Swasthik
+              Sharma <br></br> 4. Ekansh Verma
+            </span>
           </div>
         </div>
       </div>
@@ -200,7 +213,7 @@ function AllPrize() {
               );
             })}
           </div>
-          <div className="flex items-center justify-center block w-full lg:hidden">
+          <div className="flex items-center justify-center  w-full lg:hidden">
             <button
               onClick={() => setloadMore(!loadMore)}
               className="p-3 mt-4 mb-10 text-2xl bg-[#503883] rounded-xl text-gray-300"
@@ -243,40 +256,43 @@ function TrackPrizes() {
     },
     {
       title: "Theme Prizes",
-      content:
-        ["Rs. 1500 Cash Prize per theme", "Hidden prize for Open Innovation."],
+      content: [
+        "Rs. 1500 Cash Prize per theme",
+        "Hidden prize for Open Innovation.",
+      ],
     },
     {
       title: "Hardware Only Hack",
-      content:
-        ["Win a free electronics gadget kit in our hardware competition."],
+      content: [
+        "Win a free electronics gadget kit in our hardware competition.",
+      ],
     },
   ];
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 text-white px-8 py-6">
       {trackData.map((track, index) => (
-              <div
-                className="flex flex-col md:m-4 mb-6 rounded-xl shadow-2xl p-4  bg-black/30"
-                key={track.key}
-              >
-                <div className="text-2xl text-start md:text-center md:text-3xl p-3 md:p-5 md:whitespace-nowrap">{track.title}</div>
-                <div className="flex h-full space-y-4 pb-4">
-                  <div className="px-3">
-                    <ul className="list-disc px-3 text-start">
-                      {track.content.map((element, index) => {
-                        return (
-                          <li
-                            className="md:pt-1 md:tracking-tighter"
-                            key={index}
-                          >
-                            {element}
-                          </li>
-                        );
-                      })}
-                    </ul>{" "}
-                  </div>
-                  </div>
-                  </div>))}
+        <div
+          className="flex flex-col md:m-4 mb-6 rounded-xl shadow-2xl p-4  bg-black/30"
+          key={track.key}
+        >
+          <div className="text-2xl text-start md:text-center md:text-3xl p-3 md:p-5 md:whitespace-nowrap">
+            {track.title}
+          </div>
+          <div className="flex h-full space-y-4 pb-4">
+            <div className="px-3">
+              <ul className="list-disc px-3 text-start">
+                {track.content.map((element, index) => {
+                  return (
+                    <li className="md:pt-1 md:tracking-tighter" key={index}>
+                      {element}
+                    </li>
+                  );
+                })}
+              </ul>{" "}
+            </div>
+          </div>
+        </div>
+      ))}
       {/* {trackData.map((track, index) => {
         return (
           <div className="flex flex-col text-white px-8 py-2 bg-black/30 rounded-xl">

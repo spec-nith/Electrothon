@@ -24,7 +24,7 @@ export default function Sponsors() {
               title={
                 <>
                   <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] mt-4 lg:my-6 font-[Oswald]">
-                    Our Sponsors
+                    Previous Sponsors
                   </div>
                 </>
               }
@@ -80,7 +80,12 @@ export default function Sponsors() {
                 {tier.data.map((sponsor) => {
                   return (
                     <div
-                      className={"my-1 p-3 md:p-8 flex overflow-hidden w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover"+ (sponsor.sponsorName=="Showwcase"?" w-[40%] sm:w-[38%] md:w-[38%] lg:w-[38%] xl:w-[30%] 2xl:w-[1/5]":"")} 
+                      className={
+                        "my-1 p-3 md:p-8 flex overflow-hidden w-1/3 sm:w-1/3 md:w-1/3 lg:w-1/4 xl:w-1/5 items-center justify-center object-cover" +
+                        (sponsor.sponsorName == "Showwcase"
+                          ? " w-[40%] sm:w-[38%] md:w-[38%] lg:w-[38%] xl:w-[30%] 2xl:w-[1/5]"
+                          : "")
+                      }
                       key={sponsor.id}
                     >
                       <a
@@ -91,7 +96,16 @@ export default function Sponsors() {
                         {/* <img src={sponsor.src} alt={sponsor.sponsorName}></img> */}
                         <picture>
                           <source srcSet={sponsor.webp} type="image/webp" />
-                          <img src={sponsor.src} alt={sponsor.sponsorName} className={" " + (sponsor.sponsorName=="Showwcase"?"max-w-none w-[107px] md:w-[250px]":"")} />
+                          <img
+                            src={sponsor.src}
+                            alt={sponsor.sponsorName}
+                            className={
+                              " " +
+                              (sponsor.sponsorName == "Showwcase"
+                                ? "max-w-none w-[107px] md:w-[250px]"
+                                : "")
+                            }
+                          />
                         </picture>
                         {/* for sponsorname */}
                         {/* <p className="text-white tnpm rn start
