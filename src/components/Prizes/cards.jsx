@@ -46,7 +46,7 @@ function Prizes() {
     <>
       {showModal ? (
         <>
-          <div className="fixed inset-0 z-50 flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none">
+          <div className="fixed inset-0 z-50 w-screen flex items-center justify-center overflow-x-hidden overflow-y-auto outline-none focus:outline-none ">
             <div className="relative w-auto max-w-3xl mx-auto my-6">
               {/content/}
               <div className="relative flex flex-col w-full bg-[#1a1a1d] border-0 rounded-lg shadow-lg outline-none focus:outline-none text-white">
@@ -74,7 +74,7 @@ function Prizes() {
           <div className="fixed inset-0 z-40 bg-black opacity-25"></div>
         </>
       ) : null}
-      <div id="left-prize" className="flex flex-col w-full p-8 xl:w-3/5">
+      <div id="left-prize" className="flex flex-col w-screen p-8 xl:w-3/5">
         <div className="flex flex-row items-center w-full my-4 text-white">
           <span className="flex items-center justify-center w-[5rem] h-[5rem] md:w-24 md:h-24 text-2xl font-semibold text-white bg-gradient-to-r from-[#f4941d] to-[#ffd200] rounded-full">
             1st
@@ -319,7 +319,7 @@ export default function Cards() {
         <TitleText
           title={
             <>
-              <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 tracking-wider lg:my-6 font-[Oswald] my-8">
+              <div className="text-4xl lg:text-7xl font-bold text-[#8471ae] my-4 tracking-wider lg:my-6 font-[Oswald] ">
                 Prizes
               </div>
             </>
@@ -328,7 +328,7 @@ export default function Cards() {
         />
       </motion.div>
 
-      <div className="bg-[#1a1a1d] rounded-xl bg-opacity-50 py-8 mx-auto max-w-[1200px]">
+      <div className="bg-[#1a1a1d] rounded-xl bg-opacity-50 py-8 w-screen  sm:w-screen">
         <div
           id="tabs"
           className="flex justify-start w-full border-b-2 border-gray-200"

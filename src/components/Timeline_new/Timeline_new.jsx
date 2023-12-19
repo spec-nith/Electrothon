@@ -55,7 +55,7 @@ const Timeline = () => {
                 icon={faComputer}
               />
             </div>
-            <div className="timeline__event__date">27 DEC 2023-25 JAN 2024</div>
+            <div className="timeline__event__date text-center">27 DEC 2023-25 JAN 2024</div>
             <div className="timeline__event__content ">
               <div className="timeline__event__title">Registration Begins</div>
               <div className="timeline__event__description text-sm lg:text-base">

@@ -25,7 +25,18 @@ export default function Hero(props) {
     <div className="w-full" style={props.style}>
       <SocialHeader />
       <Header />
+      <picture className=" md:hidden ">
+                <source srcSet="spec_logo.webp" type="image/webp" />
+                <img
+                  className="w-20  mt-5 ml-3"
+                  src="spec_logo.png"
+                  alt="spec_logo"
+                />
+              </picture>
       <div className="flex flex-col items-center justify-center w-full h-screen text-white">
+        
+    
+             
         <div className="flex flex-col items-center justify-center m-auto font-thin text-center lg:w-1/2">
           <p className="select-none text-4xl md:text-6xl lg:text-8xl tracking-widest md:tracking-[0.6rem] lg:tracking-[1rem] hero-heading heading-glow font-bold md:font-light">
             ELECTROTHON

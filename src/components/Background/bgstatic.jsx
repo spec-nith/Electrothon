@@ -6,7 +6,7 @@ const BgStatic = () => {
       <source srcSet="img.jpg" type="image/webp" />
       <img
         className="object-cover w-screen h-[105vh]"
-        src="img.jpg"
+        src="bg-static.jpg"
         alt="hero-bg"
       />
     </picture>

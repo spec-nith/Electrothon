@@ -73,7 +73,7 @@ const Nav = () => {
 
   return (
     <div className="h-full">
-      <div className=" h-full fixed flex flex-wrap top-0 left-0 md:ml-12">
+      <div className=" h-full fixed flex flex-wrap top-0 left-0 md:ml-11">
         <nav className="items-center m-auto">
           {/* <div className="hidden md:flex py-4 rotate-90">
             <div className=" text-gray-200 text-2xl font-black">
@@ -111,7 +111,7 @@ const Nav = () => {
         </nav>
       </div>
       <div className="lg:hidden w-screen items-center fixed inline-block z-50 overflow-x-hidden">
-        <div className="bg-[#111111] rounded-t-3xl w-full h-16 flex justify-around text-gray-100 fixed bottom-0 z-50 border-t-2 border-violet-500">
+        <div className="bg-[#111111] rounded-t-3xl w-screen h-16 flex justify-around text-gray-100 fixed bottom-0 z-50 border-t-2 border-violet-500">
           {navItems.map((item) => (
             <NavbarSM item={item} key={item.id} />
           ))}
