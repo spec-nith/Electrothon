@@ -33,7 +33,7 @@ const Timeline = () => {
         <div className="hidden md:block bg-gradient-to-br from-[rgba(209,209,209,0.2)] to-[rgba(209,209,209,0.1)] backdrop-blur-[1px] mr-20 text-white rounded-xl">
           <p className="p-6 text-4xl">Working Process of Fest</p>
           <p className="font-[Poppins] px-6 py-2">
-            Here's your guide to the Electrothon 5.0 process. Go through all the
+            Here's your guide to the Electrothon 6.0 process. Go through all the
             steps to know the exact process of the fest.
           </p>
           <img
@@ -55,7 +55,7 @@ const Timeline = () => {
                 icon={faComputer}
               />
             </div>
-            <div className="timeline__event__date">6 FEB-31 MAR 2023</div>
+            <div className="timeline__event__date">27 DEC 2023-25 JAN 2024</div>
             <div className="timeline__event__content ">
               <div className="timeline__event__title">Registration Begins</div>
               <div className="timeline__event__description text-sm lg:text-base">
@@ -75,7 +75,7 @@ const Timeline = () => {
             <div className="timeline__event__icon">
               <FontAwesomeIcon className="text-3xl" icon={faPeopleGroup} />
             </div>
-            <div className="timeline__event__date">8th APRIL 2023</div>
+            <div className="timeline__event__date">26th FEB 2024</div>
             <div className="timeline__event__content">
               <div className="timeline__event__title">
                 Electrothon Main Event
@@ -97,13 +97,13 @@ const Timeline = () => {
             <div className="timeline__event__icon">
               <FontAwesomeIcon className="text-3xl" icon={faAward} />
             </div>
-            <div className="timeline__event__date">9th APRIL 2023</div>
+            <div className="timeline__event__date">28th FEB 2024</div>
             <div className="timeline__event__content">
               <div className="timeline__event__title">Result Declaration</div>
               <div className="timeline__event__description text-sm lg:text-base">
                 <p>
                   The ultimate genius will be revealed by our Judging Panel on
-                  9th April 2023 through our social media handles
+                  28th April 2024 through our social media handles
                 </p>
               </div>
             </div>

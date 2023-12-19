@@ -52,8 +52,8 @@ function App() {
           rel="noreferrer"
         >
           <img
-            src="https://s3.amazonaws.com/logged-assets/trust-badge/2023/mlh-trust-badge-2023-white.svg"
-            alt="Major League Hacking 2023 Hackathon Season"
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+            alt="Major League Hacking 2024 Hackathon Season"
             className="w-full"
           />
         </a>

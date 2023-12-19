@@ -31,17 +31,17 @@ export default function Hero(props) {
             ELECTROTHON
           </p>
           <p className="text-4xl font-bold md:text-6xl lg:text-8xl hero-heading heading-glow md:font-light">
-            5.0
+            6.0
           </p>
           <p className="mt-2 font-semibold text-md md:text-lg lg:text-2xl hero-heading">
-            MOONSHOT YOUR EUREKA
+            SOROERERS OF CIPHER
           </p>
           
           <div className="flex z-[100] flex-col ipadIssue w-full justify-center items-center gap-y-4 mt-6 hero-heading">
-              <h1 className="text-xl font-extrabold">Applications Closed</h1>
+              <h1 className="text-xl font-extrabold">Applications Open</h1>
 
-            <a rel="noreferrer" className="items-center px-4 py-2 my-4 font-semibold text-white duration-200 ease-in-out bg-blue-600 md:my-0 hover:bg-blue-400 text-bold rounded-xl ipadIssue2 w-[312px]" target="_blank" href = "https://same-uranium-0e7.notion.site/Hacker-s-Guide-to-ELECTROTHON-5-0-94659968f7d648fda39772bb09660766">
-              Hackers Guide
+            <a rel="noreferrer" className="items-center px-2 py-2 mt-2 font-semibold text-white duration-200 ease-in-out bg-blue-600 md:my-0 hover:bg-blue-400 text-bold rounded-xl ipadIssue2 w-[312px]" target="_blank" href = "#">
+              Register Now
             </a>
           </div>
           <div>
@@ -81,14 +81,15 @@ export default function Hero(props) {
 
       <div className="md:w-[900px] rounded-xl p-8 text-white mx-auto opacity-60">
         <p className="text-center paraContent">
-          Taking moonshots is no smooth sailing. It's an inherently
-          unpredictable ride. As we launch the 5th in-person lunation of
-          Electrothon, we strive for nothing less than the moon. Run by the
-          student community SPEC under the moonlight of NIT Hamirpur,
-          Electrothon has impacted over 5000 students. The budding hackers who
-          joined Electrothon over its previous iterations left no stone unturned
-          to ideate and amalgamate technologies that transfigure visions into
-          reality.
+        As the prophecy beholds, this epoch we find ourselves amidst the wisest
+of sorcerers. Embracing the mirqge while deciphering it, is undoubtedly a
+herculean task. But as the sixth spell of ELETROTHON is cast, We march into
+this enchanted land with gallant strides. Organized under the aegis of the
+student community of SPEC at NIT Hamirpur, Electrothon has entranced
+thousands of young minds. Individuals who boarded our mystic rug ensu
+red that their wizardry left no stone unturned. The Charms Corridor, is
+once again beaming with Electrothon frenzy and we are all set to take it
+to a new notch this winter.
         </p>
       </div>
     </div>
