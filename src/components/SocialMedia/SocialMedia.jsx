@@ -26,7 +26,7 @@ const SocialMediaLG = (props) => {
 const Social = () => {
   return (
     <div
-      className="fixed left-0 flex flex-wrap w-full h-full ml-6 lg:ml-12 social-handler"
+      className="fixed left-0 flex flex-wrap w-screen hidden sm:block z-10 h-full ml-6 lg:ml-12 social-handler"
       style={{ left: "92%" }}
     >
       <nav className="items-center my-auto h-1/2">
