@@ -1,20 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.b565c145.css",
-    "main.js": "/static/js/main.7e1bd0f4.js",
-    "static/js/652.3742e5a0.chunk.js": "/static/js/652.3742e5a0.chunk.js",
+    "main.css": "/static/css/main.f67e49ab.css",
+    "main.js": "/static/js/main.cb301419.js",
+    "static/js/652.bafb81e9.chunk.js": "/static/js/652.bafb81e9.chunk.js",
+    "static/media/img7.jpeg": "/static/media/img7.bd8574bddd597c883a1f.jpeg",
+    "static/media/img8.jpeg": "/static/media/img8.35147932267d9935d528.jpeg",
+    "static/media/img1.jpeg": "/static/media/img1.6518d289814e52cfa273.jpeg",
+    "static/media/img5.jpeg": "/static/media/img5.2ce8f32d1eb28d42878f.jpeg",
+    "static/media/img4.jpeg": "/static/media/img4.cac6b192ce4c450c6712.jpeg",
+    "static/media/img3.jpeg": "/static/media/img3.a04350763376a1d00d51.jpeg",
+    "static/media/img6.jpeg": "/static/media/img6.b4edda7a8325601d71bc.jpeg",
+    "static/media/img2.jpeg": "/static/media/img2.af3897c012cc1b38266d.jpeg",
     "static/media/prize-card.jpg": "/static/media/prize-card.3c96e5ce45c1253700e9.jpg",
     "index.html": "/index.html",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "main.b565c145.css.map": "/static/css/main.b565c145.css.map",
-    "main.7e1bd0f4.js.map": "/static/js/main.7e1bd0f4.js.map",
-    "652.3742e5a0.chunk.js.map": "/static/js/652.3742e5a0.chunk.js.map"
+    "main.f67e49ab.css.map": "/static/css/main.f67e49ab.css.map",
+    "main.cb301419.js.map": "/static/js/main.cb301419.js.map",
+    "652.bafb81e9.chunk.js.map": "/static/js/652.bafb81e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b565c145.css",
-    "static/js/main.7e1bd0f4.js"
+    "static/css/main.f67e49ab.css",
+    "static/js/main.cb301419.js"
   ]
 }
