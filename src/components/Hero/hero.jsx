@@ -45,7 +45,7 @@ export default function Hero(props) {
             6.0
           </p>
           <p className="mt-2 font-semibold text-md md:text-lg lg:text-2xl hero-heading">
-            SOROERERS OF CIPHER
+            SORCERERS OF CIPHER
           </p>
           
           <div className="flex z-[100] flex-col ipadIssue w-full justify-center items-center gap-y-4 mt-6 hero-heading">
