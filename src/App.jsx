@@ -44,7 +44,7 @@ function App() {
       </div>
       <div className={loading ? "hidden" : ""}>
         <Background />
-        <a
+{/*         <a
           id="mlh-trust-badge"
           className="mlh"
           href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2023-season&utm_content=white"
@@ -56,7 +56,7 @@ function App() {
             alt="Major League Hacking 2024 Hackathon Season"
             className="w-full"
           />
-        </a>
+        </a> */}
         <div
           className="grid overflow-x-hidden place-items-start md:place-items-center"
           id="hero-section"
